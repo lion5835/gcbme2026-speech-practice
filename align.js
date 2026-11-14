@@ -21,43 +21,45 @@
   const SCALE = { hundred: 100, thousand: 1000 };
 
   function wordsToNumbers(tokens) {
-    // converts runs like "ninety point three" -> "90.3", "one hundred ninety six" -> "196"
+    // "ninety point three" -> "90.3", "one hundred ninety six" -> "196", "point nine one" -> "0.91"
     const out = []; let i = 0;
     const isNumW = t => t in ONES || t in TENS || t in SCALE;
+    const digitW = t => (t in ONES && ONES[t] < 10) || /^\d$/.test(t);
+    const dval = t => /^\d$/.test(t) ? t : String(ONES[t]);
+    function decimals() { let d = ''; while (i < tokens.length && digitW(tokens[i])) { d += dval(tokens[i]); i++; } return d; }
     while (i < tokens.length) {
-      if (!isNumW(tokens[i]) || (tokens[i] === 'one' && !(isNumW(tokens[i + 1] || '') || tokens[i + 1] === 'point'))) {
-        out.push(tokens[i]); i++; continue;
-      }
-      let total = 0, cur = 0;
-      while (i < tokens.length && (isNumW(tokens[i]) || (tokens[i] === 'and' && isNumW(tokens[i + 1] || '') && cur >= 100))) {
+      const t0 = tokens[i];
+      if (t0 === 'point' && i + 1 < tokens.length && digitW(tokens[i + 1]) && !/^\d/.test(out[out.length - 1] || '')) { i++; out.push('0.' + decimals()); continue; }
+      if (!isNumW(t0) || (t0 === 'one' && !(isNumW(tokens[i + 1] || '') || tokens[i + 1] === 'point'))) { out.push(t0); i++; continue; }
+      let total = 0, cur = 0, last = '';
+      while (i < tokens.length) {
         const t = tokens[i];
-        if (t in ONES) cur += ONES[t]; else if (t in TENS) cur += TENS[t];
-        else if (t === 'hundred') cur = (cur || 1) * 100; else if (t === 'thousand') { total += (cur || 1) * 1000; cur = 0; }
+        if (t in ONES) { if (last === 'ones' || (last === 'tens' && ONES[t] >= 10)) break; cur += ONES[t]; last = 'ones'; }
+        else if (t in TENS) { if (last === 'ones' || last === 'tens') break; cur += TENS[t]; last = 'tens'; }
+        else if (t === 'hundred') { if (last === 'hundred') break; cur = (cur || 1) * 100; last = 'hundred'; }
+        else if (t === 'thousand') { total += (cur || 1) * 1000; cur = 0; last = 'hundred'; }
+        else if (t === 'and' && last === 'hundred' && isNumW(tokens[i + 1] || '')) { i++; continue; }
+        else break;
         i++;
       }
       let num = String(total + cur);
-      if (tokens[i] === 'point' && i + 1 < tokens.length && (tokens[i + 1] in ONES || /^\d+$/.test(tokens[i + 1]))) {
-        i++; let dec = '';
-        while (i < tokens.length && (tokens[i] in ONES && ONES[tokens[i]] < 10 || /^\d$/.test(tokens[i]))) { dec += (tokens[i] in ONES) ? ONES[tokens[i]] : tokens[i]; i++; }
-        num += '.' + dec;
-      }
+      if (tokens[i] === 'point' && i + 1 < tokens.length && digitW(tokens[i + 1])) { i++; num += '.' + decimals(); }
       out.push(num);
     }
-    // digits "90 point 3" -> 90.3
     const out2 = [];
     for (let k = 0; k < out.length; k++) {
       if (out[k] === 'point' && /^\d+$/.test(out2[out2.length - 1] || '') && /^\d+$/.test(out[k + 1] || '')) { out2[out2.length - 1] += '.' + out[k + 1]; k++; }
       else out2.push(out[k]);
     }
-    return out2;
+    return out2.filter(t => t !== ',');
   }
 
   function normalize(text) {
     let t = String(text).toLowerCase()
       .replace(/₂/g, '2').replace(/[–—−]/g, ' minus ').replace(/×/g, ' by ')
-      .replace(/(\d),(\d{3})/g, '$1$2').replace(/%/g, ' percent ').replace(/±/g, ' plus or minus ')
+      .replace(/(\d),(\d{3})/g, '$1$2').replace(/(^|[^\d])\.(\d)/g, '$1 0.$2').replace(/%/g, ' percent ').replace(/±/g, ' plus or minus ')
       .replace(/&/g, ' and ').replace(/\be\.g\./g, 'for example').replace(/\bi\.e\./g, 'that is')
-      .replace(/(\d)-(?=[a-z])/g, '$1 ').replace(/[^a-z0-9.\s'-]/g, ' ').replace(/(?<!\d)\.|\.(?!\d)/g, ' ')
+      .replace(/(\d)-(?=[a-z])/g, '$1 ').replace(/,/g, ' , ').replace(/[^a-z0-9.,\s'-]/g, ' ').replace(/(?<!\d)\.|\.(?!\d)/g, ' ')
       .replace(/(^|\s)'|'(\s|$)/g, ' ');
     let toks = t.split(/[\s-]+/).filter(Boolean);
     toks = wordsToNumbers(toks);

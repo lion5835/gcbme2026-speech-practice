@@ -1,0 +1,3411 @@
+{
+ "1": {
+  "points": [
+   {
+    "zh": "自我介紹：雙和醫院胸腔科醫師",
+    "kw": "who I am",
+    "en": "I am Wen-Te Liu, a pulmonologist at Shuang Ho Hospital.",
+    "groups": [
+     [
+      "wen te liu",
+      "liu",
+      "my name",
+      "i am",
+      "i'm"
+     ],
+     [
+      "pulmonologist",
+      "pulmonary",
+      "chest doctor",
+      "lung doctor",
+      "chest physician",
+      "shuang ho",
+      "shuangho",
+      "hospital",
+      "doctor",
+      "physician"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "主題：非穿戴式雷達評估睡眠呼吸",
+    "kw": "topic: contactless radar for sleep breathing",
+    "en": "Today I will talk about using contactless radar to assess breathing problems during sleep.",
+    "groups": [
+     [
+      "radar",
+      "radio wave",
+      "radio waves",
+      "sensor",
+      "device",
+      "24 gigahertz",
+      "24 ghz",
+      "microwave",
+      "contactless",
+      "no contact",
+      "non contact",
+      "without contact",
+      "contact free",
+      "doesn't touch",
+      "does not touch",
+      "don't touch",
+      "not touching",
+      "no wire",
+      "no wires",
+      "without wires",
+      "without any wire",
+      "wireless",
+      "nothing on the patient",
+      "nothing on the body",
+      "nothing attached",
+      "non wearable",
+      "not wearable",
+      "nothing to wear",
+      "don't need to wear",
+      "do not need to wear",
+      "no need to wear",
+      "without wearing",
+      "not attached",
+      "no sensors on"
+     ],
+     [
+      "sleep",
+      "sleeping",
+      "night"
+     ],
+     [
+      "breathing",
+      "respiratory",
+      "apnea",
+      "sleep disordered",
+      "airway"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "演講路線：問題→技術→院內/居家驗證→心臟",
+    "kw": "roadmap",
+    "en": "I will go from the clinical problem to the technology, then hospital and home results, and finally heart research.",
+    "groups": [
+     [
+      "problem",
+      "challenge",
+      "bottleneck"
+     ],
+     [
+      "technology",
+      "technique",
+      "method",
+      "how it works"
+     ],
+     [
+      "hospital",
+      "home",
+      "validation",
+      "results",
+      "study",
+      "studies"
+     ],
+     [
+      "heart",
+      "cardiac",
+      "cardio",
+      "heart failure",
+      "lvef",
+      "ejection fraction",
+      "heart function",
+      "cardiology",
+      "new direction",
+      "future"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "Good morning, everyone. Thank you for inviting me. I am Wen-Te Liu, a pulmonologist at Shuang Ho Hospital. Today I want to show how a contactless radar can check breathing during sleep, without any wires on the patient. I will start with the clinical problem, then the technology, then our hospital and home results, and finally some new work on the heart."
+ },
+ "2": {
+  "points": [
+   {
+    "zh": "傳統睡眠醫學遇到瓶頸",
+    "kw": "traditional sleep medicine bottleneck",
+    "en": "Traditional sleep medicine has a bottleneck.",
+    "groups": [
+     [
+      "traditional",
+      "conventional",
+      "current",
+      "standard",
+      "old",
+      "usual",
+      "sleep medicine"
+     ],
+     [
+      "bottleneck",
+      "problem",
+      "problems",
+      "limitation",
+      "limitations",
+      "difficult",
+      "difficulty",
+      "challenge",
+      "hard"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "資料片段：只有一晚、依賴醫院床位",
+    "kw": "one night, hospital-dependent",
+    "en": "We usually get only one night of data, and it depends on hospital beds and resources.",
+    "groups": [
+     [
+      "one night",
+      "single night",
+      "only one night",
+      "snapshot",
+      "fragmented",
+      "one time",
+      "once",
+      "short"
+     ],
+     [
+      "hospital",
+      "bed",
+      "beds",
+      "resources",
+      "resource",
+      "staff",
+      "cost",
+      "expensive"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "病人不方便、回家後治療有盲點",
+    "kw": "inconvenient; blind spot after going home",
+    "en": "It is inconvenient for patients, and after they go home we don't know if treatment works.",
+    "groups": [
+     [
+      "inconvenient",
+      "not convenient",
+      "trouble",
+      "hard for patients",
+      "must come",
+      "have to come",
+      "burden",
+      "travel"
+     ],
+     [
+      "go home",
+      "goes home",
+      "at home",
+      "after discharge",
+      "blind spot",
+      "blind spots",
+      "don't know",
+      "do not know",
+      "follow up",
+      "whether treatment",
+      "treatment works",
+      "working"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "Why does sleep medicine have a bottleneck? First, we usually see only one night of data. Second, testing depends on hospital beds and staff. Third, it is inconvenient for patients, who must come in just for the test. And after they go home, we do not really know if the treatment is working."
+ },
+ "3": {
+  "points": [
+   {
+    "zh": "PSG 最完整但線多、要等 1–2 個月",
+    "kw": "PSG: complete but many wires, long wait",
+    "en": "Polysomnography is complete, but it needs many wires and a long wait.",
+    "groups": [
+     [
+      "polysomnography",
+      "psg",
+      "sleep test",
+      "sleep study",
+      "sleep lab",
+      "gold standard",
+      "reference standard",
+      "standard test",
+      "standard sleep"
+     ],
+     [
+      "wire",
+      "wires",
+      "cables",
+      "electrodes",
+      "complicated",
+      "many sensors"
+     ],
+     [
+      "wait",
+      "waiting",
+      "month",
+      "months",
+      "long time",
+      "queue"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "居家檢測與穿戴裝置也不舒服",
+    "kw": "home test & wearables uncomfortable",
+    "en": "Home tests, finger oximeters and ECG patches are easier, but still uncomfortable.",
+    "groups": [
+     [
+      "home sleep test",
+      "home sleep testing",
+      "home sleep apnea test",
+      "hsat",
+      "home testing",
+      "home test",
+      "oximeter",
+      "finger",
+      "patch",
+      "patches",
+      "ecg",
+      "wearable",
+      "wearables"
+     ],
+     [
+      "uncomfortable",
+      "not comfortable",
+      "discomfort",
+      "allergy",
+      "allergic",
+      "skin",
+      "irritation",
+      "annoying"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "需要舒適、多天、非穿戴的監測",
+    "kw": "need comfortable multi-night non-wearable",
+    "en": "We need comfortable, multi-night, non-wearable monitoring.",
+    "groups": [
+     [
+      "contactless",
+      "no contact",
+      "non contact",
+      "without contact",
+      "contact free",
+      "doesn't touch",
+      "does not touch",
+      "don't touch",
+      "not touching",
+      "no wire",
+      "no wires",
+      "without wires",
+      "without any wire",
+      "wireless",
+      "nothing on the patient",
+      "nothing on the body",
+      "nothing attached",
+      "non wearable",
+      "not wearable",
+      "nothing to wear",
+      "don't need to wear",
+      "do not need to wear",
+      "no need to wear",
+      "without wearing",
+      "not attached",
+      "no sensors on",
+      "comfortable",
+      "comfort"
+     ],
+     [
+      "multi day",
+      "multi night",
+      "many nights",
+      "several nights",
+      "several days",
+      "many days",
+      "long term",
+      "continuous",
+      "continuously",
+      "every night",
+      "multiple nights"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "Let's compare the current tests. Polysomnography is the most complete, but it needs more than twenty wires and patients may wait one to two months. Home sleep tests and wearable sensors are easier, but they are still uncomfortable, and patches can irritate the skin. None of them gives comfortable monitoring over many nights. That is why we want a non-wearable, continuous method."
+ },
+ "4": {
+  "points": [
+   {
+    "zh": "檢查本身造成病人極大不便",
+    "kw": "testing is a burden for patients",
+    "en": "Getting objective sleep data is a big burden for patients.",
+    "groups": [
+     [
+      "data",
+      "test",
+      "testing",
+      "exam",
+      "measurement",
+      "objective"
+     ],
+     [
+      "inconvenient",
+      "inconvenience",
+      "burden",
+      "difficult",
+      "hard",
+      "trouble",
+      "waiting",
+      "wait"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "貼線超過 60 分鐘、會焦慮",
+    "kw": "over 60 minutes of wiring, anxiety",
+    "en": "Putting on the sensors can take more than an hour and makes patients anxious.",
+    "groups": [
+     [
+      "60 minutes",
+      "sixty minutes",
+      "one hour",
+      "an hour",
+      "hour",
+      "long time",
+      "takes time"
+     ],
+     [
+      "wire",
+      "wires",
+      "sensor",
+      "sensors",
+      "attach",
+      "setup",
+      "set up",
+      "electrodes"
+     ],
+     [
+      "anxiety",
+      "anxious",
+      "nervous",
+      "worried",
+      "stress",
+      "stressful",
+      "uncomfortable"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "睡眠環境不自然，與我們想測的相反",
+    "kw": "unnatural sleep conditions",
+    "en": "The test creates an unnatural night, the opposite of what we want to measure.",
+    "groups": [
+     [
+      "unnatural",
+      "not natural",
+      "not normal",
+      "strange",
+      "different",
+      "artificial",
+      "not real",
+      "not their own bed"
+     ],
+     [
+      "sleep",
+      "night",
+      "sleeping",
+      "condition",
+      "conditions",
+      "environment"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "From the patient's side, the problem is clear. We need objective data, but getting it is a burden. Putting on all the sensors can take more than an hour, and many patients feel anxious. So the test night is very unnatural, which is the opposite of the normal night we want to measure."
+ },
+ "5": {
+  "points": [
+   {
+    "zh": "穿戴式感測器進步很多",
+    "kw": "wearable sensors have improved",
+    "en": "Wearable sensors have improved a lot and can track brain, heart, breathing and oxygen.",
+    "groups": [
+     [
+      "wearable",
+      "wearables",
+      "sensors",
+      "sensor",
+      "devices"
+     ],
+     [
+      "improved",
+      "impressive",
+      "progress",
+      "advanced",
+      "many",
+      "brain",
+      "heart",
+      "respiration",
+      "breathing",
+      "oxygen",
+      "engineering"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "但都還是要貼在身上",
+    "kw": "still attached to the body",
+    "en": "But every one of them still has to be attached to the body.",
+    "groups": [
+     [
+      "attach",
+      "attached",
+      "on the body",
+      "wear",
+      "worn",
+      "stick",
+      "touch",
+      "put on",
+      "on the skin",
+      "contact"
+     ],
+     [
+      "still",
+      "but",
+      "however",
+      "every",
+      "all",
+      "each"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "問題：能不能不用穿戴？",
+    "kw": "could non-wearable be possible?",
+    "en": "So we asked: could we monitor without wearing anything?",
+    "groups": [
+     [
+      "contactless",
+      "no contact",
+      "non contact",
+      "without contact",
+      "contact free",
+      "doesn't touch",
+      "does not touch",
+      "don't touch",
+      "not touching",
+      "no wire",
+      "no wires",
+      "without wires",
+      "without any wire",
+      "wireless",
+      "nothing on the patient",
+      "nothing on the body",
+      "nothing attached",
+      "non wearable",
+      "not wearable",
+      "nothing to wear",
+      "don't need to wear",
+      "do not need to wear",
+      "no need to wear",
+      "without wearing",
+      "not attached",
+      "no sensors on",
+      "without wearing anything",
+      "not wear anything"
+     ],
+     [
+      "could",
+      "can we",
+      "possible",
+      "question",
+      "asked",
+      "is it possible",
+      "what if"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "The field has worked hard on wearable sensors. They can track the brain, the heart, movement, breathing and oxygen. It is impressive engineering. But every one of these sensors still has to be attached to the body. So our question was simple: can we monitor sleep without wearing anything at all?"
+ },
+ "6": {
+  "points": [
+   {
+    "zh": "我們的答案：24 GHz 連續波雷達",
+    "kw": "24 GHz continuous-wave radar",
+    "en": "Our answer is a 24 gigahertz continuous wave radar.",
+    "groups": [
+     [
+      "radar"
+     ],
+     [
+      "24",
+      "gigahertz",
+      "ghz",
+      "continuous wave",
+      "continuous"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "偵測胸壁微小起伏，不用接線",
+    "kw": "senses tiny chest movement, no wires",
+    "en": "It picks up tiny chest movements without any wires.",
+    "groups": [
+     [
+      "chest",
+      "chest wall",
+      "thorax",
+      "rib cage",
+      "chest movement",
+      "chest motion",
+      "breathing movement",
+      "rise and fall",
+      "moves up and down",
+      "up and down",
+      "micro movement",
+      "micro movements",
+      "small movement",
+      "tiny movement",
+      "movement",
+      "movements",
+      "motion"
+     ],
+     [
+      "contactless",
+      "no contact",
+      "non contact",
+      "without contact",
+      "contact free",
+      "doesn't touch",
+      "does not touch",
+      "don't touch",
+      "not touching",
+      "no wire",
+      "no wires",
+      "without wires",
+      "without any wire",
+      "wireless",
+      "nothing on the patient",
+      "nothing on the body",
+      "nothing attached",
+      "non wearable",
+      "not wearable",
+      "nothing to wear",
+      "don't need to wear",
+      "do not need to wear",
+      "no need to wear",
+      "without wearing",
+      "not attached",
+      "no sensors on",
+      "reflection",
+      "reflect",
+      "reflected",
+      "signal"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "從訊號相位變化重建呼吸，用深度神經決策樹分析",
+    "kw": "phase changes → breathing; deep neural decision trees",
+    "en": "From phase changes in the reflected signal we rebuild the breathing, using deep neural decision trees.",
+    "groups": [
+     [
+      "phase",
+      "timing",
+      "signal",
+      "reflection",
+      "reflected",
+      "changes"
+     ],
+     [
+      "breathing",
+      "breath",
+      "respiration",
+      "respiratory"
+     ],
+     [
+      "deep",
+      "neural",
+      "decision tree",
+      "decision trees",
+      "ai",
+      "artificial intelligence",
+      "machine learning",
+      "deep learning",
+      "algorithm"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "Our answer is a 24 gigahertz continuous wave radar. It sends a signal to the body and picks up the reflection. When the chest rises and falls, the reflected signal changes in timing and phase. From those changes we rebuild the breathing signal, with no wires at all. The analysis uses deep neural decision trees."
+ },
+ "7": {
+  "points": [
+   {
+    "zh": "雷達裝在病床上方牆上",
+    "kw": "mounted on the wall above the bed",
+    "en": "The radar is mounted on the wall above the bed, at a distance from the patient.",
+    "groups": [
+     [
+      "wall",
+      "mounted",
+      "above the bed",
+      "over the bed",
+      "distance",
+      "far",
+      "away"
+     ],
+     [
+      "bed",
+      "patient",
+      "user"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "胸部微小位移改變相位/飛行時間",
+    "kw": "small chest displacement → phase shift",
+    "en": "A small chest displacement changes the phase and the time of flight of the signal.",
+    "groups": [
+     [
+      "chest",
+      "chest wall",
+      "thorax",
+      "rib cage",
+      "chest movement",
+      "chest motion",
+      "breathing movement",
+      "rise and fall",
+      "moves up and down",
+      "up and down",
+      "displacement",
+      "movement",
+      "delta x",
+      "move",
+      "moves"
+     ],
+     [
+      "phase",
+      "phase shift",
+      "time of flight",
+      "delay",
+      "timing",
+      "signal changes",
+      "change"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "這些微小變化帶有呼吸資訊",
+    "kw": "tiny changes carry breathing information",
+    "en": "These tiny changes carry the breathing information.",
+    "groups": [
+     [
+      "tiny",
+      "small",
+      "little",
+      "micro",
+      "subtle"
+     ],
+     [
+      "breathing",
+      "respiratory",
+      "respiration",
+      "information",
+      "breath"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "Here is the same idea as a diagram. The radar sits on the wall, some distance above the bed. When the chest moves a little, the received signal shifts in time and in phase compared with the signal we sent. These tiny changes carry all the breathing information."
+ },
+ "8": {
+  "points": [
+   {
+    "zh": "病床邊裝在牆上，也有支架/落地架",
+    "kw": "wall, arm, or floor stand at bedside",
+    "en": "At the bedside, the radar is on the wall, or on an arm or a floor stand.",
+    "groups": [
+     [
+      "wall",
+      "arm",
+      "floor stand",
+      "stand",
+      "bracket",
+      "mounted",
+      "mount"
+     ],
+     [
+      "bed",
+      "bedside",
+      "ward",
+      "room"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "病人身上什麼都沒有，護理師不用半夜重貼",
+    "kw": "nothing on the patient, nothing to reattach",
+    "en": "Nothing is on the patient, so nurses don't need to reattach anything at night.",
+    "groups": [
+     [
+      "contactless",
+      "no contact",
+      "non contact",
+      "without contact",
+      "contact free",
+      "doesn't touch",
+      "does not touch",
+      "don't touch",
+      "not touching",
+      "no wire",
+      "no wires",
+      "without wires",
+      "without any wire",
+      "wireless",
+      "nothing on the patient",
+      "nothing on the body",
+      "nothing attached",
+      "non wearable",
+      "not wearable",
+      "nothing to wear",
+      "don't need to wear",
+      "do not need to wear",
+      "no need to wear",
+      "without wearing",
+      "not attached",
+      "no sensors on",
+      "nothing",
+      "no sensor",
+      "nothing to attach"
+     ],
+     [
+      "nurse",
+      "nurses",
+      "reattach",
+      "re attach",
+      "middle of the night",
+      "at night",
+      "night",
+      "easy",
+      "simple"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "This is how it looks at the bedside. In our wards, the radar is on the wall above the bed. We also use an adjustable arm or a simple floor stand. Nothing is on the patient, nothing to attach, and the nurse never has to fix a sensor in the middle of the night."
+ },
+ "9": {
+  "points": [
+   {
+    "zh": "雷達波形和 PSG 鼻壓訊號很吻合",
+    "kw": "radar waveform matches PSG nasal pressure",
+    "en": "The radar waveform matches the PSG nasal pressure signal very well.",
+    "groups": [
+     [
+      "radar",
+      "waveform",
+      "signal",
+      "wave"
+     ],
+     [
+      "polysomnography",
+      "psg",
+      "sleep test",
+      "sleep study",
+      "sleep lab",
+      "gold standard",
+      "reference standard",
+      "standard test",
+      "standard sleep",
+      "nasal pressure",
+      "nasal",
+      "nose"
+     ],
+     [
+      "correlation",
+      "correlate",
+      "correlated",
+      "agree",
+      "agreement",
+      "match",
+      "matches",
+      "consistent",
+      "similar",
+      "align",
+      "aligned",
+      "same",
+      "look the same",
+      "close"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "正常、淺呼吸振幅變小、呼吸中止訊號消失",
+    "kw": "normal / hypopnea smaller / apnea flat",
+    "en": "In hypopnea the amplitude gets smaller, and in apnea the signal almost disappears.",
+    "groups": [
+     [
+      "hypopnea",
+      "shallow",
+      "smaller",
+      "reduced",
+      "decrease",
+      "lower",
+      "drops"
+     ],
+     [
+      "apnea",
+      "stop",
+      "stops",
+      "flat",
+      "disappear",
+      "disappears",
+      "loss",
+      "no signal",
+      "lost"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "這是理想化範例，真實阻塞事件更複雜",
+    "kw": "idealized; real events more complex",
+    "en": "This is an idealized example; real obstructive events are more complex.",
+    "groups": [
+     [
+      "ideal",
+      "idealized",
+      "example",
+      "simple",
+      "perfect"
+     ],
+     [
+      "complex",
+      "complicated",
+      "more complex",
+      "not so simple",
+      "later",
+      "real"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "Can the radar capture breathing events? Here the radar waveform is on top and the PSG nasal pressure is below. In normal breathing they match. In a hypopnea the amplitude gets smaller, and in this apnea the signal is lost. But this is an ideal picture. Real obstructive events are more complex, and I will show why in a moment."
+ },
+ "10": {
+  "points": [
+   {
+    "zh": "三階段：院內驗證 196 人，r = 0.91",
+    "kw": "phase 1: hospital, 196, r 0.91",
+    "en": "Phase one validated the radar in 196 hospital patients against PSG, with a correlation of 0.91.",
+    "groups": [
+     [
+      "196",
+      "hospital",
+      "phase one",
+      "first phase",
+      "clinical"
+     ],
+     [
+      "0.91",
+      "91",
+      "correlation",
+      "polysomnography",
+      "psg",
+      "sleep test",
+      "sleep study",
+      "sleep lab",
+      "gold standard",
+      "reference standard",
+      "standard test",
+      "standard sleep"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "居家：80 人 147 晚",
+    "kw": "phase 2: home, 80 patients, 147 nights",
+    "en": "Phase two tested it at home in 80 patients over 147 nights.",
+    "groups": [
+     [
+      "home",
+      "house",
+      "real world",
+      "real life",
+      "daily life",
+      "at home",
+      "phase two",
+      "second phase"
+     ],
+     [
+      "80",
+      "147",
+      "nights",
+      "patients"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "心臟：72 人，週期性呼吸與 LVEF 相關",
+    "kw": "phase 3: cardiac, 72, periodic breathing ~ LVEF",
+    "en": "Phase three found that periodic breathing was associated with lower heart function in 72 patients.",
+    "groups": [
+     [
+      "heart",
+      "cardiac",
+      "cardio",
+      "heart failure",
+      "lvef",
+      "ejection fraction",
+      "heart function",
+      "cardiology",
+      "phase three",
+      "third phase"
+     ],
+     [
+      "72",
+      "periodic breathing",
+      "cheyne stokes",
+      "cheyne-stokes",
+      "breathing pattern",
+      "abnormal breathing",
+      "cyclic breathing",
+      "waxing and waning",
+      "pattern",
+      "association",
+      "associated",
+      "associate",
+      "link",
+      "linked",
+      "related",
+      "relationship",
+      "correlated",
+      "connection",
+      "connected"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "Our work followed three phases. Phase one was in the hospital: 196 patients compared with polysomnography, with a correlation of 0.91. Phase two moved to the home: 80 patients over 147 nights, with no technician. Phase three moved to cardiology: in 72 patients, periodic breathing seen by the radar was associated with lower heart function."
+ },
+ "11": {
+  "points": [
+   {
+    "zh": "第一幕：院內驗證，196 位病人、以 PSG 為標準",
+    "kw": "act 1: hospital, 196, PSG reference",
+    "en": "Act one was hospital validation in 196 patients, with polysomnography as the reference.",
+    "groups": [
+     [
+      "hospital",
+      "ward",
+      "clinical",
+      "in hospital",
+      "inpatient",
+      "sleep lab",
+      "act one",
+      "first"
+     ],
+     [
+      "196",
+      "polysomnography",
+      "psg",
+      "sleep test",
+      "sleep study",
+      "sleep lab",
+      "gold standard",
+      "reference standard",
+      "standard test",
+      "standard sleep"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "目的：排除干擾、建立乾淨的基準準確度",
+    "kw": "goal: clean baseline accuracy",
+    "en": "The goal was to remove interference and get a clean baseline accuracy.",
+    "groups": [
+     [
+      "control",
+      "controlled",
+      "strict",
+      "remove",
+      "interference",
+      "clean",
+      "baseline"
+     ],
+     [
+      "accuracy",
+      "accurate",
+      "correct",
+      "precise",
+      "precision",
+      "performance",
+      "perform",
+      "baseline"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "Act one is clinical validation in the hospital. We studied 196 patients and compared the radar with polysomnography, under strict control. The goal was simple: remove outside noise and find a clean baseline accuracy."
+ },
+ "12": {
+  "points": [
+   {
+    "zh": "雷達把胸壁微動轉成呼吸訊號",
+    "kw": "chest micro-movement → breathing signature",
+    "en": "The radar turns tiny chest movements into a breathing signal.",
+    "groups": [
+     [
+      "radar",
+      "signal",
+      "translate",
+      "turn",
+      "convert"
+     ],
+     [
+      "chest",
+      "chest wall",
+      "thorax",
+      "rib cage",
+      "chest movement",
+      "chest motion",
+      "breathing movement",
+      "rise and fall",
+      "moves up and down",
+      "up and down",
+      "movement",
+      "movements",
+      "micro movement"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "正常呼吸振幅穩定；事件時振幅停掉再恢復",
+    "kw": "normal steady; event drops then recovers",
+    "en": "Normal breathing has a steady amplitude; during an event it stops and then comes back.",
+    "groups": [
+     [
+      "normal",
+      "regular",
+      "stable",
+      "steady"
+     ],
+     [
+      "apnea",
+      "apnoea",
+      "stop breathing",
+      "stops breathing",
+      "stopped breathing",
+      "breathing stops",
+      "pause in breathing",
+      "breathing pause",
+      "pauses",
+      "not breathing",
+      "no breathing",
+      "osa",
+      "sleep apnea",
+      "hypopnea",
+      "shallow breathing",
+      "breathing event",
+      "respiratory event",
+      "events",
+      "drop",
+      "drops",
+      "flat",
+      "stop",
+      "return",
+      "recovery",
+      "comes back"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "但不只是一條平線",
+    "kw": "not just a flat line",
+    "en": "But an event is not just a flat line.",
+    "groups": [
+     [
+      "flat line",
+      "flat",
+      "not just",
+      "not only",
+      "not the whole story",
+      "more than"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "The physics are simple. The radar turns tiny chest movements into a breathing signal. Normal breathing has a regular, steady amplitude. During a breathing event, the signal drops, and then breathing comes back. But a simple flat line is not the whole story."
+ },
+ "13": {
+  "points": [
+   {
+    "zh": "睡眠實驗室用氣流定義呼吸事件",
+    "kw": "events are defined by airflow",
+    "en": "In the sleep lab, apneas and hypopneas are defined by airflow.",
+    "groups": [
+     [
+      "airflow",
+      "air flow",
+      "air",
+      "nose",
+      "nasal",
+      "flow"
+     ],
+     [
+      "define",
+      "defined",
+      "definition",
+      "measure",
+      "measured",
+      "sleep lab",
+      "standard",
+      "apnea",
+      "apnoea",
+      "stop breathing",
+      "stops breathing",
+      "stopped breathing",
+      "breathing stops",
+      "pause in breathing",
+      "breathing pause",
+      "pauses",
+      "not breathing",
+      "no breathing",
+      "osa",
+      "sleep apnea",
+      "hypopnea",
+      "shallow breathing",
+      "breathing event",
+      "respiratory event",
+      "events"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "雷達看的是胸部起伏，不是氣流",
+    "kw": "radar sees chest motion, not airflow",
+    "en": "The radar sees chest movement, not airflow.",
+    "groups": [
+     [
+      "radar",
+      "it"
+     ],
+     [
+      "chest",
+      "chest wall",
+      "thorax",
+      "rib cage",
+      "chest movement",
+      "chest motion",
+      "breathing movement",
+      "rise and fall",
+      "moves up and down",
+      "up and down"
+     ],
+     [
+      "not airflow",
+      "not air",
+      "no airflow",
+      "not the air",
+      "instead of airflow",
+      "different",
+      "not the same",
+      "rather than"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "阻塞時氣道關閉但胸部仍在動 → 盲點，要看特徵序列",
+    "kw": "obstruction: chest still moves → need a pattern",
+    "en": "In an obstructive event the chest keeps moving, so the radar must look for a pattern, not a flat line.",
+    "groups": [
+     [
+      "obstructive",
+      "obstruction",
+      "airway closed",
+      "airway is closed",
+      "blocked",
+      "closed"
+     ],
+     [
+      "keeps moving",
+      "still moving",
+      "still moves",
+      "keep moving",
+      "trying to breathe",
+      "try to breathe",
+      "effort",
+      "struggle"
+     ],
+     [
+      "pattern",
+      "sequence",
+      "blind spot",
+      "blind spots",
+      "not a flat line",
+      "recognize"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "In the sleep lab, an apnea or hypopnea is defined by airflow. But the radar does not see airflow. It sees the chest moving. This creates a blind spot. When the airway is blocked, the patient keeps trying to breathe, so the chest still moves even with no air. So the radar cannot just look for a flat line. It must recognize a special pattern of chest movement."
+ },
+ "14": {
+  "points": [
+   {
+    "zh": "一開始正常，事件開始時振幅明顯下降甚至停止",
+    "kw": "normal → amplitude drops or stops",
+    "en": "Breathing starts normal, then at the event the chest movement drops sharply or stops.",
+    "groups": [
+     [
+      "normal",
+      "regular"
+     ],
+     [
+      "drop",
+      "drops",
+      "decrease",
+      "decreases",
+      "smaller",
+      "reduce",
+      "reduced",
+      "stop",
+      "stops",
+      "flat",
+      "goes down",
+      "go down",
+      "falls",
+      "weaker",
+      "less"
+     ]
+    ],
+    "need": 1,
+    "must": true
+   },
+   {
+    "zh": "氣道還關著時，胸部掙扎出現小幅上下",
+    "kw": "struggle: small movements while airway closed",
+    "en": "While the airway is still closed, the chest struggles with small up-and-down movements.",
+    "groups": [
+     [
+      "struggle",
+      "struggling",
+      "effort",
+      "trying to breathe",
+      "try to breathe",
+      "fight"
+     ],
+     [
+      "small",
+      "tiny",
+      "little",
+      "slight",
+      "micro",
+      "weak"
+     ],
+     [
+      "airway",
+      "closed",
+      "blocked",
+      "up and down",
+      "movement",
+      "movements"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "氣道打開時一次大起伏（恢復呼吸），再回到正常",
+    "kw": "big recovery breath, then back to normal",
+    "en": "When the airway opens there is one big recovery breath, then breathing returns to normal.",
+    "groups": [
+     [
+      "big",
+      "large",
+      "deep",
+      "huge",
+      "strong",
+      "surge",
+      "sharp"
+     ],
+     [
+      "recovery",
+      "recover",
+      "opens",
+      "open",
+      "airway opens",
+      "gasp"
+     ],
+     [
+      "return",
+      "returns",
+      "back to normal",
+      "normal again",
+      "normal"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "整個序列才是雷達能偵測的事件；示意圖",
+    "kw": "whole pattern defines the event; schematic",
+    "en": "It is the whole pattern, not one drop, that defines the event the radar can detect.",
+    "groups": [
+     [
+      "whole",
+      "entire",
+      "full",
+      "all",
+      "sequence",
+      "pattern",
+      "five",
+      "5"
+     ],
+     [
+      "event",
+      "detect",
+      "detects",
+      "detection",
+      "radar"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "So what does the radar look for? A pattern in five steps. First, normal breathing. Second, the chest movement drops a lot or stops. Third, the airway is still closed, so the chest struggles with small up and down movements. Fourth, the airway opens, and there is one big recovery breath. Fifth, breathing goes back to normal. This whole pattern is the event the radar detects. The picture is a schematic, not patient data."
+ },
+ "15": {
+  "points": [
+   {
+    "zh": "比較院內 PSG 與無接觸雷達",
+    "kw": "PSG vs contactless radar",
+    "en": "We compared hospital polysomnography with the contactless radar.",
+    "groups": [
+     [
+      "polysomnography",
+      "psg",
+      "sleep test",
+      "sleep study",
+      "sleep lab",
+      "gold standard",
+      "reference standard",
+      "standard test",
+      "standard sleep",
+      "wires",
+      "hospital"
+     ],
+     [
+      "radar",
+      "radio wave",
+      "radio waves",
+      "sensor",
+      "device",
+      "24 gigahertz",
+      "24 ghz",
+      "microwave",
+      "contactless",
+      "no contact",
+      "non contact",
+      "without contact",
+      "contact free",
+      "doesn't touch",
+      "does not touch",
+      "don't touch",
+      "not touching",
+      "no wire",
+      "no wires",
+      "without wires",
+      "without any wire",
+      "wireless",
+      "nothing on the patient",
+      "nothing on the body",
+      "nothing attached",
+      "non wearable",
+      "not wearable",
+      "nothing to wear",
+      "don't need to wear",
+      "do not need to wear",
+      "no need to wear",
+      "without wearing",
+      "not attached",
+      "no sensors on"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "196 人，相關係數 0.91",
+    "kw": "196 patients, r = 0.91",
+    "en": "In 196 patients, the correlation was 0.91.",
+    "groups": [
+     [
+      "0.91",
+      "91"
+     ],
+     [
+      "196",
+      "correlation",
+      "agree",
+      "agreement",
+      "patients",
+      "match",
+      "matched",
+      "matches",
+      "similar",
+      "close"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "So, does the radar agree with the gold standard? On the left is polysomnography in the hospital, with all its wires. On the right is our contactless radar in a normal ward room. In 196 patients, the correlation between the two was 0.91. That is very strong agreement."
+ },
+ "16": {
+  "points": [
+   {
+    "zh": "雷達 bRDI 與 PSG AHI 高度相關（0.91）",
+    "kw": "bRDI vs AHI, 0.91",
+    "en": "The radar index closely matches the PSG AHI, at 0.91.",
+    "groups": [
+     [
+      "0.91",
+      "91",
+      "correlation",
+      "scatter",
+      "match",
+      "agree",
+      "agreement"
+     ],
+     [
+      "brdi",
+      "ahi",
+      "index",
+      "psg",
+      "radar"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "中重度 90.3%、重度 92.4%",
+    "kw": "moderate-to-severe 90.3%, severe 92.4%",
+    "en": "Accuracy was 90.3 percent for moderate to severe OSA and 92.4 percent for severe OSA.",
+    "groups": [
+     [
+      "90.3",
+      "90",
+      "92.4",
+      "92"
+     ],
+     [
+      "accuracy",
+      "accurate",
+      "correct",
+      "precise",
+      "precision",
+      "performance",
+      "perform"
+     ],
+     [
+      "severe",
+      "serious",
+      "high risk",
+      "worst",
+      "moderate"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "四級分類平均 83.7%",
+    "kw": "four-class 83.7%",
+    "en": "For four severity levels, the average accuracy was 83.7 percent.",
+    "groups": [
+     [
+      "83.7",
+      "83",
+      "84"
+     ],
+     [
+      "four",
+      "4",
+      "class",
+      "classes",
+      "levels",
+      "categories",
+      "normal mild moderate severe",
+      "mild"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "Here are the hospital numbers. The radar index and the PSG AHI correlate at 0.91. For moderate to severe OSA, accuracy was 90.3 percent. For severe OSA, it was 92.4 percent. And when we sort patients into four levels, normal, mild, moderate and severe, the average accuracy was 83.7 percent."
+ },
+ "17": {
+  "points": [
+   {
+    "zh": "把雷達帶進病房日常照護（零接觸平台）",
+    "kw": "into routine ward care",
+    "en": "We moved the radar into routine ward care as a zero-contact platform.",
+    "groups": [
+     [
+      "ward",
+      "wards",
+      "inpatient",
+      "routine",
+      "daily",
+      "care",
+      "platform",
+      "hospital"
+     ],
+     [
+      "radar",
+      "radio wave",
+      "radio waves",
+      "sensor",
+      "device",
+      "24 gigahertz",
+      "24 ghz",
+      "microwave",
+      "contactless",
+      "no contact",
+      "non contact",
+      "without contact",
+      "contact free",
+      "doesn't touch",
+      "does not touch",
+      "don't touch",
+      "not touching",
+      "no wire",
+      "no wires",
+      "without wires",
+      "without any wire",
+      "wireless",
+      "nothing on the patient",
+      "nothing on the body",
+      "nothing attached",
+      "non wearable",
+      "not wearable",
+      "nothing to wear",
+      "don't need to wear",
+      "do not need to wear",
+      "no need to wear",
+      "without wearing",
+      "not attached",
+      "no sensors on",
+      "zero contact"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "監測呼吸、心跳、在床/離床，警示送到照護團隊",
+    "kw": "breathing, heart rate, bed status, alerts",
+    "en": "It monitors breathing, heart rate and bed status, and sends alerts to the care team.",
+    "groups": [
+     [
+      "breathing",
+      "heart rate",
+      "heart",
+      "respiration",
+      "vital",
+      "vitals",
+      "monitor",
+      "monitors"
+     ],
+     [
+      "bed",
+      "out of bed",
+      "bed exit",
+      "leave the bed",
+      "leaves the bed",
+      "left the bed",
+      "in bed",
+      "getting up",
+      "alert",
+      "alerts",
+      "alarm",
+      "notify",
+      "notification",
+      "notifications",
+      "line",
+      "message",
+      "push",
+      "warn",
+      "warning"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "2021 SNQ、2022 NHQA 特色中心",
+    "kw": "SNQ 2021, NHQA 2022",
+    "en": "It won the 2021 SNQ award, and our sleep center won the 2022 NHQA award.",
+    "groups": [
+     [
+      "snq",
+      "nhqa",
+      "award",
+      "awards",
+      "recognized",
+      "recognition",
+      "prize",
+      "quality"
+     ],
+     [
+      "2021",
+      "2022",
+      "national",
+      "symbol"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "Validation only matters if it helps patients. So we put the radar into daily ward care as a zero-contact platform. It watches breathing, heart rate, and whether the patient is in bed. Alerts go straight to the care team, including LINE messages. This platform received the 2021 SNQ award, and our sleep center received the 2022 NHQA award."
+ },
+ "18": {
+  "points": [
+   {
+    "zh": "COVID-19 後的阻塞性睡眠呼吸中止（Life 2024）",
+    "kw": "OSA after COVID-19",
+    "en": "This study looked at obstructive sleep apnea after COVID-19.",
+    "groups": [
+     [
+      "covid",
+      "covid 19",
+      "coronavirus",
+      "pandemic",
+      "after covid",
+      "long covid"
+     ],
+     [
+      "apnea",
+      "apnoea",
+      "stop breathing",
+      "stops breathing",
+      "stopped breathing",
+      "breathing stops",
+      "pause in breathing",
+      "breathing pause",
+      "pauses",
+      "not breathing",
+      "no breathing",
+      "osa",
+      "sleep apnea",
+      "hypopnea",
+      "shallow breathing",
+      "breathing event",
+      "respiratory event",
+      "events"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "257 人只有 2 人正常；重度 58.75%",
+    "kw": "257 patients, only 2 normal, 58.75% severe",
+    "en": "Of 257 patients, only two were normal, and almost 59 percent had severe OSA.",
+    "groups": [
+     [
+      "257",
+      "only two",
+      "only 2",
+      "two were normal",
+      "2 were normal",
+      "most",
+      "almost all",
+      "majority"
+     ],
+     [
+      "58.75",
+      "59",
+      "58",
+      "severe",
+      "29.18",
+      "moderate",
+      "high"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "Here is one reason continuous screening matters. A 2024 study in Life looked at sleep apnea after COVID-19. Among 257 patients, only two were normal. Most had sleep apnea, and about 59 percent had severe OSA."
+ },
+ "19": {
+  "points": [
+   {
+    "zh": "病房雷達大量資料：5,376 筆紀錄（2021–2022）",
+    "kw": "5,376 radar recordings on the ward",
+    "en": "On the ward we collected 5,376 radar recordings from 2021 to 2022.",
+    "groups": [
+     [
+      "5376",
+      "5,376",
+      "5000",
+      "thousands",
+      "large",
+      "many recordings",
+      "big data",
+      "at scale"
+     ],
+     [
+      "recording",
+      "recordings",
+      "records",
+      "data",
+      "ward",
+      "radar"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "追蹤 RDI ≥15/30/40 比例，跨 Delta 到 Omicron",
+    "kw": "RDI proportions across Delta→Omicron",
+    "en": "We tracked the share of recordings with high RDI from the Delta wave to the Omicron wave.",
+    "groups": [
+     [
+      "rdi",
+      "15",
+      "30",
+      "40",
+      "proportion",
+      "percentage",
+      "index"
+     ],
+     [
+      "delta",
+      "omicron",
+      "wave",
+      "waves",
+      "season",
+      "seasons",
+      "covid",
+      "time"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "Omicron 期間很多人有上呼吸道症狀",
+    "kw": "Omicron: upper-airway symptoms",
+    "en": "During Omicron, many patients had upper airway symptoms like a runny nose and sore throat.",
+    "groups": [
+     [
+      "omicron"
+     ],
+     [
+      "upper airway",
+      "runny nose",
+      "sore throat",
+      "symptoms",
+      "nose",
+      "throat",
+      "sneezing",
+      "headache",
+      "fatigue"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "With radar on the ward, we could study this at scale. From July 2021 to July 2022, we collected 5,376 radar recordings. These lines show how many recordings had an RDI above 15, 30 and 40, from the Delta wave to the Omicron wave. During Omicron, many patients had upper airway symptoms, like a runny nose and sore throat."
+ },
+ "21": {
+  "points": [
+   {
+    "zh": "問題：在家也可靠嗎？",
+    "kw": "does it work at home?",
+    "en": "The next question is: does it work reliably at home?",
+    "groups": [
+     [
+      "home",
+      "house",
+      "real world",
+      "real life",
+      "daily life",
+      "at home"
+     ],
+     [
+      "reliable",
+      "reliably",
+      "work",
+      "works",
+      "accurate",
+      "question",
+      "can it",
+      "trust",
+      "trusted",
+      "good enough",
+      "useful"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "80 人、147 晚",
+    "kw": "80 patients, 147 nights",
+    "en": "We studied 80 patients over 147 nights.",
+    "groups": [
+     [
+      "80",
+      "147"
+     ],
+     [
+      "patients",
+      "nights",
+      "subjects",
+      "people"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "目標：不需專業人員安裝的實用替代方案",
+    "kw": "practical alternative, no professional setup",
+    "en": "Our goal was a practical option that needs no professional setup.",
+    "groups": [
+     [
+      "practical",
+      "alternative",
+      "option",
+      "easy",
+      "simple"
+     ],
+     [
+      "no professional",
+      "without professional",
+      "no technician",
+      "without technician",
+      "no setup",
+      "by themselves",
+      "no help",
+      "no staff",
+      "without help"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "The next question is: does it work at home, in real life? We studied 80 patients over 147 nights. Our goal was a practical option for home sleep testing, one that needs no technician to set it up or to watch it during the night."
+ },
+ "22": {
+  "points": [
+   {
+    "zh": "家裡變數多：姿勢、厚被子、噪音、沒有技術員",
+    "kw": "home has uncontrolled variables",
+    "en": "The home has many uncontrolled factors, like sleep position, thick blankets, noise, and no technician.",
+    "groups": [
+     [
+      "position",
+      "positions",
+      "blanket",
+      "blankets",
+      "noise",
+      "noisy",
+      "technician",
+      "uncontrolled",
+      "variables",
+      "factors",
+      "messy"
+     ],
+     [
+      "home",
+      "house",
+      "real world",
+      "real life",
+      "daily life",
+      "at home"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "80 人 147 晚，以居家睡眠檢測為對照",
+    "kw": "80 subjects, 147 nights vs HSAT",
+    "en": "We studied 80 people over 147 nights, compared with home sleep apnea testing.",
+    "groups": [
+     [
+      "80",
+      "147"
+     ],
+     [
+      "home sleep test",
+      "home sleep testing",
+      "home sleep apnea test",
+      "hsat",
+      "home testing",
+      "home test",
+      "control",
+      "compared",
+      "comparison",
+      "baseline"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "裝在牆架或落地架，高度 75–90 公分",
+    "kw": "wall bracket or floor stand, 75–90 cm",
+    "en": "The radar was on a wall bracket or a floor stand, at 75 to 90 centimeters.",
+    "groups": [
+     [
+      "wall",
+      "bracket",
+      "floor stand",
+      "stand"
+     ],
+     [
+      "75",
+      "90",
+      "centimeters",
+      "cm"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "Act two took us into the real world. At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician. We studied 80 people over 147 nights, and compared the radar with home sleep apnea testing. The radar was placed on a wall bracket or a floor stand, at 75 to 90 centimeters."
+ },
+ "23": {
+  "points": [
+   {
+    "zh": "居家相關係數 0.87",
+    "kw": "home correlation 0.87",
+    "en": "At home, the radar correlated with the home sleep test at 0.87.",
+    "groups": [
+     [
+      "0.87",
+      "87"
+     ],
+     [
+      "correlation",
+      "correlate",
+      "correlated",
+      "agree",
+      "agreement",
+      "match",
+      "matches",
+      "consistent",
+      "similar",
+      "home",
+      "house",
+      "real world",
+      "real life",
+      "daily life",
+      "at home",
+      "home sleep test",
+      "home sleep testing",
+      "home sleep apnea test",
+      "hsat",
+      "home testing",
+      "home test"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "Bland–Altman：平均差 −5.30，93.88% 夜晚在一致界限內",
+    "kw": "Bland–Altman: mean −5.30, 93.88% within",
+    "en": "The mean difference was minus 5.3 events per hour, and about 94 percent of nights were within the limits of agreement.",
+    "groups": [
+     [
+      "5.30",
+      "5.3",
+      "minus 5",
+      "mean difference",
+      "bland altman",
+      "bias"
+     ],
+     [
+      "93.88",
+      "94",
+      "138",
+      "limits of agreement",
+      "limits",
+      "within"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "這是一致界限，不是信賴區間",
+    "kw": "limits of agreement, not a CI",
+    "en": "These are limits of agreement, not a confidence interval.",
+    "groups": [
+     [
+      "limits of agreement",
+      "agreement"
+     ],
+     [
+      "not a confidence interval",
+      "not confidence interval",
+      "not a ci",
+      "not the confidence"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "At home, the radar and the home sleep test correlated at 0.87. The Bland Altman plot shows a mean difference of minus 5.3 events per hour. 138 of 147 nights, about 94 percent, were inside the limits of agreement. Please note, these are limits of agreement, not a confidence interval."
+ },
+ "24": {
+  "points": [
+   {
+    "zh": "居家中重度準確度 83.67%",
+    "kw": "home moderate-to-severe 83.67%",
+    "en": "At home, accuracy for moderate to severe OSA was 83.67 percent.",
+    "groups": [
+     [
+      "83.67",
+      "83",
+      "84",
+      "83.7"
+     ],
+     [
+      "moderate",
+      "accuracy",
+      "accurate"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "居家重度準確度 93.21%",
+    "kw": "home severe 93.21%",
+    "en": "For severe OSA at home, accuracy was 93.21 percent.",
+    "groups": [
+     [
+      "93.21",
+      "93",
+      "93.2"
+     ],
+     [
+      "severe",
+      "serious",
+      "high risk",
+      "worst",
+      "accuracy",
+      "accurate",
+      "correct",
+      "precise",
+      "precision",
+      "performance",
+      "perform"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "多分類 78.23%，比純 HSAT 規則 72.11% 好",
+    "kw": "multi-class 78.23% vs 72.11%",
+    "en": "Multi-class accuracy was 78.23 percent, better than 72.11 percent with HSAT rules alone.",
+    "groups": [
+     [
+      "78.23",
+      "78",
+      "72.11",
+      "72"
+     ],
+     [
+      "multi class",
+      "multiclass",
+      "class",
+      "levels",
+      "better",
+      "higher",
+      "compared"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "For severity at home, accuracy for moderate to severe OSA was 83.67 percent. For severe OSA, it was 93.21 percent. And for sorting patients into several severity levels, the radar reached 78.23 percent, compared with 72.11 percent using home sleep test rules alone."
+ },
+ "25": {
+  "points": [
+   {
+    "zh": "院內 vs 居家並列比較",
+    "kw": "hospital vs home side by side",
+    "en": "Let's compare the hospital and home studies side by side.",
+    "groups": [
+     [
+      "hospital",
+      "ward",
+      "clinical",
+      "in hospital",
+      "inpatient",
+      "sleep lab"
+     ],
+     [
+      "home",
+      "house",
+      "real world",
+      "real life",
+      "daily life",
+      "at home",
+      "side by side",
+      "compare",
+      "comparison"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "相關性 0.91 vs 0.87",
+    "kw": "correlation 0.91 vs 0.87",
+    "en": "Correlation was 0.91 in the hospital and 0.87 at home.",
+    "groups": [
+     [
+      "0.91",
+      "91"
+     ],
+     [
+      "0.87",
+      "87"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "重度準確度兩邊都 >92%",
+    "kw": "severe accuracy >92% in both",
+    "en": "For severe OSA, accuracy stayed above 92 percent in both settings.",
+    "groups": [
+     [
+      "severe",
+      "serious",
+      "high risk",
+      "worst"
+     ],
+     [
+      "92",
+      "92.4",
+      "93.21",
+      "93",
+      "above 90",
+      "over 90",
+      "both"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   }
+  ],
+  "gist": "Let's put the two studies side by side. The hospital study used PSG with strict control. The home study used a home sleep test in real life. Correlation was 0.91 in the hospital and 0.87 at home. For severe OSA, accuracy was 92.4 percent in the hospital and 93.21 percent at home. So for the high risk group, accuracy stayed above 92 percent in both places."
+ },
+ "26": {
+  "points": [
+   {
+    "zh": "已通過台灣 TFDA 核准",
+    "kw": "Taiwan FDA cleared",
+    "en": "The device is cleared by the Taiwan FDA.",
+    "groups": [
+     [
+      "tfda",
+      "fda",
+      "taiwan",
+      "approved",
+      "approval",
+      "cleared",
+      "clearance",
+      "regulatory",
+      "license"
+     ]
+    ],
+    "need": 1,
+    "must": true
+   },
+   {
+    "zh": "bRDI ≥ 30 篩檢疑似重度 OSA，敏感度/特異度 90.5%",
+    "kw": "bRDI ≥30 screen, 90.5% / 90.5%",
+    "en": "A bRDI of 30 or more screens for suspected severe OSA, with 90.5 percent sensitivity and specificity.",
+    "groups": [
+     [
+      "30",
+      "thirty"
+     ],
+     [
+      "90.5",
+      "90",
+      "sensitivity",
+      "specificity"
+     ],
+     [
+      "severe",
+      "serious",
+      "high risk",
+      "worst",
+      "screen",
+      "screening"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "是篩檢，不是獨立診斷",
+    "kw": "screen, not standalone diagnosis",
+    "en": "It is a screening tool, not a standalone diagnostic device.",
+    "groups": [
+     [
+      "screen",
+      "screening",
+      "not diagnosis",
+      "not a diagnosis",
+      "not diagnostic",
+      "not replace",
+      "doesn't replace",
+      "does not replace",
+      "not a replacement",
+      "not standalone",
+      "not a diagnostic",
+      "not yet",
+      "not validated",
+      "only screening"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "This work also passed regulatory review. The device is cleared by the Taiwan FDA. Its use is specific: a bRDI of 30 or more screens for suspected severe OSA. At that level, sensitivity and specificity are both 90.5 percent. To be clear, it is a screening tool, not a standalone diagnostic device."
+ },
+ "27": {
+  "points": [
+   {
+    "zh": "TFDA 許可證文件",
+    "kw": "the TFDA license",
+    "en": "This is the TFDA license document.",
+    "groups": [
+     [
+      "license",
+      "licence",
+      "document",
+      "certificate",
+      "tfda",
+      "fda",
+      "approval"
+     ]
+    ],
+    "need": 1,
+    "must": true
+   },
+   {
+    "zh": "報告內容：睡眠時間、睡眠分期、bRDI、心跳呼吸",
+    "kw": "report: sleep time, stages, bRDI, HR, RR",
+    "en": "The report covers sleep time, sleep stages, bRDI, heart rate and breathing rate.",
+    "groups": [
+     [
+      "sleep time",
+      "time in bed",
+      "sleep efficiency",
+      "efficiency",
+      "sleep stages",
+      "stages",
+      "staging"
+     ],
+     [
+      "brdi",
+      "heart rate",
+      "respiratory rate",
+      "breathing rate",
+      "index"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "標示性能：90.5%、心跳 40–120、分期一致性 69%",
+    "kw": "labeled: 90.5%, HR 40–120, staging 69%",
+    "en": "The label shows 90.5 percent sensitivity and specificity, heart rate from 40 to 120, and 69 percent staging agreement.",
+    "groups": [
+     [
+      "90.5",
+      "90"
+     ],
+     [
+      "40",
+      "120",
+      "heart rate"
+     ],
+     [
+      "69",
+      "staging",
+      "stages",
+      "agreement"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "This is the license document. The report includes time in bed, sleep time, sleep efficiency, sleep stages, the bRDI, heart rate and breathing rate. The labeled performance is 90.5 percent sensitivity and specificity at a bRDI of 30, heart rate from 40 to 120 beats per minute, and 69 percent agreement for sleep staging."
+ },
+ "28": {
+  "points": [
+   {
+    "zh": "主要門檻 bRDI ≥ 30 → 疑似重度",
+    "kw": "main threshold bRDI ≥30",
+    "en": "The main threshold is a bRDI of 30 or more for suspected severe OSA.",
+    "groups": [
+     [
+      "30",
+      "thirty",
+      "threshold",
+      "cut off",
+      "cutoff"
+     ],
+     [
+      "severe",
+      "serious",
+      "high risk",
+      "worst",
+      "brdi"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "敏感度/特異度 90.5%；分期 69%",
+    "kw": "90.5%; staging 69%",
+    "en": "Sensitivity and specificity are 90.5 percent, and sleep staging is 69 percent consistent.",
+    "groups": [
+     [
+      "90.5",
+      "90",
+      "sensitivity",
+      "specificity"
+     ],
+     [
+      "69",
+      "staging"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "是篩檢，不取代確定診斷",
+    "kw": "screen, not definitive diagnosis",
+    "en": "It is a screen, not a replacement for a definitive diagnosis.",
+    "groups": [
+     [
+      "screen",
+      "screening",
+      "not diagnosis",
+      "not a diagnosis",
+      "not diagnostic",
+      "not replace",
+      "doesn't replace",
+      "does not replace",
+      "not a replacement",
+      "not standalone",
+      "not a diagnostic",
+      "not yet",
+      "not validated",
+      "only screening"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "In simple terms: the main threshold is a bRDI of 30 or more, which means suspected severe OSA. Sensitivity and specificity are 90.5 percent. Heart rate is tracked from 40 to 120, and sleep staging is 69 percent consistent. Again, it is a screen, not a replacement for a full diagnosis."
+ },
+ "29": {
+  "points": [
+   {
+    "zh": "安裝簡單：牆架或落地架，75–90 公分",
+    "kw": "simple: wall or floor stand, 75–90 cm",
+    "en": "Installation is simple: a wall bracket or a floor stand at 75 to 90 centimeters.",
+    "groups": [
+     [
+      "simple",
+      "easy",
+      "install",
+      "installation",
+      "deployment"
+     ],
+     [
+      "wall",
+      "bracket",
+      "floor stand",
+      "stand",
+      "75",
+      "90"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "牆架適合醫院固定床、落地架適合居家彈性使用",
+    "kw": "wall for hospital beds, stand for home",
+    "en": "The wall bracket suits hospital beds, and the floor stand suits flexible home use.",
+    "groups": [
+     [
+      "wall",
+      "bracket",
+      "option a"
+     ],
+     [
+      "hospital",
+      "clinic",
+      "permanent",
+      "fixed"
+     ],
+     [
+      "floor",
+      "stand",
+      "option b",
+      "home",
+      "flexible"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "Deployment is simple. We use either a wall bracket or a floor stand, placed at 75 to 90 centimeters. The wall bracket is best for permanent hospital or clinic beds. The floor stand is best for flexible use at home."
+ },
+ "30": {
+  "points": [
+   {
+    "zh": "資料用 Wi-Fi 持續傳到臨床儀表板",
+    "kw": "Wi-Fi to clinical dashboard",
+    "en": "Data stream continuously over Wi-Fi to a clinical dashboard.",
+    "groups": [
+     [
+      "wifi",
+      "wi fi",
+      "wireless",
+      "internet",
+      "network",
+      "stream",
+      "streams",
+      "upload",
+      "cloud"
+     ],
+     [
+      "dashboard",
+      "screen",
+      "system",
+      "platform",
+      "monitor",
+      "nursing station"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "追蹤狀態、動作、心跳、呼吸",
+    "kw": "tracks status, movement, HR, breathing",
+    "en": "It tracks patient status, movement, heart rate and breathing.",
+    "groups": [
+     [
+      "status",
+      "movement",
+      "heart rate",
+      "heart",
+      "breathing",
+      "respiration",
+      "vital",
+      "vitals"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "LINE 自動推播異常值或離床警示",
+    "kw": "LINE alerts for abnormal values / bed exit",
+    "en": "LINE push messages alert staff to abnormal values or bed exits.",
+    "groups": [
+     [
+      "alert",
+      "alerts",
+      "alarm",
+      "notify",
+      "notification",
+      "notifications",
+      "line",
+      "message",
+      "push",
+      "warn",
+      "warning"
+     ],
+     [
+      "bed",
+      "out of bed",
+      "bed exit",
+      "leave the bed",
+      "leaves the bed",
+      "left the bed",
+      "in bed",
+      "getting up",
+      "abnormal",
+      "abnormal values",
+      "problem",
+      "emergency"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "Once installed, everything is connected. The radar sends data over Wi-Fi to a clinical dashboard. It tracks patient status, movement, heart rate and breathing. If something is abnormal, or a patient leaves the bed, LINE messages alert the care team right away."
+ },
+ "31": {
+  "points": [
+   {
+    "zh": "每床 LINE 摘要：bRDI、睡眠時間、週期性呼吸",
+    "kw": "LINE summary per bed",
+    "en": "Each morning, a LINE summary shows the bRDI, sleep time and periodic breathing for every bed.",
+    "groups": [
+     [
+      "line",
+      "summary",
+      "message",
+      "notify",
+      "report"
+     ],
+     [
+      "brdi",
+      "sleep time",
+      "periodic breathing",
+      "cycle length",
+      "each bed",
+      "every bed",
+      "per bed"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "完整睡眠報告：分期、事件、趨勢、心跳呼吸",
+    "kw": "full sleep report",
+    "en": "There is also a full sleep report with sleep stages, events, breathing rate and heart rate.",
+    "groups": [
+     [
+      "full report",
+      "sleep report",
+      "report",
+      "full"
+     ],
+     [
+      "stages",
+      "events",
+      "trend",
+      "heart rate",
+      "breathing rate",
+      "night"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "照護團隊每天早上看到",
+    "kw": "care team sees it every morning",
+    "en": "The care team sees this every morning.",
+    "groups": [
+     [
+      "care team",
+      "team",
+      "nurses",
+      "doctors",
+      "staff",
+      "we see"
+     ],
+     [
+      "every morning",
+      "each morning",
+      "morning",
+      "daily",
+      "every day"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "What does daily screening look like? On the left is a LINE summary. For each bed, it shows the bRDI, sleep time, and how much periodic breathing there was. On the right is the full sleep report, with sleep stages, breathing events, breathing rate and heart rate through the night. The care team sees this every morning."
+ },
+ "32": {
+  "points": [
+   {
+    "zh": "第三幕：延伸到心臟研究（72 人）",
+    "kw": "act 3: cardiac research, 72 patients",
+    "en": "Act three expands into heart research, with 72 patients.",
+    "groups": [
+     [
+      "heart",
+      "cardiac",
+      "cardio",
+      "heart failure",
+      "lvef",
+      "ejection fraction",
+      "heart function",
+      "cardiology",
+      "act three",
+      "third"
+     ],
+     [
+      "72",
+      "research",
+      "study",
+      "paper",
+      "expand",
+      "expanding"
+     ]
+    ],
+    "need": 1,
+    "must": true
+   },
+   {
+    "zh": "週期性呼吸與左心室射出分率下降有關",
+    "kw": "periodic breathing associated with low LVEF",
+    "en": "Periodic breathing seen by the radar was associated with lower heart pumping function.",
+    "groups": [
+     [
+      "periodic breathing",
+      "cheyne stokes",
+      "cheyne-stokes",
+      "breathing pattern",
+      "abnormal breathing",
+      "cyclic breathing",
+      "waxing and waning",
+      "pattern"
+     ],
+     [
+      "association",
+      "associated",
+      "associate",
+      "link",
+      "linked",
+      "related",
+      "relationship",
+      "correlated",
+      "connection",
+      "connected"
+     ],
+     [
+      "heart",
+      "cardiac",
+      "cardio",
+      "heart failure",
+      "lvef",
+      "ejection fraction",
+      "heart function",
+      "cardiology",
+      "pumping",
+      "weaker heart"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "只是相關、早期預警概念，尚非驗證工具",
+    "kw": "association only, not validated",
+    "en": "This is only an association and an early warning idea, not a validated tool yet.",
+    "groups": [
+     [
+      "association",
+      "associations",
+      "only",
+      "concept",
+      "idea",
+      "early warning",
+      "proposed"
+     ],
+     [
+      "screen",
+      "screening",
+      "not diagnosis",
+      "not a diagnosis",
+      "not diagnostic",
+      "not replace",
+      "doesn't replace",
+      "does not replace",
+      "not a replacement",
+      "not standalone",
+      "not a diagnostic",
+      "not yet",
+      "not validated",
+      "only screening",
+      "not proven",
+      "not validated"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "Those periodic breathing numbers lead to Act three: heart research. In our third paper, with 72 patients, periodic breathing seen by the radar was associated with lower heart function, meaning a lower ejection fraction. This is an early warning idea based on associations. It is not yet a validated diagnostic or predictive tool."
+ },
+ "33": {
+  "points": [
+   {
+    "zh": "呼吸控制迴路：神經輸出、plant gain、循環時間、化學反射",
+    "kw": "breathing control loop",
+    "en": "Breathing is controlled by a loop: neural drive, plant gain, circulation time and chemoreflex.",
+    "groups": [
+     [
+      "loop",
+      "control",
+      "feedback",
+      "system"
+     ],
+     [
+      "neural",
+      "plant gain",
+      "circulation",
+      "chemoreflex",
+      "chemo",
+      "co2",
+      "pco2",
+      "gain"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "心臟透過循環時間影響呼吸",
+    "kw": "heart enters via circulation time",
+    "en": "The heart affects this loop through circulation time.",
+    "groups": [
+     [
+      "heart",
+      "cardiac",
+      "cardio",
+      "heart failure",
+      "lvef",
+      "ejection fraction",
+      "heart function",
+      "cardiology"
+     ],
+     [
+      "circulation",
+      "circulation time",
+      "blood flow",
+      "slower",
+      "delay"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "雷達不量 CO₂，只看到結果的呼吸型態",
+    "kw": "radar doesn't measure CO2",
+    "en": "The radar does not measure CO2; it only sees the resulting breathing pattern.",
+    "groups": [
+     [
+      "co2",
+      "carbon dioxide"
+     ],
+     [
+      "not measure",
+      "doesn't measure",
+      "does not measure",
+      "don't measure",
+      "only sees",
+      "only see",
+      "pattern",
+      "cannot measure"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "Why would a weak heart change breathing during sleep? Breathing is controlled by a feedback loop: the brain's drive, the lungs, circulation time, and the body's response to CO2. A weak heart makes circulation slower, and that can make the loop unstable. Just to be clear, the radar does not measure CO2. It only sees the breathing pattern that results."
+ },
+ "34": {
+  "points": [
+   {
+    "zh": "週期性呼吸可量化：週期長度等特徵",
+    "kw": "measurable features, e.g. cycle length",
+    "en": "Periodic breathing has measurable features, especially cycle length.",
+    "groups": [
+     [
+      "periodic breathing",
+      "cheyne stokes",
+      "cheyne-stokes",
+      "breathing pattern",
+      "abnormal breathing",
+      "cyclic breathing",
+      "waxing and waning",
+      "pattern",
+      "features",
+      "feature"
+     ],
+     [
+      "cycle length",
+      "cycle",
+      "length",
+      "measure",
+      "measurable"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "LVEF 越低，週期越長（約 49 秒 → 86 秒）",
+    "kw": "lower LVEF → longer cycle (49→86 s)",
+    "en": "As heart function falls, the cycle gets longer, from about 49 seconds to about 86 seconds.",
+    "groups": [
+     [
+      "longer",
+      "rises",
+      "increase",
+      "increases",
+      "goes up",
+      "49",
+      "86",
+      "seconds"
+     ],
+     [
+      "heart",
+      "cardiac",
+      "cardio",
+      "heart failure",
+      "lvef",
+      "ejection fraction",
+      "heart function",
+      "cardiology",
+      "falls",
+      "lower",
+      "weaker"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "急性心衰 11 倍、慢性 8 倍",
+    "kw": "acute HF 11×, chronic 8×",
+    "en": "With CPAP data, the ratio was 11 times in acute heart failure and 8 times in chronic heart failure.",
+    "groups": [
+     [
+      "11",
+      "eleven",
+      "8",
+      "eight",
+      "times"
+     ],
+     [
+      "heart failure",
+      "acute",
+      "chronic",
+      "cpap"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "Periodic breathing has features we can measure, and cycle length is the most interesting one. In published data, the cycle gets longer as heart function falls, from about 49 seconds with a normal heart to about 86 seconds when the ejection fraction is below 20 percent. CPAP data showed a similar trend in acute and chronic heart failure."
+ },
+ "35": {
+  "points": [
+   {
+    "zh": "我們 2025 IEEE JTEHM 論文：雷達+深度學習評估心功能",
+    "kw": "IEEE JTEHM 2025: radar + deep learning for cardiac",
+    "en": "Our 2025 IEEE paper used radar and deep learning to evaluate heart impairment.",
+    "groups": [
+     [
+      "ieee",
+      "paper",
+      "journal",
+      "published",
+      "2025",
+      "publication"
+     ],
+     [
+      "deep learning",
+      "radar",
+      "wireless",
+      "ai"
+     ],
+     [
+      "heart",
+      "cardiac",
+      "cardio",
+      "heart failure",
+      "lvef",
+      "ejection fraction",
+      "heart function",
+      "cardiology"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "LVEF >50% 47 人、≤50% 25 人",
+    "kw": "47 vs 25 patients by LVEF",
+    "en": "47 patients had an ejection fraction above 50 percent, and 25 had 50 percent or less.",
+    "groups": [
+     [
+      "47",
+      "25"
+     ],
+     [
+      "lvef",
+      "ejection fraction",
+      "50",
+      "percent",
+      "groups",
+      "group"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "年齡性別等相似，心臟超音波指標顯著不同",
+    "kw": "similar baseline, echo differs",
+    "en": "Age and sex were similar, but the heart measures were clearly different.",
+    "groups": [
+     [
+      "age",
+      "sex",
+      "bmi",
+      "similar",
+      "same",
+      "comparable"
+     ],
+     [
+      "lvedd",
+      "lvesd",
+      "lvef",
+      "different",
+      "differ",
+      "significant",
+      "significantly"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "This is our 2025 paper in an IEEE journal. We used wireless radar and deep learning to evaluate heart impairment from abnormal breathing patterns. In the table, 47 patients had an ejection fraction above 50 percent, and 25 had 50 percent or below. Age, sex and BMI were similar, but the heart measurements were clearly different."
+ },
+ "36": {
+  "points": [
+   {
+    "zh": "只是臨床相關性",
+    "kw": "associations only",
+    "en": "These are clinical associations only.",
+    "groups": [
+     [
+      "association",
+      "associations",
+      "associated",
+      "correlation",
+      "relationship",
+      "link"
+     ],
+     [
+      "only",
+      "just",
+      "not cause",
+      "not causation",
+      "clinical"
+     ]
+    ],
+    "need": 1,
+    "must": true
+   },
+   {
+    "zh": "RDI 每增加 1，LVEF 低 0.22%",
+    "kw": "RDI +1 → LVEF −0.22%",
+    "en": "For each one-point rise in RDI, LVEF was 0.22 percent lower.",
+    "groups": [
+     [
+      "rdi",
+      "event per hour",
+      "events per hour"
+     ],
+     [
+      "0.22",
+      "lvef",
+      "lower",
+      "decrease"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "週期每長 1 秒，NT-proBNP 高 158.49",
+    "kw": "cycle +1 s → NT-proBNP +158.49",
+    "en": "For each extra second of cycle length, NT-proBNP was about 158 higher.",
+    "groups": [
+     [
+      "cycle length",
+      "cycle",
+      "second",
+      "seconds"
+     ],
+     [
+      "nt probnp",
+      "probnp",
+      "bnp",
+      "158",
+      "158.49",
+      "higher"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "We then measured these relationships, and again, they are associations only. For each one-point rise in RDI, the ejection fraction was 0.22 percent lower. For each extra second of periodic breathing cycle length, NT-proBNP was about 158 higher, and the ejection fraction was 0.21 percent lower. The heart chambers were also slightly larger."
+ },
+ "37": {
+  "points": [
+   {
+    "zh": "心臟研究也帶動品質計畫",
+    "kw": "cardiac work shaped our quality program",
+    "en": "This heart research also shaped our quality program.",
+    "groups": [
+     [
+      "heart",
+      "cardiac",
+      "cardio",
+      "heart failure",
+      "lvef",
+      "ejection fraction",
+      "heart function",
+      "cardiology"
+     ],
+     [
+      "quality",
+      "program",
+      "care",
+      "award"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "2025 NHQA 智慧醫療（住院）標章",
+    "kw": "NHQA 2025 Quality Mark, inpatient",
+    "en": "In 2025, our zero-contact monitoring platform received the NHQA Quality Mark for inpatient smart healthcare.",
+    "groups": [
+     [
+      "nhqa",
+      "quality mark",
+      "mark",
+      "award"
+     ],
+     [
+      "2025",
+      "inpatient",
+      "smart healthcare",
+      "smart",
+      "zero contact",
+      "platform"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "SNQ「全心全力」心功能評估照護模式",
+    "kw": "SNQ 'Wholehearted' cardiac care model",
+    "en": "Our 'Wholehearted' cardiac care model received the SNQ award.",
+    "groups": [
+     [
+      "snq",
+      "symbol of national quality",
+      "national quality"
+     ],
+     [
+      "wholehearted",
+      "whole hearted",
+      "cardiac",
+      "heart",
+      "care model",
+      "team"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "gist": "This heart work also shaped our quality program. In 2025, our zero-contact monitoring platform for sleep breathing and heart care received the NHQA Quality Mark for inpatient smart healthcare. And our Wholehearted care model for non-invasive heart function assessment received the SNQ award as an outstanding healthcare team."
+ },
+ "40": {
+  "points": [
+   {
+    "zh": "24 GHz 無接觸雷達，可連續多夜監測",
+    "kw": "contactless, continuous multi-night",
+    "en": "Contactless radar gives continuous, multi-night monitoring without bothering the patient.",
+    "groups": [
+     [
+      "radar",
+      "radio wave",
+      "radio waves",
+      "sensor",
+      "device",
+      "24 gigahertz",
+      "24 ghz",
+      "microwave",
+      "contactless",
+      "no contact",
+      "non contact",
+      "without contact",
+      "contact free",
+      "doesn't touch",
+      "does not touch",
+      "don't touch",
+      "not touching",
+      "no wire",
+      "no wires",
+      "without wires",
+      "without any wire",
+      "wireless",
+      "nothing on the patient",
+      "nothing on the body",
+      "nothing attached",
+      "non wearable",
+      "not wearable",
+      "nothing to wear",
+      "don't need to wear",
+      "do not need to wear",
+      "no need to wear",
+      "without wearing",
+      "not attached",
+      "no sensors on"
+     ],
+     [
+      "continuous",
+      "multi night",
+      "many nights",
+      "every night",
+      "long term",
+      "multi-night",
+      "friction"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "院內 0.91、居家 0.87 都準確",
+    "kw": "accurate: 0.91 hospital, 0.87 home",
+    "en": "It was accurate both in the hospital, at 0.91, and at home, at 0.87.",
+    "groups": [
+     [
+      "0.91",
+      "91",
+      "0.87",
+      "87",
+      "accurate",
+      "accuracy"
+     ],
+     [
+      "hospital",
+      "ward",
+      "clinical",
+      "in hospital",
+      "inpatient",
+      "sleep lab",
+      "home",
+      "house",
+      "real world",
+      "real life",
+      "daily life",
+      "at home"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "TFDA 核准篩檢重度 OSA；心臟只是相關",
+    "kw": "TFDA screen for severe OSA; cardiac = association",
+    "en": "It is TFDA cleared as a screen for severe OSA, and the heart findings are associations.",
+    "groups": [
+     [
+      "tfda",
+      "fda",
+      "screen",
+      "screening",
+      "cleared",
+      "90.5"
+     ],
+     [
+      "heart",
+      "cardiac",
+      "cardio",
+      "heart failure",
+      "lvef",
+      "ejection fraction",
+      "heart function",
+      "cardiology",
+      "periodic breathing",
+      "cheyne stokes",
+      "cheyne-stokes",
+      "breathing pattern",
+      "abnormal breathing",
+      "cyclic breathing",
+      "waxing and waning",
+      "pattern",
+      "association",
+      "associated",
+      "associate",
+      "link",
+      "linked",
+      "related",
+      "relationship",
+      "correlated",
+      "connection",
+      "connected"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   },
+   {
+    "zh": "感謝，歡迎提問",
+    "kw": "thank you, questions",
+    "en": "Thank you for your attention. I am happy to take your questions.",
+    "groups": [
+     [
+      "thank",
+      "thanks"
+     ],
+     [
+      "question",
+      "questions",
+      "attention"
+     ]
+    ],
+    "need": 1,
+    "must": false
+   }
+  ],
+  "gist": "Let me close with the key messages. First, contactless radar gives continuous monitoring over many nights, with nothing on the patient. Second, it was accurate in the hospital, at 0.91, and at home, at 0.87. Third, it is TFDA cleared as a screen for suspected severe OSA. Fourth, periodic breathing is associated with heart impairment. And this work has received SNQ and NHQA awards. Thank you very much. I am happy to take your questions."
+ }
+}

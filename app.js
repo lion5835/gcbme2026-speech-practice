@@ -8,7 +8,7 @@ const LS = {
   get(k, d) { try { const v = localStorage.getItem('gcbme_' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem('gcbme_' + k, JSON.stringify(v)); } catch (e) { } }
 };
-const settings = Object.assign({ rate: 0.9, thr: 0.75, voiceFb: true, shadowRetry: true, voice: '', mode: 'full' }, LS.get('settings', {}));
+const settings = Object.assign({ useEmbed: true, rate: 0.9, thr: 0.75, voiceFb: true, shadowRetry: true, voice: '', mode: 'full' }, LS.get('settings', {}));
 const saveSettings = () => LS.set('settings', settings);
 const best = LS.get('best', {});
 
@@ -102,7 +102,7 @@ class Listener {
 
 /* ---------- shared slide state ---------- */
 let cur = LS.get('cur', 0); if (cur >= SL.length) cur = 0;
-let view = 'practice';
+let view = 'kp';
 const total = SL.reduce((a, s) => a + s.seconds, 0);
 
 function cueHTML(sent, kws) {
@@ -135,6 +135,7 @@ function showSlide(i) {
   renderScript($('script'), s, settings.mode);
   $('result').classList.add('hidden'); $('live').classList.add('hidden');
   // preload neighbours
+  (window.__slideHooks || []).forEach(f => { try { f(cur); } catch (e) { console.warn(e); } });
   [cur + 1, cur - 1].forEach(k => { if (SL[k]) { const im = new Image(); im.src = SL[k].image; } });
 }
 $('jump').innerHTML = SL.map((s, i) => `<option value="${i}">${s.slide}. ${esc(s.title)}</option>`).join('');
@@ -142,7 +143,7 @@ $('jump').onchange = e => showSlide(+e.target.value);
 $('prev').onclick = () => showSlide(cur - 1);
 $('next').onclick = () => showSlide(cur + 1);
 document.addEventListener('keydown', e => {
-  if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || view === 'rh' || view === 'qa') return;
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || view === 'rh' || view === 'qa' || document.querySelector('dialog[open]')) return;
   if (e.key === 'ArrowRight') showSlide(cur + 1); else if (e.key === 'ArrowLeft') showSlide(cur - 1);
 });
 (function swipe(el) {
@@ -292,6 +293,7 @@ $('btnShadowStop').onclick = () => stopEverything();
 function stopEverything() {
   shadowRun++; stopTTS(); if (listener && listener.active) { listener.onState && listener.onState(false); listener.active = false; clearInterval(listener.timer); try { listener.rec.abort(); } catch (e) { } }
   stopTimer(); highlight($('script'), -1); $('recState').classList.add('hidden'); $('qaRec').classList.add('hidden');
+  if (window.KPUI) window.KPUI.stop();
   $('btnSpeak').classList.remove('recording'); $('btnSpeak').textContent = '🎤 我來講';
 }
 $('btnStopAll').onclick = stopEverything;
@@ -326,7 +328,7 @@ $('qaAnswer').onclick = async () => {
 let rh = null;
 function rhRenderHistory() {
   const hist = LS.get('rehearsals', []);
-  $('rhHistory').innerHTML = hist.length ? hist.map((h, i) => `<div class="hist"><span>${new Date(h.date).toLocaleString('zh-TW', { hour12: false })} · ${fmt(h.total)} · 平均 ${Math.round(h.avg * 100)}%</span><button class="btn small ghost" data-h="${i}">看報告</button></div>`).join('') : '<p class="muted small">還沒有紀錄。</p>';
+  $('rhHistory').innerHTML = hist.length ? hist.map((h, i) => `<div class="hist"><span>${new Date(h.date).toLocaleString('zh-TW', { hour12: false })} · ${h.kind === 'gist' ? `🎯 重點彩排 · 過關 ${h.passN}/${h.rows.length} 張` : `逐字 · ${fmt(h.total)} · 平均 ${Math.round(h.avg * 100)}%`}</span><button class="btn small ghost" data-h="${i}">看報告</button></div>`).join('') : '<p class="muted small">還沒有紀錄。</p>';
   $('rhHistory').querySelectorAll('[data-h]').forEach(b => b.onclick = () => rhShowReport(LS.get('rehearsals', [])[+b.dataset.h]));
 }
 let rhMode = 'none';
@@ -334,23 +336,27 @@ $('rhModeSeg').onclick = e => { const m = e.target.dataset.mode; if (!m) return;
 function rhShow(i) {
   rh.i = i; const s = SL[i];
   $('rhImg').src = s.image; $('rhProg').style.width = ((i + 1) / SL.length * 100) + '%';
-  $('rhSlideTarget').textContent = fmt(s.seconds); renderScript($('rhScript'), s, rhMode);
+  if (rh.kind === 'gist') { $('rhSlideTarget').textContent = '不限'; window.KPUI.renderHints($('rhScript'), s.slide, { none: 'none', kw: 'zh', full: 'en' }[rhMode], true); }
+  else { $('rhSlideTarget').textContent = fmt(s.seconds); renderScript($('rhScript'), s, rhMode); }
   $('rhLive').innerHTML = esc(rh.text[i] || '');
   rh.slideStart = Date.now();
   $('rhNext').textContent = i === SL.length - 1 ? '完成 ✓' : '下一張 ›';
   if (SL[i + 1]) new Image().src = SL[i + 1].image;
 }
 function rhAccount() { if (!rh) return; rh.time[rh.i] = (rh.time[rh.i] || 0) + (Date.now() - rh.slideStart) / 1000; }
-$('rhStart').onclick = () => {
+$('rhStart').onclick = () => rhBegin('verbatim');
+$('rhGistStart').onclick = () => { if (window.KPUI) window.KPUI.ensureModel(); rhBegin('gist'); };
+function rhBegin(kind) {
   if (!SR && !confirm('此瀏覽器不支援語音辨識，只能計時不能評分。要繼續嗎？')) return;
   stopEverything();
-  rh = { i: 0, text: SL.map(() => ''), time: SL.map(() => 0), start: Date.now(), base: '' };
+  rh = { kind, i: 0, text: SL.map(() => ''), time: SL.map(() => 0), start: Date.now(), base: '' };
+  $('rhTotalGoal').classList.toggle('hidden', kind === 'gist');
   $('rhIntro').classList.add('hidden'); $('rhReport').classList.add('hidden'); $('rhRun').classList.remove('hidden');
   rhShow(0);
   rh.tick = setInterval(() => {
     const T = (Date.now() - rh.start) / 1000, st = (Date.now() - rh.slideStart) / 1000;
-    $('rhTotal').textContent = fmt(T); $('rhTotal').classList.toggle('over', T > 1200);
-    $('rhSlideT').textContent = fmt(st); $('rhSlideT').style.color = st > SL[rh.i].seconds * 1.15 ? 'var(--bad)' : '';
+    $('rhTotal').textContent = fmt(T); $('rhTotal').classList.toggle('over', rh.kind !== 'gist' && T > 1200);
+    $('rhSlideT').textContent = fmt(st); $('rhSlideT').style.color = rh.kind !== 'gist' && st > SL[rh.i].seconds * 1.15 ? 'var(--bad)' : '';
   }, 250);
   if (SR) {
     let consumed = 0; // chars of listener.final already assigned to slides
@@ -361,12 +367,27 @@ $('rhStart').onclick = () => {
     rh.flush = () => { const f = listener.final; rh.text[rh.i] = (rh.text[rh.i] + ' ' + f.slice(consumed)).trim(); consumed = f.length; };
     listener.start();
   } else rh.flush = () => { };
-};
+}
 $('rhNext').onclick = () => { if (!rh) return; rh.flush(); rhAccount(); if (rh.i < SL.length - 1) rhShow(rh.i + 1); else rhFinish(); };
 $('rhBack').onclick = () => { if (!rh || rh.i === 0) return; rh.flush(); rhAccount(); rhShow(rh.i - 1); };
 $('rhEnd').onclick = () => { if (rh && confirm('結束彩排並產生報告？')) { rh.flush(); rhAccount(); rhFinish(); } };
-function rhFinish() {
+async function rhFinish() {
   clearInterval(rh.tick); if (listener && listener.active) { listener.active = false; clearInterval(listener.timer); try { listener.rec.abort(); } catch (e) { } }
+  if (rh.kind === 'gist') {
+    const R = rh; rh = null; $('rhRun').classList.add('hidden');
+    $('rhReport').innerHTML = '<div class="card">評分中…</div>'; $('rhReport').classList.remove('hidden');
+    const rows = [];
+    for (let i = 0; i < SL.length; i++) {
+      const s = SL[i]; const r = R.text[i] ? await window.KPUI.scoreText(s.slide, R.text[i]) : null;
+      rows.push({ slide: s.slide, title: s.title, t: Math.round(R.time[i]), spoken: !!R.text[i], covered: r ? r.covered : 0, total: window.KPUI.data[s.slide].points.length, pass: r ? r.pass : false, marks: r ? r.points.map(p => p.covered ? 1 : 0) : [] });
+      if (r && r.pass) window.KPUI.markMastered(s.slide);
+    }
+    const rep = { kind: 'gist', date: Date.now(), total: Math.round((Date.now() - R.start) / 1000), passN: rows.filter(r => r.pass).length, rows, avg: 0 };
+    const hist = LS.get('rehearsals', []); hist.unshift(rep); LS.set('rehearsals', hist.slice(0, 10));
+    rhShowReport(rep);
+    if (settings.voiceFb && TTS) speak(`Key point rehearsal finished. You got the main idea on ${rep.passN} of ${rows.length} slides.${rep.passN >= rows.length * 0.8 ? ' Excellent work.' : ' Keep going, you are improving.'}`);
+    return;
+  }
   const rows = SL.map((s, i) => {
     const sc = rh.text[i] ? Align.score(s.sentences, rh.text[i], s.keywords, settings.thr) : null;
     return { slide: s.slide, title: s.title, t: Math.round(rh.time[i]), target: Math.round(s.seconds), cov: sc ? sc.overall : 0, spoken: !!rh.text[i], text: rh.text[i] };
@@ -382,6 +403,18 @@ function rhFinish() {
 }
 function rhShowReport(rep) {
   if (!rep) return;
+  if (rep.kind === 'gist') {
+    $('rhReport').innerHTML = `<div class="card"><h3>🎯 重點彩排報告 · ${new Date(rep.date).toLocaleString('zh-TW', { hour12: false })}</h3>
+      <div class="score"><b class="${rep.passN >= rep.rows.length * 0.8 ? 'good' : 'mid'}">${rep.passN}/${rep.rows.length}</b><span>張抓到重點</span><span class="muted">用時 ${fmt(rep.total)}（不計分）</span></div>
+      <p>講了但還沒抓到重點（建議回「抓重點」練）：${rep.rows.filter(r => r.spoken && !r.pass).map(r => r.slide).join('、') || '無'}${rep.rows.some(r => !r.spoken) ? `<br><span class="muted">沒有講（跳過）：${rep.rows.filter(r => !r.spoken).length} 張</span>` : ''}</p>
+      <table class="rep"><tr><th>#</th><th>標題</th><th>重點</th><th></th></tr>
+      ${rep.rows.map(r => `<tr><td>${r.slide}</td><td><a href="#" data-go="${r.slide}">${esc(r.title)}</a></td><td class="num">${r.spoken ? r.marks.map(m => m ? '✓' : '✗').join('') : '—'}</td><td class="num ${r.pass ? 'good' : 'bad'}">${r.spoken ? `${r.covered}/${r.total}` : ''}</td></tr>`).join('')}</table>
+      <div class="ctl"><button class="btn" id="rhBackIntro">回彩排首頁</button></div></div>`;
+    $('rhReport').classList.remove('hidden'); $('rhIntro').classList.add('hidden');
+    $('rhBackIntro').onclick = () => { $('rhReport').classList.add('hidden'); $('rhIntro').classList.remove('hidden'); rhRenderHistory(); };
+    $('rhReport').querySelectorAll('[data-go]').forEach(a => a.onclick = e => { e.preventDefault(); const k = SL.findIndex(s => s.slide === +a.dataset.go); setView('kp'); showSlide(k); });
+    return;
+  }
   const over = r => r.t > r.target * 1.25 && r.t - r.target > 5;
   const weak = rep.rows.filter(r => r.spoken && r.cov < settings.thr);
   $('rhReport').innerHTML = `<div class="card"><h3>彩排報告 · ${new Date(rep.date).toLocaleString('zh-TW', { hour12: false })}</h3>
@@ -401,7 +434,13 @@ function setView(v) {
   if (rh && v !== 'rh') { clearInterval(rh.tick); rh = null; $('rhRun').classList.add('hidden'); $('rhIntro').classList.remove('hidden'); }
   stopEverything(); view = v;
   [...$('tabs').children].forEach(b => b.classList.toggle('on', b.dataset.view === v));
-  $('view-slide').classList.toggle('hidden', !(v === 'practice' || v === 'shadow'));
+  const slideView = v === 'practice' || v === 'shadow' || v === 'kp';
+  $('view-slide').classList.toggle('hidden', !slideView);
+  ['modeSeg', 'script', 'best'].forEach(id => $(id).classList.toggle('hidden', v === 'kp'));
+  $('slideTimerRow').classList.toggle('hidden', v === 'kp');
+  $('kpPanel').classList.toggle('hidden', v !== 'kp');
+  $('target').classList.toggle('hidden', v === 'kp');
+  (window.__viewHooks || []).forEach(f => f(v));
   $('view-qa').classList.toggle('hidden', v !== 'qa'); $('view-rh').classList.toggle('hidden', v !== 'rh');
   $('practiceCtl').classList.toggle('hidden', v !== 'practice'); $('shadowCtl').classList.toggle('hidden', v !== 'shadow');
   $('result').classList.add('hidden'); $('live').classList.add('hidden');
@@ -412,16 +451,17 @@ $('tabs').onclick = e => { const b = e.target.closest('button'); if (b) setView(
 
 /* ---------- settings ---------- */
 const dlg = $('settings');
-function syncSettingsUI() { $('rate').value = settings.rate; $('rateVal').textContent = settings.rate + '×'; $('thr').value = settings.thr; $('thrVal').textContent = Math.round(settings.thr * 100) + '%'; $('voiceFb').checked = settings.voiceFb; $('shadowRetry').checked = settings.shadowRetry; }
+function syncSettingsUI() { $('rate').value = settings.rate; $('rateVal').textContent = settings.rate + '×'; $('thr').value = settings.thr; $('thrVal').textContent = Math.round(settings.thr * 100) + '%'; $('voiceFb').checked = settings.voiceFb; $('shadowRetry').checked = settings.shadowRetry; $('useEmbed').checked = settings.useEmbed; }
 $('btnSettings').onclick = () => { syncSettingsUI(); dlg.showModal ? dlg.showModal() : dlg.setAttribute('open', ''); };
 $('rate').oninput = e => { settings.rate = +e.target.value; $('rateVal').textContent = settings.rate + '×'; saveSettings(); };
 $('thr').oninput = e => { settings.thr = +e.target.value; $('thrVal').textContent = Math.round(settings.thr * 100) + '%'; saveSettings(); };
 $('voiceFb').onchange = e => { settings.voiceFb = e.target.checked; saveSettings(); };
 $('shadowRetry').onchange = e => { settings.shadowRetry = e.target.checked; saveSettings(); };
+$('useEmbed').onchange = e => { settings.useEmbed = e.target.checked; saveSettings(); if (window.KPUI) window.KPUI.modelStatus(); };
 $('voiceSel').onchange = e => { settings.voice = e.target.value; saveSettings(); };
 $('testVoice').onclick = () => { stopTTS(); speak('Good morning, everyone. Thank you for the kind invitation.'); };
 
-showSlide(cur); setView('practice'); showQA(0);
+showSlide(cur); setView('kp'); showQA(0);
 if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => { });
-window.__app = { Align, SL, QA, showSlide, setView, get cur() { return cur; } };
+window.__app = { Align, SL, QA, showSlide, setView, speak, stopTTS, Listener, stopEverything, settings, saveSettings, LS, fmt, esc, highlight, SR, TTS, get cur() { return cur; }, get view() { return view; }, get listener() { return listener; }, set listener(l) { listener = l; } };
 })();

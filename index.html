@@ -36,6 +36,28 @@
     <div class="progress"><div id="progbar"></div></div>
    </div>
    <div class="colR">
+    <div id="kpPanel" class="hidden">
+      <div class="row kphead">
+        <span id="kpMastered" class="pill"></span>
+        <span id="kpModel" class="pill ghost small"></span>
+      </div>
+      <div class="seg small4" id="kpHintSeg">
+        <button data-h="none">不提示</button>
+        <button data-h="zh" class="on">中文重點</button>
+        <button data-h="kw">英文關鍵字</button>
+        <button data-h="en">示範句</button>
+      </div>
+      <div id="kpHints" class="script kphints"></div>
+      <div class="ctl">
+        <button id="kpSpeak" class="btn primary">🎤 講重點</button>
+        <button id="kpGist" class="btn">🔊 示範一個簡短說法</button>
+        <button id="kpStop" class="btn ghost small">⏹</button>
+      </div>
+      <div class="row timerrow"><span class="muted">已講</span> <span id="kpTimer" class="timer">0:00</span><span class="muted small">（不限時，講到重點就好）</span><span id="kpRec" class="rec hidden">● 聆聽中</span></div>
+      <div id="kpGistBox" class="a hidden"></div>
+      <div id="kpLive" class="live hidden"></div>
+      <div id="kpResult" class="result hidden"></div>
+    </div>
     <div class="seg" id="modeSeg">
       <button data-mode="full" class="on">完整講稿</button>
       <button data-mode="kw">關鍵字提示</button>
@@ -53,7 +75,7 @@
       <button id="btnShadowStop" class="btn ghost">⏹ 停止</button>
       <span class="hint">播放一句 → 你跟著說 → 立即回饋</span>
     </div>
-    <div class="row timerrow">
+    <div class="row timerrow" id="slideTimerRow">
       <span id="timer" class="timer">0:00</span><span class="muted"> / 目標 <span id="timerTarget"></span></span>
       <span id="recState" class="rec hidden">● 聆聽中</span>
     </div>
@@ -88,20 +110,21 @@
   <!-- 全場彩排 -->
   <section id="view-rh" class="view hidden">
     <div id="rhIntro" class="card">
-      <h3>全場彩排（20 分鐘）</h3>
+      <h3>全場彩排</h3>
       <p>從第 1 張講到最後一張。講完一張按「下一張」，系統會記錄每張的時間與內容涵蓋率，最後產生報告並存在這台裝置上。</p>
       <div class="seg" id="rhModeSeg">
         <button data-mode="none" class="on">只看投影片</button>
         <button data-mode="kw">關鍵字提示</button>
         <button data-mode="full">完整講稿</button>
       </div>
-      <div class="ctl"><button id="rhStart" class="btn primary">▶︎ 開始彩排</button></div>
+      <div class="ctl"><button id="rhGistStart" class="btn primary">🎯 重點彩排（只看重點）</button><button id="rhStart" class="btn">▶︎ 逐字彩排（20 分鐘）</button></div>
+      <p class="small muted">重點彩排：每張只要講到重點，不計總時間；報告顯示每張重點涵蓋。逐字彩排：對照逐字稿並計時。</p>
       <h4>歷史紀錄</h4>
       <div id="rhHistory"></div>
     </div>
     <div id="rhRun" class="hidden">
       <div class="row rhbar">
-        <span>總時間 <b id="rhTotal" class="timer">0:00</b> / 20:00</span>
+        <span>總時間 <b id="rhTotal" class="timer">0:00</b><span id="rhTotalGoal"> / 20:00</span></span>
         <span>本張 <b id="rhSlideT">0:00</b> / <span id="rhSlideTarget"></span></span>
         <span id="rhRec" class="rec">● 聆聽中</span>
       </div>
@@ -120,7 +143,8 @@
 </main>
 
 <nav class="tabs" id="tabs">
-  <button data-view="practice" class="on"><span>🗣</span>逐張練習</button>
+  <button data-view="kp" class="on"><span>🎯</span>抓重點</button>
+  <button data-view="practice"><span>🗣</span>逐字練習</button>
   <button data-view="shadow"><span>🔁</span>跟讀</button>
   <button data-view="qa"><span>❓</span>Q&amp;A</button>
   <button data-view="rh"><span>⏱</span>全場彩排</button>
@@ -133,6 +157,7 @@
     <label>語速 <input type="range" id="rate" min="0.6" max="1.2" step="0.05"> <b id="rateVal"></b></label>
     <label>過關門檻（內容涵蓋率） <input type="range" id="thr" min="0.5" max="0.95" step="0.05"> <b id="thrVal"></b></label>
     <label class="chk"><input type="checkbox" id="voiceFb"> 講完後用語音回饋（唸出漏掉的字與正確說法）</label>
+    <label class="chk"><input type="checkbox" id="useEmbed"> 抓重點模式使用語意模型（第一次下載約 23 MB，之後會快取）</label>
     <label class="chk"><input type="checkbox" id="shadowRetry"> 跟讀沒過關時自動重來一次</label>
     <p class="muted small">語音辨識：Chrome（電腦）或 iPhone/iPad Safari。第一次使用會要求麥克風權限。資料只存在本機瀏覽器。</p>
     <div class="ctl"><button id="testVoice" type="button" class="btn">🔊 試聽</button><button class="btn primary" value="ok">完成</button></div>
@@ -141,6 +166,8 @@
 
 <script src="data.js"></script>
 <script src="align.js"></script>
+<script src="kpscore.js"></script>
 <script src="app.js"></script>
+<script src="kp.js"></script>
 </body>
 </html>

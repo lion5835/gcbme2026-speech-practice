@@ -77,6 +77,18 @@ table.rep td.num{text-align:right;font-variant-numeric:tabular-nums}
 .hist{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
 .hist button{font-size:13px}
 .btn.small{flex:none;white-space:nowrap}
+.kphead{justify-content:space-between}
+.seg.small4 button{font-size:13px;padding:7px 2px}
+.kphints .chip{display:block;padding:8px 10px;margin:6px 0;border-radius:10px;background:#f2f6fb;font-size:16px}
+.kphints .chip .must{color:var(--bad);font-size:12px;margin-left:6px}
+.kphints .cover{display:block;text-align:center;padding:14px;color:var(--pri);font-size:15px;cursor:pointer;background:repeating-linear-gradient(45deg,#f2f6fb,#f2f6fb 8px,#e8eff8 8px,#e8eff8 16px);border-radius:10px}
+.kpr{display:flex;gap:10px;padding:9px 0;border-top:1px dashed var(--line);align-items:flex-start}
+.kpr .mk{font-size:22px;line-height:1}
+.kpr .zh{font-weight:600}
+.kpr .en{font-size:15px;color:#36506a;margin-top:2px}
+.kpr .via{font-size:12px;color:var(--muted)}
+.badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:14px;font-weight:600}
+.badge.ok{background:#e1f4e8;color:var(--ok)}.badge.no{background:#fff1dc;color:var(--warn)}
 @media (min-width:900px){
   #view-slide{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;align-items:start}
   #view-slide.hidden{display:none}
