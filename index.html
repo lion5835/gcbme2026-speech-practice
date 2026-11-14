@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f3d5e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="GCBME 練習">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>GCBME 2026 英文演講口說練習</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">GCBME 2026 · 英文口說練習</div>
+  <button id="btnSettings" class="icon" aria-label="設定">⚙︎</button>
+</header>
+<div id="banner" class="banner hidden"></div>
+
+<main>
+  <!-- 逐張練習 / 跟讀 共用投影片區 -->
+  <section id="view-slide" class="view">
+   <div class="colL">
+    <div class="slidebox" id="slidebox">
+      <img id="slideImg" alt="slide">
+      <button class="nav prev" id="prev" aria-label="上一張">‹</button>
+      <button class="nav next" id="next" aria-label="下一張">›</button>
+    </div>
+    <div class="row meta">
+      <select id="jump" aria-label="跳到投影片"></select>
+      <span id="target" class="pill"></span>
+      <span id="best" class="pill ghost"></span>
+    </div>
+    <div class="progress"><div id="progbar"></div></div>
+   </div>
+   <div class="colR">
+    <div class="seg" id="modeSeg">
+      <button data-mode="full" class="on">完整講稿</button>
+      <button data-mode="kw">關鍵字提示</button>
+      <button data-mode="none">只看投影片</button>
+    </div>
+    <div id="script" class="script"></div>
+
+    <div id="practiceCtl" class="ctl">
+      <button id="btnListen" class="btn">🔊 示範朗讀</button>
+      <button id="btnSpeak" class="btn primary">🎤 我來講</button>
+      <button id="btnStopAll" class="btn ghost">⏹ 停止</button>
+    </div>
+    <div id="shadowCtl" class="ctl hidden">
+      <button id="btnShadow" class="btn primary">▶︎ 開始跟讀</button>
+      <button id="btnShadowStop" class="btn ghost">⏹ 停止</button>
+      <span class="hint">播放一句 → 你跟著說 → 立即回饋</span>
+    </div>
+    <div class="row timerrow">
+      <span id="timer" class="timer">0:00</span><span class="muted"> / 目標 <span id="timerTarget"></span></span>
+      <span id="recState" class="rec hidden">● 聆聽中</span>
+    </div>
+    <div id="live" class="live hidden"></div>
+    <div id="result" class="result hidden"></div>
+   </div>
+  </section>
+
+  <!-- Q&A -->
+  <section id="view-qa" class="view hidden">
+    <div class="row meta">
+      <button id="qaPrev" class="btn small ghost">‹ 上一題</button>
+      <span id="qaNum" class="pill"></span>
+      <button id="qaNext" class="btn small ghost">下一題 ›</button>
+    </div>
+    <div class="card">
+      <div class="qlabel">Question</div>
+      <div id="qaQ" class="q"></div>
+      <label class="chk"><input type="checkbox" id="qaShowA"> 顯示範例答案</label>
+      <div id="qaA" class="a hidden"></div>
+    </div>
+    <div class="ctl">
+      <button id="qaAsk" class="btn">🔊 唸題目</button>
+      <button id="qaAnswer" class="btn primary">🎤 我來回答</button>
+      <button id="qaModel" class="btn">🔊 範例答案</button>
+    </div>
+    <div class="row timerrow"><span id="qaRec" class="rec hidden">● 聆聽中</span></div>
+    <div id="qaLive" class="live hidden"></div>
+    <div id="qaResult" class="result hidden"></div>
+  </section>
+
+  <!-- 全場彩排 -->
+  <section id="view-rh" class="view hidden">
+    <div id="rhIntro" class="card">
+      <h3>全場彩排（20 分鐘）</h3>
+      <p>從第 1 張講到最後一張。講完一張按「下一張」，系統會記錄每張的時間與內容涵蓋率，最後產生報告並存在這台裝置上。</p>
+      <div class="seg" id="rhModeSeg">
+        <button data-mode="none" class="on">只看投影片</button>
+        <button data-mode="kw">關鍵字提示</button>
+        <button data-mode="full">完整講稿</button>
+      </div>
+      <div class="ctl"><button id="rhStart" class="btn primary">▶︎ 開始彩排</button></div>
+      <h4>歷史紀錄</h4>
+      <div id="rhHistory"></div>
+    </div>
+    <div id="rhRun" class="hidden">
+      <div class="row rhbar">
+        <span>總時間 <b id="rhTotal" class="timer">0:00</b> / 20:00</span>
+        <span>本張 <b id="rhSlideT">0:00</b> / <span id="rhSlideTarget"></span></span>
+        <span id="rhRec" class="rec">● 聆聽中</span>
+      </div>
+      <div class="slidebox"><img id="rhImg" alt="slide"></div>
+      <div class="progress"><div id="rhProg"></div></div>
+      <div id="rhScript" class="script"></div>
+      <div id="rhLive" class="live"></div>
+      <div class="ctl">
+        <button id="rhBack" class="btn ghost">‹ 上一張</button>
+        <button id="rhNext" class="btn primary big">下一張 ›</button>
+        <button id="rhEnd" class="btn ghost">結束</button>
+      </div>
+    </div>
+    <div id="rhReport" class="hidden"></div>
+  </section>
+</main>
+
+<nav class="tabs" id="tabs">
+  <button data-view="practice" class="on"><span>🗣</span>逐張練習</button>
+  <button data-view="shadow"><span>🔁</span>跟讀</button>
+  <button data-view="qa"><span>❓</span>Q&amp;A</button>
+  <button data-view="rh"><span>⏱</span>全場彩排</button>
+</nav>
+
+<dialog id="settings">
+  <form method="dialog">
+    <h3>設定</h3>
+    <label>示範語音 <select id="voiceSel"></select></label>
+    <label>語速 <input type="range" id="rate" min="0.6" max="1.2" step="0.05"> <b id="rateVal"></b></label>
+    <label>過關門檻（內容涵蓋率） <input type="range" id="thr" min="0.5" max="0.95" step="0.05"> <b id="thrVal"></b></label>
+    <label class="chk"><input type="checkbox" id="voiceFb"> 講完後用語音回饋（唸出漏掉的字與正確說法）</label>
+    <label class="chk"><input type="checkbox" id="shadowRetry"> 跟讀沒過關時自動重來一次</label>
+    <p class="muted small">語音辨識：Chrome（電腦）或 iPhone/iPad Safari。第一次使用會要求麥克風權限。資料只存在本機瀏覽器。</p>
+    <div class="ctl"><button id="testVoice" type="button" class="btn">🔊 試聽</button><button class="btn primary" value="ok">完成</button></div>
+  </form>
+</dialog>
+
+<script src="data.js"></script>
+<script src="align.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
