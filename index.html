@@ -37,23 +37,24 @@
    </div>
    <div class="colR">
     <div id="kpPanel" class="hidden">
+      <div class="seg lvseg" id="lvSeg">
+        <button data-lv="detailed">詳細<small>約20分</small></button>
+        <button data-lv="concise">精簡<small>約10分</small></button>
+        <button data-lv="kp" class="on">重點式<small>講重點</small></button>
+      </div>
+      <label class="chk small"><input type="checkbox" id="lvThis"> 這張固定用這個等級（其他張照全域設定）</label>
       <div class="row kphead">
         <span id="kpMastered" class="pill"></span>
         <span id="kpModel" class="pill ghost small"></span>
       </div>
-      <div class="seg small4" id="kpHintSeg">
-        <button data-h="none">不提示</button>
-        <button data-h="zh" class="on">中文重點</button>
-        <button data-h="kw">英文關鍵字</button>
-        <button data-h="en">示範句</button>
-      </div>
+      <div class="seg small4" id="kpHintSeg"></div>
       <div id="kpHints" class="script kphints"></div>
       <div class="ctl">
-        <button id="kpSpeak" class="btn primary">🎤 講重點</button>
-        <button id="kpGist" class="btn">🔊 示範一個簡短說法</button>
+        <button id="kpSpeak" class="btn primary">🎤 開始講</button>
+        <button id="kpGist" class="btn">🔊 示範（本等級）</button>
         <button id="kpStop" class="btn ghost small">⏹</button>
       </div>
-      <div class="row timerrow"><span class="muted">已講</span> <span id="kpTimer" class="timer">0:00</span><span class="muted small">（不限時，講到重點就好）</span><span id="kpRec" class="rec hidden">● 聆聽中</span></div>
+      <div class="row timerrow"><span class="muted">已講</span> <span id="kpTimer" class="timer">0:00</span><span id="kpTarget" class="muted small">（不限時，講到重點就好）</span><span id="kpRec" class="rec hidden">● 聆聽中</span></div>
       <div id="kpGistBox" class="a hidden"></div>
       <div id="kpLive" class="live hidden"></div>
       <div id="kpResult" class="result hidden"></div>
@@ -113,12 +114,18 @@
       <h3>全場彩排</h3>
       <p>從第 1 張講到最後一張。講完一張按「下一張」，系統會記錄每張的時間與內容涵蓋率，最後產生報告並存在這台裝置上。</p>
       <div class="seg" id="rhModeSeg">
-        <button data-mode="none" class="on">只看投影片</button>
-        <button data-mode="kw">關鍵字提示</button>
-        <button data-mode="full">完整講稿</button>
+        <button data-mode="none" class="on">不提示</button>
+        <button data-mode="kw">提示</button>
+        <button data-mode="full">完整文字</button>
       </div>
-      <div class="ctl"><button id="rhGistStart" class="btn primary">🎯 重點彩排（只看重點）</button><button id="rhStart" class="btn">▶︎ 逐字彩排（20 分鐘）</button></div>
-      <p class="small muted">重點彩排：每張只要講到重點，不計總時間；報告顯示每張重點涵蓋。逐字彩排：對照逐字稿並計時。</p>
+      <p class="small muted" style="margin-bottom:4px">彩排等級：</p>
+      <div class="seg lvseg" id="rhLevelSeg">
+        <button data-lv="detailed">詳細</button>
+        <button data-lv="concise">精簡</button>
+        <button data-lv="kp" class="on">重點式</button>
+      </div>
+      <div class="ctl"><button id="rhGistStart" class="btn primary">🎯 開始分級彩排</button><button id="rhStart" class="btn">▶︎ 逐字彩排（舊版比對）</button></div>
+      <p class="small muted">分級彩排：依所選等級判斷「意思有沒有講到」，時間只供參考；報告列出每張的重點與句子涵蓋。逐字彩排：逐字對照詳細稿並計時。</p>
       <h4>歷史紀錄</h4>
       <div id="rhHistory"></div>
     </div>
@@ -143,7 +150,7 @@
 </main>
 
 <nav class="tabs" id="tabs">
-  <button data-view="kp" class="on"><span>🎯</span>抓重點</button>
+  <button data-view="kp" class="on"><span>🎯</span>分級練習</button>
   <button data-view="practice"><span>🗣</span>逐字練習</button>
   <button data-view="shadow"><span>🔁</span>跟讀</button>
   <button data-view="qa"><span>❓</span>Q&amp;A</button>

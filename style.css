@@ -77,6 +77,10 @@ table.rep td.num{text-align:right;font-variant-numeric:tabular-nums}
 .hist{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
 .hist button{font-size:13px}
 .btn.small{flex:none;white-space:nowrap}
+.lvseg button{display:flex;flex-direction:column;align-items:center;font-weight:600;font-size:15px}
+.lvseg small{font-weight:400;font-size:11px;opacity:.8}
+.sres{font-size:15px;padding:6px 0;border-top:1px dotted var(--line)}
+.sres .mk{font-weight:700;margin-right:6px}
 .kphead{justify-content:space-between}
 .seg.small4 button{font-size:13px;padding:7px 2px}
 .kphints .chip{display:block;padding:8px 10px;margin:6px 0;border-radius:10px;background:#f2f6fb;font-size:16px}

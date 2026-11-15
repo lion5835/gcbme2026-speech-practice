@@ -328,7 +328,7 @@ $('qaAnswer').onclick = async () => {
 let rh = null;
 function rhRenderHistory() {
   const hist = LS.get('rehearsals', []);
-  $('rhHistory').innerHTML = hist.length ? hist.map((h, i) => `<div class="hist"><span>${new Date(h.date).toLocaleString('zh-TW', { hour12: false })} · ${h.kind === 'gist' ? `🎯 重點彩排 · 過關 ${h.passN}/${h.rows.length} 張` : `逐字 · ${fmt(h.total)} · 平均 ${Math.round(h.avg * 100)}%`}</span><button class="btn small ghost" data-h="${i}">看報告</button></div>`).join('') : '<p class="muted small">還沒有紀錄。</p>';
+  $('rhHistory').innerHTML = hist.length ? hist.map((h, i) => `<div class="hist"><span>${new Date(h.date).toLocaleString('zh-TW', { hour12: false })} · ${h.kind === 'gist' ? `🎯 ${({ detailed: '詳細', concise: '精簡', kp: '重點式' })[h.level || 'kp']}彩排 · 過關 ${h.passN}/${h.rows.length} 張 · ${fmt(h.total)}` : `逐字 · ${fmt(h.total)} · 平均 ${Math.round(h.avg * 100)}%`}</span><button class="btn small ghost" data-h="${i}">看報告</button></div>`).join('') : '<p class="muted small">還沒有紀錄。</p>';
   $('rhHistory').querySelectorAll('[data-h]').forEach(b => b.onclick = () => rhShowReport(LS.get('rehearsals', [])[+b.dataset.h]));
 }
 let rhMode = 'none';
@@ -336,7 +336,7 @@ $('rhModeSeg').onclick = e => { const m = e.target.dataset.mode; if (!m) return;
 function rhShow(i) {
   rh.i = i; const s = SL[i];
   $('rhImg').src = s.image; $('rhProg').style.width = ((i + 1) / SL.length * 100) + '%';
-  if (rh.kind === 'gist') { $('rhSlideTarget').textContent = '不限'; window.KPUI.renderHints($('rhScript'), s.slide, { none: 'none', kw: 'zh', full: 'en' }[rhMode], true); }
+  if (rh.kind === 'gist') { const D = window.KPUI.data[s.slide]; $('rhSlideTarget').textContent = rh.level === 'detailed' ? '參考 ' + fmt(D.secD) : '不限'; window.KPUI.renderHints($('rhScript'), s.slide, rh.level === 'kp' ? { none: 'none', kw: 'zh', full: 'en' }[rhMode] : { none: 'none', kw: 'cue', full: 'full' }[rhMode], true, rh.level); }
   else { $('rhSlideTarget').textContent = fmt(s.seconds); renderScript($('rhScript'), s, rhMode); }
   $('rhLive').innerHTML = esc(rh.text[i] || '');
   rh.slideStart = Date.now();
@@ -345,12 +345,17 @@ function rhShow(i) {
 }
 function rhAccount() { if (!rh) return; rh.time[rh.i] = (rh.time[rh.i] || 0) + (Date.now() - rh.slideStart) / 1000; }
 $('rhStart').onclick = () => rhBegin('verbatim');
+let rhLevel = LS.get('rhLevel', 'kp');
+const syncRhLevel = () => [...$('rhLevelSeg').children].forEach(b => b.classList.toggle('on', b.dataset.lv === rhLevel));
+syncRhLevel();
+$('rhLevelSeg').onclick = e => { const b = e.target.closest('button'); if (!b) return; rhLevel = b.dataset.lv; LS.set('rhLevel', rhLevel); syncRhLevel(); };
 $('rhGistStart').onclick = () => { if (window.KPUI) window.KPUI.ensureModel(); rhBegin('gist'); };
 function rhBegin(kind) {
   if (!SR && !confirm('此瀏覽器不支援語音辨識，只能計時不能評分。要繼續嗎？')) return;
   stopEverything();
-  rh = { kind, i: 0, text: SL.map(() => ''), time: SL.map(() => 0), start: Date.now(), base: '' };
-  $('rhTotalGoal').classList.toggle('hidden', kind === 'gist');
+  rh = { kind, level: rhLevel, i: 0, text: SL.map(() => ''), time: SL.map(() => 0), start: Date.now(), base: '' };
+  $('rhTotalGoal').classList.toggle('hidden', kind === 'gist' && rhLevel !== 'detailed');
+  $('rhTotalGoal').textContent = kind === 'gist' && rhLevel === 'detailed' ? ' / 參考 20:00' : ' / 20:00';
   $('rhIntro').classList.add('hidden'); $('rhReport').classList.add('hidden'); $('rhRun').classList.remove('hidden');
   rhShow(0);
   rh.tick = setInterval(() => {
@@ -378,14 +383,14 @@ async function rhFinish() {
     $('rhReport').innerHTML = '<div class="card">評分中…</div>'; $('rhReport').classList.remove('hidden');
     const rows = [];
     for (let i = 0; i < SL.length; i++) {
-      const s = SL[i]; const r = R.text[i] ? await window.KPUI.scoreText(s.slide, R.text[i]) : null;
-      rows.push({ slide: s.slide, title: s.title, t: Math.round(R.time[i]), spoken: !!R.text[i], covered: r ? r.covered : 0, total: window.KPUI.data[s.slide].points.length, pass: r ? r.pass : false, marks: r ? r.points.map(p => p.covered ? 1 : 0) : [] });
-      if (r && r.pass) window.KPUI.markMastered(s.slide);
+      const s = SL[i]; const r = R.text[i] ? await window.KPUI.scoreText(s.slide, R.text[i], R.level) : null;
+      rows.push({ slide: s.slide, title: s.title, t: Math.round(R.time[i]), spoken: !!R.text[i], covered: r ? r.covered : 0, total: window.KPUI.data[s.slide].points.length, pass: r ? r.pass : false, marks: r ? r.points.map(p => p.covered ? 1 : 0) : [], sent: r && r.sentences ? r.sentFrac : null });
+      if (r && r.pass) window.KPUI.markMastered(s.slide, R.level);
     }
-    const rep = { kind: 'gist', date: Date.now(), total: Math.round((Date.now() - R.start) / 1000), passN: rows.filter(r => r.pass).length, rows, avg: 0 };
+    const rep = { kind: 'gist', level: R.level, date: Date.now(), total: Math.round((Date.now() - R.start) / 1000), passN: rows.filter(r => r.pass).length, rows, avg: 0 };
     const hist = LS.get('rehearsals', []); hist.unshift(rep); LS.set('rehearsals', hist.slice(0, 10));
     rhShowReport(rep);
-    if (settings.voiceFb && TTS) speak(`Key point rehearsal finished. You got the main idea on ${rep.passN} of ${rows.length} slides.${rep.passN >= rows.length * 0.8 ? ' Excellent work.' : ' Keep going, you are improving.'}`);
+    if (settings.voiceFb && TTS) speak(`Rehearsal finished. You got the main idea on ${rep.passN} of ${rows.length} slides.${rep.passN >= rows.length * 0.8 ? ' Excellent work.' : ' Keep going, you are improving.'}`);
     return;
   }
   const rows = SL.map((s, i) => {
@@ -404,11 +409,12 @@ async function rhFinish() {
 function rhShowReport(rep) {
   if (!rep) return;
   if (rep.kind === 'gist') {
-    $('rhReport').innerHTML = `<div class="card"><h3>🎯 重點彩排報告 · ${new Date(rep.date).toLocaleString('zh-TW', { hour12: false })}</h3>
-      <div class="score"><b class="${rep.passN >= rep.rows.length * 0.8 ? 'good' : 'mid'}">${rep.passN}/${rep.rows.length}</b><span>張抓到重點</span><span class="muted">用時 ${fmt(rep.total)}（不計分）</span></div>
+    const LVN = ({ detailed: '詳細', concise: '精簡', kp: '重點式' })[rep.level || 'kp'];
+    $('rhReport').innerHTML = `<div class="card"><h3>🎯 ${LVN}彩排報告 · ${new Date(rep.date).toLocaleString('zh-TW', { hour12: false })}</h3>
+      <div class="score"><b class="${rep.passN >= rep.rows.length * 0.8 ? 'good' : 'mid'}">${rep.passN}/${rep.rows.length}</b><span>張抓到重點</span><span class="muted">用時 ${fmt(rep.total)}${rep.level === 'detailed' ? '（參考 20:00，不計分）' : '（不計分）'}</span></div>
       <p>講了但還沒抓到重點（建議回「抓重點」練）：${rep.rows.filter(r => r.spoken && !r.pass).map(r => r.slide).join('、') || '無'}${rep.rows.some(r => !r.spoken) ? `<br><span class="muted">沒有講（跳過）：${rep.rows.filter(r => !r.spoken).length} 張</span>` : ''}</p>
-      <table class="rep"><tr><th>#</th><th>標題</th><th>重點</th><th></th></tr>
-      ${rep.rows.map(r => `<tr><td>${r.slide}</td><td><a href="#" data-go="${r.slide}">${esc(r.title)}</a></td><td class="num">${r.spoken ? r.marks.map(m => m ? '✓' : '✗').join('') : '—'}</td><td class="num ${r.pass ? 'good' : 'bad'}">${r.spoken ? `${r.covered}/${r.total}` : ''}</td></tr>`).join('')}</table>
+      <table class="rep"><tr><th>#</th><th>標題</th><th>重點</th><th>句意</th><th></th></tr>
+      ${rep.rows.map(r => `<tr><td>${r.slide}</td><td><a href="#" data-go="${r.slide}">${esc(r.title)}</a></td><td class="num">${r.spoken ? r.marks.map(m => m ? '✓' : '✗').join('') : '—'}</td><td class="num">${r.spoken && r.sent != null ? Math.round(r.sent * 100) + '%' : ''}</td><td class="num ${r.pass ? 'good' : 'bad'}">${r.spoken ? `${r.covered}/${r.total}` : ''}</td></tr>`).join('')}</table>
       <div class="ctl"><button class="btn" id="rhBackIntro">回彩排首頁</button></div></div>`;
     $('rhReport').classList.remove('hidden'); $('rhIntro').classList.add('hidden');
     $('rhBackIntro').onclick = () => { $('rhReport').classList.add('hidden'); $('rhIntro').classList.remove('hidden'); rhRenderHistory(); };

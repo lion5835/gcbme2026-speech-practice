@@ -1,7 +1,9 @@
 /* Key-point (meaning) scoring. Browser: window.KPScore ; Node: module.exports */
 (function (root) {
   const A = root.Align || (typeof require !== 'undefined' ? require('./align.js') : null);
-  const TH = { hi: 0.78, lo: 0.70 }; // embedding thresholds (tuned in tune/tune.js)
+  const TH = { hi: 0.78, lo: 0.70 }; // key-point embedding thresholds (tuned in tune/tune.js)
+  const TS = { hi: 0.68, lo: 0.47, lex: 0.5, lexLo: 0.25 }; // sentence-level thresholds (tuned in tune/tune_v3.js)
+  const NEED = { detailed: 0.7, concise: 0.6 };
   const phraseCache = new Map();
   const ptoks = p => { if (!phraseCache.has(p)) phraseCache.set(p, A.normalize(p)); return phraseCache.get(p); };
 
@@ -26,11 +28,11 @@
     return point.groups.map(g => { const h = g.find(p => phraseHit(p, S)); return h || null; });
   }
   // sliding windows of the transcript, sized to the model sentence
-  function windows(transcript, modelSentence) {
+  function windows(transcript, modelSentence, minL) {
     const W = String(transcript).split(/\s+/).filter(Boolean);
-    const L = Math.max(8, Math.min(30, modelSentence.split(/\s+/).length + 4));
+    const L = Math.max(minL || 8, Math.min(30, modelSentence.split(/\s+/).length + 4));
     if (W.length <= L) return W.length ? [W.join(' ')] : [];
-    const out = []; for (let i = 0; i < W.length; i += 4) { out.push(W.slice(i, i + L).join(' ')); if (i + L >= W.length) break; }
+    const step = L <= 8 ? 2 : 4; const out = []; for (let i = 0; i < W.length; i += step) { out.push(W.slice(i, i + L).join(' ')); if (i + L >= W.length) break; }
     return out;
   }
   /**
@@ -52,6 +54,23 @@
     const mustOk = pts.every(p => !p.must || p.covered);
     return { points: pts, covered: c, total: n, needN, pass: c >= needN && mustOk, mustOk };
   }
-  const api = { score, windows, phraseHit, TH };
+  /** scoreLevel(slide, level, transcript, sims) — level: 'detailed' | 'concise' | 'kp'
+   *  slide: {points, detailed[], concise[], keywords[]}; sims: {pts:[], sents:[]} or null */
+  function scoreLevel(slide, level, transcript, sims) {
+    const kpRes = score({ points: slide.points }, transcript, sims ? sims.pts : null);
+    if (level === 'kp') return Object.assign({}, kpRes, { level, sentences: null, kpPass: kpRes.pass });
+    const sents = level === 'detailed' ? slide.detailed : slide.concise;
+    const spoken = A.normalize(transcript || '').length > 0;
+    const lex = A.score(sents, transcript || '', slide.keywords || [], TS.lex);
+    const sres = sents.map((t, i) => {
+      const cov = lex.sentences[i].coverage; const sim = sims && sims.sents ? sims.sents[i] : null;
+      const byLex = cov >= TS.lex, bySem = sim != null && (sim >= TS.hi || (sim >= TS.lo && cov >= TS.lexLo));
+      return { text: t, cov, sim, covered: spoken && (byLex || bySem), via: byLex ? 'words' : bySem ? 'meaning' : null, missed: lex.sentences[i].missed };
+    });
+    const frac = sres.length ? sres.filter(x => x.covered).length / sres.length : 0;
+    const need = NEED[level];
+    return Object.assign({}, kpRes, { level, sentences: sres, sentFrac: frac, sentNeed: need, kpPass: kpRes.pass, pass: kpRes.pass && frac >= need });
+  }
+  const api = { score, scoreLevel, windows, phraseHit, TH, TS, NEED };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.KPScore = api;
 })(typeof window !== 'undefined' ? window : globalThis);

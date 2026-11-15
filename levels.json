@@ -1,5 +1,17 @@
 {
  "1": {
+  "title": "Title",
+  "concise": [
+   "Good morning, everyone.",
+   "Thank you for inviting me.",
+   "I am Wen-Te Liu, a pulmonologist at Shuang Ho Hospital.",
+   "Today I will talk about contactless radar for sleep breathing.",
+   "I will cover the problem, the technology, our hospital and home results, and new heart research."
+  ],
+  "secC": 22.0,
+  "wc": 44,
+  "secD": 36.0,
+  "wd": 81,
   "points": [
    {
     "zh": "自我介紹：雙和醫院胸腔科醫師",
@@ -126,10 +138,21 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "Good morning, everyone. Thank you for inviting me. I am Wen-Te Liu, a pulmonologist at Shuang Ho Hospital. Today I want to show how a contactless radar can check breathing during sleep, without any wires on the patient. I will start with the clinical problem, then the technology, then our hospital and home results, and finally some new work on the heart."
+  ]
  },
  "2": {
+  "title": "Why a clinical bottleneck?",
+  "concise": [
+   "Why does sleep medicine have a bottleneck?",
+   "We usually see only one night of data.",
+   "Testing depends on hospital beds and staff.",
+   "It is inconvenient for patients.",
+   "And after they go home, we do not know if treatment works."
+  ],
+  "secC": 19.5,
+  "wc": 39,
+  "secD": 44.0,
+  "wd": 99,
   "points": [
    {
     "zh": "傳統睡眠醫學遇到瓶頸",
@@ -222,10 +245,20 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "Why does sleep medicine have a bottleneck? First, we usually see only one night of data. Second, testing depends on hospital beds and staff. Third, it is inconvenient for patients, who must come in just for the test. And after they go home, we do not really know if the treatment is working."
+  ]
  },
  "3": {
+  "title": "Evaluating existing detection methods",
+  "concise": [
+   "Here are the current tests.",
+   "Polysomnography is complete, but it needs many wires and a long wait.",
+   "Home tests and wearables are easier, but they are still uncomfortable.",
+   "None of them gives comfortable monitoring over many nights."
+  ],
+  "secC": 18.5,
+  "wc": 37,
+  "secD": 44.9,
+  "wd": 101,
   "points": [
    {
     "zh": "PSG 最完整但線多、要等 1–2 個月",
@@ -349,10 +382,20 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "Let's compare the current tests. Polysomnography is the most complete, but it needs more than twenty wires and patients may wait one to two months. Home sleep tests and wearable sensors are easier, but they are still uncomfortable, and patches can irritate the skin. None of them gives comfortable monitoring over many nights. That is why we want a non-wearable, continuous method."
+  ]
  },
  "4": {
+  "title": "The diagnostic bottleneck",
+  "concise": [
+   "From the patient's side, testing is very inconvenient.",
+   "Putting on the sensors can take more than sixty minutes, and it can cause anxiety.",
+   "So the test night is very unnatural.",
+   "It is not a normal night."
+  ],
+  "secC": 18.0,
+  "wc": 36,
+  "secD": 31.6,
+  "wd": 71,
   "points": [
    {
     "zh": "檢查本身造成病人極大不便",
@@ -445,10 +488,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "From the patient's side, the problem is clear. We need objective data, but getting it is a burden. Putting on all the sensors can take more than an hour, and many patients feel anxious. So the test night is very unnatural, which is the opposite of the normal night we want to measure."
+  ]
  },
  "5": {
+  "title": "Wearable sensors — could non-wearable be possible?",
+  "concise": [
+   "Wearable sensors have improved a lot.",
+   "But every one of them still touches the body.",
+   "So we asked a simple question: can we monitor sleep without wearing anything?"
+  ],
+  "secC": 14.0,
+  "wc": 28,
+  "secD": 30.7,
+  "wd": 69,
   "points": [
    {
     "zh": "穿戴式感測器進步很多",
@@ -556,10 +608,20 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "The field has worked hard on wearable sensors. They can track the brain, the heart, movement, breathing and oxygen. It is impressive engineering. But every one of these sensors still has to be attached to the body. So our question was simple: can we monitor sleep without wearing anything at all?"
+  ]
  },
  "6": {
+  "title": "Radar principle diagram",
+  "concise": [
+   "Our answer is a 24 gigahertz radar on the wall.",
+   "It sends a signal and picks up the reflection from the chest.",
+   "Tiny chest movements change the phase of the signal.",
+   "From these changes, we rebuild the breathing, with no wires."
+  ],
+  "secC": 20.5,
+  "wc": 41,
+  "secD": 44.0,
+  "wd": 99,
   "points": [
    {
     "zh": "我們的答案：24 GHz 連續波雷達",
@@ -674,96 +736,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "Our answer is a 24 gigahertz continuous wave radar. It sends a signal to the body and picks up the reflection. When the chest rises and falls, the reflected signal changes in timing and phase. From those changes we rebuild the breathing signal, with no wires at all. The analysis uses deep neural decision trees."
+  ]
  },
  "7": {
-  "points": [
-   {
-    "zh": "雷達裝在病床上方牆上",
-    "kw": "mounted on the wall above the bed",
-    "en": "The radar is mounted on the wall above the bed, at a distance from the patient.",
-    "groups": [
-     [
-      "wall",
-      "mounted",
-      "above the bed",
-      "over the bed",
-      "distance",
-      "far",
-      "away"
-     ],
-     [
-      "bed",
-      "patient",
-      "user"
-     ]
-    ],
-    "need": 1,
-    "must": false
-   },
-   {
-    "zh": "胸部微小位移改變相位/飛行時間",
-    "kw": "small chest displacement → phase shift",
-    "en": "A small chest displacement changes the phase and the time of flight of the signal.",
-    "groups": [
-     [
-      "chest",
-      "chest wall",
-      "thorax",
-      "rib cage",
-      "chest movement",
-      "chest motion",
-      "breathing movement",
-      "rise and fall",
-      "moves up and down",
-      "up and down",
-      "displacement",
-      "movement",
-      "delta x",
-      "move",
-      "moves"
-     ],
-     [
-      "phase",
-      "phase shift",
-      "time of flight",
-      "delay",
-      "timing",
-      "signal changes",
-      "change"
-     ]
-    ],
-    "need": 2,
-    "must": true
-   },
-   {
-    "zh": "這些微小變化帶有呼吸資訊",
-    "kw": "tiny changes carry breathing information",
-    "en": "These tiny changes carry the breathing information.",
-    "groups": [
-     [
-      "tiny",
-      "small",
-      "little",
-      "micro",
-      "subtle"
-     ],
-     [
-      "breathing",
-      "respiratory",
-      "respiration",
-      "information",
-      "breath"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   }
+  "title": "Bedside implementation",
+  "concise": [
+   "This is the radar at the bedside.",
+   "It sits on the wall, on an arm, or on a floor stand.",
+   "Nothing touches the patient, and nurses do not need to fix sensors at night."
   ],
-  "gist": "Here is the same idea as a diagram. The radar sits on the wall, some distance above the bed. When the chest moves a little, the received signal shifts in time and in phase compared with the signal we sent. These tiny changes carry all the breathing information."
- },
- "8": {
+  "secC": 17.0,
+  "wc": 34,
+  "secD": 24.9,
+  "wd": 56,
   "points": [
    {
     "zh": "病床邊裝在牆上，也有支架/落地架",
@@ -840,113 +825,20 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "This is how it looks at the bedside. In our wards, the radar is on the wall above the bed. We also use an adjustable arm or a simple floor stand. Nothing is on the patient, nothing to attach, and the nurse never has to fix a sensor in the middle of the night."
+  ]
  },
- "9": {
-  "points": [
-   {
-    "zh": "雷達波形和 PSG 鼻壓訊號很吻合",
-    "kw": "radar waveform matches PSG nasal pressure",
-    "en": "The radar waveform matches the PSG nasal pressure signal very well.",
-    "groups": [
-     [
-      "radar",
-      "waveform",
-      "signal",
-      "wave"
-     ],
-     [
-      "polysomnography",
-      "psg",
-      "sleep test",
-      "sleep study",
-      "sleep lab",
-      "gold standard",
-      "reference standard",
-      "standard test",
-      "standard sleep",
-      "nasal pressure",
-      "nasal",
-      "nose"
-     ],
-     [
-      "correlation",
-      "correlate",
-      "correlated",
-      "agree",
-      "agreement",
-      "match",
-      "matches",
-      "consistent",
-      "similar",
-      "align",
-      "aligned",
-      "same",
-      "look the same",
-      "close"
-     ]
-    ],
-    "need": 2,
-    "must": true
-   },
-   {
-    "zh": "正常、淺呼吸振幅變小、呼吸中止訊號消失",
-    "kw": "normal / hypopnea smaller / apnea flat",
-    "en": "In hypopnea the amplitude gets smaller, and in apnea the signal almost disappears.",
-    "groups": [
-     [
-      "hypopnea",
-      "shallow",
-      "smaller",
-      "reduced",
-      "decrease",
-      "lower",
-      "drops"
-     ],
-     [
-      "apnea",
-      "stop",
-      "stops",
-      "flat",
-      "disappear",
-      "disappears",
-      "loss",
-      "no signal",
-      "lost"
-     ]
-    ],
-    "need": 1,
-    "must": false
-   },
-   {
-    "zh": "這是理想化範例，真實阻塞事件更複雜",
-    "kw": "idealized; real events more complex",
-    "en": "This is an idealized example; real obstructive events are more complex.",
-    "groups": [
-     [
-      "ideal",
-      "idealized",
-      "example",
-      "simple",
-      "perfect"
-     ],
-     [
-      "complex",
-      "complicated",
-      "more complex",
-      "not so simple",
-      "later",
-      "real"
-     ]
-    ],
-    "need": 1,
-    "must": false
-   }
+ "8": {
+  "title": "Three-phase technical roadmap",
+  "concise": [
+   "Our work had three phases.",
+   "First, the hospital: 196 patients, with a correlation of 0.91.",
+   "Second, the home: 80 patients over 147 nights.",
+   "Third, the heart: in 72 patients, periodic breathing was associated with lower heart function."
   ],
-  "gist": "Can the radar capture breathing events? Here the radar waveform is on top and the PSG nasal pressure is below. In normal breathing they match. In a hypopnea the amplitude gets smaller, and in this apnea the signal is lost. But this is an ideal picture. Real obstructive events are more complex, and I will show why in a moment."
- },
- "10": {
+  "secC": 18.5,
+  "wc": 37,
+  "secD": 36.9,
+  "wd": 83,
   "points": [
    {
     "zh": "三階段：院內驗證 196 人，r = 0.91",
@@ -1045,10 +937,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "Our work followed three phases. Phase one was in the hospital: 196 patients compared with polysomnography, with a correlation of 0.91. Phase two moved to the home: 80 patients over 147 nights, with no technician. Phase three moved to cardiology: in 72 patients, periodic breathing seen by the radar was associated with lower heart function."
+  ]
  },
- "11": {
+ "9": {
+  "title": "Act I: Clinical validation (hospital)",
+  "concise": [
+   "Act one was in the hospital.",
+   "We studied 196 patients and compared the radar with polysomnography, under strict control.",
+   "The goal was a clean baseline accuracy."
+  ],
+  "secC": 13.0,
+  "wc": 26,
+  "secD": 16.9,
+  "wd": 38,
   "points": [
    {
     "zh": "第一幕：院內驗證，196 位病人、以 PSG 為標準",
@@ -1109,10 +1010,20 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "Act one is clinical validation in the hospital. We studied 196 patients and compared the radar with polysomnography, under strict control. The goal was simple: remove outside noise and find a clean baseline accuracy."
+  ]
  },
- "12": {
+ "10": {
+  "title": "Signal physics → respiratory signatures",
+  "concise": [
+   "The radar turns tiny chest movements into a breathing signal.",
+   "Normal breathing looks regular.",
+   "During an event, the signal drops and then comes back.",
+   "But a flat line is not the whole story."
+  ],
+  "secC": 16.5,
+  "wc": 33,
+  "secD": 32.9,
+  "wd": 74,
   "points": [
    {
     "zh": "雷達把胸壁微動轉成呼吸訊號",
@@ -1204,10 +1115,21 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "The physics are simple. The radar turns tiny chest movements into a breathing signal. Normal breathing has a regular, steady amplitude. During a breathing event, the signal drops, and then breathing comes back. But a simple flat line is not the whole story."
+  ]
  },
- "13": {
+ "11": {
+  "title": "Airflow defines the event; radar sees the chest wall",
+  "concise": [
+   "In the sleep lab, events are defined by airflow.",
+   "The radar does not see airflow.",
+   "It sees the chest moving.",
+   "When the airway is blocked, the chest still moves.",
+   "So the radar must look for a pattern, not a flat line."
+  ],
+  "secC": 20.5,
+  "wc": 41,
+  "secD": 47.6,
+  "wd": 107,
   "points": [
    {
     "zh": "睡眠實驗室用氣流定義呼吸事件",
@@ -1323,10 +1245,23 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "In the sleep lab, an apnea or hypopnea is defined by airflow. But the radar does not see airflow. It sees the chest moving. This creates a blind spot. When the airway is blocked, the patient keeps trying to breathe, so the chest still moves even with no air. So the radar cannot just look for a flat line. It must recognize a special pattern of chest movement."
+  ]
  },
- "14": {
+ "12": {
+  "title": "The radar-detectable sleep-breathing event",
+  "concise": [
+   "Here is the pattern in five steps.",
+   "Normal breathing.",
+   "Then the movement drops or stops.",
+   "Then small struggling movements while the airway is closed.",
+   "Then one big recovery breath.",
+   "Then back to normal.",
+   "This picture is a schematic."
+  ],
+  "secC": 19.0,
+  "wc": 38,
+  "secD": 47.6,
+  "wd": 107,
   "points": [
    {
     "zh": "一開始正常，事件開始時振幅明顯下降甚至停止",
@@ -1450,10 +1385,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "So what does the radar look for? A pattern in five steps. First, normal breathing. Second, the chest movement drops a lot or stops. Third, the airway is still closed, so the chest struggles with small up and down movements. Fourth, the airway opens, and there is one big recovery breath. Fifth, breathing goes back to normal. This whole pattern is the event the radar detects. The picture is a schematic, not patient data."
+  ]
  },
- "15": {
+ "13": {
+  "title": "Does the radar agree with the gold standard?",
+  "concise": [
+   "Does the radar agree with the gold standard?",
+   "We compared polysomnography with our contactless radar.",
+   "In 196 patients, the correlation was 0.91."
+  ],
+  "secC": 11.0,
+  "wc": 22,
+  "secD": 26.7,
+  "wd": 60,
   "points": [
    {
     "zh": "比較院內 PSG 與無接觸雷達",
@@ -1538,10 +1482,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "So, does the radar agree with the gold standard? On the left is polysomnography in the hospital, with all its wires. On the right is our contactless radar in a normal ward room. In 196 patients, the correlation between the two was 0.91. That is very strong agreement."
+  ]
  },
- "16": {
+ "14": {
+  "title": "Act I: Hospital accuracy & results",
+  "concise": [
+   "Here are the hospital results.",
+   "Accuracy was 90.3 percent for moderate to severe OSA, and 92.4 percent for severe OSA.",
+   "Across four severity levels, average accuracy was 83.7 percent."
+  ],
+  "secC": 14.5,
+  "wc": 29,
+  "secD": 35.1,
+  "wd": 79,
   "points": [
    {
     "zh": "雷達 bRDI 與 PSG AHI 高度相關（0.91）",
@@ -1623,10 +1576,20 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "Here are the hospital numbers. The radar index and the PSG AHI correlate at 0.91. For moderate to severe OSA, accuracy was 90.3 percent. For severe OSA, it was 92.4 percent. And when we sort patients into four levels, normal, mild, moderate and severe, the average accuracy was 83.7 percent."
+  ]
  },
- "17": {
+ "15": {
+  "title": "From validation to the ward (SNQ 2021 / NHQA 2022)",
+  "concise": [
+   "Next, we took the radar into daily ward care.",
+   "It watches breathing, heart rate, and whether the patient is in bed.",
+   "Alerts go to the care team.",
+   "This platform won the 2021 SNQ award, and our sleep center won a 2022 NHQA award."
+  ],
+  "secC": 21.5,
+  "wc": 43,
+  "secD": 48.4,
+  "wd": 109,
   "points": [
    {
     "zh": "把雷達帶進病房日常照護（零接觸平台）",
@@ -1749,10 +1712,20 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "Validation only matters if it helps patients. So we put the radar into daily ward care as a zero-contact platform. It watches breathing, heart rate, and whether the patient is in bed. Alerts go straight to the care team, including LINE messages. This platform received the 2021 SNQ award, and our sleep center received the 2022 NHQA award."
+  ]
  },
- "18": {
+ "16": {
+  "title": "OSA after COVID-19 (Life 2024)",
+  "concise": [
+   "Here is why screening matters.",
+   "A 2024 study looked at sleep apnea after COVID-19.",
+   "Of 257 patients, only two were normal.",
+   "About 59 percent had severe OSA."
+  ],
+  "secC": 13.5,
+  "wc": 27,
+  "secD": 22.7,
+  "wd": 51,
   "points": [
    {
     "zh": "COVID-19 後的阻塞性睡眠呼吸中止（Life 2024）",
@@ -1819,10 +1792,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "Here is one reason continuous screening matters. A 2024 study in Life looked at sleep apnea after COVID-19. Among 257 patients, only two were normal. Most had sleep apnea, and about 59 percent had severe OSA."
+  ]
  },
- "19": {
+ "17": {
+  "title": "OSA detected by radar in COVID-19 patients",
+  "concise": [
+   "With radar on the ward, we could study this at scale.",
+   "We collected 5,376 radar recordings from 2021 to 2022, from the Delta wave to the Omicron wave.",
+   "During Omicron, many patients had nose and throat symptoms."
+  ],
+  "secC": 18.5,
+  "wc": 37,
+  "secD": 51.1,
+  "wd": 115,
   "points": [
    {
     "zh": "病房雷達大量資料：5,376 筆紀錄（2021–2022）",
@@ -1902,10 +1884,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "With radar on the ward, we could study this at scale. From July 2021 to July 2022, we collected 5,376 radar recordings. These lines show how many recordings had an RDI above 15, 30 and 40, from the Delta wave to the Omicron wave. During Omicron, many patients had upper airway symptoms, like a runny nose and sore throat."
+  ]
  },
- "21": {
+ "19": {
+  "title": "Does it work reliably at home?",
+  "concise": [
+   "Next question: does it work at home?",
+   "We studied 80 patients over 147 nights.",
+   "The goal was a practical option that needs no technician."
+  ],
+  "secC": 12.0,
+  "wc": 24,
+  "secD": 23.6,
+  "wd": 53,
   "points": [
    {
     "zh": "問題：在家也可靠嗎？",
@@ -1983,10 +1974,20 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "The next question is: does it work at home, in real life? We studied 80 patients over 147 nights. Our goal was a practical option for home sleep testing, one that needs no technician to set it up or to watch it during the night."
+  ]
  },
- "22": {
+ "20": {
+  "title": "Act II: Walking into the real world",
+  "concise": [
+   "Homes are messy.",
+   "People sleep in different positions, use thick blankets, and there is noise.",
+   "We compared the radar with home sleep testing.",
+   "The radar was on a wall bracket or a floor stand, 75 to 90 centimeters high."
+  ],
+  "secC": 19.5,
+  "wc": 39,
+  "secD": 31.6,
+  "wd": 71,
   "points": [
    {
     "zh": "家裡變數多：姿勢、厚被子、噪音、沒有技術員",
@@ -2064,10 +2065,20 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "Act two took us into the real world. At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician. We studied 80 people over 147 nights, and compared the radar with home sleep apnea testing. The radar was placed on a wall bracket or a floor stand, at 75 to 90 centimeters."
+  ]
  },
- "23": {
+ "21": {
+  "title": "Act II: Home accuracy & results",
+  "concise": [
+   "At home, the correlation was 0.87.",
+   "The mean difference was minus 5.3 events per hour.",
+   "About 94 percent of nights were inside the limits of agreement.",
+   "These are limits of agreement, not a confidence interval."
+  ],
+  "secC": 17.5,
+  "wc": 35,
+  "secD": 36.0,
+  "wd": 81,
   "points": [
    {
     "zh": "居家相關係數 0.87",
@@ -2149,10 +2160,17 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "At home, the radar and the home sleep test correlated at 0.87. The Bland Altman plot shows a mean difference of minus 5.3 events per hour. 138 of 147 nights, about 94 percent, were inside the limits of agreement. Please note, these are limits of agreement, not a confidence interval."
+  ]
  },
- "24": {
+ "22": {
+  "title": "Act II: Home severity accuracy",
+  "concise": [
+   "For severity at home, accuracy was 83.67 percent for moderate to severe OSA, and 93.21 percent for severe OSA."
+  ],
+  "secC": 9.5,
+  "wc": 19,
+  "secD": 22.2,
+  "wd": 50,
   "points": [
    {
     "zh": "居家中重度準確度 83.67%",
@@ -2225,10 +2243,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "For severity at home, accuracy for moderate to severe OSA was 83.67 percent. For severe OSA, it was 93.21 percent. And for sorting patients into several severity levels, the radar reached 78.23 percent, compared with 72.11 percent using home sleep test rules alone."
+  ]
  },
- "25": {
+ "23": {
+  "title": "Synthesis: hospital vs. home",
+  "concise": [
+   "Let's compare.",
+   "Correlation was 0.91 in the hospital and 0.87 at home.",
+   "For severe OSA, accuracy stayed above 92 percent in both places."
+  ],
+  "secC": 11.5,
+  "wc": 23,
+  "secD": 28.4,
+  "wd": 64,
   "points": [
    {
     "zh": "院內 vs 居家並列比較",
@@ -2299,10 +2326,20 @@
     "need": 2,
     "must": true
    }
-  ],
-  "gist": "Let's put the two studies side by side. The hospital study used PSG with strict control. The home study used a home sleep test in real life. Correlation was 0.91 in the hospital and 0.87 at home. For severe OSA, accuracy was 92.4 percent in the hospital and 93.21 percent at home. So for the high risk group, accuracy stayed above 92 percent in both places."
+  ]
  },
- "26": {
+ "24": {
+  "title": "Regulatory status: TFDA clearance",
+  "concise": [
+   "The device is cleared by the Taiwan FDA.",
+   "A bRDI of 30 or more screens for suspected severe OSA.",
+   "Sensitivity and specificity are both 90.5 percent.",
+   "It is a screening tool, not a diagnosis."
+  ],
+  "secC": 17.0,
+  "wc": 34,
+  "secD": 31.1,
+  "wd": 70,
   "points": [
    {
     "zh": "已通過台灣 TFDA 核准",
@@ -2376,10 +2413,19 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "This work also passed regulatory review. The device is cleared by the Taiwan FDA. Its use is specific: a bRDI of 30 or more screens for suspected severe OSA. At that level, sensitivity and specificity are both 90.5 percent. To be clear, it is a screening tool, not a standalone diagnostic device."
+  ]
  },
- "27": {
+ "25": {
+  "title": "TFDA license document",
+  "concise": [
+   "This is the license.",
+   "The report includes sleep time, sleep stages, the bRDI, heart rate and breathing rate.",
+   "Sleep staging agreement is 69 percent."
+  ],
+  "secC": 12.0,
+  "wc": 24,
+  "secD": 34.7,
+  "wd": 78,
   "points": [
    {
     "zh": "TFDA 許可證文件",
@@ -2448,10 +2494,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "This is the license document. The report includes time in bed, sleep time, sleep efficiency, sleep stages, the bRDI, heart rate and breathing rate. The labeled performance is 90.5 percent sensitivity and specificity at a bRDI of 30, heart rate from 40 to 120 beats per minute, and 69 percent agreement for sleep staging."
+  ]
  },
- "28": {
+ "26": {
+  "title": "Regulatory translation",
+  "concise": [
+   "In simple terms: a bRDI of 30 or more means suspected severe OSA.",
+   "Sensitivity and specificity are 90.5 percent.",
+   "Again, it is a screen, not a full diagnosis."
+  ],
+  "secC": 14.0,
+  "wc": 28,
+  "secD": 24.9,
+  "wd": 56,
   "points": [
    {
     "zh": "主要門檻 bRDI ≥ 30 → 疑似重度",
@@ -2520,10 +2575,18 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "In simple terms: the main threshold is a bRDI of 30 or more, which means suspected severe OSA. Sensitivity and specificity are 90.5 percent. Heart rate is tracked from 40 to 120, and sleep staging is 69 percent consistent. Again, it is a screen, not a replacement for a full diagnosis."
+  ]
  },
- "29": {
+ "27": {
+  "title": "Deployment & installation",
+  "concise": [
+   "Installation is simple.",
+   "Use a wall bracket for hospital beds, or a floor stand for flexible home use, at 75 to 90 centimeters."
+  ],
+  "secC": 11.5,
+  "wc": 23,
+  "secD": 24.0,
+  "wd": 54,
   "points": [
    {
     "zh": "安裝簡單：牆架或落地架，75–90 公分",
@@ -2576,10 +2639,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "Deployment is simple. We use either a wall bracket or a floor stand, placed at 75 to 90 centimeters. The wall bracket is best for permanent hospital or clinic beds. The floor stand is best for flexible use at home."
+  ]
  },
- "30": {
+ "28": {
+  "title": "Integrated workflow & continuous monitoring",
+  "concise": [
+   "The radar sends data over Wi-Fi to a dashboard.",
+   "It tracks movement, heart rate and breathing.",
+   "If something is abnormal, or a patient leaves the bed, LINE messages alert the team."
+  ],
+  "secC": 15.5,
+  "wc": 31,
+  "secD": 19.1,
+  "wd": 43,
   "points": [
    {
     "zh": "資料用 Wi-Fi 持續傳到臨床儀表板",
@@ -2664,10 +2736,20 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "Once installed, everything is connected. The radar sends data over Wi-Fi to a clinical dashboard. It tracks patient status, movement, heart rate and breathing. If something is abnormal, or a patient leaves the bed, LINE messages alert the care team right away."
+  ]
  },
- "31": {
+ "29": {
+  "title": "Daily screening data in practice",
+  "concise": [
+   "This is daily screening data.",
+   "A LINE summary shows the bRDI, sleep time and periodic breathing for each bed.",
+   "There is also a full sleep report.",
+   "The care team sees this every morning."
+  ],
+  "secC": 16.5,
+  "wc": 33,
+  "secD": 35.6,
+  "wd": 80,
   "points": [
    {
     "zh": "每床 LINE 摘要：bRDI、睡眠時間、週期性呼吸",
@@ -2741,10 +2823,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "What does daily screening look like? On the left is a LINE summary. For each bed, it shows the bRDI, sleep time, and how much periodic breathing there was. On the right is the full sleep report, with sleep stages, breathing events, breathing rate and heart rate through the night. The care team sees this every morning."
+  ]
  },
- "32": {
+ "30": {
+  "title": "Act III: Expanding horizons (cardiac)",
+  "concise": [
+   "Act three is heart research.",
+   "In 72 patients, periodic breathing seen by the radar was associated with lower heart function.",
+   "This is an association, not a validated diagnostic tool."
+  ],
+  "secC": 14.5,
+  "wc": 29,
+  "secD": 26.7,
+  "wd": 60,
   "points": [
    {
     "zh": "第三幕：延伸到心臟研究（72 人）",
@@ -2854,10 +2945,20 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "Those periodic breathing numbers lead to Act three: heart research. In our third paper, with 72 patients, periodic breathing seen by the radar was associated with lower heart function, meaning a lower ejection fraction. This is an early warning idea based on associations. It is not yet a validated diagnostic or predictive tool."
+  ]
  },
- "33": {
+ "31": {
+  "title": "Why does cardiac impairment alter breathing?",
+  "concise": [
+   "Why does a weak heart change breathing?",
+   "Breathing is controlled by a feedback loop, and a weak heart slows circulation.",
+   "The radar does not measure CO2.",
+   "It only sees the breathing pattern."
+  ],
+  "secC": 16.0,
+  "wc": 32,
+  "secD": 29.8,
+  "wd": 67,
   "points": [
    {
     "zh": "呼吸控制迴路：神經輸出、plant gain、循環時間、化學反射",
@@ -2933,10 +3034,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "Why would a weak heart change breathing during sleep? Breathing is controlled by a feedback loop: the brain's drive, the lungs, circulation time, and the body's response to CO2. A weak heart makes circulation slower, and that can make the loop unstable. Just to be clear, the radar does not measure CO2. It only sees the breathing pattern that results."
+  ]
  },
- "34": {
+ "32": {
+  "title": "Periodic-breathing features & cycle length",
+  "concise": [
+   "Periodic breathing has measurable features.",
+   "Cycle length is the most interesting.",
+   "In published data, the cycle gets longer as heart function falls, from about 49 to about 86 seconds."
+  ],
+  "secC": 14.5,
+  "wc": 29,
+  "secD": 38.7,
+  "wd": 87,
   "points": [
    {
     "zh": "週期性呼吸可量化：週期長度等特徵",
@@ -3020,10 +3130,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "Periodic breathing has features we can measure, and cycle length is the most interesting one. In published data, the cycle gets longer as heart function falls, from about 49 seconds with a normal heart to about 86 seconds when the ejection fraction is below 20 percent. CPAP data showed a similar trend in acute and chronic heart failure."
+  ]
  },
- "35": {
+ "33": {
+  "title": "IEEE JTEHM 2025 paper",
+  "concise": [
+   "This is our 2025 IEEE paper.",
+   "We used radar and deep learning to study heart impairment.",
+   "Age and sex were similar between groups, but the heart measurements were different."
+  ],
+  "secC": 14.5,
+  "wc": 29,
+  "secD": 35.1,
+  "wd": 79,
   "points": [
    {
     "zh": "我們 2025 IEEE JTEHM 論文：雷達+深度學習評估心功能",
@@ -3105,10 +3224,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "This is our 2025 paper in an IEEE journal. We used wireless radar and deep learning to evaluate heart impairment from abnormal breathing patterns. In the table, 47 patients had an ejection fraction above 50 percent, and 25 had 50 percent or below. Age, sex and BMI were similar, but the heart measurements were clearly different."
+  ]
  },
- "36": {
+ "34": {
+  "title": "Quantifying the cardiopulmonary associations",
+  "concise": [
+   "These are associations only.",
+   "A higher RDI went with a lower ejection fraction.",
+   "A longer cycle went with a higher NT-proBNP."
+  ],
+  "secC": 10.5,
+  "wc": 21,
+  "secD": 28.4,
+  "wd": 64,
   "points": [
    {
     "zh": "只是臨床相關性",
@@ -3177,10 +3305,19 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "We then measured these relationships, and again, they are associations only. For each one-point rise in RDI, the ejection fraction was 0.22 percent lower. For each extra second of periodic breathing cycle length, NT-proBNP was about 158 higher, and the ejection fraction was 0.21 percent lower. The heart chambers were also slightly larger."
+  ]
  },
- "37": {
+ "35": {
+  "title": "Quality recognition behind the ward outcomes",
+  "concise": [
+   "This work also shaped our quality program.",
+   "Our zero-contact platform received the 2025 NHQA Quality Mark.",
+   "And our Wholehearted heart care model received the SNQ award."
+  ],
+  "secC": 13.0,
+  "wc": 26,
+  "secD": 25.3,
+  "wd": 57,
   "points": [
    {
     "zh": "心臟研究也帶動品質計畫",
@@ -3252,10 +3389,23 @@
     "need": 2,
     "must": false
    }
-  ],
-  "gist": "This heart work also shaped our quality program. In 2025, our zero-contact monitoring platform for sleep breathing and heart care received the NHQA Quality Mark for inpatient smart healthcare. And our Wholehearted care model for non-invasive heart function assessment received the SNQ award as an outstanding healthcare team."
+  ]
  },
- "40": {
+ "38": {
+  "title": "Take-home messages",
+  "concise": [
+   "Let me close.",
+   "Contactless radar can monitor many nights with nothing on the patient.",
+   "It was accurate in the hospital and at home.",
+   "It is TFDA cleared as a screen for severe OSA.",
+   "Periodic breathing is associated with heart impairment.",
+   "Thank you very much.",
+   "I am happy to take your questions."
+  ],
+  "secC": 25.5,
+  "wc": 51,
+  "secD": 48.4,
+  "wd": 109,
   "points": [
    {
     "zh": "24 GHz 無接觸雷達，可連續多夜監測",
@@ -3405,7 +3555,6 @@
     "need": 1,
     "must": false
    }
-  ],
-  "gist": "Let me close with the key messages. First, contactless radar gives continuous monitoring over many nights, with nothing on the patient. Second, it was accurate in the hospital, at 0.91, and at home, at 0.87. Third, it is TFDA cleared as a screen for suspected severe OSA. Fourth, periodic breathing is associated with heart impairment. And this work has received SNQ and NHQA awards. Thank you very much. I am happy to take your questions."
+  ]
  }
 }
