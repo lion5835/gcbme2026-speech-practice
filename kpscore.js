@@ -4,7 +4,7 @@
   const TH = { hi: 0.78, lo: 0.70 }; // key-point embedding thresholds (tuned in tune/tune.js)
   const TS = { hi: 0.68, lo: 0.47, lex: 0.5, lexLo: 0.25 }; // sentence-level thresholds (tuned in tune/tune_v3.js)
   const NEED = { detailed: 0.7, concise: 0.6 };
-  const KWNEED = { detailed: 0.5, concise: 0.4, kp: 0 }; // share of on-slide keywords (numbers, terms) that must be heard
+  const KWNEED = { detailed: 0.4, concise: 0.3, kp: 0 }; // share of on-slide keywords (numbers, terms) that must be heard
   const phraseCache = new Map();
   const ptoks = p => { if (!phraseCache.has(p)) phraseCache.set(p, A.normalize(p)); return phraseCache.get(p); };
 

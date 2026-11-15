@@ -123,7 +123,7 @@ function renderHints(el, n, hint, noCover, lv) {
   const sents = levelText(n, lv); const full = hint === 'full' || hint === 'en'; const marks = full && (lv === 'detailed' ? d.dMark : d.cMark);
   el.innerHTML = `<div class="small muted">重點：${d.points.map(p => esc(p.zh) + (p.must ? '（必講）' : '')).join('　')}</div>` +
     sents.map((s, i) => `<span class="sent ${full ? '' : 'cue'}" data-i="${i}"><span class="n">${i + 1}</span>${full ? (marks ? markHTML(marks[i], d.slideKw && d.slideKw[lv]) : esc(s)) : cue(s)}</span>`).join('') +
-    (marks ? '<div class="small muted legend"><span class="os">底色</span>＝投影片上的原文　<b class="okw">粗體</b>＝計分關鍵字（數字、術語）　<span class="add">灰色斜體</span>＝投影片上沒有的連接詞</div>' : '');
+    (marks ? '<div class="small muted legend"><span class="os">底色</span>＝投影片上的字　<b class="okw">粗體</b>＝計分關鍵字（數字、術語）　<span class="add">灰色斜體</span>＝補上的連接詞與口語（不必逐字唸投影片）</div>' : '');
 }
 function renderPanel() {
   if (!data) return;

@@ -2,27 +2,27 @@
  "1": {
   "title": "Non-wearable Devices in Sleep Medicine",
   "detailed": [
-   "Good morning, everyone. Thank you for the invitation to the GCBME 2026 International Forum on Smart Healthcare.",
-   "I'm Wen-Te Liu, M.D., Pulmonary Medicine, Shuang Ho Hospital.",
-   "My topic today is Non-wearable Devices in Sleep Medicine: using contactless radar to check breathing during sleep."
+   "Good morning, everyone. Thank you for inviting me to the GCBME 2026 International Forum on Smart Healthcare.",
+   "I'm Wen-Te Liu, from Pulmonary Medicine at Shuang Ho Hospital.",
+   "Today I'll talk about non-wearable devices in sleep medicine: using contactless radar to check breathing during sleep."
   ],
   "concise": [
-   "Good morning, everyone. I'm Wen-Te Liu, Pulmonary Medicine, Shuang Ho Hospital.",
-   "Today: Non-wearable Devices in Sleep Medicine: using contactless radar to check breathing during sleep."
+   "Good morning, everyone. I'm Wen-Te Liu, from Pulmonary Medicine at Shuang Ho Hospital.",
+   "Today's topic is using contactless radar to check breathing during sleep."
   ],
   "dMark": [
-   "[Good morning, everyone. Thank you for the invitation to the] GCBME 2026 International Forum on Smart Healthcare.",
-   "[I'm] Wen-Te Liu, M.D., Pulmonary Medicine, Shuang Ho Hospital.",
-   "[My topic today is] Non-wearable Devices in Sleep Medicine: using contactless radar to check breathing during sleep."
+   "[Good morning, everyone. Thank you for inviting me to the] GCBME 2026 International Forum on Smart Healthcare.",
+   "[I'm] Wen-Te Liu, [from] Pulmonary Medicine [at] Shuang Ho Hospital.",
+   "[Today I'll talk about] non-wearable devices in sleep medicine: using contactless radar to check breathing during sleep."
   ],
   "cMark": [
-   "[Good morning, everyone.] [I'm] Wen-Te Liu, Pulmonary Medicine, Shuang Ho Hospital.",
-   "[Today:] Non-wearable Devices in Sleep Medicine: using contactless radar to check breathing during sleep."
+   "[Good morning, everyone. I'm] Wen-Te Liu, [from] Pulmonary Medicine [at] Shuang Ho Hospital.",
+   "[Today's topic is] using contactless radar to check breathing during sleep."
   ],
-  "secC": 13.0,
-  "wc": 25,
-  "secD": 19.8,
-  "wd": 43,
+  "secC": 12.5,
+  "wc": 24,
+  "secD": 20.3,
+  "wd": 44,
   "points": [
    {
     "zh": "自我介紹：雙和醫院胸腔科醫師",
@@ -162,62 +162,58 @@
     "Medicine",
     "Shuang",
     "Hospital",
-    "Devices",
-    "Sleep"
+    "wearable",
+    "contactless"
    ],
    "concise": [
     "Pulmonary",
     "Medicine",
     "Shuang",
     "Hospital",
-    "Devices",
-    "Sleep",
-    "wearable",
-    "contactless"
+    "contactless",
+    "breathing"
    ],
    "kp": [
     "Pulmonary",
     "Medicine",
     "Shuang",
     "Hospital",
-    "Devices"
+    "Sleep"
    ]
   },
-  "onD": 28,
-  "onC": 20
+  "onD": 27,
+  "onC": 15
  },
  "2": {
   "title": "Why is sleep care hitting a bottleneck?",
   "detailed": [
-   "Why is sleep care hitting a bottleneck?",
-   "Look at the cycle between the Patient, the Physician and the Hospital.",
-   "First, Fragmented data: We only get a one-night snapshot.",
-   "Second, Hospital reliance: It takes a lot of medical resources and hospital beds.",
-   "Third, Patient inconvenience: Patients have to come to the hospital just for the test.",
-   "And Treatment blind spots: At home, we can't easily tell if treatment is used, or if it works."
+   "So, why is sleep care hitting a bottleneck?",
+   "First, it's just one night. That's all the data we get.",
+   "Second, it ties up the hospital. It uses a lot of resources and beds.",
+   "Third, it's hard on patients. They have to come in just for the test.",
+   "And finally, there are blind spots at home. We can't easily tell if treatment is used, or if it works."
   ],
   "concise": [
    "Why is sleep care hitting a bottleneck?",
-   "We only get a one-night snapshot. It takes a lot of medical resources and hospital beds.",
-   "Patients have to come to the hospital just for the test. And at home, we can't easily tell if treatment is used, or if it works."
+   "We get just one night of data, and it ties up hospital beds.",
+   "It's hard on patients, and at home we can't tell if treatment works."
   ],
   "dMark": [
-   "Why is sleep care hitting a bottleneck?",
-   "[Look at the cycle between the] Patient, [the] Physician [and the] Hospital.",
-   "[First,] Fragmented data: We only get a one-night snapshot.",
-   "[Second,] Hospital reliance: It takes a lot of medical resources and hospital beds.",
-   "[Third,] Patient inconvenience: Patients have to come to the hospital just for the test.",
-   "[And] Treatment blind spots: At home, we can't easily tell if treatment is used, or if it works."
+   "[So,] why is sleep care hitting a bottleneck?",
+   "[First, it's] just one night. That's all the data we get.",
+   "[Second, it] ties up the hospital. It uses a lot of resources and beds.",
+   "[Third, it's] hard on patients. They have to come in just for the test.",
+   "[And finally, there are] blind spots at home. We can't easily tell if treatment is used, or if it works."
   ],
   "cMark": [
    "Why is sleep care hitting a bottleneck?",
-   "We only get a one-night snapshot. It takes a lot of medical resources and hospital beds.",
-   "Patients have to come to the hospital just for the test. [And] at home, we can't easily tell if treatment is used, or if it works."
+   "We get just one night [of] data, [and it] ties up hospital beds.",
+   "[It's] hard on patients, [and] at home we can't tell if treatment works."
   ],
-  "secC": 25.6,
-  "wc": 49,
-  "secD": 33.7,
-  "wd": 73,
+  "secC": 17.2,
+  "wc": 33,
+  "secD": 30.9,
+  "wd": 67,
   "points": [
    {
     "zh": "睡眠醫療為什麼卡關",
@@ -251,9 +247,9 @@
     "must": true
    },
    {
-    "zh": "資料片段（單晚快照）、依賴醫院資源與床位",
+    "zh": "只有一晚的資料；占用醫院資源和病床",
     "kw": "one night, hospital-dependent",
-    "en": "Fragmented data: we only get a one-night snapshot; Hospital reliance: it takes a lot of medical resources and hospital beds.",
+    "en": "It's just one night of data, and it ties up the hospital: a lot of resources and beds.",
     "groups": [
      [
       "one night",
@@ -265,7 +261,8 @@
       "once",
       "short",
       "single-night",
-      "one-night snapshot"
+      "one-night snapshot",
+      "just one night"
      ],
      [
       "hospital",
@@ -279,16 +276,18 @@
       "reliance",
       "bed space",
       "medical resources",
-      "hospital beds"
+      "hospital beds",
+      "ties up",
+      "resources and beds"
      ]
     ],
     "need": 1,
     "must": false
    },
    {
-    "zh": "病人得專程來醫院；回家後難知道治療有沒有用",
+    "zh": "病人很辛苦；回家後難知道治療有沒有用",
     "kw": "inconvenient; blind spot after going home",
-    "en": "Patients have to come to the hospital just for the test; at home, we can't easily tell if treatment is used, or if it works.",
+    "en": "It's hard on patients, and at home we can't easily tell if treatment is used, or if it works.",
     "groups": [
      [
       "inconvenient",
@@ -303,7 +302,9 @@
       "blindspots",
       "blind spots",
       "track",
-      "just for the test"
+      "just for the test",
+      "hard on patients",
+      "come in"
      ],
      [
       "go home",
@@ -320,7 +321,8 @@
       "working",
       "can't easily tell",
       "if it works",
-      "treatment is used"
+      "treatment is used",
+      "blind spots at home"
      ]
     ],
     "need": 1,
@@ -329,71 +331,58 @@
   ],
   "slideKw": {
    "detailed": [
-    "Patient",
-    "Physician",
-    "Hospital",
-    "Fragmented",
-    "Patients",
-    "Treatment",
     "bottleneck",
-    "snapshot",
-    "reliance",
+    "hospital",
     "resources",
-    "inconvenience"
+    "patients",
+    "treatment"
    ],
    "concise": [
-    "Patients",
     "bottleneck",
-    "snapshot",
-    "resources",
     "hospital",
+    "patients",
     "treatment"
    ],
    "kp": [
-    "Hospital",
-    "Patients",
     "bottleneck",
-    "snapshot",
-    "resources"
+    "hospital",
+    "patients",
+    "treatment"
    ]
   },
-  "onD": 60,
-  "onC": 48
+  "onD": 56,
+  "onC": 28
  },
  "3": {
   "title": "How do today's tests compare?",
   "detailed": [
    "How do today's tests compare?",
-   "Polysomnography (PSG): scope, All Sleep Diseases; ≥20 wires; wait time 1-2 Months; multi-day, No; Uncomfortable.",
-   "Home Sleep Testing (HST): OSA Specific; 3 wires; ~1 Week; multi-day, No; Uncomfortable.",
-   "Oximeter: OSA Specific; 1 (Finger); Immediate; multi-day, 7-14 Days; Uncomfortable.",
-   "ECG Patch: OSA Specific; 1 (Chest); Immediate; 7-14 Days; Prone to allergy.",
-   "To close this gap, we need to move from wearable sensors (Types I/II) to fully non-wearable, continuous monitoring."
+   "PSG covers all sleep diseases, but it needs 20 or more wires, and patients wait 1 to 2 months.",
+   "Home sleep testing uses 3 wires. An oximeter or an ECG patch can record for 7 to 14 days.",
+   "But they are all uncomfortable, and the patch can cause allergy.",
+   "So we need to move past wearable sensors, to monitoring with nothing to wear, night after night."
   ],
   "concise": [
    "How do today's tests compare?",
-   "Polysomnography: ≥20 wires, 1-2 Months wait.",
-   "Home testing, oximeter and ECG patch: Uncomfortable.",
-   "To close this gap, we need to move to fully non-wearable, continuous monitoring."
+   "PSG needs 20 or more wires and a 1 to 2 month wait, and the other tests are uncomfortable.",
+   "So we need monitoring with nothing to wear, night after night."
   ],
   "dMark": [
    "How do today's tests compare?",
-   "Polysomnography (PSG): [scope,] All Sleep Diseases; ≥20 wires; wait time 1-2 Months; multi-day, No; Uncomfortable.",
-   "Home Sleep Testing (HST): OSA Specific; 3 wires; ~1 Week; multi-day, No; Uncomfortable.",
-   "Oximeter: OSA Specific; 1 (Finger); Immediate; multi-day, 7-14 Days; Uncomfortable.",
-   "ECG Patch: OSA Specific; 1 (Chest); Immediate; 7-14 Days; Prone to allergy.",
-   "To close this gap, we need to move from wearable sensors (Types I/II) to fully non-wearable, continuous monitoring."
+   "PSG [covers] all sleep diseases, [but it needs] 20 [or more] wires, [and patients] wait 1 [to 2] months.",
+   "Home sleep testing [uses] 3 wires. [An] oximeter [or an] ECG patch [can record for 7 to 14] days.",
+   "[But they are all] uncomfortable, [and the] patch [can cause] allergy.",
+   "So we need to move past wearable sensors, to monitoring with nothing to wear, night after night."
   ],
   "cMark": [
    "How do today's tests compare?",
-   "Polysomnography: ≥20 wires, 1-2 Months [wait].",
-   "[Home testing, oximeter and ECG patch:] Uncomfortable.",
-   "To close this gap, we need to move to fully non-wearable, continuous monitoring."
+   "PSG [needs] 20 [or more] wires [and a] 1 [to 2 month] wait, [and the other] tests [are] uncomfortable.",
+   "So we need monitoring with nothing to wear, night after night."
   ],
-  "secC": 16.2,
-  "wc": 31,
-  "secD": 33.7,
-  "wd": 73,
+  "secC": 18.3,
+  "wc": 35,
+  "secD": 32.8,
+  "wd": 71,
   "points": [
    {
     "zh": "PSG 最完整但線多、要等 1–2 個月",
@@ -466,9 +455,9 @@
     "must": false
    },
    {
-    "zh": "需要舒適、多天、非穿戴的監測",
+    "zh": "要走向不用穿戴、每晚都能監測",
     "kw": "need comfortable multi-night non-wearable",
-    "en": "To close this gap, we need to move to fully non-wearable, continuous monitoring.",
+    "en": "So we need to move past wearable sensors, to monitoring with nothing to wear, night after night.",
     "groups": [
      [
       "contactless",
@@ -498,7 +487,9 @@
       "not attached",
       "no sensors on",
       "comfortable",
-      "comfort"
+      "comfort",
+      "move past",
+      "non-wearable"
      ],
      [
       "multi day",
@@ -511,7 +502,8 @@
       "continuous",
       "continuously",
       "every night",
-      "multiple nights"
+      "multiple nights",
+      "night after night"
      ]
     ],
     "need": 2,
@@ -522,67 +514,56 @@
    "detailed": [
     "20",
     "PSG",
-    "HST",
-    "OSA",
     "ECG",
-    "Polysomnography",
-    "Sleep",
-    "Diseases",
-    "Months",
-    "Uncomfortable",
-    "Testing",
-    "Specific"
+    "diseases",
+    "oximeter",
+    "uncomfortable",
+    "wearable",
+    "monitoring"
    ],
    "concise": [
     "20",
-    "Polysomnography",
-    "Months",
-    "Uncomfortable",
-    "wearable",
-    "continuous",
+    "PSG",
+    "uncomfortable",
     "monitoring"
    ],
    "kp": [
     "20",
-    "Polysomnography",
-    "Months",
     "Uncomfortable",
-    "wearable"
+    "monitoring"
    ]
   },
-  "onD": 72,
-  "onC": 25
+  "onD": 43,
+  "onC": 23
  },
  "4": {
   "title": "Why is sleep testing so hard?",
   "detailed": [
    "Why is sleep testing so hard?",
-   "The Waiting Room: If we suspect sleep-disordered breathing, we need objective data.",
+   "Look at the waiting room. If we suspect sleep-disordered breathing, we need objective data.",
    "But getting that data is a real hassle.",
-   "The Wired Patient. Clinical Note: sensor application time often exceeds 60 minutes, causing anxiety.",
-   "And patients have to sleep in a very unnatural setting."
+   "Putting on the sensors often takes more than 60 minutes, and it makes patients anxious.",
+   "And then patients have to sleep in a very unnatural setting."
   ],
   "concise": [
    "Why is sleep testing so hard?",
-   "If we suspect sleep-disordered breathing, we need objective data. But getting that data is a real hassle.",
-   "And patients have to sleep in a very unnatural setting."
+   "We need objective data, but patients must sleep in a very unnatural setting."
   ],
   "dMark": [
    "Why is sleep testing so hard?",
-   "The Waiting Room: If we suspect sleep-disordered breathing, we need objective data.",
+   "[Look at] the waiting room. If we suspect sleep-disordered breathing, we need objective data.",
    "But getting that data is a real hassle.",
-   "The Wired Patient. Clinical Note: sensor application time often exceeds 60 minutes, causing anxiety.",
-   "And patients have to sleep in a very unnatural setting."
+   "[Putting on the sensors] often [takes more than] 60 minutes, [and it makes] patients [anxious.]",
+   "[And then] patients have to sleep in a very unnatural setting."
   ],
   "cMark": [
    "Why is sleep testing so hard?",
-   "If we suspect sleep-disordered breathing, we need objective data. But getting that data is a real hassle.",
-   "And patients have to sleep in a very unnatural setting."
+   "We need objective data, but patients [must] sleep in a very unnatural setting."
   ],
-  "secC": 17.2,
-  "wc": 33,
-  "secD": 23.1,
-  "wd": 50,
+  "secC": 9.9,
+  "wc": 19,
+  "secD": 24.9,
+  "wd": 54,
   "points": [
    {
     "zh": "需要客觀資料，但取得很麻煩",
@@ -687,63 +668,54 @@
   "slideKw": {
    "detailed": [
     "60",
-    "Waiting",
-    "Wired",
-    "Patient",
-    "Clinical",
     "disordered",
     "breathing",
     "objective",
-    "application",
     "patients",
     "unnatural"
    ],
    "concise": [
-    "disordered",
-    "breathing",
     "objective",
     "patients",
     "unnatural"
    ],
    "kp": [
     "Patients",
-    "disordered",
-    "breathing",
     "objective",
     "unnatural"
    ]
   },
-  "onD": 50,
-  "onC": 33
+  "onD": 39,
+  "onC": 18
  },
  "5": {
   "title": "Wearable sensors for sleep monitoring",
   "detailed": [
-   "Wearable sensors for sleep monitoring.",
-   "They track brain activity, heart activity, movement, respiration and blood oxygen.",
-   "This figure is from iScience, 2021.",
-   "But every sensor is on the body. Could non-wearables work?"
+   "Today, there are many wearable sensors for sleep monitoring.",
+   "They track brain activity, heart activity, movement, respiration, and blood oxygen.",
+   "But every one of them has to be worn on the body.",
+   "So the question is: could non-wearables work?"
   ],
   "concise": [
-   "Wearable sensors for sleep monitoring: brain activity, heart activity, respiration, blood oxygen.",
+   "There are many wearable sensors for sleep monitoring.",
    "But every one of them is worn on the body.",
    "Could non-wearables work?"
   ],
   "dMark": [
-   "Wearable sensors for sleep monitoring.",
-   "[They track] brain activity, heart activity, movement, respiration [and] blood oxygen.",
-   "[This figure is from] iScience, 2021.",
-   "[But every sensor is on the body.] Could non-wearables work?"
+   "[Today, there are many] wearable sensors for sleep monitoring.",
+   "[They track] brain activity, heart activity, movement, respiration, [and] blood oxygen.",
+   "[But every one of them has to be worn on the body.]",
+   "[So the question is:] could non-wearables work?"
   ],
   "cMark": [
-   "Wearable sensors for sleep monitoring: brain activity, heart activity, respiration, blood oxygen.",
+   "[There are many] wearable sensors for sleep monitoring.",
    "[But every one of them is worn on the body.]",
    "Could non-wearables work?"
   ],
-  "secC": 13.0,
-  "wc": 25,
-  "secD": 14.8,
-  "wd": 32,
+  "secC": 11.0,
+  "wc": 21,
+  "secD": 18.0,
+  "wd": 39,
   "points": [
    {
     "zh": "穿戴式感測器進步很多",
@@ -854,9 +826,7 @@
   ],
   "slideKw": {
    "detailed": [
-    "2021",
-    "Wearable",
-    "Could",
+    "wearable",
     "monitoring",
     "activity",
     "movement",
@@ -864,54 +834,47 @@
     "wearables"
    ],
    "concise": [
-    "Wearable",
     "Could",
+    "wearable",
     "monitoring",
-    "activity",
-    "respiration",
     "wearables"
    ],
    "kp": [
     "Wearable",
     "Could",
     "monitoring",
-    "activity",
-    "respiration"
+    "wearables"
    ]
   },
-  "onD": 18,
-  "onC": 15
+  "onD": 16,
+  "onC": 8
  },
  "6": {
   "title": "Radar principle diagram",
   "detailed": [
    "Here is how the radar works.",
-   "The Radar sits at a distance, D0, from the User.",
-   "It sends a signal from Tx and picks up the reflection at Rx.",
-   "A small chest movement, Δx, changes the received pulse.",
-   "We see this as the time of flight, ToF, and the phase shift, Δφ.",
-   "From these changes we rebuild the breathing, with no wires."
+   "It sends a signal from Tx, and picks up the reflection at Rx.",
+   "When the chest moves a little, the received pulse changes, in its time of flight and its phase.",
+   "From these changes, we can rebuild the breathing signal, with no wires."
   ],
   "concise": [
-   "The Radar sends a signal from Tx and receives it at Rx.",
-   "A small chest movement, Δx, changes the received pulse — the phase shift, Δφ."
+   "The radar sends a signal from Tx, and receives the reflection at Rx.",
+   "A small chest movement changes the received pulse."
   ],
   "dMark": [
-   "[Here is how the radar works.]",
-   "[The] Radar [sits at a distance,] D0, [from the] User.",
-   "[It sends a signal from] Tx [and picks up the reflection at] Rx.",
-   "[A small chest movement,] Δx, [changes the] received pulse.",
-   "[We see this as the time of flight,] ToF, [and the phase shift,] Δφ.",
-   "[From these changes we rebuild the breathing, with no wires.]"
+   "[Here is how the] radar [works.]",
+   "[It sends a signal from Tx, and picks up the reflection at Rx.]",
+   "[When the chest moves a little, the] received pulse [changes, in its time of flight and its phase.]",
+   "[From these changes, we can rebuild the breathing signal, with no wires.]"
   ],
   "cMark": [
-   "[The] Radar [sends a signal from] Tx [and receives it at] Rx.",
-   "[A small chest movement,] Δx, [changes the] received pulse [— the phase shift,] Δφ."
+   "[The] radar [sends a signal from Tx, and receives the reflection at Rx.]",
+   "[A small chest movement changes the] received pulse."
   ],
-  "secC": 13.6,
-  "wc": 26,
-  "secD": 28.6,
-  "wd": 62,
+  "secC": 11.0,
+  "wc": 21,
+  "secD": 22.6,
+  "wd": 49,
   "points": [
    {
     "zh": "雷達 Tx 發射、Rx 接收",
@@ -1039,11 +1002,9 @@
   ],
   "slideKw": {
    "detailed": [
-    "Radar",
     "received"
    ],
    "concise": [
-    "Radar",
     "received"
    ],
    "kp": [
@@ -1051,33 +1012,33 @@
     "received"
    ]
   },
-  "onD": 10,
-  "onC": 7
+  "onD": 3,
+  "onC": 3
  },
  "7": {
   "title": "Here's how it looks at the bedside",
   "detailed": [
    "Here's how it looks at the bedside.",
-   "The radar is mounted on the wall above the bed, or on an arm, or on a floor stand.",
+   "The radar can go on the wall above the bed, on an arm, or on a floor stand.",
    "Nothing touches the patient."
   ],
   "concise": [
    "Here's how it looks at the bedside.",
-   "Wall, arm, or floor stand. Nothing touches the patient."
+   "It goes on the wall, on an arm, or on a floor stand. Nothing touches the patient."
   ],
   "dMark": [
    "Here's how it looks at the bedside.",
-   "[The radar is mounted on the wall above the bed, or on an arm, or on a floor stand.]",
+   "[The radar can go on the wall above the bed, on an arm, or on a floor stand.]",
    "[Nothing touches the patient.]"
   ],
   "cMark": [
    "Here's how it looks at the bedside.",
-   "[Wall, arm, or floor stand. Nothing touches the patient.]"
+   "[It goes on the wall, on an arm, or on a floor stand. Nothing touches the patient.]"
   ],
-  "secC": 8.3,
-  "wc": 16,
-  "secD": 13.8,
-  "wd": 30,
+  "secC": 12.5,
+  "wc": 24,
+  "secD": 13.4,
+  "wd": 29,
   "points": [
    {
     "zh": "病床邊裝在牆上，也有支架/落地架",
@@ -1169,40 +1130,40 @@
  "8": {
   "title": "Our three published studies: sleep lab, home, and heart",
   "detailed": [
-   "Our three published studies: sleep lab, home, and heart.",
-   "The core: a 24-GHz continuous-wave radar plus deep neural decision trees.",
-   "Study 1: In the sleep lab (N=196). We compared it directly with gold-standard polysomnography (PSG). Strong correlation (r=0.91).",
-   "Study 2: At home (80 patients, 147 nights). Sleep testing at home, with no professional needed to set it up.",
-   "Study 3: The heart (N=72). Periodic breathing (PB) picked up by radar was associated with impaired LVEF."
+   "Our team has three published studies: in the sleep lab, at home, and on the heart.",
+   "How it works: a 24-GHz continuous-wave radar, plus deep neural decision trees.",
+   "In Study 1, in the sleep lab, we compared the radar side by side with PSG in 196 patients, and got a strong correlation, r = 0.91.",
+   "In Study 2, we tested 80 patients at home, for 147 nights, with no professional needed to set it up.",
+   "In Study 3, with 72 patients, when the radar picked up periodic breathing, it was linked to lower LVEF."
   ],
   "concise": [
-   "Our three published studies: sleep lab, home, and heart.",
-   "Study 1: In the sleep lab (N=196). Strong correlation (r=0.91).",
-   "Study 2: At home (80 patients, 147 nights).",
-   "Study 3: The heart (N=72). Periodic breathing picked up by radar was associated with impaired LVEF."
+   "We have three published studies: sleep lab, home, and heart.",
+   "Study 1: in the sleep lab, 196 patients, r = 0.91.",
+   "Study 2: at home, 80 patients and 147 nights.",
+   "Study 3: in 72 patients, periodic breathing was linked to lower LVEF."
   ],
   "dMark": [
-   "Our three published studies: sleep lab, home, and heart.",
-   "The core: a 24-GHz continuous-wave radar plus deep neural decision trees.",
-   "Study 1: In the sleep lab (N=196). We compared it directly with gold-standard polysomnography (PSG). Strong correlation (r=0.91).",
-   "Study 2: At home (80 patients, 147 nights). Sleep testing at home, with no professional needed to set it up.",
-   "Study 3: The heart (N=72). Periodic breathing (PB) picked up by radar was associated with impaired LVEF."
+   "[Our team has] three published studies: in the sleep lab, at home, and [on] the heart.",
+   "How it works: a 24-GHz continuous-wave radar, plus deep neural decision trees.",
+   "[In] Study 1, in the sleep lab, we compared [the] radar side by side with PSG [in] 196 patients, and got a strong correlation, r = 0.91.",
+   "[In] Study 2, [we tested] 80 patients at home, [for] 147 nights, with no professional needed to set it up.",
+   "[In] Study 3, [with] 72 patients, when [the] radar picked up periodic breathing, it was linked to lower LVEF."
   ],
   "cMark": [
-   "Our three published studies: sleep lab, home, and heart.",
-   "Study 1: In the sleep lab (N=196). Strong correlation (r=0.91).",
-   "Study 2: At home (80 patients, 147 nights).",
-   "Study 3: The heart (N=72). Periodic breathing picked up by radar was associated with impaired LVEF."
+   "[We have] three published studies: sleep lab, home, and heart.",
+   "Study 1: in the sleep lab, 196 patients, r = 0.91.",
+   "Study 2: at home, 80 patients [and] 147 nights.",
+   "Study 3: [in] 72 patients, periodic breathing was linked to lower LVEF."
   ],
-  "secC": 22.4,
-  "wc": 43,
-  "secD": 34.6,
-  "wd": 75,
+  "secC": 21.9,
+  "wc": 42,
+  "secD": 43.4,
+  "wd": 94,
   "points": [
    {
     "zh": "我們發表的三篇研究；研究一：院內 196 人，強相關 r = 0.91",
     "kw": "phase 1: hospital, 196, r 0.91",
-    "en": "Our three published studies. Study 1: In the sleep lab (N=196), compared with polysomnography: Strong correlation (r=0.91).",
+    "en": "Our three published studies. Study 1, in the sleep lab: 196 patients, compared side by side with PSG, with a strong correlation, r = 0.91.",
     "groups": [
      [
       "196",
@@ -1230,7 +1191,9 @@
       "gold standard",
       "reference standard",
       "standard test",
-      "standard sleep"
+      "standard sleep",
+      "side by side",
+      "strong correlation"
      ]
     ],
     "need": 2,
@@ -1239,7 +1202,7 @@
    {
     "zh": "研究二：居家 80 人 147 晚",
     "kw": "phase 2: home, 80 patients, 147 nights",
-    "en": "Study 2: At home (80 patients, 147 nights), with no professional needed to set it up.",
+    "en": "Study 2, at home: 80 patients and 147 nights, with no professional needed to set it up.",
     "groups": [
      [
       "home",
@@ -1265,9 +1228,9 @@
     "must": false
    },
    {
-    "zh": "研究三：72 人，週期性呼吸與 LVEF 降低相關",
+    "zh": "研究三：72 人，雷達測到週期性呼吸與 LVEF 較低有關",
     "kw": "phase 3: cardiac, 72, periodic breathing ~ LVEF",
-    "en": "Study 3: The heart (N=72): periodic breathing picked up by radar was associated with impaired LVEF.",
+    "en": "Study 3, the heart: in 72 patients, periodic breathing picked up by radar was linked to lower LVEF.",
     "groups": [
      [
       "heart",
@@ -1304,7 +1267,8 @@
       "connection",
       "connected",
       "impaired lvef",
-      "picked up"
+      "picked up",
+      "lower lvef"
      ]
     ],
     "need": 2,
@@ -1321,10 +1285,10 @@
     "72",
     "GHz",
     "PSG",
-    "PB",
     "LVEF",
     "Study",
-    "Strong"
+    "published",
+    "continuous-wave"
    ],
    "concise": [
     "196",
@@ -1334,7 +1298,7 @@
     "72",
     "LVEF",
     "Study",
-    "Strong"
+    "published"
    ],
    "kp": [
     "196",
@@ -1344,39 +1308,35 @@
     "72"
    ]
   },
-  "onD": 75,
-  "onC": 43
+  "onD": 80,
+  "onC": 38
  },
  "9": {
   "title": "Study 1: Testing it in the hospital",
   "detailed": [
-   "Study 1: Testing it in the hospital.",
-   "What we did: Our team published this study in 2024.",
-   "How many: N = 196 patients.",
-   "Compared with: Polysomnography (PSG).",
-   "Setting: A tightly controlled lab, with no outside noise. So we get a clean baseline."
+   "Let's start with Study 1: testing it in the hospital.",
+   "Our team published this study in 2024.",
+   "We compared the radar with PSG in 196 patients.",
+   "The setting was a tightly controlled lab, with no outside noise. So we get a clean baseline."
   ],
   "concise": [
-   "Study 1: Testing it in the hospital.",
-   "Our team published this study in 2024. N = 196 patients, compared with Polysomnography (PSG).",
-   "A tightly controlled lab, with no outside noise. So we get a clean baseline."
+   "Study 1: testing it in the hospital, published by our team in 2024.",
+   "We compared the radar with PSG in 196 patients, in a tightly controlled lab."
   ],
   "dMark": [
-   "Study 1: Testing it in the hospital.",
-   "What we did: Our team published this study in 2024.",
-   "How many: N = 196 patients.",
-   "Compared with: Polysomnography (PSG).",
-   "Setting: A tightly controlled lab, with no outside noise. So we get a clean baseline."
+   "[Let's start with] Study 1: testing it in the hospital.",
+   "Our team published this study in 2024.",
+   "[We] compared [the radar with] PSG [in] 196 patients.",
+   "[The] setting [was] a tightly controlled lab, with no outside noise. So we get a clean baseline."
   ],
   "cMark": [
-   "Study 1: Testing it in the hospital.",
-   "Our team published this study in 2024. N = 196 patients, compared with Polysomnography (PSG).",
-   "A tightly controlled lab, with no outside noise. So we get a clean baseline."
+   "Study 1: testing it in the hospital, published [by] our team in 2024.",
+   "[We] compared [the radar with] PSG [in] 196 patients, [in] a tightly controlled lab."
   ],
-  "secC": 18.8,
-  "wc": 36,
-  "secD": 19.4,
-  "wd": 42,
+  "secC": 14.1,
+  "wc": 27,
+  "secD": 19.8,
+  "wd": 43,
   "points": [
    {
     "zh": "研究一：團隊 2024 發表；196 位病人、以 PSG 為標準",
@@ -1455,60 +1415,58 @@
     "196",
     "PSG",
     "Study",
-    "Testing",
-    "Compared",
-    "Polysomnography",
-    "Setting",
     "hospital",
     "published",
+    "compared",
     "patients",
-    "controlled"
+    "controlled",
+    "baseline"
    ],
    "concise": [
     "2024",
     "196",
     "PSG",
     "Study",
-    "Testing",
-    "Polysomnography",
     "hospital",
-    "published"
+    "published",
+    "compared",
+    "patients"
    ],
    "kp": [
     "2024",
     "196",
     "PSG",
     "Study",
-    "Polysomnography"
+    "published"
    ]
   },
-  "onD": 42,
-  "onC": 36
+  "onD": 33,
+  "onC": 20
  },
  "10": {
   "title": "Radar turns tiny chest movements into breathing signals",
   "detailed": [
-   "Radar turns tiny chest movements into breathing signals.",
-   "(A) Normal breathing — a regular amplitude.",
-   "(C) Respiratory event — the apnea episode , and then breathing comes back."
+   "So how does it see breathing? The radar turns tiny chest movements into breathing signals.",
+   "At the top, normal breathing gives a steady, regular wave.",
+   "At the bottom is a respiratory event. During the apnea episode, the wave gets very small, and then breathing comes back."
   ],
   "concise": [
-   "Radar turns tiny chest movements into breathing signals.",
-   "Normal breathing, and a respiratory event with an apnea episode."
+   "The radar turns tiny chest movements into breathing signals.",
+   "You can see normal breathing, and a respiratory event with an apnea episode."
   ],
   "dMark": [
-   "Radar turns tiny chest movements into breathing signals.",
-   "(A) Normal breathing [— a regular amplitude].",
-   "(C) Respiratory event [— the] apnea episode [, and then breathing comes back]."
+   "[So how does it see] breathing? [The] radar turns tiny chest movements into breathing signals.",
+   "[At the top,] normal breathing [gives a steady, regular wave.]",
+   "[At the bottom is a] respiratory event. [During the] apnea episode, [the wave gets very small, and then] breathing [comes back.]"
   ],
   "cMark": [
-   "Radar turns tiny chest movements into breathing signals.",
-   "Normal breathing, [and a] respiratory event [with an] apnea episode."
+   "[The] radar turns tiny chest movements into breathing signals.",
+   "[You can see] normal breathing, [and a] respiratory event [with an] apnea episode."
   ],
-  "secC": 9.4,
-  "wc": 18,
-  "secD": 12.9,
-  "wd": 28,
+  "secC": 11.5,
+  "wc": 22,
+  "secD": 21.2,
+  "wd": 46,
   "points": [
    {
     "zh": "雷達把胸壁微動轉成呼吸訊號",
@@ -1611,15 +1569,11 @@
   ],
   "slideKw": {
    "detailed": [
-    "Radar",
-    "Normal",
-    "Respiratory",
+    "breathing",
     "movements",
-    "breathing"
+    "respiratory"
    ],
    "concise": [
-    "Radar",
-    "Normal",
     "movements",
     "breathing",
     "respiratory"
@@ -1632,50 +1586,44 @@
     "respiratory"
    ]
   },
-  "onD": 18,
+  "onD": 16,
   "onC": 14
  },
  "11": {
-  "title": "Airflow defines the event. Radar sees the chest wall.",
+  "title": "Sleep tests watch airflow. Radar watches the chest.",
   "detailed": [
-   "Airflow defines the event. Radar sees the chest wall.",
-   "Standard scoring and radar look at two different signals.",
-   "Standard scoring: airflow. Airflow stops (apnea) or gets shallow (hypopnea).",
-   "We only see these events when we measure airflow.",
-   "Radar: chest-wall motion. Radar senses the chest rising and falling, not airflow.",
-   "If we read chest motion as airflow, we get blind spots.",
-   "Blind spot: In an obstructive event, the patient keeps trying to breathe, but no air flows. So chest motion isn't the same as airflow.",
-   "Radar has to spot a typical pattern of chest-motion changes."
+   "Sleep tests watch airflow. Radar watches the chest.",
+   "In standard scoring, airflow stops, or gets shallow. We only see these events when we measure airflow.",
+   "Radar senses the chest rising and falling, not airflow. So if we read chest motion as airflow, we get blind spots.",
+   "In an obstructive event, the patient keeps trying to breathe, but no air flows. So chest motion isn't the same as airflow.",
+   "That's why the radar has to spot a typical pattern of chest-motion changes."
   ],
   "concise": [
-   "Airflow defines the event. Radar sees the chest wall.",
+   "Sleep tests watch airflow: it stops, or gets shallow. Radar watches the chest.",
    "Radar senses the chest rising and falling, not airflow.",
-   "Radar has to spot a typical pattern of chest-motion changes."
+   "In an obstructive event the chest still moves, so the radar has to spot a typical pattern of chest-motion changes."
   ],
   "dMark": [
-   "Airflow defines the event. Radar sees the chest wall.",
-   "Standard scoring and radar look at two different signals.",
-   "Standard scoring: airflow. Airflow stops (apnea) or gets shallow (hypopnea).",
-   "We only see these events when we measure airflow.",
-   "Radar: chest-wall motion. Radar senses the chest rising and falling, not airflow.",
-   "If we read chest motion as airflow, we get blind spots.",
-   "Blind spot: In an obstructive event, the patient keeps trying to breathe, but no air flows. So chest motion isn't the same as airflow.",
-   "Radar has to spot a typical pattern of chest-motion changes."
+   "Sleep tests watch airflow. Radar watches the chest.",
+   "[In] standard scoring, airflow stops, or gets shallow. We only see these events when we measure airflow.",
+   "Radar senses the chest rising and falling, not airflow. [So] if we read chest motion as airflow, we get blind spots.",
+   "In an obstructive event, the patient keeps trying to breathe, but no air flows. So chest motion isn't the same as airflow.",
+   "[That's why the] radar has to spot a typical pattern of chest-motion changes."
   ],
   "cMark": [
-   "Airflow defines the event. Radar sees the chest wall.",
+   "Sleep tests watch airflow: [it] stops, or gets shallow. Radar watches the chest.",
    "Radar senses the chest rising and falling, not airflow.",
-   "Radar has to spot a typical pattern of chest-motion changes."
+   "In an obstructive event the chest [still moves, so the] radar has to spot a typical pattern of chest-motion changes."
   ],
-  "secC": 14.6,
-  "wc": 28,
-  "secD": 43.4,
-  "wd": 94,
+  "secC": 21.9,
+  "wc": 42,
+  "secD": 37.4,
+  "wd": 81,
   "points": [
    {
-    "zh": "睡眠實驗室用氣流定義呼吸事件",
+    "zh": "睡眠檢查看氣流：停止（apnea）或變淺（hypopnea）",
     "kw": "events are defined by airflow",
-    "en": "Standard scoring: airflow stops (apnea) or gets shallow (hypopnea).",
+    "en": "Sleep tests watch airflow: it stops (apnea) or gets shallow (hypopnea).",
     "groups": [
      [
       "airflow",
@@ -1683,7 +1631,9 @@
       "air",
       "nose",
       "nasal",
-      "flow"
+      "flow",
+      "sleep tests",
+      "watch airflow"
      ],
      [
       "define",
@@ -1712,7 +1662,8 @@
       "respiratory event",
       "events",
       "gets shallow",
-      "shallow"
+      "shallow",
+      "stops"
      ]
     ],
     "need": 2,
@@ -1721,7 +1672,7 @@
    {
     "zh": "雷達看的是胸部起伏，不是氣流",
     "kw": "radar sees chest motion, not airflow",
-    "en": "Radar senses the chest rising and falling, not airflow.",
+    "en": "Radar watches the chest rising and falling, not airflow.",
     "groups": [
      [
       "radar",
@@ -1739,7 +1690,9 @@
       "moves up and down",
       "up and down",
       "chest rising and falling",
-      "rising and falling"
+      "rising and falling",
+      "watches the chest",
+      "chest rising"
      ],
      [
       "not airflow",
@@ -1795,61 +1748,56 @@
   ],
   "slideKw": {
    "detailed": [
-    "Airflow",
+    "Sleep",
     "Radar",
-    "Standard",
-    "Blind",
-    "different",
-    "hypopnea",
+    "standard",
     "obstructive"
    ],
    "concise": [
-    "Airflow",
-    "Radar"
+    "Sleep",
+    "Radar",
+    "obstructive"
    ],
    "kp": [
+    "Sleep",
     "Radar"
    ]
   },
-  "onD": 94,
-  "onC": 28
+  "onD": 76,
+  "onC": 37
  },
  "12": {
   "title": "How radar sees a sleep-breathing event",
   "detailed": [
-   "How radar sees a sleep-breathing event: five steps in chest-wall motion.",
-   "1, Normal breathing: The chest moves regularly, at normal size.",
-   "2, Apnea onset: Movement drops sharply, or stops.",
-   "3, Struggling effort: The airway is still closed. The chest makes small moves, trying to breathe.",
-   "4, Recovery surge: The airway opens. One big breath as breathing comes back.",
-   "5, Back to normal: Movement goes back to normal.",
-   "This whole sequence is the event that radar can detect.",
-   "Schematic – not patient data."
+   "How does radar see a sleep-breathing event? In five steps of chest-wall motion.",
+   "First, normal breathing: the chest moves regularly.",
+   "Then apnea onset: the movement drops sharply, or stops.",
+   "Then struggling effort: the airway is still closed, so the chest makes small moves.",
+   "Then a recovery surge: the airway opens, with one big breath.",
+   "And then it goes back to normal.",
+   "This whole sequence is the event that radar can detect."
   ],
   "concise": [
-   "How radar sees a sleep-breathing event.",
-   "Normal breathing, Apnea onset, Struggling effort, Recovery surge, Back to normal.",
-   "This whole sequence is the event that radar can detect."
+   "Here is how radar sees a sleep-breathing event, in five steps.",
+   "Normal breathing, apnea onset, struggling effort, recovery surge, and back to normal."
   ],
   "dMark": [
-   "How radar sees a sleep-breathing event: five steps in chest-wall motion.",
-   "1, Normal breathing: The chest moves regularly, at normal size.",
-   "2, Apnea onset: Movement drops sharply, or stops.",
-   "3, Struggling effort: The airway is still closed. The chest makes small moves, trying to breathe.",
-   "4, Recovery surge: The airway opens. One big breath as breathing comes back.",
-   "5, Back to normal: Movement goes back to normal.",
-   "This whole sequence is the event that radar can detect.",
-   "Schematic – not patient data."
-  ],
-  "cMark": [
-   "How radar sees a sleep-breathing event.",
-   "Normal breathing, Apnea onset, Struggling effort, Recovery surge, Back to normal.",
+   "[How does] radar [see] a sleep-breathing event? [In] five steps [of] chest-wall motion.",
+   "[First,] normal breathing: the chest moves regularly.",
+   "[Then] apnea onset: [the] movement drops sharply, or stops.",
+   "[Then] struggling effort: the airway is still closed, [so] the chest makes small moves.",
+   "[Then a] recovery surge: the airway opens, [with] one big breath.",
+   "[And then it] goes back to normal.",
    "This whole sequence is the event that radar can detect."
   ],
-  "secC": 14.1,
-  "wc": 27,
-  "secD": 37.8,
-  "wd": 82,
+  "cMark": [
+   "[Here is] how radar sees a sleep-breathing event, [in] five steps.",
+   "Normal breathing, apnea onset, struggling effort, recovery surge, [and] back to normal."
+  ],
+  "secC": 12.0,
+  "wc": 23,
+  "secD": 32.8,
+  "wd": 71,
   "points": [
    {
     "zh": "一開始正常，事件開始時振幅明顯下降甚至停止",
@@ -1979,23 +1927,18 @@
   ],
   "slideKw": {
    "detailed": [
-    "Normal",
-    "Apnea",
-    "Movement",
-    "Struggling",
-    "Recovery",
-    "Schematic",
     "breathing",
     "regularly",
+    "movement",
+    "struggling",
+    "recovery",
     "sequence"
    ],
    "concise": [
     "Normal",
-    "Apnea",
-    "Struggling",
-    "Recovery",
     "breathing",
-    "sequence"
+    "struggling",
+    "recovery"
    ],
    "kp": [
     "Normal",
@@ -2005,35 +1948,33 @@
     "breathing"
    ]
   },
-  "onD": 82,
-  "onC": 27
+  "onD": 55,
+  "onC": 19
  },
  "13": {
   "title": "Does the radar agree with the clinical gold standard?",
   "detailed": [
-   "Does the radar agree with the clinical gold standard?",
-   "Full sleep study in the hospital (PSG) versus Contactless 24-GHz Radar.",
-   "r = 0.91 Correlation.",
-   "We tested N = 196 patients."
+   "So, does the radar agree with the clinical gold standard?",
+   "On one side, we have the full sleep study in the hospital, PSG. On the other side, the contactless 24-GHz radar.",
+   "We tested 196 patients, and the correlation was r = 0.91."
   ],
   "concise": [
    "Does the radar agree with the clinical gold standard?",
-   "r = 0.91 Correlation. We tested N = 196 patients."
+   "In 196 patients, the correlation with PSG was r = 0.91."
   ],
   "dMark": [
-   "Does the radar agree with the clinical gold standard?",
-   "Full sleep study in the hospital (PSG) [versus] Contactless 24-GHz Radar.",
-   "r = 0.91 Correlation.",
-   "We tested N = 196 patients."
+   "[So,] does the radar agree with the clinical gold standard?",
+   "[On one side, we have the] full sleep study in the hospital, PSG. [On the other side, the] contactless 24-GHz radar.",
+   "We tested 196 patients, [and the] correlation [was] r = 0.91."
   ],
   "cMark": [
    "Does the radar agree with the clinical gold standard?",
-   "r = 0.91 Correlation. We tested N = 196 patients."
+   "[In] 196 patients, [the] correlation [with] PSG [was] r = 0.91."
   ],
-  "secC": 9.9,
-  "wc": 19,
-  "secD": 13.8,
-  "wd": 30,
+  "secC": 10.4,
+  "wc": 20,
+  "secD": 19.4,
+  "wd": 42,
   "points": [
    {
     "zh": "比較院內 PSG 與無接觸雷達",
@@ -2126,67 +2067,67 @@
   "slideKw": {
    "detailed": [
     "24",
-    "0.91",
     "196",
+    "0.91",
     "PSG",
     "GHz",
-    "Contactless",
-    "Radar",
-    "Correlation",
     "clinical",
     "standard",
     "hospital",
-    "patients"
+    "contactless",
+    "patients",
+    "correlation"
    ],
    "concise": [
-    "0.91",
     "196",
-    "Correlation",
+    "0.91",
+    "PSG",
     "clinical",
     "standard",
-    "patients"
+    "patients",
+    "correlation"
    ],
    "kp": [
     "0.91",
     "196",
+    "PSG",
     "Radar",
-    "Correlation",
-    "clinical"
+    "Correlation"
    ]
   },
-  "onD": 29,
-  "onC": 19
+  "onD": 27,
+  "onC": 16
  },
  "14": {
   "title": "Study 1: How accurate is it in the hospital?",
   "detailed": [
-   "Study 1: How accurate is it in the hospital?",
-   "bRDI versus AHI: r = 0.91 (p < 0.01).",
-   "Moderate-to-Severe OSA: 90.3% Accuracy (Cut-off: 19.2 events/h).",
-   "Severe OSA: 92.4% Accuracy (Cut-off: 28.86 events/h).",
-   "Multi-class Prediction: 83.7% Average Accuracy (telling normal, mild, moderate and severe apart)."
+   "Study 1: how accurate is it in the hospital?",
+   "The radar's bRDI and the AHI from PSG line up well, with r = 0.91, and p < 0.01.",
+   "For moderate-to-severe OSA, the accuracy was 90.3%, with a cut-off of 19.2 events/h.",
+   "For severe OSA, the accuracy was 92.4%, with a cut-off of 28.86 events/h.",
+   "And for multi-class prediction, the average accuracy was 83.7%."
   ],
   "concise": [
-   "Study 1: How accurate is it in the hospital?",
-   "Moderate-to-Severe OSA: 90.3% Accuracy. Severe OSA: 92.4% Accuracy.",
-   "Multi-class Prediction: 83.7% Average Accuracy."
+   "Study 1: how accurate is it in the hospital?",
+   "For moderate-to-severe OSA, accuracy was 90.3%. For severe OSA, it was 92.4%.",
+   "For multi-class prediction, the average accuracy was 83.7%."
   ],
   "dMark": [
-   "Study 1: How accurate is it in the hospital?",
-   "[bRDI versus AHI:] r = 0.91 (p < 0.01).",
-   "Moderate-to-Severe OSA: 90.3% Accuracy (Cut-off: 19.2 events/h).",
-   "Severe OSA: 92.4% Accuracy (Cut-off: 28.86 events/h).",
-   "Multi-class Prediction: 83.7% Average Accuracy (telling normal, mild, moderate and severe apart)."
+   "Study 1: how accurate is it in the hospital?",
+   "[The radar's] bRDI [and the] AHI [from PSG line up well, with] r = 0.91, [and] p < 0.01.",
+   "[For] moderate-to-severe OSA, [the] accuracy [was] 90.3%, [with a] cut-off [of] 19.2 events/h.",
+   "[For] severe OSA, [the] accuracy [was] 92.4%, [with a] cut-off [of] 28.86 events/h.",
+   "[And for] multi-class prediction, [the] average accuracy [was] 83.7%."
   ],
   "cMark": [
-   "Study 1: How accurate is it in the hospital?",
-   "Moderate-to-Severe OSA: 90.3% Accuracy. Severe OSA: 92.4% Accuracy.",
-   "Multi-class Prediction: 83.7% Average Accuracy."
+   "Study 1: how accurate is it in the hospital?",
+   "[For] moderate-to-severe OSA, accuracy [was] 90.3%. [For] severe OSA, [it was] 92.4%.",
+   "[For] multi-class prediction, [the] average accuracy [was] 83.7%."
   ],
-  "secC": 11.5,
-  "wc": 22,
-  "secD": 20.3,
-  "wd": 44,
+  "secC": 15.1,
+  "wc": 29,
+  "secD": 29.1,
+  "wd": 63,
   "points": [
    {
     "zh": "雷達 bRDI 與 PSG AHI 高度相關（r = 0.91）",
@@ -2281,11 +2222,11 @@
     "92.4%",
     "28.86",
     "83.7%",
+    "bRDI",
+    "AHI",
     "OSA",
     "Study",
-    "Moderate-to",
-    "Severe",
-    "Accuracy"
+    "accurate"
    ],
    "concise": [
     "90.3%",
@@ -2293,9 +2234,9 @@
     "83.7%",
     "OSA",
     "Study",
-    "Moderate-to",
-    "Severe",
-    "Accuracy"
+    "accurate",
+    "hospital",
+    "moderate-to-severe"
    ],
    "kp": [
     "90.3%",
@@ -2305,39 +2246,37 @@
     "Moderate-to"
    ]
   },
-  "onD": 41,
-  "onC": 22
+  "onD": 36,
+  "onC": 21
  },
  "15": {
   "title": "From research to the ward: a zero-contact care platform",
   "detailed": [
-   "From research to the ward: a zero-contact care platform. We now use the radar every day for our inpatients.",
-   "Sleep-Breathing Health Care Platform: Breathing: monitored nonstop, with no contact. Heart rate: read from the same radar signal. Bed status: in bed, out of bed, and moving.",
-   "Alerts sent to the care team: Out of bed too long: staff get a reminder when a patient is out of bed too long.",
-   "Abnormal vital signs: shown on the ward dashboard. Push notifications: staff get messages on the dashboard and LINE Notify.",
-   "National quality recognition: 2021 SNQ, Symbol of National Quality; 2022 NHQA, Distinctive Center – Sleep Center."
+   "From research to the ward: this is our zero-contact care platform. We now use the radar every day for our inpatients.",
+   "It monitors breathing nonstop, with no contact, and it reads heart rate and bed status from the same radar signal.",
+   "If a patient is out of bed too long, or vital signs are abnormal, staff get alerts on the dashboard and LINE Notify.",
+   "It received the 2021 SNQ, and the 2022 NHQA, Distinctive Center for our Sleep Center."
   ],
   "concise": [
-   "From research to the ward: a zero-contact care platform. We now use the radar every day for our inpatients.",
-   "Breathing, Heart rate, Bed status. Alerts sent to the care team.",
-   "2021 SNQ, Symbol of National Quality; 2022 NHQA, Distinctive Center – Sleep Center."
+   "From research to the ward: we now use the radar every day for our inpatients.",
+   "It tracks breathing, heart rate, and bed status.",
+   "It received the 2021 SNQ and the 2022 NHQA awards."
   ],
   "dMark": [
-   "From research to the ward: a zero-contact care platform. We now use the radar every day for our inpatients.",
-   "Sleep-Breathing Health Care Platform: Breathing: monitored nonstop, with no contact. Heart rate: read from the same radar signal. Bed status: in bed, out of bed, and moving.",
-   "Alerts sent to the care team: Out of bed too long: staff get a reminder when a patient is out of bed too long.",
-   "Abnormal vital signs: shown on the ward dashboard. Push notifications: staff get messages on the dashboard and LINE Notify.",
-   "National quality recognition: 2021 SNQ, Symbol of National Quality; 2022 NHQA, Distinctive Center – Sleep Center."
+   "From research to the ward: [this is our] zero-contact care platform. We now use the radar every day for our inpatients.",
+   "[It monitors] breathing nonstop, with no contact, [and it reads] heart rate [and] bed status from the same radar signal.",
+   "[If] a patient is out of bed too long, [or] vital signs [are] abnormal, staff get alerts on the dashboard and LINE Notify.",
+   "[It received the] 2021 SNQ, [and the] 2022 NHQA, Distinctive Center for our Sleep Center."
   ],
   "cMark": [
-   "From research to the ward: a zero-contact care platform. We now use the radar every day for our inpatients.",
-   "Breathing, Heart rate, Bed status. Alerts sent to the care team.",
-   "2021 SNQ, Symbol of National Quality; 2022 NHQA, Distinctive Center – Sleep Center."
+   "From research to the ward: we now use the radar every day for our inpatients.",
+   "[It tracks] breathing, heart rate, [and] bed status.",
+   "[It received the] 2021 SNQ [and the] 2022 NHQA [awards.]"
   ],
-  "secC": 22.4,
-  "wc": 43,
-  "secD": 48.5,
-  "wd": 105,
+  "secC": 17.2,
+  "wc": 33,
+  "secD": 36.5,
+  "wd": 79,
   "points": [
    {
     "zh": "從研究到病房：每天用在住院病人",
@@ -2472,23 +2411,22 @@
     "LINE",
     "SNQ",
     "NHQA",
+    "Notify",
+    "Distinctive",
+    "Center",
     "Sleep",
-    "Breathing",
-    "Health",
-    "Platform",
-    "Heart",
-    "Alerts",
-    "Abnormal"
+    "research",
+    "platform",
+    "inpatients"
    ],
    "concise": [
     "2021",
     "2022",
     "SNQ",
     "NHQA",
-    "Breathing",
-    "Heart",
-    "Alerts",
-    "Symbol"
+    "research",
+    "inpatients",
+    "breathing"
    ],
    "kp": [
     "2021",
@@ -2498,35 +2436,35 @@
     "Breathing"
    ]
   },
-  "onD": 105,
-  "onC": 43
+  "onD": 62,
+  "onC": 24
  },
  "16": {
   "title": "Obstructive Sleep Apnea after COVID-19",
   "detailed": [
-   "Obstructive Sleep Apnea after COVID-19: An Observational Study. Published in Life (Basel), 2024.",
-   "Table 3: Characteristics of PG evaluation in post-COVID-19 patients.",
-   "N = 257, only 2 were normal (AHI<5).",
-   "Mild: 11.28%. Moderate: 29.18%. Severe: 58.75%."
+   "Next, obstructive sleep apnea after COVID-19. This is an observational study.",
+   "The table shows sleep test results in post-COVID-19 patients.",
+   "Out of 257 patients, only 2 were normal, with an AHI below 5.",
+   "Mild OSA was 11.28%, moderate was 29.18%, and severe was 58.75%."
   ],
   "concise": [
-   "Obstructive Sleep Apnea after COVID-19.",
-   "N = 257, only 2 were normal (AHI<5). Severe: 58.75%."
+   "This is an observational study of sleep apnea after COVID-19.",
+   "Out of 257 patients, only 2 were normal, and 58.75% were severe."
   ],
   "dMark": [
-   "Obstructive Sleep Apnea after COVID-19: An Observational Study. [Published in] Life (Basel), 2024.",
-   "[Table 3:] Characteristics of PG evaluation in post-COVID-19 patients.",
-   "N = 257, only 2 were normal (AHI<5).",
-   "Mild: 11.28%. Moderate: 29.18%. Severe: 58.75%."
+   "[Next,] obstructive sleep apnea after COVID-19. [This is] an observational study.",
+   "[The table shows] sleep [test results] in post-COVID-19 patients.",
+   "[Out of] 257 patients, only 2 were normal, [with an AHI below 5.]",
+   "Mild [OSA was] 11.28%, moderate [was] 29.18%, [and] severe [was] 58.75%."
   ],
   "cMark": [
-   "Obstructive Sleep Apnea after COVID-19.",
-   "N = 257, only 2 were normal (AHI<5). Severe: 58.75%."
+   "[This is] an observational study [of] sleep apnea after COVID-19.",
+   "[Out of] 257 patients, only 2 were normal, [and] 58.75% [were] severe."
   ],
-  "secC": 7.8,
-  "wc": 15,
-  "secD": 16.6,
-  "wd": 36,
+  "secC": 11.5,
+  "wc": 22,
+  "secD": 20.3,
+  "wd": 44,
   "points": [
    {
     "zh": "COVID-19 後的阻塞性睡眠呼吸中止（Life 2024）",
@@ -2596,78 +2534,66 @@
   ],
   "slideKw": {
    "detailed": [
-    "2024",
     "257",
     "11.28%",
     "29.18%",
     "58.75%",
     "COVID",
-    "PG",
-    "AHI",
-    "Obstructive",
-    "Sleep",
-    "Apnea",
-    "Observational"
+    "obstructive",
+    "observational",
+    "patients",
+    "moderate"
    ],
    "concise": [
     "257",
     "58.75%",
     "COVID",
-    "AHI",
-    "Obstructive",
-    "Sleep",
-    "Apnea",
-    "Severe"
+    "observational",
+    "patients"
    ],
    "kp": [
     "257",
     "58.75%",
     "COVID",
-    "AHI",
-    "Obstructive"
+    "Sleep",
+    "Apnea"
    ]
   },
-  "onD": 32,
+  "onD": 24,
   "onC": 15
  },
  "17": {
   "title": "Radar picks up OSA in COVID-19 patients",
   "detailed": [
-   "Radar picks up OSA in COVID-19 patients.",
-   "With the Tiered Zero-Contact Physiological Monitoring Respiratory Care Platform — 24th SNQ, Symbol of National Quality —",
-   "2021/7 to 2022/7: 5,376 monitoring sessions.",
-   "The lines show RDI >=15 (%), RDI >=30 (%) and RDI >=40 (%).",
-   "Covid-19 (Delta), 2021 Summer; Autumn > Winter > Spring; Covid-19 (Omicron), 2022 Summer.",
-   "Pharyngitis: runny nose, headache, fatigue, sneezing, sore throat.",
-   "Other studies: mild: 11.28%, Moderate: 29.18%, Severe: 58.75%.",
-   "These are observational data; they show trends, not a diagnosis for each patient."
+   "Radar also picks up OSA in COVID-19 patients.",
+   "From 2021/7 to 2022/7, our platform recorded 5,376 monitoring sessions.",
+   "The lines show the percentage with RDI ≥15, ≥30, and ≥40.",
+   "The chart runs from COVID-19 Delta in the summer of 2021, through autumn, winter and spring, to Omicron in the summer of 2022.",
+   "These are observational data. They show trends, not a diagnosis for each patient."
   ],
   "concise": [
    "Radar picks up OSA in COVID-19 patients.",
-   "2021/7 to 2022/7: 5,376 monitoring sessions.",
-   "RDI ≥15, ≥30, ≥40 (%), from Covid-19 (Delta), 2021 Summer, to Covid-19 (Omicron), 2022 Summer.",
-   "Pharyngitis: runny nose, sore throat. These are observational trends, not a diagnosis for each patient."
+   "From 2021/7 to 2022/7, we recorded 5,376 monitoring sessions.",
+   "We tracked RDI ≥15, ≥30, and ≥40, from Delta to Omicron.",
+   "These are observational trends, not a diagnosis for each patient."
   ],
   "dMark": [
-   "Radar picks up OSA in COVID-19 patients.",
-   "[With the] Tiered Zero-Contact Physiological Monitoring Respiratory Care Platform [— 24th SNQ, Symbol of National Quality —]",
-   "2021/7 to 2022/7: 5,376 monitoring sessions.",
-   "[The lines show] RDI >=15 (%), RDI >=30 (%) [and] RDI >=40 (%).",
-   "Covid-19 (Delta), 2021 Summer; Autumn > Winter > Spring; Covid-19 (Omicron), 2022 Summer.",
-   "Pharyngitis: runny nose, headache, fatigue, sneezing, sore throat.",
-   "Other studies: mild: 11.28%, Moderate: 29.18%, Severe: 58.75%.",
-   "[These are observational data; they show trends, not a diagnosis for each patient.]"
+   "Radar [also] picks up OSA in COVID-19 patients.",
+   "[From] 2021/7 to 2022/7, [our] platform [recorded] 5,376 monitoring sessions.",
+   "[The lines show the percentage with] RDI ≥15, ≥30, [and] ≥40.",
+   "[The chart runs from] COVID-19 Delta [in the] summer [of] 2021, [through] autumn, winter [and] spring, [to] Omicron [in the] summer [of] 2022.",
+   "[These are observational data. They show trends, not a diagnosis for each patient.]"
   ],
   "cMark": [
    "Radar picks up OSA in COVID-19 patients.",
-   "2021/7 to 2022/7: 5,376 monitoring sessions.",
-   "RDI ≥15, ≥30, ≥40 (%), from Covid-19 (Delta), 2021 Summer, to Covid-19 (Omicron), 2022 Summer.",
-   "Pharyngitis: runny nose, sore throat. [These are observational trends, not a diagnosis for each patient.]"
+   "[From] 2021/7 to 2022/7, [we recorded] 5,376 monitoring sessions.",
+   "[We tracked] RDI ≥15, ≥30, [and] ≥40, [from] Delta [to] Omicron.",
+   "[These are observational trends, not a diagnosis for each patient.]"
   ],
-  "secC": 22.4,
-  "wc": 43,
-  "secD": 39.2,
-  "wd": 85,
+  "secC": 19.3,
+  "wc": 37,
+  "secD": 30.0,
+  "wd": 65,
   "points": [
    {
     "zh": "2021/7–2022/7：5,376 次監測（monitoring sessions）",
@@ -2782,12 +2708,12 @@
     "15",
     "30",
     "40",
-    "11.28%",
-    "29.18%",
-    "58.75%",
     "OSA",
     "COVID",
-    "RDI"
+    "RDI",
+    "Radar",
+    "Delta",
+    "Omicron"
    ],
    "concise": [
     "2021",
@@ -2807,37 +2733,37 @@
     "30"
    ]
   },
-  "onD": 58,
-  "onC": 33
+  "onD": 28,
+  "onC": 19
  },
  "19": {
   "title": "Does it work in real homes?",
   "detailed": [
-   "Does it work in real homes?",
-   "80 Patients, 147 Nights.",
-   "A Promising Complement to HSAT.",
-   "We checked it against PSG in the hospital, and against HSAT at home (147 nights). No technician was there at home."
+   "Now, does it work in real homes?",
+   "We studied 80 patients over 147 nights.",
+   "We checked it against PSG in the hospital, and against HSAT at home. No technician was there at home.",
+   "So we see it as a promising complement to HSAT."
   ],
   "concise": [
    "Does it work in real homes?",
-   "80 Patients, 147 Nights. A Promising Complement to HSAT.",
-   "No technician was there at home."
+   "We studied 80 patients over 147 nights, with no technician at home.",
+   "It's a promising complement to HSAT."
   ],
   "dMark": [
-   "Does it work in real homes?",
-   "80 Patients, 147 Nights.",
-   "A Promising Complement to HSAT.",
-   "We checked it against PSG in the hospital, and against HSAT at home (147 nights). No technician was there at home."
+   "[Now,] does it work in real homes?",
+   "[We studied] 80 patients [over] 147 nights.",
+   "We checked it against PSG in the hospital, and against HSAT at home. No technician was there at home.",
+   "[So we see it as] a promising complement to HSAT."
   ],
   "cMark": [
    "Does it work in real homes?",
-   "80 Patients, 147 Nights. A Promising Complement to HSAT.",
-   "No technician was there at home."
+   "[We studied] 80 patients [over] 147 nights, [with] no technician at home.",
+   "[It's] a promising complement to HSAT."
   ],
-  "secC": 11.0,
-  "wc": 21,
-  "secD": 16.6,
-  "wd": 36,
+  "secC": 12.5,
+  "wc": 24,
+  "secD": 19.8,
+  "wd": 43,
   "points": [
    {
     "zh": "在真實家中也行得通嗎？",
@@ -2923,24 +2849,22 @@
    "detailed": [
     "80",
     "147",
-    "HSAT",
     "PSG",
-    "Patients",
-    "Nights",
-    "Promising",
-    "Complement",
+    "HSAT",
+    "patients",
     "hospital",
-    "technician"
+    "technician",
+    "promising",
+    "complement"
    ],
    "concise": [
     "80",
     "147",
     "HSAT",
-    "Patients",
-    "Nights",
-    "Promising",
-    "Complement",
-    "technician"
+    "patients",
+    "technician",
+    "promising",
+    "complement"
    ],
    "kp": [
     "80",
@@ -2950,43 +2874,39 @@
     "Nights"
    ]
   },
-  "onD": 36,
-  "onC": 21
+  "onD": 34,
+  "onC": 19
  },
  "20": {
   "title": "Study 2: Taking it home",
   "detailed": [
-   "Study 2: Taking it home.",
+   "This brings us to Study 2: taking it home.",
    "At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician.",
-   "80 subjects. 147 nights of home sleep, with no staff on site.",
-   "We compared it with home sleep apnea testing (HSAT).",
-   "Wall-mounted bracket or Floor stand, 75-90 cm.",
-   "Note: Real homes are messy, so we need robust signal processing."
+   "We had 80 subjects and 147 nights of home sleep, with no staff on site.",
+   "We compared the radar with home sleep apnea testing, or HSAT.",
+   "Real homes are messy, so we need robust signal processing."
   ],
   "concise": [
-   "Study 2: Taking it home.",
-   "At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician.",
-   "80 subjects, 147 nights. We compared it with home sleep apnea testing (HSAT).",
-   "Wall-mounted bracket or Floor stand, 75-90 cm."
+   "Study 2: taking it home.",
+   "At home, nothing is controlled, and there's no technician.",
+   "We had 80 subjects and 147 nights, and we compared it with HSAT."
   ],
   "dMark": [
-   "Study 2: Taking it home.",
+   "[This brings us to] Study 2: taking it home.",
    "At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician.",
-   "80 subjects. 147 nights of home sleep, with no staff on site.",
-   "We compared it with home sleep apnea testing (HSAT).",
-   "Wall-mounted bracket [or] Floor stand, 75-90 cm.",
-   "Note: Real homes are messy, so we need robust signal processing."
+   "[We had] 80 subjects [and] 147 nights of home sleep, with no staff on site.",
+   "We compared [the radar] with home sleep apnea testing, [or] HSAT.",
+   "Real homes are messy, so we need robust signal processing."
   ],
   "cMark": [
-   "Study 2: Taking it home.",
-   "At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician.",
-   "80 subjects, 147 nights. We compared it with home sleep apnea testing (HSAT).",
-   "Wall-mounted bracket [or] Floor stand, 75-90 cm."
+   "Study 2: taking it home.",
+   "At home, nothing is controlled, [and there's] no technician.",
+   "[We had] 80 subjects [and] 147 nights, [and] we compared it with HSAT."
   ],
-  "secC": 20.3,
-  "wc": 39,
-  "secD": 26.8,
-  "wd": 58,
+  "secC": 14.1,
+  "wc": 27,
+  "secD": 27.2,
+  "wd": 59,
   "points": [
    {
     "zh": "居家什麼都無法控制：睡姿、厚被子、噪音、沒有技術員",
@@ -3072,70 +2992,68 @@
    "detailed": [
     "80",
     "147",
-    "75",
     "HSAT",
     "Study",
-    "Taking",
-    "Floor",
     "controlled",
     "different",
     "positions",
     "blankets",
-    "technician"
+    "technician",
+    "subjects",
+    "compared",
+    "processing"
    ],
    "concise": [
     "80",
     "147",
-    "75",
     "HSAT",
     "Study",
-    "Taking",
-    "Floor",
-    "controlled"
+    "controlled",
+    "technician",
+    "subjects",
+    "compared"
    ],
    "kp": [
     "80",
     "147",
-    "75",
     "HSAT",
-    "Floor"
+    "controlled",
+    "technician"
    ]
   },
-  "onD": 57,
-  "onC": 38
+  "onD": 49,
+  "onC": 21
  },
  "21": {
   "title": "Study 2: How well does it work at home?",
   "detailed": [
-   "Study 2: How well does it work at home?",
-   "Correlation: r = 0.87 (p < 0.01). bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
-   "Consistency: On average, the difference is −5.30 events/h.",
-   "The limits run from +1.96 SD to −1.96 SD.",
-   "93.88% of nights (138 of 147) fall within the ±1.96 SD limits of agreement.",
+   "Study 2: how well does it work at home?",
+   "The correlation was r = 0.87, with p < 0.01. So bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
+   "For consistency, on average, the difference is −5.30 events/h.",
+   "And 93.88% of nights, that's 138 of 147, fall within the ±1.96 SD limits of agreement.",
    "These are limits of agreement, not a confidence interval."
   ],
   "concise": [
-   "Study 2: How well does it work at home?",
-   "Correlation: r = 0.87 (p < 0.01).",
-   "On average, the difference is −5.30 events/h. 93.88% of nights fall within the ±1.96 SD limits of agreement."
+   "Study 2: how well does it work at home?",
+   "The correlation was r = 0.87.",
+   "On average, the difference is −5.30 events/h."
   ],
   "dMark": [
-   "Study 2: How well does it work at home?",
-   "Correlation: r = 0.87 (p < 0.01). bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
-   "Consistency: On average, the difference is −5.30 events/h.",
-   "[The limits run from] +1.96 SD [to] −1.96 SD.",
-   "93.88% of nights (138 of 147) fall within the ±1.96 SD limits of agreement.",
-   "[These are limits of agreement, not a confidence interval.]"
+   "Study 2: how well does it work at home?",
+   "[The] correlation [was] r = 0.87, [with] p < 0.01. [So] bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
+   "[For] consistency, on average, the difference is −5.30 events/h.",
+   "[And] 93.88% of nights, [that's] 138 of 147, fall within the ±1.96 SD limits of agreement.",
+   "[These are] limits of agreement, [not a confidence interval.]"
   ],
   "cMark": [
-   "Study 2: How well does it work at home?",
-   "Correlation: r = 0.87 (p < 0.01).",
-   "On average, the difference is −5.30 events/h. 93.88% of nights fall within the ±1.96 SD limits of agreement."
+   "Study 2: how well does it work at home?",
+   "[The] correlation [was] r = 0.87.",
+   "On average, the difference is −5.30 events/h."
   ],
-  "secC": 17.7,
-  "wc": 34,
-  "secD": 30.5,
-  "wd": 66,
+  "secC": 11.5,
+  "wc": 22,
+  "secD": 29.5,
+  "wd": 64,
   "points": [
    {
     "zh": "居家相關係數 0.87",
@@ -3223,10 +3141,10 @@
     "0.87",
     "0.01",
     "5.30",
-    "1.96",
     "93.88%",
     "138",
     "147",
+    "1.96",
     "bRDI",
     "HSAT",
     "AHI",
@@ -3235,51 +3153,47 @@
    ],
    "concise": [
     "0.87",
-    "0.01",
     "5.30",
-    "93.88%",
-    "1.96",
-    "SD",
     "Study",
-    "Correlation"
+    "correlation",
+    "difference"
    ],
    "kp": [
     "0.87",
-    "0.01",
     "5.30",
-    "93.88%",
-    "1.96"
+    "Correlation",
+    "difference"
    ]
   },
-  "onD": 52,
-  "onC": 34
+  "onD": 51,
+  "onC": 20
  },
  "22": {
   "title": "Study 2: Grading severity at home",
   "detailed": [
-   "Study 2: Grading severity at home.",
-   "Moderate-to-Severe OSA: 83.67% Accuracy (Cut-off bRDI_TIB: 21.19 events/h).",
-   "Severe OSA: 93.21% Accuracy (Cut-off bRDI_TIB: 28.14 events/h).",
-   "Multi-class Prediction: 78.23% average accuracy (better than HSAT rules alone, at 72.11%)."
+   "Study 2: grading severity at home.",
+   "For moderate-to-severe OSA, the accuracy was 83.67%, with a bRDI_TIB cut-off of 21.19 events/h.",
+   "For severe OSA, it was 93.21%, with a cut-off of 28.14 events/h.",
+   "For multi-class prediction, the average accuracy was 78.23%. That's better than HSAT rules alone, at 72.11%."
   ],
   "concise": [
-   "Study 2: Grading severity at home.",
-   "Moderate-to-Severe OSA: 83.67%. Severe OSA: 93.21%."
+   "Study 2: grading severity at home.",
+   "For moderate-to-severe OSA, accuracy was 83.67%. For severe OSA, it was 93.21%."
   ],
   "dMark": [
-   "Study 2: Grading severity at home.",
-   "Moderate-to-Severe OSA: 83.67% Accuracy (Cut-off bRDI_TIB: 21.19 events/h).",
-   "Severe OSA: 93.21% Accuracy (Cut-off bRDI_TIB: 28.14 events/h).",
-   "Multi-class Prediction: 78.23% average accuracy (better than HSAT rules alone, at 72.11%)."
+   "Study 2: grading severity at home.",
+   "[For] moderate-to-severe OSA, [the] accuracy [was] 83.67%, [with a] bRDI_TIB cut-off [of] 21.19 events/h.",
+   "[For] severe OSA, [it was] 93.21%, [with a] cut-off [of] 28.14 events/h.",
+   "[For] multi-class prediction, [the] average accuracy [was] 78.23%. [That's] better than HSAT rules alone, at 72.11%."
   ],
   "cMark": [
-   "Study 2: Grading severity at home.",
-   "Moderate-to-Severe OSA: 83.67%. Severe OSA: 93.21%."
+   "Study 2: grading severity at home.",
+   "[For] moderate-to-severe OSA, accuracy [was] 83.67%. [For] severe OSA, [it was] 93.21%."
   ],
-  "secC": 6.3,
-  "wc": 12,
-  "secD": 15.7,
-  "wd": 34,
+  "secC": 9.4,
+  "wc": 18,
+  "secD": 22.2,
+  "wd": 48,
   "points": [
    {
     "zh": "居家中重度準確度 83.67%",
@@ -3365,18 +3279,17 @@
     "bRDI",
     "HSAT",
     "Study",
-    "Grading",
-    "Moderate-to"
+    "severity",
+    "moderate-to-severe"
    ],
    "concise": [
     "83.67%",
     "93.21%",
     "OSA",
     "Study",
-    "Grading",
-    "Moderate-to",
-    "Severe",
-    "severity"
+    "severity",
+    "moderate-to-severe",
+    "accuracy"
    ],
    "kp": [
     "83.67%",
@@ -3386,37 +3299,35 @@
     "Severe"
    ]
   },
-  "onD": 34,
-  "onC": 12
+  "onD": 32,
+  "onC": 13
  },
  "23": {
   "title": "Hospital vs. home: how do they compare?",
   "detailed": [
-   "Hospital vs. home: how do they compare?",
-   "Hospital Validation (Paper 1): Reference, PSG; Environment, Strict Control; Correlation, r = 0.91; Severe OSA Accuracy, 92.4%.",
-   "Home Validation (Paper 2): Reference, HSAT; Environment, Daily Uncontrolled Variables; Correlation, r = 0.87; Severe OSA Accuracy, 93.21%.",
-   "Key insight: For severe OSA, accuracy stays above 92% in the hospital and at home."
+   "So, hospital vs. home: how do they compare?",
+   "In Study 1, in the hospital, the correlation with PSG was r = 0.91, and severe OSA accuracy was 92.4%.",
+   "In Study 2, in real homes with nothing controlled, the correlation with HSAT was r = 0.87, and severe OSA accuracy was 93.21%.",
+   "So the key insight is: for severe OSA, accuracy stays above 92%, in the hospital and at home."
   ],
   "concise": [
    "Hospital vs. home: how do they compare?",
-   "Correlation: r = 0.91 and r = 0.87.",
-   "Key insight: For severe OSA, accuracy stays above 92% in the hospital and at home."
+   "For severe OSA, accuracy stays above 92% in the hospital and at home."
   ],
   "dMark": [
-   "Hospital vs. home: how do they compare?",
-   "Hospital Validation (Paper 1): Reference, PSG; Environment, Strict Control; Correlation, r = 0.91; Severe OSA Accuracy, 92.4%.",
-   "Home Validation (Paper 2): Reference, HSAT; Environment, Daily Uncontrolled Variables; Correlation, r = 0.87; Severe OSA Accuracy, 93.21%.",
-   "Key insight: For severe OSA, accuracy stays above 92% in the hospital and at home."
+   "[So,] hospital vs. home: how do they compare?",
+   "[In] Study 1, in the hospital, [the] correlation [with] PSG [was] r = 0.91, [and] severe OSA accuracy [was] 92.4%.",
+   "[In] Study 2, [in] real homes [with] nothing controlled, [the] correlation [with] HSAT [was] r = 0.87, [and] severe OSA accuracy [was] 93.21%.",
+   "[So the] key insight [is:] for severe OSA, accuracy stays above 92%, in the hospital and at home."
   ],
   "cMark": [
    "Hospital vs. home: how do they compare?",
-   "Correlation: r = 0.91 [and] r = 0.87.",
-   "Key insight: For severe OSA, accuracy stays above 92% in the hospital and at home."
+   "For severe OSA, accuracy stays above 92% in the hospital and at home."
   ],
-  "secC": 15.7,
-  "wc": 30,
-  "secD": 26.3,
-  "wd": 57,
+  "secC": 10.4,
+  "wc": 20,
+  "secD": 31.8,
+  "wd": 69,
   "points": [
    {
     "zh": "院內 vs 居家：比較",
@@ -3429,7 +3340,9 @@
       "clinical",
       "in hospital",
       "inpatient",
-      "sleep lab"
+      "sleep lab",
+      "study 1",
+      "tightly controlled"
      ],
      [
       "home",
@@ -3440,7 +3353,10 @@
       "at home",
       "side by side",
       "compare",
-      "comparison"
+      "comparison",
+      "study 2",
+      "real homes",
+      "nothing controlled"
      ]
     ],
     "need": 2,
@@ -3500,59 +3416,55 @@
     "PSG",
     "OSA",
     "HSAT",
-    "Hospital",
-    "Validation",
-    "Paper",
-    "Reference"
+    "Study",
+    "hospital",
+    "correlation",
+    "accuracy"
    ],
    "concise": [
-    "0.91",
-    "0.87",
     "92%",
     "OSA",
     "Hospital",
-    "Correlation",
     "accuracy"
    ],
    "kp": [
-    "0.91",
-    "0.87",
     "92%",
     "OSA",
-    "Hospital"
+    "Hospital",
+    "accuracy"
    ]
   },
-  "onD": 57,
-  "onC": 29
+  "onD": 51,
+  "onC": 20
  },
  "24": {
   "title": "TFDA clearance: where we stand",
   "detailed": [
-   "TFDA clearance: where we stand. TFDA Cleared.",
-   "What it's for: bRDI ≥ 30 is used only as a screen for suspected severe obstructive sleep apnea.",
-   "How it performs at a cut-off of 30: Sensitivity: 90.5%. Specificity: 90.5%.",
-   "Please note: This device screens for suspected severe OSA. It does not diagnose OSA on its own."
+   "TFDA clearance: where we stand. The device is TFDA cleared.",
+   "bRDI ≥ 30 is used only as a screen for suspected severe obstructive sleep apnea.",
+   "At a cut-off of 30, the sensitivity is 90.5%, and the specificity is also 90.5%.",
+   "Please note: this device screens for suspected severe OSA. It does not diagnose OSA on its own."
   ],
   "concise": [
    "TFDA clearance: where we stand.",
-   "bRDI ≥ 30 is used only as a screen for suspected severe obstructive sleep apnea.",
+   "bRDI ≥ 30 is used only as a screen for suspected severe OSA.",
    "It does not diagnose OSA on its own."
   ],
   "dMark": [
-   "TFDA clearance: where we stand. TFDA Cleared.",
-   "What it's for: bRDI ≥ 30 is used only as a screen for suspected severe obstructive sleep apnea.",
-   "How it performs at a cut-off of 30: Sensitivity: 90.5%. Specificity: 90.5%.",
-   "Please note: This device screens for suspected severe OSA. It does not diagnose OSA on its own."
+   "TFDA clearance: where we stand. [The] device [is] TFDA cleared.",
+   "bRDI ≥ 30 is used only as a screen for suspected severe obstructive sleep apnea.",
+   "At a cut-off of 30, [the] sensitivity [is] 90.5%, [and the] specificity [is also] 90.5%.",
+   "Please note: this device screens for suspected severe OSA. It does not diagnose OSA on its own."
   ],
   "cMark": [
    "TFDA clearance: where we stand.",
-   "bRDI ≥ 30 is used only as a screen for suspected severe obstructive sleep apnea.",
+   "bRDI ≥ 30 is used only as a screen for suspected severe OSA.",
    "It does not diagnose OSA on its own."
   ],
-  "secC": 14.6,
-  "wc": 28,
-  "secD": 24.9,
-  "wd": 54,
+  "secC": 13.6,
+  "wc": 26,
+  "secD": 26.3,
+  "wd": 57,
   "points": [
    {
     "zh": "已通過台灣 TFDA 核准",
@@ -3637,13 +3549,13 @@
     "TFDA",
     "bRDI",
     "OSA",
-    "Cleared",
-    "Sensitivity",
-    "Specificity",
     "Please",
     "clearance",
     "suspected",
-    "obstructive"
+    "obstructive",
+    "sensitivity",
+    "specificity",
+    "diagnose"
    ],
    "concise": [
     "30",
@@ -3652,7 +3564,6 @@
     "OSA",
     "clearance",
     "suspected",
-    "obstructive",
     "diagnose"
    ],
    "kp": [
@@ -3663,37 +3574,33 @@
     "clearance"
    ]
   },
-  "onD": 54,
-  "onC": 28
+  "onD": 49,
+  "onC": 26
  },
  "25": {
   "title": "TFDA license document",
   "detailed": [
    "This is the TFDA license document, in Chinese.",
-   "The report covers sleep time, sleep stages, the bRDI (BestShape respiratory dysfunction index), heart rate and respiration rate.",
-   "bRDI cut-off 30: sensitivity 90.5%, specificity 90.5%.",
-   "Heart rate 40–120 Bpm; 95% CI ±3.7 Bpm.",
-   "Sleep staging: overall agreement = 69%."
+   "At a bRDI cut-off of 30, sensitivity and specificity are both 90.5%.",
+   "Heart rate is tracked from 40–120 bpm, and sleep staging agreement is 69%."
   ],
   "concise": [
-   "This is the TFDA license.",
-   "bRDI cut-off 30: sensitivity and specificity 90.5%."
+   "This is the TFDA license document.",
+   "At a bRDI cut-off of 30, sensitivity and specificity are both 90.5%."
   ],
   "dMark": [
-   "[This is the TFDA license document, in Chinese.]",
-   "[The report covers sleep time, sleep stages, the] bRDI (BestShape respiratory dysfunction index)[, heart rate and respiration rate].",
-   "bRDI [cut-off] 30: [sensitivity] 90.5%, [specificity] 90.5%.",
-   "[Heart rate] 40–120 Bpm; 95% [CI] ±3.7 Bpm.",
-   "[Sleep staging: overall agreement] = 69%."
+   "[This is the] TFDA license document, [in Chinese.]",
+   "[At a] bRDI [cut-off of] 30, [sensitivity and specificity are both] 90.5%.",
+   "[Heart rate is tracked from] 40–120 bpm, [and sleep staging agreement is] 69%."
   ],
   "cMark": [
-   "[This is the TFDA license.]",
-   "bRDI [cut-off] 30: [sensitivity and specificity] 90.5%."
+   "[This is the] TFDA license document.",
+   "[At a] bRDI [cut-off of] 30, [sensitivity and specificity are both] 90.5%."
   ],
-  "secC": 6.3,
-  "wc": 12,
-  "secD": 21.7,
-  "wd": 47,
+  "secC": 9.4,
+  "wc": 18,
+  "secD": 15.2,
+  "wd": 33,
   "points": [
    {
     "zh": "TFDA 許可證文件",
@@ -3769,59 +3676,59 @@
     "90.5%",
     "40",
     "120",
-    "95%",
-    "3.7",
     "69%",
+    "TFDA",
     "bRDI",
-    "respiratory",
-    "dysfunction"
+    "document"
    ],
    "concise": [
     "30",
     "90.5%",
-    "bRDI"
+    "TFDA",
+    "bRDI",
+    "document"
    ],
    "kp": [
     "30",
     "90.5%",
-    "bRDI"
+    "TFDA",
+    "bRDI",
+    "document"
    ]
   },
-  "onD": 17,
-  "onC": 3
+  "onD": 9,
+  "onC": 6
  },
  "26": {
-  "title": "What the TFDA clearance means in practice",
+  "title": "So what does TFDA clearance mean in practice?",
   "detailed": [
-   "What the TFDA clearance means in practice.",
-   "Main cut-off: bRDI ≥ 30 (This flags suspected severe OSA.)",
-   "How well it works: Sensitivity: 90.5% | Specificity: 90.5%.",
-   "Heart rate: It tracks heart rate from 40–120 bpm (95% CI ±3.7 bpm).",
-   "Sleep stages: 69% consistency.",
-   "Keep in mind: bRDI ≥ 30 is validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis."
+   "So what does TFDA clearance mean in practice?",
+   "The main cut-off is bRDI ≥ 30. This flags suspected severe OSA.",
+   "Sensitivity and specificity are both 90.5%.",
+   "It tracks heart rate from 40–120 bpm.",
+   "And for sleep stages, the consistency is 69%.",
+   "But keep in mind: bRDI ≥ 30 is validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis."
   ],
   "concise": [
-   "What the TFDA clearance means in practice.",
-   "Main cut-off: bRDI ≥ 30.",
-   "Keep in mind: it is validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis."
+   "So what does TFDA clearance mean in practice?",
+   "The main cut-off is bRDI ≥ 30. It's a screen, not a full diagnosis."
   ],
   "dMark": [
-   "What the TFDA clearance means in practice.",
-   "Main cut-off: bRDI ≥ 30 (This flags suspected severe OSA.)",
-   "How well it works: Sensitivity: 90.5% | Specificity: 90.5%.",
-   "Heart rate: It tracks heart rate from 40–120 bpm (95% CI ±3.7 bpm).",
-   "Sleep stages: 69% consistency.",
-   "Keep in mind: bRDI ≥ 30 is validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis."
+   "So what does TFDA clearance mean in practice?",
+   "[The] main cut-off [is] bRDI ≥ 30. This flags suspected severe OSA.",
+   "Sensitivity [and] specificity [are both] 90.5%.",
+   "It tracks heart rate from 40–120 bpm.",
+   "[And for] sleep stages, [the] consistency [is] 69%.",
+   "[But] keep in mind: bRDI ≥ 30 is validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis."
   ],
   "cMark": [
-   "What the TFDA clearance means in practice.",
-   "Main cut-off: bRDI ≥ 30.",
-   "Keep in mind: [it is] validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis."
+   "So what does TFDA clearance mean in practice?",
+   "[The] main cut-off [is] bRDI ≥ 30. [It's] a screen, [not] a full diagnosis."
   ],
-  "secC": 16.2,
-  "wc": 31,
-  "secD": 29.5,
-  "wd": 64,
+  "secC": 11.5,
+  "wc": 22,
+  "secD": 29.1,
+  "wd": 63,
   "points": [
    {
     "zh": "主要門檻 bRDI ≥ 30 → 疑似重度",
@@ -3870,7 +3777,7 @@
    {
     "zh": "已驗證可篩檢疑似重度 OSA，不能取代完整診斷",
     "kw": "screen, not definitive diagnosis",
-    "en": "Validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis.",
+    "en": "It's validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis.",
     "groups": [
      [
       "screen",
@@ -3903,62 +3810,58 @@
     "90.5%",
     "40",
     "120",
-    "95%",
-    "3.7",
     "69%",
     "TFDA",
     "bRDI",
     "OSA",
-    "CI",
-    "Sensitivity"
+    "Sensitivity",
+    "clearance",
+    "practice",
+    "suspected"
    ],
    "concise": [
     "30",
     "TFDA",
     "bRDI",
-    "OSA",
     "clearance",
     "practice",
-    "validated",
-    "suspected"
+    "diagnosis"
    ],
    "kp": [
     "30",
     "bRDI",
-    "OSA",
-    "Validated",
-    "suspected"
+    "diagnosis"
    ]
   },
-  "onD": 64,
-  "onC": 29
+  "onD": 53,
+  "onC": 18
  },
  "27": {
   "title": "How do we install it?",
   "detailed": [
    "How do we install it?",
-   "Option A: Wall-mounted bracket (best for fixed hospital or clinic beds).",
-   "Option B: Floor stand (best for homes, easy to move).",
-   "Wall-mounted bracket or floor stand, set at 75–90 cm."
+   "Option A is a wall-mounted bracket. It's best for fixed hospital or clinic beds.",
+   "Option B is a floor stand. It's best for homes, and it's easy to move.",
+   "Either way, the radar is set at 75–90 cm."
   ],
   "concise": [
    "How do we install it?",
-   "Wall-mounted bracket or floor stand, set at 75–90 cm."
+   "We use a wall-mounted bracket or a floor stand, set at 75–90 cm."
   ],
   "dMark": [
    "How do we install it?",
-   "Option A: Wall-mounted bracket (best for fixed hospital or clinic beds).",
-   "Option B: Floor stand (best for homes, easy to move).",
-   "Wall-mounted bracket or floor stand, set at 75–90 cm."
+   "Option A [is] a wall-mounted bracket. [It's] best for fixed hospital or clinic beds.",
+   "Option B [is a] floor stand. [It's] best for homes, [and it's] easy to move.",
+   "[Either way, the radar is] set at 75–90 cm."
   ],
   "cMark": [
    "How do we install it?",
-   "Wall-mounted bracket or floor stand, set at 75–90 cm."
+   "[We use] a wall-mounted bracket or [a] floor stand, set at 75–90 cm."
   ],
-  "secC": 7.3,
-  "wc": 14,
-  "secD": 16.2,
-  "wd": 35,
+  "secC": 9.4,
+  "wc": 18,
+  "secD": 19.8,
+  "wd": 43,
   "points": [
    {
     "zh": "安裝簡單：牆架或落地架，75–90 公分",
@@ -4019,7 +3922,6 @@
     "75",
     "90",
     "Option",
-    "Floor",
     "hospital"
    ],
    "concise": [
@@ -4032,35 +3934,35 @@
     "Floor"
    ]
   },
-  "onD": 35,
-  "onC": 14
+  "onD": 31,
+  "onC": 15
  },
  "28": {
   "title": "How it all works, around the clock",
   "detailed": [
-   "How it all works, around the clock.",
-   "Sends data nonstop over Wi-Fi.",
-   "Clinical dashboard (Shows each patient's status, movement and abnormal vital signs in one place).",
-   "Automatic Line@ app alerts (Staff get an alert right away for abnormal values or bed exits)."
+   "So how does it all work, around the clock?",
+   "The radar sends data nonstop over Wi-Fi.",
+   "The clinical dashboard shows each patient's status, movement, and abnormal vital signs in one place.",
+   "And with automatic Line@ app alerts, staff get an alert right away for abnormal values or bed exits."
   ],
   "concise": [
    "How it all works, around the clock.",
-   "Sends data nonstop over Wi-Fi. Clinical dashboard. Automatic Line@ app alerts."
+   "It sends data over Wi-Fi to a clinical dashboard, and staff get Line@ app alerts right away."
   ],
   "dMark": [
-   "How it all works, around the clock.",
-   "Sends data nonstop over Wi-Fi.",
-   "Clinical dashboard (Shows each patient's status, movement and abnormal vital signs in one place).",
-   "Automatic Line@ app alerts (Staff get an alert right away for abnormal values or bed exits)."
+   "[So how does] it all [work,] around the clock?",
+   "[The radar] sends data nonstop over Wi-Fi.",
+   "[The] clinical dashboard shows each patient's status, movement, and abnormal vital signs in one place.",
+   "[And with] automatic Line@ app alerts, staff get an alert right away for abnormal values or bed exits."
   ],
   "cMark": [
    "How it all works, around the clock.",
-   "Sends data nonstop over Wi-Fi. Clinical dashboard. Automatic Line@ app alerts."
+   "[It] sends data over Wi-Fi [to a] clinical dashboard, [and] staff get Line@ app alerts right away."
   ],
-  "secC": 9.4,
-  "wc": 18,
-  "secD": 19.4,
-  "wd": 42,
+  "secC": 12.5,
+  "wc": 24,
+  "secD": 22.6,
+  "wd": 49,
   "points": [
    {
     "zh": "資料用 Wi-Fi 持續傳到臨床儀表板",
@@ -4155,57 +4057,51 @@
   ],
   "slideKw": {
    "detailed": [
-    "Sends",
-    "Clinical",
-    "Shows",
-    "Automatic",
-    "Staff",
+    "clinical",
     "dashboard",
     "movement",
-    "abnormal"
+    "abnormal",
+    "automatic"
    ],
    "concise": [
-    "Sends",
-    "Clinical",
-    "Automatic",
+    "clinical",
     "dashboard"
    ],
    "kp": [
     "Sends",
     "Clinical",
-    "Automatic",
     "dashboard"
    ]
   },
-  "onD": 42,
-  "onC": 18
+  "onD": 40,
+  "onC": 20
  },
  "29": {
   "title": "What does daily screening data look like?",
   "detailed": [
    "What does daily screening data look like?",
-   "LINE Notify from the RD Test Site.",
-   "For each bed it lists: bRDI / Sleep time / PB% / PB events / Cycle-length avg.",
-   "On the right is the full BestShape sleep report, in Chinese, with sleep stages, breathing events, breathing rate and heart rate."
+   "The team gets a LINE Notify message from the test site.",
+   "For each bed, it lists the bRDI, sleep time, PB%, PB events, and the average cycle length.",
+   "On the right is the full sleep report, in Chinese."
   ],
   "concise": [
    "What does daily screening data look like?",
-   "LINE Notify: bRDI / Sleep time / PB% / PB events / Cycle-length avg."
+   "LINE Notify lists the bRDI, sleep time, PB%, and PB events for each bed."
   ],
   "dMark": [
    "What does daily screening data look like?",
-   "LINE Notify [from the] RD Test Site.",
-   "[For each bed it lists:] bRDI / Sleep time / PB% / PB events / Cycle-length avg.",
-   "[On the right is the full] BestShape [sleep report, in Chinese, with sleep stages, breathing events, breathing rate and heart rate.]"
+   "[The team gets a] LINE Notify [message from the] test site.",
+   "[For each bed, it lists the] bRDI, sleep time, PB%, PB events, [and the average cycle length.]",
+   "[On the right is the full] sleep [report, in Chinese.]"
   ],
   "cMark": [
    "What does daily screening data look like?",
-   "LINE Notify: bRDI / Sleep time / PB% / PB events / Cycle-length avg."
+   "LINE Notify [lists the] bRDI, sleep time, PB%, [and] PB events [for each bed.]"
   ],
   "secC": 11.0,
   "wc": 21,
-  "secD": 24.0,
-  "wd": 52,
+  "secD": 20.8,
+  "wd": 45,
   "points": [
    {
     "zh": "每床 LINE 摘要：bRDI、睡眠時間、週期性呼吸",
@@ -4287,12 +4183,9 @@
   "slideKw": {
    "detailed": [
     "LINE",
-    "RD",
     "bRDI",
     "PB",
     "Notify",
-    "Sleep",
-    "Cycle-length",
     "screening"
    ],
    "concise": [
@@ -4300,8 +4193,6 @@
     "bRDI",
     "PB",
     "Notify",
-    "Sleep",
-    "Cycle-length",
     "screening"
    ],
    "kp": [
@@ -4312,39 +4203,39 @@
     "Sleep"
    ]
   },
-  "onD": 25,
-  "onC": 21
+  "onD": 18,
+  "onC": 15
  },
  "30": {
   "title": "Study 3: Can breathing tell us about the heart?",
   "detailed": [
-   "Study 3: Can breathing tell us about the heart?",
-   "Study 3 at a glance (N = 72). Published by our team (2025).",
-   "What we found: When the radar picks up abnormal breathing patterns (especially periodic breathing / Cheyne-Stokes), this is associated with impaired LVEF (left ventricular ejection fraction).",
-   "Important: This is a proposed early-warning model for heart failure, based on associations.",
-   "It is not yet a validated tool for diagnosis or prediction."
+   "Now, Study 3: can breathing tell us about the heart?",
+   "This study had 72 patients, and it was published by our team in 2025.",
+   "Here's what we found. When the radar picks up abnormal breathing, especially periodic breathing, or Cheyne-Stokes, it's linked to a lower LVEF.",
+   "Just to be clear: this is an early-warning idea for heart failure, based on associations.",
+   "It isn't validated yet for diagnosis or prediction."
   ],
   "concise": [
-   "Study 3: Can breathing tell us about the heart?",
-   "Published by our team (2025). When the radar picks up abnormal breathing patterns, this is associated with impaired LVEF.",
-   "It is not yet a validated tool for diagnosis or prediction."
+   "Study 3: can breathing tell us about the heart? Our team published it in 2025.",
+   "When the radar picks up periodic breathing, it's linked to a lower LVEF.",
+   "It's based on associations, and it isn't validated yet."
   ],
   "dMark": [
-   "Study 3: Can breathing tell us about the heart?",
-   "Study 3 at a glance (N = 72). Published by our team (2025).",
-   "What we found: When the radar picks up abnormal breathing patterns (especially periodic breathing / Cheyne-Stokes), this is associated with impaired LVEF (left ventricular ejection fraction).",
-   "Important: This is a proposed early-warning model for heart failure, based on associations.",
-   "It is not yet a validated tool for diagnosis or prediction."
+   "[Now,] Study 3: can breathing tell us about the heart?",
+   "[This] study [had] 72 [patients, and it was] published by our team [in] 2025.",
+   "Here's what we found. When the radar picks up abnormal breathing, especially periodic breathing, [or] Cheyne-Stokes, it's linked to a lower LVEF.",
+   "Just to be clear: this is an early-warning idea for heart failure, based on associations.",
+   "It isn't validated yet for diagnosis or prediction."
   ],
   "cMark": [
-   "Study 3: Can breathing tell us about the heart?",
-   "Published by our team (2025). When the radar picks up abnormal breathing patterns, this is associated with impaired LVEF.",
-   "It is not yet a validated tool for diagnosis or prediction."
+   "Study 3: can breathing tell us about the heart? Our team published [it in] 2025.",
+   "When the radar picks up periodic breathing, it's linked to a lower LVEF.",
+   "[It's] based on associations, [and] it isn't validated yet."
   ],
-  "secC": 20.3,
-  "wc": 39,
-  "secD": 33.2,
-  "wd": 72,
+  "secC": 19.3,
+  "wc": 37,
+  "secD": 31.8,
+  "wd": 69,
   "points": [
    {
     "zh": "研究三：呼吸能告訴我們心臟的事嗎？（團隊 2025 發表，72 人）",
@@ -4383,9 +4274,9 @@
     "must": true
    },
    {
-    "zh": "週期性呼吸與左心室射出分率下降有關",
+    "zh": "雷達測到異常呼吸（尤其週期性呼吸）與 LVEF 較低有關",
     "kw": "periodic breathing associated with low LVEF",
-    "en": "When the radar picks up abnormal breathing patterns (periodic breathing / Cheyne-Stokes), this is associated with impaired LVEF.",
+    "en": "When the radar picks up abnormal breathing, especially periodic breathing, it's linked to a lower LVEF.",
     "groups": [
      [
       "periodic breathing",
@@ -4407,7 +4298,8 @@
       "relationship",
       "correlated",
       "connection",
-      "connected"
+      "connected",
+      "lower lvef"
      ],
      [
       "heart",
@@ -4426,9 +4318,9 @@
     "must": false
    },
    {
-    "zh": "只是相關、早期預警概念，尚非驗證工具",
+    "zh": "只是根據相關性的早期預警想法，尚未驗證可用於診斷或預測",
     "kw": "association only, not validated",
-    "en": "It is not yet a validated tool for diagnosis or prediction.",
+    "en": "It's an early-warning idea based on associations, and it isn't validated yet for diagnosis or prediction.",
     "groups": [
      [
       "association",
@@ -4439,7 +4331,9 @@
       "early warning",
       "proposed",
       "not yet",
-      "validated tool"
+      "validated tool",
+      "early-warning idea",
+      "just to be clear"
      ],
      [
       "screen",
@@ -4457,7 +4351,8 @@
       "not validated",
       "only screening",
       "not proven",
-      "not validated"
+      "isn't validated",
+      "validated yet"
      ]
     ],
     "need": 1,
@@ -4470,24 +4365,24 @@
     "2025",
     "LVEF",
     "Study",
-    "Published",
     "Cheyne",
     "Stokes",
-    "Important",
     "breathing",
+    "published",
     "abnormal",
-    "patterns",
-    "especially"
+    "especially",
+    "periodic",
+    "associations"
    ],
    "concise": [
     "2025",
     "LVEF",
     "Study",
-    "Published",
     "breathing",
-    "abnormal",
-    "patterns",
-    "associated"
+    "published",
+    "periodic",
+    "associations",
+    "validated"
    ],
    "kp": [
     "2025",
@@ -4497,39 +4392,37 @@
     "breathing"
    ]
   },
-  "onD": 72,
-  "onC": 39
+  "onD": 60,
+  "onC": 33
  },
  "31": {
   "title": "Why does a weaker heart change breathing during sleep?",
   "detailed": [
    "Why does a weaker heart change breathing during sleep?",
-   "Neural Outflow; Plant Gain (ΔPCO2/ΔVE); Circulation Time; Chemoreflex Gain to CO2 (ΔVE/ΔPCO2).",
+   "It comes from a feedback loop: the neural outflow, the plant gain, the circulation time, and the chemoreflex gain to CO2.",
    "Periodic breathing is associated with impaired cardiac function.",
-   "The radar does not measure CO2; it sees the breathing pattern."
+   "Our radar does not measure CO2. It only sees the breathing pattern."
   ],
   "concise": [
    "Why does a weaker heart change breathing during sleep?",
-   "Neural Outflow, Plant Gain, Circulation Time, Chemoreflex Gain to CO2.",
-   "Periodic breathing is associated with impaired cardiac function, through Circulation Time.",
-   "The radar does not measure CO2; it sees the breathing pattern."
+   "Periodic breathing is associated with impaired cardiac function, through circulation time.",
+   "The radar does not measure CO2. It only sees the breathing pattern."
   ],
   "dMark": [
    "Why does a weaker heart change breathing during sleep?",
-   "Neural Outflow; Plant Gain (ΔPCO2/ΔVE); Circulation Time; Chemoreflex Gain to CO2 (ΔVE/ΔPCO2).",
+   "[It comes from a feedback loop: the] neural outflow, [the] plant gain, [the] circulation time, [and the] chemoreflex gain to CO2.",
    "Periodic breathing is associated with impaired cardiac function.",
-   "[The radar does not measure CO2; it sees the breathing pattern.]"
+   "[Our radar] does [not measure] CO2. [It only sees the] breathing [pattern.]"
   ],
   "cMark": [
    "Why does a weaker heart change breathing during sleep?",
-   "Neural Outflow, Plant Gain, Circulation Time, Chemoreflex Gain to CO2.",
-   "Periodic breathing is associated with impaired cardiac function[, through Circulation Time].",
-   "[The radar does not measure CO2; it sees the breathing pattern.]"
+   "Periodic breathing is associated with impaired cardiac function, [through] circulation time.",
+   "[The radar] does [not measure] CO2. [It only sees the] breathing [pattern.]"
   ],
-  "secC": 21.4,
-  "wc": 41,
-  "secD": 18.5,
-  "wd": 40,
+  "secC": 16.7,
+  "wc": 32,
+  "secD": 23.1,
+  "wd": 50,
   "points": [
    {
     "zh": "呼吸控制迴路：神經輸出、plant gain、循環時間、化學反射",
@@ -4609,68 +4502,60 @@
   "slideKw": {
    "detailed": [
     "CO2",
-    "Neural",
-    "Outflow",
-    "Plant",
-    "Circulation",
-    "Chemoreflex",
     "Periodic",
     "breathing",
+    "circulation",
+    "chemoreflex",
     "associated",
     "impaired",
     "function"
    ],
    "concise": [
     "CO2",
-    "Neural",
-    "Outflow",
-    "Plant",
-    "Circulation",
-    "Chemoreflex",
     "Periodic",
-    "breathing"
+    "breathing",
+    "associated",
+    "impaired",
+    "function",
+    "circulation"
    ],
    "kp": [
     "CO2",
-    "Neural",
-    "Outflow",
-    "Plant",
-    "Circulation"
+    "Circulation",
+    "Periodic",
+    "breathing",
+    "associated"
    ]
   },
-  "onD": 29,
-  "onC": 28
+  "onD": 30,
+  "onC": 22
  },
  "32": {
   "title": "Periodic-breathing features & cycle length",
   "detailed": [
-   "Cycle length / Apnea-hypopnea length / Hyperpnea length / Hyperpnea shape / Hyperpnea initial jump feature.",
-   "Classifier features of ApneaLink — SLEEP, Vol. 32, No. 4, 2009.",
-   "Cycle length measured by CPAP: Acute Heart Failure: 11x. Chronic Heart Failure: 8x. Normal Heart: 1x.",
-   "By LVEF (%): above 50, cycle length 49.1 seconds; 40-49, 58.9; 30-39, 60.5; 20-29, 73.9; below 20, 85.7.",
-   "Data from Wedewardt et al."
+   "We can measure periodic breathing by features like the cycle length and the hyperpnea length.",
+   "When cycle length was measured by CPAP, it was 11x in acute heart failure, 8x in chronic heart failure, and 1x in a normal heart.",
+   "And by LVEF, the cycle length goes from 49.1 seconds when LVEF is above 50, up to 85.7 seconds when LVEF is below 20."
   ],
   "concise": [
-   "Cycle length / Apnea-hypopnea length / Hyperpnea length.",
-   "Cycle length measured by CPAP: Acute Heart Failure: 11x. Chronic Heart Failure: 8x.",
-   "Cycle length 49.1 to 85.7 seconds as LVEF falls."
+   "Periodic breathing has features we can measure, like the cycle length.",
+   "Cycle length measured by CPAP is 11x in acute heart failure, and 8x in chronic heart failure.",
+   "As LVEF falls, the cycle length goes from 49.1 up to 85.7 seconds."
   ],
   "dMark": [
-   "Cycle length / Apnea-hypopnea length / Hyperpnea length / Hyperpnea shape / Hyperpnea initial jump feature.",
-   "Classifier features of ApneaLink [—] SLEEP, Vol. 32, No. 4, 2009.",
-   "Cycle length measured by CPAP: Acute Heart Failure: 11x. Chronic Heart Failure: 8x. Normal Heart: 1x.",
-   "[By] LVEF (%): [above] 50, cycle length 49.1 [seconds]; 40-49, 58.9; 30-39, 60.5; 20-29, 73.9; [below] 20, 85.7.",
-   "Data from Wedewardt et al."
+   "[We can measure periodic breathing by] features [like the] cycle length [and the] hyperpnea length.",
+   "[When] cycle length [was] measured by CPAP, [it was] 11x [in] acute heart failure, 8x [in] chronic heart failure, [and] 1x [in a] normal heart.",
+   "[And by] LVEF, [the] cycle length [goes from] 49.1 [seconds when] LVEF [is above] 50, [up to] 85.7 [seconds when] LVEF [is below] 20."
   ],
   "cMark": [
-   "Cycle length / Apnea-hypopnea length / Hyperpnea length.",
-   "Cycle length measured by CPAP: Acute Heart Failure: 11x. Chronic Heart Failure: 8x.",
-   "[Cycle length] 49.1 [to] 85.7 [seconds as LVEF falls]."
+   "[Periodic breathing has] features [we can measure, like the] cycle length.",
+   "Cycle length measured by CPAP [is] 11x [in] acute heart failure, [and] 8x [in] chronic heart failure.",
+   "[As] LVEF [falls, the] cycle length [goes from] 49.1 [up to] 85.7 [seconds.]"
   ],
-  "secC": 15.7,
-  "wc": 30,
-  "secD": 30.5,
-  "wd": 66,
+  "secC": 21.4,
+  "wc": 41,
+  "secD": 29.5,
+  "wd": 64,
   "points": [
    {
     "zh": "週期性呼吸可量化：週期長度等特徵",
@@ -4762,68 +4647,62 @@
   ],
   "slideKw": {
    "detailed": [
-    "32",
-    "2009",
     "11",
-    "50",
     "49.1",
-    "40",
-    "58.9",
-    "30",
-    "60.5",
+    "50",
+    "85.7",
     "20",
-    "73.9",
-    "85.7"
+    "CPAP",
+    "LVEF",
+    "features",
+    "hyperpnea",
+    "measured"
    ],
    "concise": [
     "11",
     "49.1",
     "85.7",
     "CPAP",
+    "LVEF",
     "Cycle",
-    "Apnea-hypopnea",
-    "Hyperpnea",
-    "Acute"
+    "features",
+    "measured"
    ],
    "kp": [
     "49.1",
     "85.7",
     "11",
-    "CPAP",
-    "Cycle"
+    "LVEF",
+    "CPAP"
    ]
   },
-  "onD": 62,
-  "onC": 24
+  "onD": 30,
+  "onC": 21
  },
  "33": {
   "title": "IEEE JTEHM 2025 paper",
   "detailed": [
-   "Evaluating Cardiac Impairment From Abnormal Respiratory Patterns: Insights From a Wireless Radar and Deep Learning Study.",
-   "(A) Normal breathing, (B) Periodic breathing with its cycle length, (C) Respiratory event.",
-   "Table 1: comparisons of characteristic variables between individuals grouped by a 50% left ventricular ejection fraction (LVEF) threshold.",
-   "LVEF > 50% (N = 47) and LVEF ≤ 50% (N = 25).",
-   "Age, gender, body-mass index and Charlson comorbidity index were similar; LVEF, LVEDD and LVESD, p < 0.01."
+   "This is our paper on evaluating cardiac impairment from abnormal respiratory patterns, using wireless radar and deep learning.",
+   "In Table 1, we split patients by LVEF: above 50%, 47 patients, and 50% or below, 25 patients.",
+   "The table also compares LVEF, LVEDD, and LVESD between the two groups."
   ],
   "concise": [
-   "Evaluating Cardiac Impairment From Abnormal Respiratory Patterns.",
-   "LVEF > 50% (N = 47) and LVEF ≤ 50% (N = 25)."
+   "This is our paper on evaluating cardiac impairment from abnormal respiratory patterns.",
+   "We compared 47 patients with LVEF above 50%, and 25 patients with LVEF of 50% or below."
   ],
   "dMark": [
-   "Evaluating Cardiac Impairment From Abnormal Respiratory Patterns: Insights From a Wireless Radar and Deep Learning Study.",
-   "(A) Normal breathing, (B) Periodic breathing [with its] cycle length, (C) Respiratory event.",
-   "Table 1: comparisons of characteristic variables between individuals grouped by a 50% left ventricular ejection fraction (LVEF) threshold.",
-   "LVEF > 50% (N = 47) [and] LVEF ≤ 50% (N = 25).",
-   "[Age, gender, body-mass index and Charlson comorbidity index were similar;] LVEF, LVEDD [and] LVESD, [p] < 0.01."
+   "[This is our] paper [on] evaluating cardiac impairment from abnormal respiratory patterns, [using] wireless radar and deep learning.",
+   "[In] Table 1, [we split patients by] LVEF: [above] 50%, 47 [patients, and] 50% [or below,] 25 [patients.]",
+   "[The] table [also compares] LVEF, LVEDD, [and] LVESD between [the two groups.]"
   ],
   "cMark": [
-   "Evaluating Cardiac Impairment From Abnormal Respiratory Patterns.",
-   "LVEF > 50% (N = 47) [and] LVEF ≤ 50% (N = 25)."
+   "[This is our] paper [on] evaluating cardiac impairment from abnormal respiratory patterns.",
+   "[We compared] 47 [patients with] LVEF [above] 50%, [and] 25 [patients with] LVEF [of] 50% [or below.]"
   ],
-  "secC": 10.4,
-  "wc": 20,
-  "secD": 35.5,
-  "wd": 77,
+  "secC": 15.1,
+  "wc": 29,
+  "secD": 22.2,
+  "wd": 48,
   "points": [
    {
     "zh": "我們 2025 IEEE JTEHM 論文：雷達+深度學習評估心功能",
@@ -4914,25 +4793,25 @@
     "50%",
     "47",
     "25",
-    "0.01",
     "LVEF",
     "LVEDD",
     "LVESD",
-    "Evaluating",
-    "Cardiac",
-    "Impairment",
-    "Abnormal",
-    "Respiratory"
+    "Table",
+    "evaluating",
+    "impairment",
+    "abnormal",
+    "respiratory",
+    "patterns"
    ],
    "concise": [
-    "50%",
     "47",
+    "50%",
     "25",
     "LVEF",
-    "Evaluating",
-    "Cardiac",
-    "Impairment",
-    "Abnormal"
+    "evaluating",
+    "impairment",
+    "abnormal",
+    "respiratory"
    ],
    "kp": [
     "50%",
@@ -4942,37 +4821,37 @@
     "Evaluating"
    ]
   },
-  "onD": 62,
-  "onC": 19
+  "onD": 25,
+  "onC": 14
  },
  "34": {
   "title": "Putting numbers on the heart–breathing links",
   "detailed": [
-   "Putting numbers on the heart–breathing links.",
-   "Keep in mind: These are clinical associations only.",
-   "If RDI goes up 1/h: LVEF goes down 0.22%; LVESD goes up 0.14 mm.",
-   "If the PB cycle is 1 s longer: NT-proBNP goes up 158.49 pg/mL; LVEF goes down 0.21%; LVEDD goes up 0.11 mm; LVESD goes up 0.16 mm."
+   "Let's put numbers on the heart–breathing links.",
+   "Keep in mind: these are clinical associations only.",
+   "If RDI goes up by 1/h, LVEF goes down 0.22%, and LVESD goes up 0.14 mm.",
+   "If the PB cycle is 1 s longer, NT-proBNP goes up 158.49 pg/mL, LVEF goes down 0.21%, LVEDD goes up 0.11 mm, and LVESD goes up 0.16 mm."
   ],
   "concise": [
-   "Putting numbers on the heart–breathing links.",
-   "These are clinical associations only.",
-   "If RDI goes up 1/h: LVEF goes down 0.22%."
+   "Let's put numbers on the heart–breathing links. These are clinical associations only.",
+   "If RDI goes up by 1/h, LVEF goes down 0.22%.",
+   "If the PB cycle is 1 s longer, NT-proBNP goes up 158.49 pg/mL."
   ],
   "dMark": [
-   "Putting numbers on the heart–breathing links.",
-   "Keep in mind: These are clinical associations only.",
-   "If RDI goes up 1/h: LVEF goes down 0.22%; LVESD goes up 0.14 mm.",
-   "If the PB cycle is 1 s longer: NT-proBNP goes up 158.49 pg/mL; LVEF goes down 0.21%; LVEDD goes up 0.11 mm; LVESD goes up 0.16 mm."
+   "[Let's put] numbers on the heart–breathing links.",
+   "Keep in mind: these are clinical associations only.",
+   "If RDI goes up [by] 1/h, LVEF goes down 0.22%, [and] LVESD goes up 0.14 mm.",
+   "If the PB cycle is 1 s longer, NT-proBNP goes up 158.49 pg/mL, LVEF goes down 0.21%, LVEDD goes up 0.11 mm, [and] LVESD goes up 0.16 mm."
   ],
   "cMark": [
-   "Putting numbers on the heart–breathing links.",
-   "These are clinical associations only.",
-   "If RDI goes up 1/h: LVEF goes down 0.22%."
+   "[Let's put] numbers on the heart–breathing links. These are clinical associations only.",
+   "If RDI goes up [by] 1/h, LVEF goes down 0.22%.",
+   "If the PB cycle is 1 s longer, NT-proBNP goes up 158.49 pg/mL."
   ],
-  "secC": 10.4,
-  "wc": 20,
-  "secD": 25.4,
-  "wd": 55,
+  "secC": 18.3,
+  "wc": 35,
+  "secD": 27.2,
+  "wd": 59,
   "points": [
    {
     "zh": "提醒：只是臨床相關性",
@@ -5064,54 +4943,49 @@
    ],
    "concise": [
     "0.22%",
+    "158.49",
     "RDI",
     "LVEF",
-    "Putting",
+    "PB",
+    "NT",
     "breathing",
-    "clinical",
-    "associations"
+    "clinical"
    ],
    "kp": [
     "0.22%",
+    "158.49",
     "RDI",
     "LVEF",
-    "clinical",
-    "associations"
+    "PB"
    ]
   },
-  "onD": 55,
-  "onC": 20
+  "onD": 54,
+  "onC": 32
  },
  "35": {
   "title": "Our ward work has won national awards",
   "detailed": [
-   "Our ward work has won national awards. National awards for our zero-contact care platform.",
-   "2025 NHQA: National Healthcare Quality Award. Quality Mark · Smart Healthcare Category, Smart Solutions Track · Inpatient Services.",
-   "Zero-Contact Physiological Monitoring Platform for Sleep-Breathing and Cardiac Function Care.",
-   "SNQ: Symbol of National Quality. Outstanding Healthcare Team · Certificate No. S010724 (valid through 31 Dec 2025).",
-   "“Wholehearted”: Integrated Care Model for Non-invasive, Multidimensional Cardiac Function Assessment."
+   "Our ward work has also won national awards for our zero-contact care platform.",
+   "In 2025, we received the NHQA, the National Healthcare Quality Award, for our zero-contact monitoring platform for inpatients.",
+   "We also received the SNQ, the Symbol of National Quality, for our Wholehearted integrated care model."
   ],
   "concise": [
    "Our ward work has won national awards.",
-   "2025 NHQA: National Healthcare Quality Award.",
-   "SNQ: Symbol of National Quality."
+   "We received the 2025 NHQA and the SNQ national quality awards."
   ],
   "dMark": [
-   "Our ward work has won national awards. National awards for our zero-contact care platform.",
-   "2025 NHQA: National Healthcare Quality Award. Quality Mark · Smart Healthcare Category, Smart Solutions Track · Inpatient Services.",
-   "Zero-Contact Physiological Monitoring Platform for Sleep-Breathing and Cardiac Function Care.",
-   "SNQ: Symbol of National Quality. Outstanding Healthcare Team · Certificate No. S010724 (valid through 31 Dec 2025).",
-   "“Wholehearted”: Integrated Care Model for Non-invasive, Multidimensional Cardiac Function Assessment."
+   "Our ward work has [also] won national awards for our zero-contact care platform.",
+   "[In] 2025, [we received the] NHQA, [the] National Healthcare Quality Award, for our zero-contact monitoring platform for [inpatients.]",
+   "[We also received the] SNQ, [the] Symbol of National Quality, for our Wholehearted integrated care model."
   ],
   "cMark": [
    "Our ward work has won national awards.",
-   "2025 NHQA: National Healthcare Quality Award.",
-   "SNQ: Symbol of National Quality."
+   "[We received the] 2025 NHQA [and the] SNQ national quality awards."
   ],
   "secC": 9.4,
   "wc": 18,
-  "secD": 31.8,
-  "wd": 69,
+  "secD": 21.7,
+  "wd": 47,
   "points": [
    {
     "zh": "標題：我們的病房工作獲得國家獎項",
@@ -5191,79 +5065,75 @@
   "slideKw": {
    "detailed": [
     "2025",
-    "010724",
-    "31",
     "NHQA",
     "SNQ",
     "National",
     "Healthcare",
     "Quality",
     "Award",
-    "Smart",
-    "Category",
-    "Solutions"
+    "Symbol",
+    "Wholehearted",
+    "platform",
+    "monitoring",
+    "integrated"
    ],
    "concise": [
     "2025",
     "NHQA",
     "SNQ",
-    "National",
-    "Healthcare",
-    "Quality",
-    "Award",
-    "Symbol"
+    "national"
    ],
    "kp": [
     "2025",
     "NHQA",
     "SNQ",
     "National",
-    "Healthcare"
+    "Quality"
    ]
   },
-  "onD": 69,
-  "onC": 18
+  "onD": 35,
+  "onC": 13
  },
  "38": {
   "title": "What to take home",
   "detailed": [
-   "What to take home.",
-   "1. Contactless: A 24-GHz radar can monitor breathing night after night, with nothing to wear.",
-   "2. Consistent: It agrees with standard tests in the hospital (r=0.91) and at home (r=0.87).",
-   "3. A validated screen: It's TFDA-cleared to screen for suspected severe OSA (bRDI ≥ 30), with 90.5% sensitivity.",
-   "4. Looking ahead: We found associations between periodic breathing and cardiac impairment. So it may help us watch the heart, too.",
-   "5. Recognition: We received SNQ (2021) and NHQA (2022, 2025) national quality awards.",
+   "So, what should you take home?",
+   "First, it's contactless. A 24-GHz radar can monitor breathing night after night, with nothing to wear.",
+   "Second, it's consistent with standard tests: r = 0.91 in the hospital, and r = 0.87 at home.",
+   "Third, it's a TFDA-cleared screen for suspected severe OSA, with 90.5% sensitivity.",
+   "Fourth, we found associations between periodic breathing and cardiac impairment. So it may help us watch the heart, too.",
+   "And finally, our work received national quality awards: SNQ and NHQA.",
    "Thank you very much. I'm happy to take your questions."
   ],
   "concise": [
-   "What to take home.",
-   "Contactless: A 24-GHz radar can monitor breathing night after night.",
-   "Consistent: It agrees with standard tests in the hospital (r=0.91) and at home (r=0.87).",
-   "A validated screen: It's TFDA-cleared to screen for suspected severe OSA (bRDI ≥ 30).",
-   "Looking ahead: We found associations between periodic breathing and cardiac impairment.",
+   "What should you take home?",
+   "It's contactless, with nothing to wear.",
+   "It agrees with standard tests, in the hospital and at home.",
+   "It's TFDA-cleared to screen for suspected severe OSA.",
+   "And it may help us watch the heart, too.",
    "Thank you very much. I'm happy to take your questions."
   ],
   "dMark": [
-   "What to take home.",
-   "1. Contactless: A 24-GHz radar can monitor breathing night after night, with nothing to wear.",
-   "2. Consistent: It agrees with standard tests in the hospital (r=0.91) and at home (r=0.87).",
-   "3. A validated screen: It's TFDA-cleared to screen for suspected severe OSA (bRDI ≥ 30), with 90.5% sensitivity.",
-   "4. Looking ahead: We found associations between periodic breathing and cardiac impairment. So it may help us watch the heart, too.",
-   "5. Recognition: We received SNQ (2021) and NHQA (2022, 2025) national quality awards.",
-   "[Thank you very much. I'm happy to take your questions.]"
+   "[So,] what [should you] take home?",
+   "[First, it's] contactless. A 24-GHz radar can monitor breathing night after night, with nothing to wear.",
+   "[Second, it's] consistent with standard tests: r = 0.91 in the hospital, [and] r = 0.87 at home.",
+   "[Third, it's a] TFDA-cleared screen for suspected severe OSA, with 90.5% sensitivity.",
+   "[Fourth,] we found associations between periodic breathing and cardiac impairment. So it may help us watch the heart, too.",
+   "[And finally, our work] received national quality awards: SNQ and NHQA.",
+   "[Thank you very much. I'm happy] to take [your questions.]"
   ],
   "cMark": [
-   "What to take home.",
-   "Contactless: A 24-GHz radar can monitor breathing night after night.",
-   "Consistent: It agrees with standard tests in the hospital (r=0.91) and at home (r=0.87).",
-   "A validated screen: It's TFDA-cleared to screen for suspected severe OSA (bRDI ≥ 30).",
-   "Looking ahead: We found associations between periodic breathing and cardiac impairment.",
-   "[Thank you very much. I'm happy to take your questions.]"
+   "What [should you] take home?",
+   "[It's] contactless, with nothing to wear.",
+   "It agrees with standard tests, in the hospital and at home.",
+   "It's TFDA-cleared to screen for suspected severe OSA.",
+   "[And] it may help us watch the heart, too.",
+   "[Thank you very much. I'm happy] to take [your questions.]"
   ],
-  "secC": 32.9,
-  "wc": 63,
-  "secD": 44.3,
-  "wd": 96,
+  "secC": 25.6,
+  "wc": 49,
+  "secD": 42.5,
+  "wd": 92,
   "points": [
    {
     "zh": "24 GHz 雷達：夜夜監測、身上不用戴東西",
@@ -5423,35 +5293,31 @@
     "24",
     "0.91",
     "0.87",
-    "30",
     "90.5%",
-    "2021",
-    "2022",
-    "2025",
     "GHz",
     "TFDA",
     "OSA",
-    "bRDI"
+    "SNQ",
+    "NHQA",
+    "contactless",
+    "breathing",
+    "consistent"
    ],
    "concise": [
-    "24",
-    "0.91",
-    "0.87",
-    "30",
-    "GHz",
     "TFDA",
     "OSA",
-    "bRDI"
+    "contactless",
+    "standard",
+    "hospital",
+    "suspected"
    ],
    "kp": [
-    "24",
-    "0.91",
-    "0.87",
-    "30",
-    "GHz"
+    "TFDA",
+    "OSA",
+    "Contactless"
    ]
   },
-  "onD": 86,
-  "onC": 53
+  "onD": 68,
+  "onC": 37
  }
 }
