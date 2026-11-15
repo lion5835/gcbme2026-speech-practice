@@ -1177,38 +1177,38 @@
   "detailed": [
    "A Three-Phase Technical Roadmap Validates Radar from Sleep Lab to Cardiology.",
    "Core Technology Base: 24-GHz Continuous-Wave Radar combined with Deep Neural Decision Trees.",
-   "Phase 1: Clinical Purity (N=196). Mapped directly against gold-standard Polysomnography (PSG). Correlation (r=0.91).",
+   "Phase 1: Clinical Purity (N=196). Mapped directly against gold-standard Polysomnography (PSG). Strong correlation (r=0.91).",
    "Phase 2: Real-World Utility (80 patients, 147 nights). Demonstrated home sleep assessment without the need for professional intervention or setup.",
    "Phase 3: Cross-Domain Translation (N=72). Radar-captured Periodic Breathing (PB) was associated with Left Ventricular Ejection Fraction (LVEF) impairment."
   ],
   "concise": [
    "A Three-Phase Technical Roadmap from Sleep Lab to Cardiology.",
-   "Phase 1: Clinical Purity (N=196), (r=0.91).",
+   "Phase 1: Clinical Purity (N=196). Strong correlation (r=0.91).",
    "Phase 2: Real-World Utility (80 patients, 147 nights).",
    "Phase 3: Cross-Domain Translation (N=72): Periodic Breathing was associated with LVEF impairment."
   ],
   "dMark": [
    "A Three-Phase Technical Roadmap Validates Radar from Sleep Lab to Cardiology.",
    "Core Technology Base: 24-GHz Continuous-Wave Radar combined with Deep Neural Decision Trees.",
-   "Phase 1: Clinical Purity (N=196). Mapped directly against gold-standard Polysomnography (PSG). [Correlation] (r=0.91).",
-   "Phase 2: Real-World Utility (80 patients, 147 nights). [Demonstrated] home sleep assessment without the need for professional intervention or setup.",
+   "Phase 1: Clinical Purity (N=196). Mapped directly against gold-standard Polysomnography (PSG). Strong correlation (r=0.91).",
+   "Phase 2: Real-World Utility (80 patients, 147 nights). Demonstrated home sleep assessment without the need for professional intervention or setup.",
    "Phase 3: Cross-Domain Translation (N=72). Radar-captured Periodic Breathing (PB) was associated with Left Ventricular Ejection Fraction (LVEF) impairment."
   ],
   "cMark": [
    "A Three-Phase Technical Roadmap [from] Sleep Lab to Cardiology.",
-   "Phase 1: Clinical Purity (N=196), (r=0.91).",
+   "Phase 1: Clinical Purity (N=196). Strong correlation (r=0.91).",
    "Phase 2: Real-World Utility (80 patients, 147 nights).",
    "Phase 3: Cross-Domain Translation (N=72): Periodic Breathing was associated with LVEF impairment."
   ],
-  "secC": 18.3,
-  "wc": 35,
-  "secD": 34.2,
-  "wd": 74,
+  "secC": 19.3,
+  "wc": 37,
+  "secD": 34.6,
+  "wd": 75,
   "points": [
    {
-    "zh": "三階段：院內驗證 196 人，r = 0.91",
+    "zh": "三階段：院內驗證 196 人，強相關 r = 0.91",
     "kw": "phase 1: hospital, 196, r 0.91",
-    "en": "Phase 1: Clinical Purity (N=196), mapped against Polysomnography, r=0.91.",
+    "en": "Phase 1: Clinical Purity (N=196), mapped against Polysomnography: Strong correlation (r=0.91).",
     "groups": [
      [
       "196",
@@ -1336,8 +1336,8 @@
     "72"
    ]
   },
-  "onD": 72,
-  "onC": 34
+  "onD": 75,
+  "onC": 36
  },
  "9": {
   "title": "Act I: Clinical Validation (Hospital Setting)",
@@ -3380,30 +3380,28 @@
    "Synthesis: Hospital vs. Home Matrix.",
    "Hospital Validation (Paper 1): Reference, PSG; Environment, Strict Control; Correlation, r = 0.91; Severe OSA Accuracy, 92.4%.",
    "Home Validation (Paper 2): Reference, HSAT; Environment, Daily Uncontrolled Variables; Correlation, r = 0.87; Severe OSA Accuracy, 93.21%.",
-   "Key Insight: Exceptional cross-domain stability.",
-   "Severe high-risk screening accuracy remains consistently over 92% regardless of environmental strictness."
+   "Key Insight: Severe high-risk screening accuracy remains consistently over 92% regardless of environmental strictness."
   ],
   "concise": [
    "Synthesis: Hospital vs. Home Matrix.",
    "Correlation: r = 0.91 and r = 0.87.",
-   "Severe high-risk screening accuracy remains consistently over 92%."
+   "Key Insight: Severe high-risk screening accuracy remains consistently over 92%."
   ],
   "dMark": [
    "Synthesis: Hospital vs. Home Matrix.",
    "Hospital Validation (Paper 1): Reference, PSG; Environment, Strict Control; Correlation, r = 0.91; Severe OSA Accuracy, 92.4%.",
    "Home Validation (Paper 2): Reference, HSAT; Environment, Daily Uncontrolled Variables; Correlation, r = 0.87; Severe OSA Accuracy, 93.21%.",
-   "Key Insight: Exceptional cross-domain stability.",
-   "Severe high-risk screening accuracy remains consistently over 92% regardless of environmental strictness."
+   "Key Insight: Severe high-risk screening accuracy remains consistently over 92% regardless of environmental strictness."
   ],
   "cMark": [
    "Synthesis: Hospital vs. Home Matrix.",
    "Correlation: r = 0.91 [and] r = 0.87.",
-   "Severe high-risk screening accuracy remains consistently over 92%."
+   "Key Insight: Severe high-risk screening accuracy remains consistently over 92%."
   ],
-  "secC": 11.0,
-  "wc": 21,
-  "secD": 26.3,
-  "wd": 57,
+  "secC": 12.0,
+  "wc": 23,
+  "secD": 24.9,
+  "wd": 54,
   "points": [
    {
     "zh": "院內 vs 居家並列比較",
@@ -3498,7 +3496,7 @@
     "Hospital",
     "Matrix",
     "Correlation",
-    "Severe"
+    "Insight"
    ],
    "kp": [
     "0.91",
@@ -3508,8 +3506,8 @@
     "Hospital"
    ]
   },
-  "onD": 57,
-  "onC": 20
+  "onD": 54,
+  "onC": 22
  },
  "24": {
   "title": "Regulatory Status: TFDA Clearance",
@@ -3781,12 +3779,12 @@
    "Efficacy: Sensitivity: 90.5% | Specificity: 90.5%.",
    "Physiological Range: Heart Rate tracking range 40–120 bpm (95% CI ±3.7 bpm).",
    "Sleep Staging: 69% consistency.",
-   "Crucial Caveat — bRDI ≥ 30 is validated as a highly accurate screen for suspected severe OSA, but is not a replacement for definitive diagnosis."
+   "Crucial Caveat — bRDI ≥ 30 is validated as a screen for suspected severe OSA, but is not a replacement for definitive diagnosis."
   ],
   "concise": [
    "Regulatory Translation.",
    "Primary Threshold: bRDI ≥ 30.",
-   "It is a screen for suspected severe OSA, but is not a replacement for definitive diagnosis."
+   "Crucial Caveat — it is validated as a screen for suspected severe OSA, but is not a replacement for definitive diagnosis."
   ],
   "dMark": [
    "Regulatory Translation (TFDA Screening Guidelines).",
@@ -3794,17 +3792,17 @@
    "Efficacy: Sensitivity: 90.5% | Specificity: 90.5%.",
    "Physiological Range: Heart Rate tracking range 40–120 bpm (95% CI ±3.7 bpm).",
    "Sleep Staging: 69% consistency.",
-   "Crucial Caveat — bRDI ≥ 30 is validated as a highly accurate screen for suspected severe OSA, but is not a replacement for definitive diagnosis."
+   "Crucial Caveat — bRDI ≥ 30 is validated as a screen for suspected severe OSA, but is not a replacement for definitive diagnosis."
   ],
   "cMark": [
    "Regulatory Translation.",
    "Primary Threshold: bRDI ≥ 30.",
-   "[It is] a screen for suspected severe OSA, but is not a replacement for definitive diagnosis."
+   "Crucial Caveat — [it is] validated as a screen for suspected severe OSA, but is not a replacement for definitive diagnosis."
   ],
-  "secC": 12.0,
-  "wc": 23,
-  "secD": 28.6,
-  "wd": 62,
+  "secC": 14.6,
+  "wc": 28,
+  "secD": 27.7,
+  "wd": 60,
   "points": [
    {
     "zh": "主要門檻 bRDI ≥ 30 → 疑似重度",
@@ -3851,7 +3849,7 @@
    {
     "zh": "是篩檢，不取代確定診斷",
     "kw": "screen, not definitive diagnosis",
-    "en": "A screen for suspected severe OSA, but not a replacement for definitive diagnosis.",
+    "en": "Validated as a screen for suspected severe OSA, but not a replacement for definitive diagnosis.",
     "groups": [
      [
       "screen",
@@ -3899,7 +3897,7 @@
     "Translation",
     "Primary",
     "Threshold",
-    "suspected"
+    "Crucial"
    ],
    "kp": [
     "30",
@@ -3909,8 +3907,8 @@
     "Threshold"
    ]
   },
-  "onD": 62,
-  "onC": 21
+  "onD": 60,
+  "onC": 26
  },
  "27": {
   "title": "Deployment & Installation Parameters",
@@ -5201,42 +5199,42 @@
   "title": "Take-Home Messages",
   "detailed": [
    "Take-Home Messages.",
-   "1. Technological Leap: 24-GHz contactless radar provides precise, continuous, multi-night monitoring without patient friction.",
-   "2. Proven Stability: Clinical-grade accuracy maintained across both highly controlled hospital settings (r=0.91) and unmanaged daily home environments (r=0.87).",
-   "3. Validated Screening: Functions as a highly sensitive (90.5%) TFDA-cleared screen for suspected severe OSA (bRDI ≥ 30).",
-   "4. Expanding Horizons: Ongoing research demonstrates powerful potential for cross-domain monitoring, identifying associations between periodic breathing and cardiac impairment.",
+   "1. Technological Leap: 24-GHz contactless radar provides continuous, multi-night monitoring without patient friction.",
+   "2. Proven Stability: Agreement maintained across both highly controlled hospital settings (r=0.91) and unmanaged daily home environments (r=0.87).",
+   "3. Validated Screening: Functions as a sensitive (90.5%) TFDA-cleared screen for suspected severe OSA (bRDI ≥ 30).",
+   "4. Expanding Horizons: Ongoing research demonstrates potential for cross-domain monitoring, identifying associations between periodic breathing and cardiac impairment.",
    "5. Real-World Recognition: SNQ (2021) and NHQA (2022, 2025) national quality awards.",
    "Thank you very much. I'm happy to take your questions."
   ],
   "concise": [
    "Take-Home Messages.",
    "Technological Leap: 24-GHz contactless radar, continuous, multi-night monitoring.",
-   "Proven Stability: hospital settings (r=0.91) and home environments (r=0.87).",
+   "Proven Stability: Agreement maintained across hospital settings (r=0.91) and home environments (r=0.87).",
    "Validated Screening: TFDA-cleared screen for suspected severe OSA (bRDI ≥ 30).",
    "Expanding Horizons: associations between periodic breathing and cardiac impairment.",
    "Thank you very much. I'm happy to take your questions."
   ],
   "dMark": [
    "Take-Home Messages.",
-   "1. Technological Leap: 24-GHz contactless radar provides precise, continuous, multi-night monitoring without patient friction.",
-   "2. Proven Stability: Clinical-grade accuracy maintained across both highly controlled hospital settings (r=0.91) and unmanaged daily home environments (r=0.87).",
-   "3. Validated Screening: Functions as a highly sensitive (90.5%) TFDA-cleared screen for suspected severe OSA (bRDI ≥ 30).",
-   "4. Expanding Horizons: Ongoing research demonstrates powerful potential for cross-domain monitoring, identifying associations between periodic breathing and cardiac impairment.",
+   "1. Technological Leap: 24-GHz contactless radar provides continuous, multi-night monitoring without patient friction.",
+   "2. Proven Stability: Agreement maintained across both highly controlled hospital settings (r=0.91) and unmanaged daily home environments (r=0.87).",
+   "3. Validated Screening: Functions as a sensitive (90.5%) TFDA-cleared screen for suspected severe OSA (bRDI ≥ 30).",
+   "4. Expanding Horizons: Ongoing research demonstrates potential for cross-domain monitoring, identifying associations between periodic breathing and cardiac impairment.",
    "5. Real-World Recognition: SNQ (2021) and NHQA (2022, 2025) national quality awards.",
    "[Thank you very much. I'm happy to take your questions.]"
   ],
   "cMark": [
    "Take-Home Messages.",
    "Technological Leap: 24-GHz contactless radar, continuous, multi-night monitoring.",
-   "Proven Stability: hospital settings (r=0.91) and home environments (r=0.87).",
+   "Proven Stability: Agreement maintained across hospital settings (r=0.91) and home environments (r=0.87).",
    "Validated Screening: TFDA-cleared screen for suspected severe OSA (bRDI ≥ 30).",
    "Expanding Horizons: associations between periodic breathing and cardiac impairment.",
    "[Thank you very much. I'm happy to take your questions.]"
   ],
-  "secC": 25.6,
-  "wc": 49,
-  "secD": 43.4,
-  "wd": 94,
+  "secC": 27.1,
+  "wc": 52,
+  "secD": 41.5,
+  "wd": 90,
   "points": [
    {
     "zh": "24 GHz 無接觸雷達，可連續多夜監測",
@@ -5293,9 +5291,9 @@
     "must": true
    },
    {
-    "zh": "院內 0.91、居家 0.87 都準確",
+    "zh": "院內 r=0.91、居家 r=0.87：結果一致",
     "kw": "accurate: 0.91 hospital, 0.87 home",
-    "en": "Hospital settings (r=0.91) and home environments (r=0.87).",
+    "en": "Agreement maintained across hospital settings (r=0.91) and home environments (r=0.87).",
     "groups": [
      [
       "0.91",
@@ -5420,7 +5418,7 @@
     "GHz"
    ]
   },
-  "onD": 84,
-  "onC": 39
+  "onD": 80,
+  "onC": 42
  }
 }
