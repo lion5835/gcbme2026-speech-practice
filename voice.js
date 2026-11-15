@@ -25,9 +25,9 @@ function index(levels) {
   ready = true;
 }
 fetch('levels.json').then(r => r.json()).then(index).catch(e => console.warn('voice index', e));
-fetch('audio/heart/durations.json?v=6').then(r => r.json()).then(d => dur = d).catch(() => { });
+fetch('audio/heart/durations.json?v=6c').then(r => r.json()).then(d => dur = d).catch(() => { });
 const natural = () => settings.nvoice !== 'browser';
-const urlFor = key => `audio/${settings.nvoice}/${key}.mp3?v=6`;
+const urlFor = key => `audio/${settings.nvoice}/${key}.mp3?v=6c`;
 function playKey(key) {
   const my = token; lastErr = false;
   return new Promise(resolve => {

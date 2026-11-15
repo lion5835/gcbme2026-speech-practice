@@ -1167,42 +1167,42 @@
   "onC": 7
  },
  "8": {
-  "title": "Three steps: from the sleep lab, to the home, to the heart",
+  "title": "Our three published studies: sleep lab, home, and heart",
   "detailed": [
-   "Three steps: from the sleep lab, to the home, to the heart.",
+   "Our three published studies: sleep lab, home, and heart.",
    "The core: a 24-GHz continuous-wave radar plus deep neural decision trees.",
-   "Phase 1: In the sleep lab (N=196). We compared it directly with gold-standard polysomnography (PSG). Strong correlation (r=0.91).",
-   "Phase 2: At home (80 patients, 147 nights). Sleep testing at home, with no professional needed to set it up.",
-   "Phase 3: The heart (N=72). Periodic breathing (PB) picked up by radar was associated with impaired LVEF."
+   "Study 1: In the sleep lab (N=196). We compared it directly with gold-standard polysomnography (PSG). Strong correlation (r=0.91).",
+   "Study 2: At home (80 patients, 147 nights). Sleep testing at home, with no professional needed to set it up.",
+   "Study 3: The heart (N=72). Periodic breathing (PB) picked up by radar was associated with impaired LVEF."
   ],
   "concise": [
-   "Three steps: from the sleep lab, to the home, to the heart.",
-   "Phase 1: In the sleep lab (N=196). Strong correlation (r=0.91).",
-   "Phase 2: At home (80 patients, 147 nights).",
-   "Phase 3: The heart (N=72). Periodic breathing picked up by radar was associated with impaired LVEF."
+   "Our three published studies: sleep lab, home, and heart.",
+   "Study 1: In the sleep lab (N=196). Strong correlation (r=0.91).",
+   "Study 2: At home (80 patients, 147 nights).",
+   "Study 3: The heart (N=72). Periodic breathing picked up by radar was associated with impaired LVEF."
   ],
   "dMark": [
-   "Three steps: from the sleep lab, to the home, to the heart.",
+   "Our three published studies: sleep lab, home, and heart.",
    "The core: a 24-GHz continuous-wave radar plus deep neural decision trees.",
-   "Phase 1: In the sleep lab (N=196). We compared it directly with gold-standard polysomnography (PSG). Strong correlation (r=0.91).",
-   "Phase 2: At home (80 patients, 147 nights). Sleep testing at home, with no professional needed to set it up.",
-   "Phase 3: The heart (N=72). Periodic breathing (PB) picked up by radar was associated with impaired LVEF."
+   "Study 1: In the sleep lab (N=196). We compared it directly with gold-standard polysomnography (PSG). Strong correlation (r=0.91).",
+   "Study 2: At home (80 patients, 147 nights). Sleep testing at home, with no professional needed to set it up.",
+   "Study 3: The heart (N=72). Periodic breathing (PB) picked up by radar was associated with impaired LVEF."
   ],
   "cMark": [
-   "Three steps: from the sleep lab, to the home, to the heart.",
-   "Phase 1: In the sleep lab (N=196). Strong correlation (r=0.91).",
-   "Phase 2: At home (80 patients, 147 nights).",
-   "Phase 3: The heart (N=72). Periodic breathing picked up by radar was associated with impaired LVEF."
+   "Our three published studies: sleep lab, home, and heart.",
+   "Study 1: In the sleep lab (N=196). Strong correlation (r=0.91).",
+   "Study 2: At home (80 patients, 147 nights).",
+   "Study 3: The heart (N=72). Periodic breathing picked up by radar was associated with impaired LVEF."
   ],
-  "secC": 24.0,
-  "wc": 46,
-  "secD": 36.0,
-  "wd": 78,
+  "secC": 22.4,
+  "wc": 43,
+  "secD": 34.6,
+  "wd": 75,
   "points": [
    {
-    "zh": "三階段：院內驗證 196 人，強相關 r = 0.91",
+    "zh": "我們發表的三篇研究；研究一：院內 196 人，強相關 r = 0.91",
     "kw": "phase 1: hospital, 196, r 0.91",
-    "en": "Phase 1: In the sleep lab (N=196), compared with polysomnography: Strong correlation (r=0.91).",
+    "en": "Our three published studies. Study 1: In the sleep lab (N=196), compared with polysomnography: Strong correlation (r=0.91).",
     "groups": [
      [
       "196",
@@ -1211,7 +1211,12 @@
       "first phase",
       "clinical",
       "sleep lab",
-      "phase 1"
+      "phase 1",
+      "study 1",
+      "study one",
+      "first study",
+      "published",
+      "three published studies"
      ],
      [
       "0.91",
@@ -1232,9 +1237,9 @@
     "must": true
    },
    {
-    "zh": "居家：80 人 147 晚",
+    "zh": "研究二：居家 80 人 147 晚",
     "kw": "phase 2: home, 80 patients, 147 nights",
-    "en": "Phase 2: At home (80 patients, 147 nights), with no professional needed to set it up.",
+    "en": "Study 2: At home (80 patients, 147 nights), with no professional needed to set it up.",
     "groups": [
      [
       "home",
@@ -1245,7 +1250,9 @@
       "at home",
       "phase two",
       "second phase",
-      "no professional"
+      "no professional",
+      "study 2",
+      "study two"
      ],
      [
       "80",
@@ -1258,9 +1265,9 @@
     "must": false
    },
    {
-    "zh": "心臟：72 人，週期性呼吸與 LVEF 相關",
+    "zh": "研究三：72 人，週期性呼吸與 LVEF 降低相關",
     "kw": "phase 3: cardiac, 72, periodic breathing ~ LVEF",
-    "en": "Phase 3: The heart (N=72): periodic breathing picked up by radar was associated with impaired LVEF.",
+    "en": "Study 3: The heart (N=72): periodic breathing picked up by radar was associated with impaired LVEF.",
     "groups": [
      [
       "heart",
@@ -1272,7 +1279,9 @@
       "heart function",
       "cardiology",
       "phase three",
-      "third phase"
+      "third phase",
+      "study 3",
+      "study three"
      ],
      [
       "72",
@@ -1314,8 +1323,8 @@
     "PSG",
     "PB",
     "LVEF",
-    "Three",
-    "Phase"
+    "Study",
+    "Strong"
    ],
    "concise": [
     "196",
@@ -1324,8 +1333,8 @@
     "147",
     "72",
     "LVEF",
-    "Three",
-    "Phase"
+    "Study",
+    "Strong"
    ],
    "kp": [
     "196",
@@ -1335,44 +1344,44 @@
     "72"
    ]
   },
-  "onD": 78,
-  "onC": 46
+  "onD": 75,
+  "onC": 43
  },
  "9": {
-  "title": "Act I: Testing it in the hospital",
+  "title": "Study 1: Testing it in the hospital",
   "detailed": [
-   "Act I: Testing it in the hospital.",
-   "What we did: We checked the radar in the hospital.",
+   "Study 1: Testing it in the hospital.",
+   "What we did: Our team published this study in 2024.",
    "How many: N = 196 patients.",
    "Compared with: Polysomnography (PSG).",
    "Setting: A tightly controlled lab, with no outside noise. So we get a clean baseline."
   ],
   "concise": [
-   "Act I: Testing it in the hospital.",
-   "N = 196 patients, compared with Polysomnography (PSG).",
+   "Study 1: Testing it in the hospital.",
+   "Our team published this study in 2024. N = 196 patients, compared with Polysomnography (PSG).",
    "A tightly controlled lab, with no outside noise. So we get a clean baseline."
   ],
   "dMark": [
-   "Act I: Testing it in the hospital.",
-   "What we did: We checked the radar in the hospital.",
+   "Study 1: Testing it in the hospital.",
+   "What we did: Our team published this study in 2024.",
    "How many: N = 196 patients.",
    "Compared with: Polysomnography (PSG).",
    "Setting: A tightly controlled lab, with no outside noise. So we get a clean baseline."
   ],
   "cMark": [
-   "Act I: Testing it in the hospital.",
-   "N = 196 patients, compared with Polysomnography (PSG).",
+   "Study 1: Testing it in the hospital.",
+   "Our team published this study in 2024. N = 196 patients, compared with Polysomnography (PSG).",
    "A tightly controlled lab, with no outside noise. So we get a clean baseline."
   ],
-  "secC": 15.1,
-  "wc": 29,
+  "secC": 18.8,
+  "wc": 36,
   "secD": 19.4,
   "wd": 42,
   "points": [
    {
-    "zh": "第一幕：院內驗證，196 位病人、以 PSG 為標準",
+    "zh": "研究一：團隊 2024 發表；196 位病人、以 PSG 為標準",
     "kw": "act 1: hospital, 196, PSG reference",
-    "en": "Act I: Testing it in the hospital, N = 196 patients, compared with Polysomnography (PSG).",
+    "en": "Study 1: Our team published this study in 2024; N = 196 patients, compared with Polysomnography (PSG).",
     "groups": [
      [
       "hospital",
@@ -1384,7 +1393,11 @@
       "act one",
       "first",
       "testing it in the hospital",
-      "checked the radar"
+      "checked the radar",
+      "study 1",
+      "published",
+      "our team",
+      "2024"
      ],
      [
       "196",
@@ -1438,37 +1451,39 @@
   ],
   "slideKw": {
    "detailed": [
+    "2024",
     "196",
     "PSG",
+    "Study",
     "Testing",
     "Compared",
     "Polysomnography",
     "Setting",
     "hospital",
+    "published",
     "patients",
-    "controlled",
-    "baseline"
+    "controlled"
    ],
    "concise": [
+    "2024",
     "196",
     "PSG",
+    "Study",
     "Testing",
     "Polysomnography",
     "hospital",
-    "patients",
-    "compared",
-    "controlled"
+    "published"
    ],
    "kp": [
+    "2024",
     "196",
     "PSG",
-    "Testing",
-    "Polysomnography",
-    "hospital"
+    "Study",
+    "Polysomnography"
    ]
   },
   "onD": 42,
-  "onC": 29
+  "onC": 36
  },
  "10": {
   "title": "Radar turns tiny chest movements into breathing signals",
@@ -2143,28 +2158,28 @@
   "onC": 19
  },
  "14": {
-  "title": "Act I: How accurate is it in the hospital?",
+  "title": "Study 1: How accurate is it in the hospital?",
   "detailed": [
-   "Act I: How accurate is it in the hospital?",
+   "Study 1: How accurate is it in the hospital?",
    "bRDI versus AHI: r = 0.91 (p < 0.01).",
    "Moderate-to-Severe OSA: 90.3% Accuracy (Cut-off: 19.2 events/h).",
    "Severe OSA: 92.4% Accuracy (Cut-off: 28.86 events/h).",
    "Multi-class Prediction: 83.7% Average Accuracy (telling normal, mild, moderate and severe apart)."
   ],
   "concise": [
-   "Act I: How accurate is it in the hospital?",
+   "Study 1: How accurate is it in the hospital?",
    "Moderate-to-Severe OSA: 90.3% Accuracy. Severe OSA: 92.4% Accuracy.",
    "Multi-class Prediction: 83.7% Average Accuracy."
   ],
   "dMark": [
-   "Act I: How accurate is it in the hospital?",
+   "Study 1: How accurate is it in the hospital?",
    "[bRDI versus AHI:] r = 0.91 (p < 0.01).",
    "Moderate-to-Severe OSA: 90.3% Accuracy (Cut-off: 19.2 events/h).",
    "Severe OSA: 92.4% Accuracy (Cut-off: 28.86 events/h).",
    "Multi-class Prediction: 83.7% Average Accuracy (telling normal, mild, moderate and severe apart)."
   ],
   "cMark": [
-   "Act I: How accurate is it in the hospital?",
+   "Study 1: How accurate is it in the hospital?",
    "Moderate-to-Severe OSA: 90.3% Accuracy. Severe OSA: 92.4% Accuracy.",
    "Multi-class Prediction: 83.7% Average Accuracy."
   ],
@@ -2267,20 +2282,20 @@
     "28.86",
     "83.7%",
     "OSA",
+    "Study",
     "Moderate-to",
     "Severe",
-    "Accuracy",
-    "Multi-class"
+    "Accuracy"
    ],
    "concise": [
     "90.3%",
     "92.4%",
     "83.7%",
     "OSA",
+    "Study",
     "Moderate-to",
     "Severe",
-    "Accuracy",
-    "Multi-class"
+    "Accuracy"
    ],
    "kp": [
     "90.3%",
@@ -2939,9 +2954,9 @@
   "onC": 21
  },
  "20": {
-  "title": "Act II: Taking it home",
+  "title": "Study 2: Taking it home",
   "detailed": [
-   "Act II: Taking it home.",
+   "Study 2: Taking it home.",
    "At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician.",
    "80 subjects. 147 nights of home sleep, with no staff on site.",
    "We compared it with home sleep apnea testing (HSAT).",
@@ -2949,13 +2964,13 @@
    "Note: Real homes are messy, so we need robust signal processing."
   ],
   "concise": [
-   "Act II: Taking it home.",
+   "Study 2: Taking it home.",
    "At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician.",
    "80 subjects, 147 nights. We compared it with home sleep apnea testing (HSAT).",
    "Wall-mounted bracket or Floor stand, 75-90 cm."
   ],
   "dMark": [
-   "Act II: Taking it home.",
+   "Study 2: Taking it home.",
    "At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician.",
    "80 subjects. 147 nights of home sleep, with no staff on site.",
    "We compared it with home sleep apnea testing (HSAT).",
@@ -2963,7 +2978,7 @@
    "Note: Real homes are messy, so we need robust signal processing."
   ],
   "cMark": [
-   "Act II: Taking it home.",
+   "Study 2: Taking it home.",
    "At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician.",
    "80 subjects, 147 nights. We compared it with home sleep apnea testing (HSAT).",
    "Wall-mounted bracket [or] Floor stand, 75-90 cm."
@@ -3059,24 +3074,24 @@
     "147",
     "75",
     "HSAT",
+    "Study",
     "Taking",
     "Floor",
     "controlled",
     "different",
     "positions",
     "blankets",
-    "technician",
-    "subjects"
+    "technician"
    ],
    "concise": [
     "80",
     "147",
     "75",
     "HSAT",
+    "Study",
     "Taking",
     "Floor",
-    "controlled",
-    "different"
+    "controlled"
    ],
    "kp": [
     "80",
@@ -3090,9 +3105,9 @@
   "onC": 38
  },
  "21": {
-  "title": "Act II: How well does it work at home?",
+  "title": "Study 2: How well does it work at home?",
   "detailed": [
-   "Act II: How well does it work at home?",
+   "Study 2: How well does it work at home?",
    "Correlation: r = 0.87 (p < 0.01). bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
    "Consistency: On average, the difference is −5.30 events/h.",
    "The limits run from +1.96 SD to −1.96 SD.",
@@ -3100,12 +3115,12 @@
    "These are limits of agreement, not a confidence interval."
   ],
   "concise": [
-   "Act II: How well does it work at home?",
+   "Study 2: How well does it work at home?",
    "Correlation: r = 0.87 (p < 0.01).",
    "On average, the difference is −5.30 events/h. 93.88% of nights fall within the ±1.96 SD limits of agreement."
   ],
   "dMark": [
-   "Act II: How well does it work at home?",
+   "Study 2: How well does it work at home?",
    "Correlation: r = 0.87 (p < 0.01). bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
    "Consistency: On average, the difference is −5.30 events/h.",
    "[The limits run from] +1.96 SD [to] −1.96 SD.",
@@ -3113,7 +3128,7 @@
    "[These are limits of agreement, not a confidence interval.]"
   ],
   "cMark": [
-   "Act II: How well does it work at home?",
+   "Study 2: How well does it work at home?",
    "Correlation: r = 0.87 (p < 0.01).",
    "On average, the difference is −5.30 events/h. 93.88% of nights fall within the ±1.96 SD limits of agreement."
   ],
@@ -3216,7 +3231,7 @@
     "HSAT",
     "AHI",
     "SD",
-    "Correlation"
+    "Study"
    ],
    "concise": [
     "0.87",
@@ -3225,8 +3240,8 @@
     "93.88%",
     "1.96",
     "SD",
-    "Correlation",
-    "difference"
+    "Study",
+    "Correlation"
    ],
    "kp": [
     "0.87",
@@ -3240,25 +3255,25 @@
   "onC": 34
  },
  "22": {
-  "title": "Act II: Grading severity at home",
+  "title": "Study 2: Grading severity at home",
   "detailed": [
-   "Act II: Grading severity at home.",
+   "Study 2: Grading severity at home.",
    "Moderate-to-Severe OSA: 83.67% Accuracy (Cut-off bRDI_TIB: 21.19 events/h).",
    "Severe OSA: 93.21% Accuracy (Cut-off bRDI_TIB: 28.14 events/h).",
    "Multi-class Prediction: 78.23% average accuracy (better than HSAT rules alone, at 72.11%)."
   ],
   "concise": [
-   "Act II: Grading severity at home.",
+   "Study 2: Grading severity at home.",
    "Moderate-to-Severe OSA: 83.67%. Severe OSA: 93.21%."
   ],
   "dMark": [
-   "Act II: Grading severity at home.",
+   "Study 2: Grading severity at home.",
    "Moderate-to-Severe OSA: 83.67% Accuracy (Cut-off bRDI_TIB: 21.19 events/h).",
    "Severe OSA: 93.21% Accuracy (Cut-off bRDI_TIB: 28.14 events/h).",
    "Multi-class Prediction: 78.23% average accuracy (better than HSAT rules alone, at 72.11%)."
   ],
   "cMark": [
-   "Act II: Grading severity at home.",
+   "Study 2: Grading severity at home.",
    "Moderate-to-Severe OSA: 83.67%. Severe OSA: 93.21%."
   ],
   "secC": 6.3,
@@ -3349,14 +3364,15 @@
     "OSA",
     "bRDI",
     "HSAT",
+    "Study",
     "Grading",
-    "Moderate-to",
-    "Severe"
+    "Moderate-to"
    ],
    "concise": [
     "83.67%",
     "93.21%",
     "OSA",
+    "Study",
     "Grading",
     "Moderate-to",
     "Severe",
@@ -4300,40 +4316,40 @@
   "onC": 21
  },
  "30": {
-  "title": "Act III: Can breathing tell us about the heart?",
+  "title": "Study 3: Can breathing tell us about the heart?",
   "detailed": [
-   "Act III: Can breathing tell us about the heart?",
-   "Paper 3 at a glance (N = 72).",
+   "Study 3: Can breathing tell us about the heart?",
+   "Study 3 at a glance (N = 72). Published by our team (2025).",
    "What we found: When the radar picks up abnormal breathing patterns (especially periodic breathing / Cheyne-Stokes), this is associated with impaired LVEF (left ventricular ejection fraction).",
    "Important: This is a proposed early-warning model for heart failure, based on associations.",
    "It is not yet a validated tool for diagnosis or prediction."
   ],
   "concise": [
-   "Act III: Can breathing tell us about the heart?",
-   "When the radar picks up abnormal breathing patterns, this is associated with impaired LVEF.",
+   "Study 3: Can breathing tell us about the heart?",
+   "Published by our team (2025). When the radar picks up abnormal breathing patterns, this is associated with impaired LVEF.",
    "It is not yet a validated tool for diagnosis or prediction."
   ],
   "dMark": [
-   "Act III: Can breathing tell us about the heart?",
-   "Paper 3 at a glance (N = 72).",
+   "Study 3: Can breathing tell us about the heart?",
+   "Study 3 at a glance (N = 72). Published by our team (2025).",
    "What we found: When the radar picks up abnormal breathing patterns (especially periodic breathing / Cheyne-Stokes), this is associated with impaired LVEF (left ventricular ejection fraction).",
    "Important: This is a proposed early-warning model for heart failure, based on associations.",
    "It is not yet a validated tool for diagnosis or prediction."
   ],
   "cMark": [
-   "Act III: Can breathing tell us about the heart?",
-   "When the radar picks up abnormal breathing patterns, this is associated with impaired LVEF.",
+   "Study 3: Can breathing tell us about the heart?",
+   "Published by our team (2025). When the radar picks up abnormal breathing patterns, this is associated with impaired LVEF.",
    "It is not yet a validated tool for diagnosis or prediction."
   ],
-  "secC": 17.7,
-  "wc": 34,
-  "secD": 30.9,
-  "wd": 67,
+  "secC": 20.3,
+  "wc": 39,
+  "secD": 33.2,
+  "wd": 72,
   "points": [
    {
-    "zh": "第三幕：呼吸能告訴我們心臟的事嗎？（72 人）",
+    "zh": "研究三：呼吸能告訴我們心臟的事嗎？（團隊 2025 發表，72 人）",
     "kw": "act 3: cardiac research, 72 patients",
-    "en": "Act III: Can breathing tell us about the heart? Paper 3 (N = 72).",
+    "en": "Study 3: Can breathing tell us about the heart? Published by our team (2025), N = 72.",
     "groups": [
      [
       "heart",
@@ -4348,7 +4364,11 @@
       "third",
       "can breathing tell us about the heart",
       "paper 3",
-      "at a glance"
+      "at a glance",
+      "study 3",
+      "published",
+      "our team",
+      "2025"
      ],
      [
       "72",
@@ -4447,38 +4467,38 @@
   "slideKw": {
    "detailed": [
     "72",
+    "2025",
     "LVEF",
-    "Paper",
+    "Study",
+    "Published",
     "Cheyne",
     "Stokes",
     "Important",
     "breathing",
     "abnormal",
     "patterns",
-    "especially",
-    "periodic",
-    "associated"
+    "especially"
    ],
    "concise": [
+    "2025",
     "LVEF",
-    "breathing",
-    "abnormal",
-    "patterns",
-    "associated",
-    "impaired",
-    "validated",
-    "diagnosis"
-   ],
-   "kp": [
-    "LVEF",
+    "Study",
+    "Published",
     "breathing",
     "abnormal",
     "patterns",
     "associated"
+   ],
+   "kp": [
+    "2025",
+    "LVEF",
+    "Study",
+    "Published",
+    "breathing"
    ]
   },
-  "onD": 67,
-  "onC": 34
+  "onD": 72,
+  "onC": 39
  },
  "31": {
   "title": "Why does a weaker heart change breathing during sleep?",
