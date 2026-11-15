@@ -111,3 +111,17 @@ b.st{color:#0b4f9c}
 .small2 button{padding:6px 10px;font-size:13px}
 .nvctl .seg{margin:0}
 .nvctl .seg button{flex:none;white-space:nowrap}
+/* v5: 看投影片唸 */
+.os{background:#fff6cc;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+b.okw{color:#0b4f9c;font-weight:700}
+.add{color:#8a94a3;font-style:italic}
+.kwres{margin-top:8px;line-height:1.9}.kwres span{margin-right:6px;white-space:nowrap}
+#readNote{margin:6px 0;line-height:1.7}
+body.readmode #view-slide{display:block}
+body.readmode #view-slide.hidden{display:none}
+body.readmode .colL{position:static}
+body.readmode #kpHints{font-size:18px;line-height:1.75}
+body.readmode #kpHints .sent{display:block;margin:6px 0}
+body.readmode #kpHints .chip.sent{display:block}
+body.readmode .lvseg + .chk{display:none}
+@media (min-width:900px){ body.readmode main{max-width:1180px} }

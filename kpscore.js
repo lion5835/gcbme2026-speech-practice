@@ -4,6 +4,7 @@
   const TH = { hi: 0.78, lo: 0.70 }; // key-point embedding thresholds (tuned in tune/tune.js)
   const TS = { hi: 0.68, lo: 0.47, lex: 0.5, lexLo: 0.25 }; // sentence-level thresholds (tuned in tune/tune_v3.js)
   const NEED = { detailed: 0.7, concise: 0.6 };
+  const KWNEED = { detailed: 0.5, concise: 0.4, kp: 0 }; // share of on-slide keywords (numbers, terms) that must be heard
   const phraseCache = new Map();
   const ptoks = p => { if (!phraseCache.has(p)) phraseCache.set(p, A.normalize(p)); return phraseCache.get(p); };
 
@@ -56,9 +57,18 @@
   }
   /** scoreLevel(slide, level, transcript, sims) — level: 'detailed' | 'concise' | 'kp'
    *  slide: {points, detailed[], concise[], keywords[]}; sims: {pts:[], sents:[]} or null */
+  // on-slide keywords: extra weight on reading the slide's own words/numbers
+  function kwScore(slide, level, transcript) {
+    const kws = (slide.slideKw && slide.slideKw[level]) || [];
+    const S = A.normalize(String(transcript || '').replace(/(\d)x\b/g, '$1 times'));
+    const hits = kws.map(k => S.length > 0 && phraseHit(k, S));
+    const n = hits.filter(Boolean).length;
+    return { kw: kws, kwHits: hits, kwFrac: kws.length ? n / kws.length : 1, kwNeed: kws.length ? KWNEED[level] : 0 };
+  }
   function scoreLevel(slide, level, transcript, sims) {
     const kpRes = score({ points: slide.points }, transcript, sims ? sims.pts : null);
-    if (level === 'kp') return Object.assign({}, kpRes, { level, sentences: null, kpPass: kpRes.pass });
+    const kw = kwScore(slide, level, transcript); const kwOk = kw.kwFrac >= kw.kwNeed;
+    if (level === 'kp') return Object.assign({}, kpRes, kw, { level, sentences: null, kpPass: kpRes.pass, kwOk, pass: kpRes.pass && kwOk });
     const sents = level === 'detailed' ? slide.detailed : slide.concise;
     const spoken = A.normalize(transcript || '').length > 0;
     const lex = A.score(sents, transcript || '', slide.keywords || [], TS.lex);
@@ -69,8 +79,8 @@
     });
     const frac = sres.length ? sres.filter(x => x.covered).length / sres.length : 0;
     const need = NEED[level];
-    return Object.assign({}, kpRes, { level, sentences: sres, sentFrac: frac, sentNeed: need, kpPass: kpRes.pass, pass: kpRes.pass && frac >= need });
+    return Object.assign({}, kpRes, kw, { level, sentences: sres, sentFrac: frac, sentNeed: need, kpPass: kpRes.pass, kwOk, pass: kpRes.pass && frac >= need && kwOk });
   }
-  const api = { score, scoreLevel, windows, phraseHit, TH, TS, NEED };
+  const api = { score, scoreLevel, kwScore, windows, phraseHit, TH, TS, NEED, KWNEED };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.KPScore = api;
 })(typeof window !== 'undefined' ? window : globalThis);

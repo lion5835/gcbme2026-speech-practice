@@ -462,12 +462,14 @@ function setView(v) {
   if (rh && v !== 'rh') { clearInterval(rh.tick); rh = null; $('rhRun').classList.add('hidden'); $('rhIntro').classList.remove('hidden'); }
   stopEverything(); view = v;
   [...$('tabs').children].forEach(b => b.classList.toggle('on', b.dataset.view === v));
-  const slideView = v === 'practice' || v === 'shadow' || v === 'kp';
+  const kpLike = v === 'kp' || v === 'read';
+  const slideView = v === 'practice' || v === 'shadow' || kpLike;
   $('view-slide').classList.toggle('hidden', !slideView);
-  ['modeSeg', 'script', 'best'].forEach(id => $(id).classList.toggle('hidden', v === 'kp'));
-  $('slideTimerRow').classList.toggle('hidden', v === 'kp');
-  $('kpPanel').classList.toggle('hidden', v !== 'kp');
-  $('target').classList.toggle('hidden', v === 'kp');
+  document.body.classList.toggle('readmode', v === 'read');
+  ['modeSeg', 'script', 'best'].forEach(id => $(id).classList.toggle('hidden', kpLike));
+  $('slideTimerRow').classList.toggle('hidden', kpLike);
+  $('kpPanel').classList.toggle('hidden', !kpLike);
+  $('target').classList.toggle('hidden', kpLike);
   (window.__viewHooks || []).forEach(f => f(v));
   $('view-qa').classList.toggle('hidden', v !== 'qa'); $('view-rh').classList.toggle('hidden', v !== 'rh');
   $('practiceCtl').classList.toggle('hidden', v !== 'practice'); $('shadowCtl').classList.toggle('hidden', v !== 'shadow');

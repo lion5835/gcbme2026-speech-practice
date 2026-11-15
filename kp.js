@@ -48,7 +48,7 @@ async function sentSim(model, transcript) {
   if (!settings.useEmbed || EMB.state !== 'ready' || !transcript.trim()) return null;
   return (await maxSims([model], transcript, 3))[0];
 }
-function slideObj(n) { const s = SL.find(x => x.slide === +n); const d = data[n]; return { points: d.points, detailed: s.sentences, concise: d.concise, keywords: s.keywords }; }
+function slideObj(n) { const s = SL.find(x => x.slide === +n); const d = data[n]; return { points: d.points, detailed: s.sentences, concise: d.concise, keywords: s.keywords, slideKw: d.slideKw }; }
 function levelText(n, lv) { const o = slideObj(n); return lv === 'detailed' ? o.detailed : lv === 'concise' ? o.concise : o.points.map(p => p.en); }
 async function scoreText(n, transcript, lv) {
   lv = lv || levelOf(n); const o = slideObj(n); let sims = null;
@@ -86,8 +86,18 @@ function updateMastered() {
 }
 function markMastered(n, lv) { mastered[lv][n] = Date.now(); LS.set(masteredKey(lv), mastered[lv]); updateMastered(); }
 
-const HINTS = { kp: [['none', '不提示'], ['zh', '中文重點'], ['kw', '英文關鍵字'], ['en', '示範句']], other: [['none', '不提示'], ['cue', '開頭＋關鍵字'], ['full', '完整稿＋停頓重音']] };
-const markHTML = t => esc(t).replace(/\s*\/\/\s*/g, ' <span class="pz2">‖</span> ').replace(/\s*\/\s*/g, ' <span class="pz">|</span> ').replace(/\*([^*]+)\*/g, '<b class="st">$1</b>');
+const HINTS = { kp: [['none', '不提示'], ['zh', '中文重點'], ['kw', '英文關鍵字'], ['en', '示範句']], other: [['none', '不提示'], ['cue', '開頭＋關鍵字'], ['full', '完整稿（投影片原文）']] };
+// v5 marks: text in [brackets] = words not on the slide (grey italic); on-slide text highlighted, on-slide keywords bold
+const reEsc = x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+function markHTML(t, kws) {
+  const kwRe = kws && kws.length ? new RegExp('(^|[^A-Za-z0-9])(' + kws.slice().sort((a, b) => b.length - a.length).map(k => reEsc(esc(k))).join('|') + ')(?![A-Za-z0-9])', 'g') : null;
+  return String(t).split(/(\[[^\]]*\])/).filter(x => x !== '').map(part => {
+    if (part[0] === '[') return `<span class="add">${esc(part.slice(1, -1))}</span>`;
+    let h = esc(part); if (kwRe) h = h.replace(kwRe, '$1<b class="okw">$2</b>');
+    return part.trim() ? `<span class="os">${h}</span>` : h;
+  }).join('');
+}
+const isRead = () => APP.view === 'read';
 function cue(sent) {
   const w = sent.split(/\s+/); const lead = w.slice(0, 3).join(' '); const rest = w.slice(3).join(' ');
   const terms = new Set();
@@ -106,13 +116,14 @@ function renderHints(el, n, hint, noCover, lv) {
       el.querySelector('.cover').onclick = () => { revealed = true; renderHints(el, n, hint, false, lv); }; return;
     }
     const h = { zh: 'zh', kw: 'kw', en: 'en', cue: 'zh', full: 'en' }[hint] || 'zh';
-    el.innerHTML = d.points.map((p, i) => `<span class="chip sent" data-i="${i}">${i + 1}. ${esc(p[h])}${p.must ? '<span class="must">必講</span>' : ''}</span>`).join('');
+    const kk = (d.slideKw && d.slideKw.kp) || [];
+    el.innerHTML = d.points.map((p, i) => `<span class="chip sent" data-i="${i}">${i + 1}. ${h === 'en' ? markHTML(p.en, kk) : esc(p[h])}${p.must ? '<span class="must">必講</span>' : ''}</span>`).join('');
     return;
   }
   const sents = levelText(n, lv); const full = hint === 'full' || hint === 'en'; const marks = full && (lv === 'detailed' ? d.dMark : d.cMark);
   el.innerHTML = `<div class="small muted">重點：${d.points.map(p => esc(p.zh) + (p.must ? '（必講）' : '')).join('　')}</div>` +
-    sents.map((s, i) => `<span class="sent ${full ? '' : 'cue'}" data-i="${i}"><span class="n">${i + 1}</span>${full ? (marks ? markHTML(marks[i]) : esc(s)) : cue(s)}</span>`).join('') +
-    (marks ? '<div class="small muted legend"><span class="pz">|</span> 換氣短停　<span class="pz2">‖</span> 較長停頓　<b class="st">粗體</b> 加重語氣</div>' : '');
+    sents.map((s, i) => `<span class="sent ${full ? '' : 'cue'}" data-i="${i}"><span class="n">${i + 1}</span>${full ? (marks ? markHTML(marks[i], d.slideKw && d.slideKw[lv]) : esc(s)) : cue(s)}</span>`).join('') +
+    (marks ? '<div class="small muted legend"><span class="os">底色</span>＝投影片上的原文　<b class="okw">粗體</b>＝計分關鍵字（數字、術語）　<span class="add">灰色斜體</span>＝投影片上沒有的連接詞</div>' : '');
 }
 function renderPanel() {
   if (!data) return;
@@ -122,7 +133,8 @@ function renderPanel() {
   const opts = HINTS[lv === 'kp' ? 'kp' : 'other'];
   if (!opts.some(o => o[0] === hints[lv])) hints[lv] = opts[1][0];
   $('kpHintSeg').innerHTML = opts.map(o => `<button data-h="${o[0]}" class="${o[0] === hints[lv] ? 'on' : ''}">${o[1]}</button>`).join('');
-  renderHints($('kpHints'), n, hints[lv], false, lv);
+  $('kpHintSeg').classList.toggle('hidden', isRead()); $('readNote').classList.toggle('hidden', !isRead());
+  renderHints($('kpHints'), n, isRead() ? (lv === 'kp' ? 'en' : 'full') : hints[lv], isRead(), lv);
   $('kpResult').classList.add('hidden'); $('kpLive').classList.add('hidden'); $('kpGistBox').classList.add('hidden');
   $('kpTimer').textContent = '0:00';
   const d = data[n];
@@ -146,6 +158,7 @@ function resultHTML(n, r) {
   if (r.sentences) {
     h += `<div class="small muted" style="margin-top:8px">${LV_NAME[lv]}稿逐句（判斷意思，不要求逐字）</div>` + r.sentences.map((s, i) => `<div class="sres"><span class="mk ${s.covered ? 'good' : 'bad'}">${s.covered ? '✓' : '✗'}</span>${esc(s.text)}${s.covered ? `<span class="via small muted"> · ${s.via === 'meaning' ? '意思相近 ' + Math.round(s.sim * 100) + '%' : '用字涵蓋 ' + Math.round(s.cov * 100) + '%'}</span>` : ` <button class="btn small ghost" data-say="s${i}">🔊</button>`}</div>`).join('');
   }
+  if (r.kw && r.kw.length) h += `<div class="small kwres">📌 投影片關鍵字 ${r.kwHits.filter(Boolean).length}/${r.kw.length}${r.kwNeed ? `（需 ${Math.round(r.kwNeed * 100)}%）` : '（加分，不影響過關）'}：${r.kw.map((k, i) => `<span class="${r.kwHits[i] ? 'good' : 'bad'}">${r.kwHits[i] ? '✓' : '✗'}${esc(k)}</span>`).join(' ')}</div>`;
   if (r.pace) h += `<div class="small pace">⏱ ${r.pace}</div>`;
   if (r.pass && (r.covered < r.total || (r.sentences && r.sentFrac < 1))) h += '<p class="small muted">已經過關！沒講到的部分是加分題，熟了再補。</p>';
   return h;
@@ -216,10 +229,10 @@ $('kpGist').onclick = async () => {
 };
 
 (window.__slideHooks = window.__slideHooks || []).push(() => { revealed = false; stop(); renderPanel(); });
-(window.__viewHooks = window.__viewHooks || []).push(v => { if (v === 'kp') { renderPanel(); ensureModel(); } });
+(window.__viewHooks = window.__viewHooks || []).push(v => { if (v === 'kp' || v === 'read') { renderPanel(); ensureModel(); } });
 
 window.KPUI = { stop, sentSim, renderHints, scoreText, markMastered, ensureModel, modelStatus, levelOf, levelText, LV_NAME,
   get data() { return data; }, get emb() { return EMB.state; }, get globalLevel() { return globalLevel; } };
-fetch('levels.json').then(r => r.json()).then(d => { data = d; renderPanel(); if (APP.view === 'kp') ensureModel(); })
+fetch('levels.json').then(r => r.json()).then(d => { data = d; renderPanel(); if (APP.view === 'kp' || APP.view === 'read') ensureModel(); })
   .catch(e => { $('kpHints').innerHTML = '<span class="bad">練習資料載入失敗，請重新整理。</span>'; console.error(e); });
 })();
