@@ -44,6 +44,10 @@ async function maxSims(models, transcript, minL) {
   const ev = await embed(uniq); const map = new Map(uniq.map((w, i) => [w, ev[i]]));
   return models.map((m, i) => wins[i].length ? Math.max(...wins[i].map(w => dot(map.get(w), EMB.cache.get(m)))) : 0);
 }
+async function sentSim(model, transcript) {
+  if (!settings.useEmbed || EMB.state !== 'ready' || !transcript.trim()) return null;
+  return (await maxSims([model], transcript, 3))[0];
+}
 function slideObj(n) { const s = SL.find(x => x.slide === +n); const d = data[n]; return { points: d.points, detailed: s.sentences, concise: d.concise, keywords: s.keywords }; }
 function levelText(n, lv) { const o = slideObj(n); return lv === 'detailed' ? o.detailed : lv === 'concise' ? o.concise : o.points.map(p => p.en); }
 async function scoreText(n, transcript, lv) {
@@ -82,7 +86,8 @@ function updateMastered() {
 }
 function markMastered(n, lv) { mastered[lv][n] = Date.now(); LS.set(masteredKey(lv), mastered[lv]); updateMastered(); }
 
-const HINTS = { kp: [['none', '不提示'], ['zh', '中文重點'], ['kw', '英文關鍵字'], ['en', '示範句']], other: [['none', '不提示'], ['cue', '開頭＋關鍵字'], ['full', '完整稿']] };
+const HINTS = { kp: [['none', '不提示'], ['zh', '中文重點'], ['kw', '英文關鍵字'], ['en', '示範句']], other: [['none', '不提示'], ['cue', '開頭＋關鍵字'], ['full', '完整稿＋停頓重音']] };
+const markHTML = t => esc(t).replace(/\s*\/\/\s*/g, ' <span class="pz2">‖</span> ').replace(/\s*\/\s*/g, ' <span class="pz">|</span> ').replace(/\*([^*]+)\*/g, '<b class="st">$1</b>');
 function cue(sent) {
   const w = sent.split(/\s+/); const lead = w.slice(0, 3).join(' '); const rest = w.slice(3).join(' ');
   const terms = new Set();
@@ -104,9 +109,10 @@ function renderHints(el, n, hint, noCover, lv) {
     el.innerHTML = d.points.map((p, i) => `<span class="chip sent" data-i="${i}">${i + 1}. ${esc(p[h])}${p.must ? '<span class="must">必講</span>' : ''}</span>`).join('');
     return;
   }
-  const sents = levelText(n, lv); const full = hint === 'full' || hint === 'en';
+  const sents = levelText(n, lv); const full = hint === 'full' || hint === 'en'; const marks = full && (lv === 'detailed' ? d.dMark : d.cMark);
   el.innerHTML = `<div class="small muted">重點：${d.points.map(p => esc(p.zh) + (p.must ? '（必講）' : '')).join('　')}</div>` +
-    sents.map((s, i) => `<span class="sent ${full ? '' : 'cue'}" data-i="${i}"><span class="n">${i + 1}</span>${full ? esc(s) : cue(s)}</span>`).join('');
+    sents.map((s, i) => `<span class="sent ${full ? '' : 'cue'}" data-i="${i}"><span class="n">${i + 1}</span>${full ? (marks ? markHTML(marks[i]) : esc(s)) : cue(s)}</span>`).join('') +
+    (marks ? '<div class="small muted legend"><span class="pz">|</span> 換氣短停　<span class="pz2">‖</span> 較長停頓　<b class="st">粗體</b> 加重語氣</div>' : '');
 }
 function renderPanel() {
   if (!data) return;
@@ -140,6 +146,7 @@ function resultHTML(n, r) {
   if (r.sentences) {
     h += `<div class="small muted" style="margin-top:8px">${LV_NAME[lv]}稿逐句（判斷意思，不要求逐字）</div>` + r.sentences.map((s, i) => `<div class="sres"><span class="mk ${s.covered ? 'good' : 'bad'}">${s.covered ? '✓' : '✗'}</span>${esc(s.text)}${s.covered ? `<span class="via small muted"> · ${s.via === 'meaning' ? '意思相近 ' + Math.round(s.sim * 100) + '%' : '用字涵蓋 ' + Math.round(s.cov * 100) + '%'}</span>` : ` <button class="btn small ghost" data-say="s${i}">🔊</button>`}</div>`).join('');
   }
+  if (r.pace) h += `<div class="small pace">⏱ ${r.pace}</div>`;
   if (r.pass && (r.covered < r.total || (r.sentences && r.sentFrac < 1))) h += '<p class="small muted">已經過關！沒講到的部分是加分題，熟了再補。</p>';
   return h;
 }
@@ -148,12 +155,19 @@ async function feedback(n, r) {
   stopTTS(); const my = ++runId; const d = data[n];
   const got = r.points.map((p, i) => p.covered ? d.points[i].kw : null).filter(Boolean);
   let intro = r.pass ? (r.covered === r.total ? 'Excellent! You got the key points.' : 'Great job. You got the main idea.') : (r.covered ? 'Good start.' : "Let's try again.");
-  if (got.length && r.covered < r.total) intro += ' You covered: ' + got.join('; ') + '.';
+  if (got.length && r.covered < r.total && !(window.NV && NV.natural())) intro += ' You covered: ' + got.join('; ') + '.';
   await speak(intro); if (my !== runId) return;
   const adds = [];
   r.points.forEach((p, i) => { if (!p.covered) adds.push(d.points[i].en); });
   if (r.sentences && !r.pass) r.sentences.forEach(s => { if (!s.covered && adds.length < 4) adds.push(s.text); });
   for (const a of adds.slice(0, 4)) { await speak('You could add: ' + a); if (my !== runId) return; }
+}
+function paceText(L, text, lv) {
+  const secs = L && L.firstHeard && L.lastHeard > L.firstHeard ? (L.lastHeard - L.firstHeard) / 1000 + 0.5 : 0;
+  const w = text.split(/\s+/).filter(Boolean).length; if (secs < 4 || w < 8) return '';
+  const wpm = Math.round(w / secs * 60); const [lo, hi] = lv === 'detailed' ? [115, 160] : [100, 150];
+  const tag = wpm < lo ? '偏慢，可以再順一點' : wpm > hi ? '偏快，句子之間多停一下' : '速度剛好';
+  return `語速約 ${wpm} 字/分（${tag}；參考 ${lo}–${hi}）` + (L.longPauses ? ` · 停頓超過 2.5 秒 ${L.longPauses} 次` : '');
 }
 function stop() {
   runId++; clearInterval(tInt);
@@ -179,7 +193,7 @@ $('kpSpeak').onclick = async () => {
   const text = await listener.start(); clearInterval(tInt);
   if (!text) { $('kpResult').innerHTML = '<p>沒有聽到聲音，請確認麥克風後再試一次。</p>'; $('kpResult').classList.remove('hidden'); speak("I didn't hear anything. Please try again."); return; }
   $('kpResult').innerHTML = '<p class="muted">判斷中…</p>'; $('kpResult').classList.remove('hidden');
-  const r = await scoreText(n, text, lv);
+  const r = await scoreText(n, text, lv); r.pace = paceText(listener, text, lv);
   $('kpResult').innerHTML = resultHTML(n, r);
   $('kpResult').querySelectorAll('[data-say]').forEach(b => b.onclick = () => { stopTTS(); const k = b.dataset.say; speak(k[0] === 'p' ? data[n].points[+k.slice(1)].en : r.sentences[+k.slice(1)].text); });
   if (r.pass) markMastered(n, lv);
@@ -196,6 +210,7 @@ $('kpGist').onclick = async () => {
     if (my !== runId) break;
     box.querySelectorAll('.sent').forEach(e => e.classList.toggle('playing', +e.dataset.g === i));
     await speak(sents[i]);
+    if (my === runId && window.NV && NV.natural()) await new Promise(r => setTimeout(r, lv === 'detailed' ? 250 : 400));
   }
   box.querySelectorAll('.sent').forEach(e => e.classList.remove('playing'));
 };
@@ -203,7 +218,7 @@ $('kpGist').onclick = async () => {
 (window.__slideHooks = window.__slideHooks || []).push(() => { revealed = false; stop(); renderPanel(); });
 (window.__viewHooks = window.__viewHooks || []).push(v => { if (v === 'kp') { renderPanel(); ensureModel(); } });
 
-window.KPUI = { stop, renderHints, scoreText, markMastered, ensureModel, modelStatus, levelOf, levelText, LV_NAME,
+window.KPUI = { stop, sentSim, renderHints, scoreText, markMastered, ensureModel, modelStatus, levelOf, levelText, LV_NAME,
   get data() { return data; }, get emb() { return EMB.state; }, get globalLevel() { return globalLevel; } };
 fetch('levels.json').then(r => r.json()).then(d => { data = d; renderPanel(); if (APP.view === 'kp') ensureModel(); })
   .catch(e => { $('kpHints').innerHTML = '<span class="bad">練習資料載入失敗，請重新整理。</span>'; console.error(e); });

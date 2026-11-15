@@ -54,6 +54,7 @@
         <button id="kpGist" class="btn">🔊 示範（本等級）</button>
         <button id="kpStop" class="btn ghost small">⏹</button>
       </div>
+      <div class="row nvrow"><span class="small muted">示範語音</span><div class="nvctl"></div></div>
       <div class="row timerrow"><span class="muted">已講</span> <span id="kpTimer" class="timer">0:00</span><span id="kpTarget" class="muted small">（不限時，講到重點就好）</span><span id="kpRec" class="rec hidden">● 聆聽中</span></div>
       <div id="kpGistBox" class="a hidden"></div>
       <div id="kpLive" class="live hidden"></div>
@@ -74,7 +75,9 @@
     <div id="shadowCtl" class="ctl hidden">
       <button id="btnShadow" class="btn primary">▶︎ 開始跟讀</button>
       <button id="btnShadowStop" class="btn ghost">⏹ 停止</button>
-      <span class="hint">播放一句 → 你跟著說 → 立即回饋</span>
+      <div class="seg lvseg small2" id="shLevelSeg"><button data-lv="detailed" class="on">詳細稿</button><button data-lv="concise">精簡稿</button></div>
+      <span class="hint">播放一句 → 你跟著說 → 立即回饋（內容＋意思＋速度）</span>
+      <div class="row nvrow"><span class="small muted">示範語音</span><div class="nvctl"></div></div>
     </div>
     <div class="row timerrow" id="slideTimerRow">
       <span id="timer" class="timer">0:00</span><span class="muted"> / 目標 <span id="timerTarget"></span></span>
@@ -160,8 +163,9 @@
 <dialog id="settings">
   <form method="dialog">
     <h3>設定</h3>
-    <label>示範語音 <select id="voiceSel"></select></label>
-    <label>語速 <input type="range" id="rate" min="0.6" max="1.2" step="0.05"> <b id="rateVal"></b></label>
+    <p class="small muted">示範語音預設用「自然語音」（預先用開源 Kokoro-82M 產生的錄音，語調較自然）。動態回饋（例如「You missed: …」）或選「瀏覽器語音」時，才用下面的瀏覽器語音與語速。</p>
+    <label>瀏覽器語音 <select id="voiceSel"></select></label>
+    <label>瀏覽器語速 <input type="range" id="rate" min="0.6" max="1.2" step="0.05"> <b id="rateVal"></b></label>
     <label>過關門檻（內容涵蓋率） <input type="range" id="thr" min="0.5" max="0.95" step="0.05"> <b id="thrVal"></b></label>
     <label class="chk"><input type="checkbox" id="voiceFb"> 講完後用語音回饋（唸出漏掉的字與正確說法）</label>
     <label class="chk"><input type="checkbox" id="useEmbed"> 抓重點模式使用語意模型（第一次下載約 23 MB，之後會快取）</label>
@@ -175,6 +179,7 @@
 <script src="align.js"></script>
 <script src="kpscore.js"></script>
 <script src="app.js"></script>
+<script src="voice.js"></script>
 <script src="kp.js"></script>
 </body>
 </html>

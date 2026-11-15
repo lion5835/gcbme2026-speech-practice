@@ -34,7 +34,11 @@ function loadVoices() {
 if (TTS) { loadVoices(); speechSynthesis.onvoiceschanged = loadVoices; }
 const pickVoice = () => voices.find(v => v.name === settings.voice) || voices[0] || null;
 let ttsToken = 0;
-function speak(text, opt = {}) {
+async function speak(text, opt = {}) {
+  if (window.NV && !opt.browser) { const my = ttsToken; const r = await window.NV.say(text); if (r !== null) return r && my === ttsToken; }
+  return speakBrowser(text, opt);
+}
+function speakBrowser(text, opt = {}) {
   return new Promise(resolve => {
     if (!TTS) return resolve(false);
     const u = new SpeechSynthesisUtterance(text);
@@ -48,7 +52,7 @@ function speak(text, opt = {}) {
     speechSynthesis.speak(u);
   });
 }
-function stopTTS() { ttsToken++; if (TTS) speechSynthesis.cancel(); }
+function stopTTS() { ttsToken++; if (window.NV) window.NV.stop(); if (TTS) speechSynthesis.cancel(); }
 
 /* ---------- Speech recognition wrapper ---------- */
 class Listener {
@@ -58,7 +62,7 @@ class Listener {
   }
   start() {
     if (!SR) { alert('此瀏覽器不支援語音辨識，請用電腦版 Chrome 或 iPhone Safari。'); return Promise.resolve(''); }
-    this.active = true; this.final = ''; this.interim = ''; this.started = Date.now(); this.lastHeard = 0;
+    this.active = true; this.final = ''; this.interim = ''; this.started = Date.now(); this.lastHeard = 0; this.firstHeard = 0; this.longPauses = 0;
     this.done = new Promise(r => this._resolve = r);
     this._spawn(); this.onState && this.onState(true);
     this.timer = setInterval(() => {
@@ -76,7 +80,7 @@ class Listener {
     r.onresult = e => {
       let fin = '', inter = '';
       for (let i = 0; i < e.results.length; i++) { const t = e.results[i][0].transcript; if (e.results[i].isFinal) fin += t + ' '; else inter += t; }
-      this.final = (base + ' ' + fin).replace(/\s+/g, ' ').trim(); this.interim = inter; this.lastHeard = Date.now();
+      this.final = (base + ' ' + fin).replace(/\s+/g, ' ').trim(); this.interim = inter; const now = Date.now(); if (!this.firstHeard) this.firstHeard = now; else if (now - this.lastHeard > 2500) this.longPauses++; this.lastHeard = now;
       this.onText && this.onText(this.final, this.interim);
     };
     r.onerror = e => {
@@ -134,6 +138,7 @@ function showSlide(i) {
   $('timerTarget').textContent = fmt(s.seconds); $('timer').textContent = '0:00'; $('timer').classList.remove('over');
   renderScript($('script'), s, settings.mode);
   $('result').classList.add('hidden'); $('live').classList.add('hidden');
+  if (view === 'shadow') renderShadowScript();
   // preload neighbours
   (window.__slideHooks || []).forEach(f => { try { f(cur); } catch (e) { console.warn(e); } });
   [cur + 1, cur - 1].forEach(k => { if (SL[k]) { const im = new Image(); im.src = SL[k].image; } });
@@ -256,26 +261,41 @@ $('btnSpeak').onclick = async () => {
 
 /* ---------- Shadowing ---------- */
 let shadowRun = 0;
+let shLevel = LS.get('shLevel', 'detailed');
+function shadowSentences(s) { const d = window.KPUI && KPUI.data && KPUI.data[s.slide]; return shLevel === 'concise' && d ? d.concise : s.sentences; }
+function renderShadowScript() { const s = SL[cur]; $('script').onclick = null; $('script').innerHTML = shadowSentences(s).map((x, i) => `<span class="sent" data-i="${i}"><span class="n">${i + 1}</span>${esc(x)}</span>`).join(''); }
+function paceNote(userSec, modelSec) {
+  if (!userSec || !modelSec) return null; const r = userSec / modelSec;
+  return r > 1.45 ? { cls: 'mid', zh: `偏慢（${userSec.toFixed(1)} 秒，示範 ${modelSec.toFixed(1)} 秒）`, en: 'A little faster.' }
+    : r < 0.65 ? { cls: 'mid', zh: `偏快（${userSec.toFixed(1)} 秒，示範 ${modelSec.toFixed(1)} 秒）`, en: 'A little slower.' }
+    : { cls: 'good', zh: `速度剛好（${userSec.toFixed(1)} 秒，示範 ${modelSec.toFixed(1)} 秒）`, en: 'Nice pace.' };
+}
 async function shadow() {
   const my = ++shadowRun; stopTTS();
-  const s = SL[cur]; const box = $('result'); box.classList.remove('hidden'); box.innerHTML = '';
+  const s = SL[cur]; const sents = shadowSentences(s); renderShadowScript();
+  const box = $('result'); box.classList.remove('hidden'); box.innerHTML = '';
   let passed = 0;
-  for (let i = 0; i < s.sentences.length; i++) {
+  for (let i = 0; i < sents.length; i++) {
     let attempt = 0;
     while (my === shadowRun) {
       highlight($('script'), i);
       liveRender($('live'), '', '🔊 先聽…');
-      await speak(s.sentences[i]); if (my !== shadowRun) return;
+      await speak(sents[i]); if (my !== shadowRun) return;
       liveRender($('live'), '', '🎤 換你說這一句…');
-      const words = s.sentences[i].split(/\s+/).length;
+      const words = sents[i].split(/\s+/).length;
       listener = new Listener({ onText: (f, it) => liveRender($('live'), f, it), onState: (on, err) => { $('recState').classList.toggle('hidden', !on); if (err) { alert(err); shadowRun++; } }, silenceMs: 1500, maxMs: (words * 0.75 + 5) * 1000, noSpeechMs: 7000 });
-      const text = await listener.start(); if (my !== shadowRun) return;
-      const r = Align.score([s.sentences[i]], text, s.keywords, settings.thr).sentences[0];
+      const L0 = listener; const text = await listener.start(); if (my !== shadowRun) return;
+      const r = Align.score([sents[i]], text, s.keywords, settings.thr).sentences[0];
+      let sim = null; if (!r.pass && text && window.KPUI && KPUI.sentSim) { try { sim = await KPUI.sentSim(sents[i], text); } catch (e) { } }
+      const ok = r.pass || (sim != null && sim >= 0.8);
+      const userSec = L0.firstHeard && L0.lastHeard > L0.firstHeard ? (L0.lastHeard - L0.firstHeard) / 1000 + 0.4 : 0;
+      const modelSec = window.NV && NV.clipSec(sents[i]) ? NV.clipSec(sents[i]) / (settings.nrate || 1) : words / 2.4;
+      const pace = text ? paceNote(userSec, modelSec) : null;
       const row = document.createElement('div'); row.className = 'rs';
-      row.innerHTML = `<div class="hd"><span>第 ${i + 1} 句 · ${Math.round(r.coverage * 100)}% ${r.pass ? '<span class="good">✓</span>' : '<span class="bad">✗</span>'}${attempt ? '（重試）' : ''}</span></div><div class="tx">${tokensHTML(r)}</div>${!r.pass && r.missed.length ? `<div class="missed">漏掉：${esc(r.missed.join(', '))}</div>` : ''}`;
+      row.innerHTML = `<div class="hd"><span>第 ${i + 1} 句 · ${Math.round(r.coverage * 100)}%${sim != null ? ` · 意思 ${Math.round(sim * 100)}%` : ''} ${ok ? '<span class="good">✓</span>' : '<span class="bad">✗</span>'}${attempt ? '（重試）' : ''}</span></div><div class="tx">${tokensHTML(r)}</div>${!ok && r.missed.length ? `<div class="missed">漏掉：${esc(r.missed.join(', '))}</div>` : ''}${pace ? `<div class="small ${pace.cls}">⏱ ${pace.zh}</div>` : ''}`;
       box.appendChild(row); row.scrollIntoView({ block: 'nearest' });
-      if (r.pass) { passed++; if (settings.voiceFb) await speak(r.coverage > 0.9 ? 'Great.' : 'Good.', { rate: 1 }); break; }
-      if (settings.voiceFb) await speak(text ? (r.missed.length ? `You missed: ${r.missed.slice(0, 4).join(', ')}.` : 'Almost.') : "I didn't hear you.", { rate: 1 });
+      if (ok) { passed++; if (settings.voiceFb) await speak(pace && pace.cls !== 'good' ? pace.en : (r.coverage > 0.9 ? 'Great.' : 'Good.'), { rate: 1 }); break; }
+      if (settings.voiceFb) await speak(!text ? "I didn't hear you." : (window.NV && NV.natural()) ? 'Almost.' : (r.missed.length ? `You missed: ${r.missed.slice(0, 4).join(', ')}.` : 'Almost.'), { rate: 1 });
       if (my !== shadowRun) return;
       attempt++; if (!settings.shadowRetry || attempt > 1) break;
       if (settings.voiceFb) await speak('Listen again.', { rate: 1 });
@@ -283,10 +303,12 @@ async function shadow() {
   }
   if (my !== shadowRun) return;
   highlight($('script'), -1); $('live').classList.add('hidden');
-  const msg = `This slide is done. ${passed} of ${s.sentences.length} sentences passed.`;
-  const d = document.createElement('div'); d.className = 'score'; d.innerHTML = `<b class="${passed === s.sentences.length ? 'good' : 'mid'}">${passed}/${s.sentences.length}</b><span>句過關。可按 › 進入下一張再跟讀。</span>`; box.appendChild(d);
+  const msg = `This slide is done. ${passed} of ${sents.length} sentences passed.`;
+  const d = document.createElement('div'); d.className = 'score'; d.innerHTML = `<b class="${passed === sents.length ? 'good' : 'mid'}">${passed}/${sents.length}</b><span>句過關。可按 › 進入下一張再跟讀。</span>`; box.appendChild(d);
   if (settings.voiceFb) speak(msg);
 }
+$('shLevelSeg').onclick = e => { const b = e.target.closest('button'); if (!b) return; shLevel = b.dataset.lv; LS.set('shLevel', shLevel); [...$('shLevelSeg').children].forEach(x => x.classList.toggle('on', x === b)); stopEverything(); renderShadowScript(); };
+[...$('shLevelSeg').children].forEach(x => x.classList.toggle('on', x.dataset.lv === shLevel));
 $('btnShadow').onclick = () => { if (!SR) return alert('此瀏覽器不支援語音辨識，請用電腦版 Chrome 或 iPhone Safari。'); shadow(); };
 $('btnShadowStop').onclick = () => stopEverything();
 
@@ -450,6 +472,7 @@ function setView(v) {
   $('view-qa').classList.toggle('hidden', v !== 'qa'); $('view-rh').classList.toggle('hidden', v !== 'rh');
   $('practiceCtl').classList.toggle('hidden', v !== 'practice'); $('shadowCtl').classList.toggle('hidden', v !== 'shadow');
   $('result').classList.add('hidden'); $('live').classList.add('hidden');
+  if (v === 'shadow') { $('modeSeg').classList.add('hidden'); renderShadowScript(); }
   if (v === 'rh') rhRenderHistory();
   window.scrollTo(0, 0);
 }
@@ -469,5 +492,5 @@ $('testVoice').onclick = () => { stopTTS(); speak('Good morning, everyone. Thank
 
 showSlide(cur); setView('kp'); showQA(0);
 if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => { });
-window.__app = { Align, SL, QA, showSlide, setView, speak, stopTTS, Listener, stopEverything, settings, saveSettings, LS, fmt, esc, highlight, SR, TTS, get cur() { return cur; }, get view() { return view; }, get listener() { return listener; }, set listener(l) { listener = l; } };
+window.__app = { Align, SL, QA, showSlide, setView, speak, speakBrowser, stopTTS, renderScript, Listener, stopEverything, settings, saveSettings, LS, fmt, esc, highlight, SR, TTS, get cur() { return cur; }, get view() { return view; }, get listener() { return listener; }, set listener(l) { listener = l; } };
 })();

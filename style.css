@@ -99,3 +99,15 @@ table.rep td.num{text-align:right;font-variant-numeric:tabular-nums}
   .colL{position:sticky;top:56px}
   .tabs{max-width:980px;margin:0 auto;border:1px solid var(--line);border-bottom:0;border-radius:12px 12px 0 0}
 }
+
+.nvrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:6px 0}
+.nvctl{display:flex;gap:8px;flex-wrap:wrap}
+.nvctl .seg button{padding:6px 10px;font-size:13px}
+.pz{color:#9aa7b8;font-weight:400;margin:0 1px}
+.pz2{color:#4a7bd0;font-weight:700;margin:0 2px}
+b.st{color:#0b4f9c}
+.legend{margin-top:6px}
+.pace{margin-top:8px;padding:6px 8px;background:#f2f6fb;border-radius:8px}
+.small2 button{padding:6px 10px;font-size:13px}
+.nvctl .seg{margin:0}
+.nvctl .seg button{flex:none;white-space:nowrap}
