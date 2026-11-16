@@ -701,33 +701,33 @@
   "title": "Radar principle diagram",
   "detailed": [
    "Here is how the radar works.",
-   "It sends a signal from Tx, and picks up the reflection at Rx.",
-   "When the chest moves a little, the received pulse changes, in its time of flight and its phase.",
-   "From these changes, we can rebuild the breathing signal, with no wires."
+   "The radar sends a signal from Tx, and picks up the reflection at Rx.",
+   "When the chest moves a little, the received signal changes, in its time of flight, or ToF, and its phase.",
+   "From the changes, we rebuild the breathing signal, with no wires."
   ],
   "concise": [
-   "The radar sends a signal from Tx, and receives the reflection at Rx.",
-   "A small chest movement changes the received pulse."
+   "The radar sends a signal from Tx, and picks up the reflection at Rx.",
+   "When the chest moves a little, the received signal changes. From the changes, we rebuild the breathing signal, with no wires."
   ],
   "dMark": [
    "[Here is how the] radar [works.]",
-   "[It sends a signal from Tx, and picks up the reflection at Rx.]",
-   "[When the chest moves a little, the] received pulse [changes, in its time of flight and its phase.]",
-   "[From these changes, we can rebuild the breathing signal, with no wires.]"
+   "[The] radar sends a signal from Tx, and picks up the reflection at Rx.",
+   "When the chest moves a little, the received signal changes, in its time of flight, [or] ToF, and its phase.",
+   "From the changes, we rebuild the breathing signal, [with] no wires."
   ],
   "cMark": [
-   "[The] radar [sends a signal from Tx, and receives the reflection at Rx.]",
-   "[A small chest movement changes the] received pulse."
+   "[The] radar sends a signal from Tx, and picks up the reflection at Rx.",
+   "When the chest moves a little, the received signal changes. From the changes, we rebuild the breathing signal, [with] no wires."
   ],
-  "secC": 11.0,
-  "wc": 21,
-  "secD": 22.6,
-  "wd": 49,
+  "secC": 18.3,
+  "wc": 35,
+  "secD": 23.5,
+  "wd": 51,
   "points": [
    {
     "zh": "雷達 Tx 發射、Rx 接收",
     "kw": "24 GHz continuous-wave radar",
-    "en": "The Radar sends from Tx and receives at Rx.",
+    "en": "Radar sends a signal from Tx, and picks up the reflection at Rx.",
     "groups": [
      [
       "radar",
@@ -748,7 +748,7 @@
    {
     "zh": "胸壁微動 Δx 改變回波，不用接線",
     "kw": "senses tiny chest movement, no wires",
-    "en": "A small chest movement, Δx, changes the received pulse, with no wires.",
+    "en": "When the chest moves a little, the received signal changes, with no wires.",
     "groups": [
      [
       "chest",
@@ -809,7 +809,7 @@
    {
     "zh": "飛行時間 ToF 與相位變化 Δφ",
     "kw": "phase changes → breathing; deep neural decision trees",
-    "en": "Time of flight, ToF, and phase shift, Δφ.",
+    "en": "The signal changes in its time of flight (ToF) and its phase.",
     "groups": [
      [
       "phase",
@@ -850,18 +850,23 @@
   ],
   "slideKw": {
    "detailed": [
-    "received"
+    "reflection",
+    "received",
+    "breathing"
    ],
    "concise": [
-    "received"
+    "reflection",
+    "received",
+    "breathing"
    ],
    "kp": [
     "Radar",
+    "reflection",
     "received"
    ]
   },
-  "onD": 3,
-  "onC": 3
+  "onD": 43,
+  "onC": 33
  },
  "6": {
   "title": "Here's how it looks at the bedside",
