@@ -537,185 +537,33 @@
   "onC": 23
  },
  "4": {
-  "title": "Why is sleep testing so hard?",
-  "detailed": [
-   "Why is sleep testing so hard?",
-   "Look at the waiting room. If we suspect sleep-disordered breathing, we need objective data.",
-   "But getting that data is a real hassle.",
-   "Putting on the sensors often takes more than 60 minutes, and it makes patients anxious.",
-   "And then patients have to sleep in a very unnatural setting."
-  ],
-  "concise": [
-   "Why is sleep testing so hard?",
-   "We need objective data, but patients must sleep in a very unnatural setting."
-  ],
-  "dMark": [
-   "Why is sleep testing so hard?",
-   "[Look at] the waiting room. If we suspect sleep-disordered breathing, we need objective data.",
-   "But getting that data is a real hassle.",
-   "[Putting on the sensors] often [takes more than] 60 minutes, [and it makes] patients [anxious.]",
-   "[And then] patients have to sleep in a very unnatural setting."
-  ],
-  "cMark": [
-   "Why is sleep testing so hard?",
-   "We need objective data, but patients [must] sleep in a very unnatural setting."
-  ],
-  "secC": 9.9,
-  "wc": 19,
-  "secD": 24.9,
-  "wd": 54,
-  "points": [
-   {
-    "zh": "需要客觀資料，但取得很麻煩",
-    "kw": "testing is a burden for patients",
-    "en": "If we suspect sleep-disordered breathing, we need objective data. But getting that data is a real hassle.",
-    "groups": [
-     [
-      "data",
-      "test",
-      "testing",
-      "exam",
-      "measurement",
-      "objective",
-      "acquiring data",
-      "massive",
-      "objective data",
-      "getting that data"
-     ],
-     [
-      "inconvenient",
-      "inconvenience",
-      "burden",
-      "difficult",
-      "hard",
-      "trouble",
-      "waiting",
-      "wait",
-      "hassle",
-      "real hassle"
-     ]
-    ],
-    "need": 2,
-    "must": true
-   },
-   {
-    "zh": "貼線超過 60 分鐘、會焦慮",
-    "kw": "over 60 minutes of wiring, anxiety",
-    "en": "Sensor application time often exceeds 60 minutes, causing anxiety.",
-    "groups": [
-     [
-      "60 minutes",
-      "sixty minutes",
-      "one hour",
-      "an hour",
-      "hour",
-      "long time",
-      "takes time"
-     ],
-     [
-      "wire",
-      "wires",
-      "sensor",
-      "sensors",
-      "attach",
-      "setup",
-      "set up",
-      "electrodes"
-     ],
-     [
-      "anxiety",
-      "anxious",
-      "nervous",
-      "worried",
-      "stress",
-      "stressful",
-      "uncomfortable"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "睡眠環境不自然，與我們想測的相反",
-    "kw": "unnatural sleep conditions",
-    "en": "Patients have to sleep in a very unnatural setting.",
-    "groups": [
-     [
-      "unnatural",
-      "not natural",
-      "not normal",
-      "strange",
-      "different",
-      "artificial",
-      "not real",
-      "not their own bed",
-      "very unnatural"
-     ],
-     [
-      "sleep",
-      "night",
-      "sleeping",
-      "condition",
-      "conditions",
-      "environment",
-      "setting"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   }
-  ],
-  "slideKw": {
-   "detailed": [
-    "60",
-    "disordered",
-    "breathing",
-    "objective",
-    "patients",
-    "unnatural"
-   ],
-   "concise": [
-    "objective",
-    "patients",
-    "unnatural"
-   ],
-   "kp": [
-    "Patients",
-    "objective",
-    "unnatural"
-   ]
-  },
-  "onD": 39,
-  "onC": 18
- },
- "5": {
   "title": "Wearable sensors for sleep monitoring",
   "detailed": [
-   "Today, there are many wearable sensors for sleep monitoring.",
+   "So what do we use today? There are many wearable sensors for sleep monitoring.",
    "They track brain activity, heart activity, movement, respiration, and blood oxygen.",
    "But every one of them has to be worn on the body.",
    "So the question is: could non-wearables work?"
   ],
   "concise": [
-   "There are many wearable sensors for sleep monitoring.",
+   "Today, we use many wearable sensors for sleep monitoring.",
    "But every one of them is worn on the body.",
    "Could non-wearables work?"
   ],
   "dMark": [
-   "[Today, there are many] wearable sensors for sleep monitoring.",
+   "[So what do we use today? There are many] wearable sensors for sleep monitoring.",
    "[They track] brain activity, heart activity, movement, respiration, [and] blood oxygen.",
    "[But every one of them has to be worn on the body.]",
    "[So the question is:] could non-wearables work?"
   ],
   "cMark": [
-   "[There are many] wearable sensors for sleep monitoring.",
+   "[Today, we use many] wearable sensors for sleep monitoring.",
    "[But every one of them is worn on the body.]",
    "Could non-wearables work?"
   ],
-  "secC": 11.0,
-  "wc": 21,
-  "secD": 18.0,
-  "wd": 39,
+  "secC": 11.5,
+  "wc": 22,
+  "secD": 20.3,
+  "wd": 44,
   "points": [
    {
     "zh": "穿戴式感測器進步很多",
@@ -849,7 +697,7 @@
   "onD": 16,
   "onC": 8
  },
- "6": {
+ "5": {
   "title": "Radar principle diagram",
   "detailed": [
    "Here is how the radar works.",
@@ -1015,7 +863,7 @@
   "onD": 3,
   "onC": 3
  },
- "7": {
+ "6": {
   "title": "Here's how it looks at the bedside",
   "detailed": [
    "Here's how it looks at the bedside.",
@@ -1127,7 +975,7 @@
   "onD": 7,
   "onC": 7
  },
- "8": {
+ "7": {
   "title": "Our three published studies: sleep lab, home, and heart",
   "detailed": [
    "Our team has three published studies: in the sleep lab, at home, and on the heart.",
@@ -1311,7 +1159,7 @@
   "onD": 80,
   "onC": 38
  },
- "9": {
+ "8": {
   "title": "Study 1: Testing it in the hospital",
   "detailed": [
    "Let's start with Study 1: testing it in the hospital.",
@@ -1443,7 +1291,7 @@
   "onD": 33,
   "onC": 20
  },
- "10": {
+ "9": {
   "title": "Radar turns tiny chest movements into breathing signals",
   "detailed": [
    "So how does it see breathing? The radar turns tiny chest movements into breathing signals.",
@@ -1589,7 +1437,7 @@
   "onD": 16,
   "onC": 14
  },
- "11": {
+ "10": {
   "title": "Sleep tests watch airflow. Radar watches the chest.",
   "detailed": [
    "Sleep tests watch airflow. Radar watches the chest.",
@@ -1766,7 +1614,7 @@
   "onD": 76,
   "onC": 37
  },
- "12": {
+ "11": {
   "title": "How radar sees a sleep-breathing event",
   "detailed": [
    "How does radar see a sleep-breathing event? In five steps of chest-wall motion.",
@@ -1951,7 +1799,7 @@
   "onD": 55,
   "onC": 19
  },
- "13": {
+ "12": {
   "title": "Does the radar agree with the clinical gold standard?",
   "detailed": [
    "So, does the radar agree with the clinical gold standard?",
@@ -2098,7 +1946,7 @@
   "onD": 27,
   "onC": 16
  },
- "14": {
+ "13": {
   "title": "Study 1: How accurate is it in the hospital?",
   "detailed": [
    "Study 1: how accurate is it in the hospital?",
@@ -2249,7 +2097,7 @@
   "onD": 36,
   "onC": 21
  },
- "15": {
+ "14": {
   "title": "From research to the ward: a zero-contact care platform",
   "detailed": [
    "From research to the ward: this is our zero-contact care platform. We now use the radar every day for our inpatients.",
@@ -2439,7 +2287,7 @@
   "onD": 62,
   "onC": 24
  },
- "16": {
+ "15": {
   "title": "Obstructive Sleep Apnea after COVID-19",
   "detailed": [
    "Next, obstructive sleep apnea after COVID-19. This is an observational study.",
@@ -2562,7 +2410,7 @@
   "onD": 24,
   "onC": 15
  },
- "17": {
+ "16": {
   "title": "Radar picks up OSA in COVID-19 patients",
   "detailed": [
    "Radar also picks up OSA in COVID-19 patients.",
@@ -2736,7 +2584,7 @@
   "onD": 28,
   "onC": 19
  },
- "19": {
+ "18": {
   "title": "Does it work in real homes?",
   "detailed": [
    "Now, does it work in real homes?",
@@ -2877,7 +2725,7 @@
   "onD": 34,
   "onC": 19
  },
- "20": {
+ "19": {
   "title": "Study 2: Taking it home",
   "detailed": [
    "This brings us to Study 2: taking it home.",
@@ -3024,7 +2872,7 @@
   "onD": 49,
   "onC": 21
  },
- "21": {
+ "20": {
   "title": "Study 2: How well does it work at home?",
   "detailed": [
    "Study 2: how well does it work at home?",
@@ -3168,7 +3016,7 @@
   "onD": 51,
   "onC": 20
  },
- "22": {
+ "21": {
   "title": "Study 2: Grading severity at home",
   "detailed": [
    "Study 2: grading severity at home.",
@@ -3302,7 +3150,7 @@
   "onD": 32,
   "onC": 13
  },
- "23": {
+ "22": {
   "title": "Hospital vs. home: how do they compare?",
   "detailed": [
    "So, hospital vs. home: how do they compare?",
@@ -3437,7 +3285,7 @@
   "onD": 51,
   "onC": 20
  },
- "24": {
+ "23": {
   "title": "TFDA clearance: where we stand",
   "detailed": [
    "TFDA clearance: where we stand. The device is TFDA cleared.",
@@ -3577,7 +3425,7 @@
   "onD": 49,
   "onC": 26
  },
- "25": {
+ "24": {
   "title": "TFDA license document",
   "detailed": [
    "This is the TFDA license document, in Chinese.",
@@ -3699,7 +3547,7 @@
   "onD": 9,
   "onC": 6
  },
- "26": {
+ "25": {
   "title": "So what does TFDA clearance mean in practice?",
   "detailed": [
    "So what does TFDA clearance mean in practice?",
@@ -3836,7 +3684,7 @@
   "onD": 53,
   "onC": 18
  },
- "27": {
+ "26": {
   "title": "How do we install it?",
   "detailed": [
    "How do we install it?",
@@ -3937,7 +3785,7 @@
   "onD": 31,
   "onC": 15
  },
- "28": {
+ "27": {
   "title": "How it all works, around the clock",
   "detailed": [
    "So how does it all work, around the clock?",
@@ -4076,7 +3924,7 @@
   "onD": 40,
   "onC": 20
  },
- "29": {
+ "28": {
   "title": "What does daily screening data look like?",
   "detailed": [
    "What does daily screening data look like?",
@@ -4206,7 +4054,7 @@
   "onD": 18,
   "onC": 15
  },
- "30": {
+ "29": {
   "title": "Study 3: Can breathing tell us about the heart?",
   "detailed": [
    "Now, Study 3: can breathing tell us about the heart?",
@@ -4395,7 +4243,7 @@
   "onD": 60,
   "onC": 33
  },
- "31": {
+ "30": {
   "title": "Why does a weaker heart change breathing during sleep?",
   "detailed": [
    "Why does a weaker heart change breathing during sleep?",
@@ -4530,7 +4378,7 @@
   "onD": 30,
   "onC": 22
  },
- "32": {
+ "31": {
   "title": "Periodic-breathing features & cycle length",
   "detailed": [
    "We can measure periodic breathing by features like the cycle length and the hyperpnea length.",
@@ -4679,7 +4527,7 @@
   "onD": 30,
   "onC": 21
  },
- "33": {
+ "32": {
   "title": "IEEE JTEHM 2025 paper",
   "detailed": [
    "This is our paper on evaluating cardiac impairment from abnormal respiratory patterns, using wireless radar and deep learning.",
@@ -4824,7 +4672,7 @@
   "onD": 25,
   "onC": 14
  },
- "34": {
+ "33": {
   "title": "Putting numbers on the heart–breathing links",
   "detailed": [
    "Let's put numbers on the heart–breathing links.",
@@ -4962,7 +4810,7 @@
   "onD": 54,
   "onC": 32
  },
- "35": {
+ "34": {
   "title": "Our ward work has won national awards",
   "detailed": [
    "Our ward work has also won national awards for our zero-contact care platform.",
@@ -5094,7 +4942,7 @@
   "onD": 35,
   "onC": 13
  },
- "38": {
+ "37": {
   "title": "What to take home",
   "detailed": [
    "So, what should you take home?",
