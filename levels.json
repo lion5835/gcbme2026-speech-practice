@@ -185,172 +185,157 @@
   "onC": 15
  },
  "2": {
-  "title": "Why is sleep care hitting a bottleneck?",
+  "title": "Why is sleep testing so hard?",
   "detailed": [
-   "So, why is sleep care hitting a bottleneck?",
-   "First, it's just one night. That's all the data we get.",
-   "Second, it ties up the hospital. It uses a lot of resources and beds.",
-   "Third, it's hard on patients. They have to come in just for the test.",
-   "And finally, there are blind spots at home. We can't easily tell if treatment is used, or if it works."
+   "So, why is sleep testing so hard?",
+   "Look at the waiting room. If we suspect sleep-disordered breathing, we need objective data.",
+   "But getting that data is a real hassle.",
+   "Putting on the sensors often takes more than 60 minutes, and it makes patients anxious.",
+   "And then patients have to sleep in a very unnatural setting."
   ],
   "concise": [
-   "Why is sleep care hitting a bottleneck?",
-   "We get just one night of data, and it ties up hospital beds.",
-   "It's hard on patients, and at home we can't tell if treatment works."
+   "Why is sleep testing so hard?",
+   "We need objective data, but getting that data is a real hassle.",
+   "And patients have to sleep in a very unnatural setting."
   ],
   "dMark": [
-   "[So,] why is sleep care hitting a bottleneck?",
-   "[First, it's] just one night. That's all the data we get.",
-   "[Second, it] ties up the hospital. It uses a lot of resources and beds.",
-   "[Third, it's] hard on patients. They have to come in just for the test.",
-   "[And finally, there are] blind spots at home. We can't easily tell if treatment is used, or if it works."
+   "[So,] why is sleep testing so hard?",
+   "[Look at] the waiting room. If we suspect sleep-disordered breathing, we need objective data.",
+   "But getting that data is a real hassle.",
+   "[Putting on the sensors] often [takes more than] 60 minutes, [and it makes] patients [anxious.]",
+   "[And then] patients have to sleep in a very unnatural setting."
   ],
   "cMark": [
-   "Why is sleep care hitting a bottleneck?",
-   "We get just one night [of] data, [and it] ties up hospital beds.",
-   "[It's] hard on patients, [and] at home we can't tell if treatment works."
+   "Why is sleep testing so hard?",
+   "We need objective data, but getting that data is a real hassle.",
+   "And patients have to sleep in a very unnatural setting."
   ],
-  "secC": 17.2,
-  "wc": 33,
-  "secD": 30.9,
-  "wd": 67,
+  "secC": 14.6,
+  "wc": 28,
+  "secD": 25.4,
+  "wd": 55,
   "points": [
    {
-    "zh": "睡眠醫療為什麼卡關",
-    "kw": "traditional sleep medicine bottleneck",
-    "en": "Why is sleep care hitting a bottleneck?",
+    "zh": "需要客觀資料，但取得很麻煩",
+    "kw": "testing is a burden for patients",
+    "en": "If we suspect sleep-disordered breathing, we need objective data. But getting that data is a real hassle.",
     "groups": [
      [
-      "traditional",
-      "conventional",
-      "current",
-      "standard",
-      "old",
-      "usual",
-      "sleep medicine",
-      "sleep care"
+      "data",
+      "test",
+      "testing",
+      "exam",
+      "measurement",
+      "objective",
+      "acquiring data",
+      "massive",
+      "objective data",
+      "getting that data"
      ],
      [
-      "bottleneck",
-      "problem",
-      "problems",
-      "limitation",
-      "limitations",
+      "inconvenient",
+      "inconvenience",
+      "burden",
       "difficult",
-      "difficulty",
-      "challenge",
       "hard",
-      "hitting a bottleneck"
+      "trouble",
+      "waiting",
+      "wait",
+      "hassle",
+      "real hassle"
      ]
     ],
     "need": 2,
     "must": true
    },
    {
-    "zh": "只有一晚的資料；占用醫院資源和病床",
-    "kw": "one night, hospital-dependent",
-    "en": "It's just one night of data, and it ties up the hospital: a lot of resources and beds.",
+    "zh": "貼線超過 60 分鐘、會焦慮",
+    "kw": "over 60 minutes of wiring, anxiety",
+    "en": "Sensor application time often exceeds 60 minutes, causing anxiety.",
     "groups": [
      [
-      "one night",
-      "single night",
-      "only one night",
-      "snapshot",
-      "fragmented",
-      "one time",
-      "once",
-      "short",
-      "single-night",
-      "one-night snapshot",
-      "just one night"
+      "60 minutes",
+      "sixty minutes",
+      "one hour",
+      "an hour",
+      "hour",
+      "long time",
+      "takes time"
      ],
      [
-      "hospital",
-      "bed",
-      "beds",
-      "resources",
-      "resource",
-      "staff",
-      "cost",
-      "expensive",
-      "reliance",
-      "bed space",
-      "medical resources",
-      "hospital beds",
-      "ties up",
-      "resources and beds"
+      "wire",
+      "wires",
+      "sensor",
+      "sensors",
+      "attach",
+      "setup",
+      "set up",
+      "electrodes"
+     ],
+     [
+      "anxiety",
+      "anxious",
+      "nervous",
+      "worried",
+      "stress",
+      "stressful",
+      "uncomfortable"
      ]
     ],
-    "need": 1,
+    "need": 2,
     "must": false
    },
    {
-    "zh": "病人很辛苦；回家後難知道治療有沒有用",
-    "kw": "inconvenient; blind spot after going home",
-    "en": "It's hard on patients, and at home we can't easily tell if treatment is used, or if it works.",
+    "zh": "睡眠環境不自然，與我們想測的相反",
+    "kw": "unnatural sleep conditions",
+    "en": "Patients have to sleep in a very unnatural setting.",
     "groups": [
      [
-      "inconvenient",
-      "not convenient",
-      "trouble",
-      "hard for patients",
-      "must come",
-      "have to come",
-      "burden",
-      "travel",
-      "inconvenience",
-      "blindspots",
-      "blind spots",
-      "track",
-      "just for the test",
-      "hard on patients",
-      "come in"
+      "unnatural",
+      "not natural",
+      "not normal",
+      "strange",
+      "different",
+      "artificial",
+      "not real",
+      "not their own bed",
+      "very unnatural"
      ],
      [
-      "go home",
-      "goes home",
-      "at home",
-      "after discharge",
-      "blind spot",
-      "blind spots",
-      "don't know",
-      "do not know",
-      "follow up",
-      "whether treatment",
-      "treatment works",
-      "working",
-      "can't easily tell",
-      "if it works",
-      "treatment is used",
-      "blind spots at home"
+      "sleep",
+      "night",
+      "sleeping",
+      "condition",
+      "conditions",
+      "environment",
+      "setting"
      ]
     ],
-    "need": 1,
+    "need": 2,
     "must": false
    }
   ],
   "slideKw": {
    "detailed": [
-    "bottleneck",
-    "hospital",
-    "resources",
+    "60",
+    "disordered",
+    "breathing",
+    "objective",
     "patients",
-    "treatment"
+    "unnatural"
    ],
    "concise": [
-    "bottleneck",
-    "hospital",
+    "objective",
     "patients",
-    "treatment"
+    "unnatural"
    ],
    "kp": [
-    "bottleneck",
-    "hospital",
-    "patients",
-    "treatment"
+    "Patients",
+    "objective",
+    "unnatural"
    ]
   },
-  "onD": 56,
+  "onD": 39,
   "onC": 28
  },
  "3": {
