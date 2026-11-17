@@ -1284,27 +1284,27 @@
  "9": {
   "title": "Radar turns tiny chest movements into breathing signals",
   "detailed": [
-   "So how does it see breathing? The radar turns tiny chest movements into breathing signals.",
+   "So, how does the radar see the breathing? It turns tiny chest movements into breathing signals.",
    "At the top, normal breathing gives a steady, regular wave.",
    "At the bottom is a respiratory event. During the apnea episode, the wave gets very small, and then breathing comes back."
   ],
   "concise": [
-   "The radar turns tiny chest movements into breathing signals.",
+   "How does the radar see the breathing? It turns tiny chest movements into breathing signals.",
    "You can see normal breathing, and a respiratory event with an apnea episode."
   ],
   "dMark": [
-   "[So how does it see] breathing? [The] radar turns tiny chest movements into breathing signals.",
+   "[So,] how does the radar see the breathing? [It] turns tiny chest movements into breathing signals.",
    "[At the top,] normal breathing [gives a steady, regular wave.]",
    "[At the bottom is a] respiratory event. [During the] apnea episode, [the wave gets very small, and then] breathing [comes back.]"
   ],
   "cMark": [
-   "[The] radar turns tiny chest movements into breathing signals.",
+   "How does the radar see the breathing? [It] turns tiny chest movements into breathing signals.",
    "[You can see] normal breathing, [and a] respiratory event [with an] apnea episode."
   ],
-  "secC": 11.5,
-  "wc": 22,
-  "secD": 21.2,
-  "wd": 46,
+  "secC": 14.6,
+  "wc": 28,
+  "secD": 21.7,
+  "wd": 47,
   "points": [
    {
     "zh": "雷達把胸壁微動轉成呼吸訊號",
@@ -1412,8 +1412,8 @@
     "respiratory"
    ],
    "concise": [
-    "movements",
     "breathing",
+    "movements",
     "respiratory"
    ],
    "kp": [
@@ -1424,8 +1424,8 @@
     "respiratory"
    ]
   },
-  "onD": 16,
-  "onC": 14
+  "onD": 21,
+  "onC": 20
  },
  "10": {
   "title": "Sleep tests watch airflow. Radar watches the chest.",
@@ -1940,6 +1940,7 @@
   "title": "Study 1: How accurate is it in the hospital?",
   "detailed": [
    "Study 1: how accurate is it in the hospital?",
+   "Here, bRDI is the BestShape Respiratory Disturbance Index, from the radar.",
    "The radar's bRDI and the AHI from PSG line up well, with r = 0.91, and p < 0.01.",
    "For moderate-to-severe OSA, the accuracy was 90.3%, with a cut-off of 19.2 events/h.",
    "For severe OSA, the accuracy was 92.4%, with a cut-off of 28.86 events/h.",
@@ -1952,6 +1953,7 @@
   ],
   "dMark": [
    "Study 1: how accurate is it in the hospital?",
+   "[Here,] bRDI [is the] BestShape Respiratory Disturbance Index, [from the radar.]",
    "[The radar's] bRDI [and the] AHI [from PSG line up well, with] r = 0.91, [and] p < 0.01.",
    "[For] moderate-to-severe OSA, [the] accuracy [was] 90.3%, [with a] cut-off [of] 19.2 events/h.",
    "[For] severe OSA, [the] accuracy [was] 92.4%, [with a] cut-off [of] 28.86 events/h.",
@@ -1964,8 +1966,8 @@
   ],
   "secC": 15.1,
   "wc": 29,
-  "secD": 29.1,
-  "wd": 63,
+  "secD": 34.2,
+  "wd": 74,
   "points": [
    {
     "zh": "雷達 bRDI 與 PSG AHI 高度相關（r = 0.91）",
@@ -2064,7 +2066,7 @@
     "AHI",
     "OSA",
     "Study",
-    "accurate"
+    "Respiratory"
    ],
    "concise": [
     "90.3%",
@@ -2084,7 +2086,7 @@
     "Moderate-to"
    ]
   },
-  "onD": 36,
+  "onD": 41,
   "onC": 21
  },
  "14": {
@@ -2574,7 +2576,7 @@
   "onD": 28,
   "onC": 19
  },
- "18": {
+ "17": {
   "title": "Does it work in real homes?",
   "detailed": [
    "Now, does it work in real homes?",
@@ -2715,7 +2717,7 @@
   "onD": 34,
   "onC": 19
  },
- "19": {
+ "18": {
   "title": "Study 2: Taking it home",
   "detailed": [
    "This brings us to Study 2: taking it home.",
@@ -2862,7 +2864,7 @@
   "onD": 49,
   "onC": 21
  },
- "20": {
+ "19": {
   "title": "Study 2: How well does it work at home?",
   "detailed": [
    "Study 2: how well does it work at home?",
@@ -3006,7 +3008,7 @@
   "onD": 51,
   "onC": 20
  },
- "21": {
+ "20": {
   "title": "Study 2: Grading severity at home",
   "detailed": [
    "Study 2: grading severity at home.",
@@ -3140,7 +3142,7 @@
   "onD": 32,
   "onC": 13
  },
- "22": {
+ "21": {
   "title": "Hospital vs. home: how do they compare?",
   "detailed": [
    "So, hospital vs. home: how do they compare?",
@@ -3275,7 +3277,7 @@
   "onD": 51,
   "onC": 20
  },
- "23": {
+ "22": {
   "title": "TFDA clearance: where we stand",
   "detailed": [
    "TFDA clearance: where we stand. The device is TFDA cleared.",
@@ -3415,7 +3417,7 @@
   "onD": 49,
   "onC": 26
  },
- "24": {
+ "23": {
   "title": "TFDA license document",
   "detailed": [
    "This is the TFDA license document, in Chinese.",
@@ -3537,7 +3539,7 @@
   "onD": 9,
   "onC": 6
  },
- "25": {
+ "24": {
   "title": "So what does TFDA clearance mean in practice?",
   "detailed": [
    "So what does TFDA clearance mean in practice?",
@@ -3674,7 +3676,7 @@
   "onD": 53,
   "onC": 18
  },
- "26": {
+ "25": {
   "title": "How do we install it?",
   "detailed": [
    "How do we install it?",
@@ -3775,7 +3777,7 @@
   "onD": 31,
   "onC": 15
  },
- "27": {
+ "26": {
   "title": "How it all works, around the clock",
   "detailed": [
    "So how does it all work, around the clock?",
@@ -3914,7 +3916,7 @@
   "onD": 40,
   "onC": 20
  },
- "28": {
+ "27": {
   "title": "What does daily screening data look like?",
   "detailed": [
    "What does daily screening data look like?",
@@ -4044,7 +4046,7 @@
   "onD": 18,
   "onC": 15
  },
- "29": {
+ "28": {
   "title": "Study 3: Can breathing tell us about the heart?",
   "detailed": [
    "Now, Study 3: can breathing tell us about the heart?",
@@ -4233,7 +4235,7 @@
   "onD": 60,
   "onC": 33
  },
- "30": {
+ "29": {
   "title": "Why does a weaker heart change breathing during sleep?",
   "detailed": [
    "Why does a weaker heart change breathing during sleep?",
@@ -4368,7 +4370,7 @@
   "onD": 30,
   "onC": 22
  },
- "31": {
+ "30": {
   "title": "Periodic-breathing features & cycle length",
   "detailed": [
    "We can measure periodic breathing by features like the cycle length and the hyperpnea length.",
@@ -4517,7 +4519,7 @@
   "onD": 30,
   "onC": 21
  },
- "32": {
+ "31": {
   "title": "IEEE JTEHM 2025 paper",
   "detailed": [
    "This is our paper on evaluating cardiac impairment from abnormal respiratory patterns, using wireless radar and deep learning.",
@@ -4662,7 +4664,7 @@
   "onD": 25,
   "onC": 14
  },
- "33": {
+ "32": {
   "title": "Putting numbers on the heart–breathing links",
   "detailed": [
    "Let's put numbers on the heart–breathing links.",
@@ -4800,7 +4802,7 @@
   "onD": 54,
   "onC": 32
  },
- "34": {
+ "33": {
   "title": "Our ward work has won national awards",
   "detailed": [
    "Our ward work has also won national awards for our zero-contact care platform.",
@@ -4932,7 +4934,7 @@
   "onD": 35,
   "onC": 13
  },
- "37": {
+ "34": {
   "title": "What to take home",
   "detailed": [
    "So, what should you take home?",
