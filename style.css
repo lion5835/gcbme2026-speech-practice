@@ -125,3 +125,12 @@ body.readmode #kpHints .sent{display:block;margin:6px 0}
 body.readmode #kpHints .chip.sent{display:block}
 body.readmode .lvseg + .chk{display:none}
 @media (min-width:900px){ body.readmode main{max-width:1180px} }
+.talkbtn{margin-left:auto;margin-right:6px;background:#ffd54f;color:#0f3d5e;border:0;border-radius:999px;padding:6px 14px;font-weight:700;font-size:15px}
+.talk{position:fixed;inset:0;z-index:50;background:var(--bg);overflow:auto;-webkit-overflow-scrolling:touch}
+.talkbar{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:calc(8px + env(safe-area-inset-top)) 14px 8px;background:var(--pri2);color:#fff}
+.talkbody{max-width:980px;margin:0 auto;padding:8px 10px calc(24px + env(safe-area-inset-bottom))}
+.tkctl .btn{flex:1;min-width:0;font-size:18px}
+.tktitle{flex:1;min-width:0;font-weight:600}
+#tkJump{flex:1;min-width:0;font-size:15px;padding:6px;border-radius:8px;border:1px solid var(--line);background:#fff}
+.tkdl{margin-top:10px}
+body.talkopen{overflow:hidden}
