@@ -3420,126 +3420,9 @@
   "onC": 26
  },
  "23": {
-  "title": "TFDA license document",
-  "detailed": [
-   "And this is the TFDA license document itself, in Chinese.",
-   "At a bRDI cut-off of 30, sensitivity and specificity are both 90.5%."
-  ],
-  "concise": [
-   "Here's the TFDA license document.",
-   "At a bRDI cut-off of 30, sensitivity and specificity are both 90.5%."
-  ],
-  "dMark": [
-   "[And this is the] TFDA license document [itself, in Chinese.]",
-   "[At a] bRDI [cut-off of] 30, [sensitivity and specificity are both] 90.5%."
-  ],
-  "cMark": [
-   "[Here's the] TFDA license document.",
-   "[At a] bRDI [cut-off of] 30, [sensitivity and specificity are both] 90.5%."
-  ],
-  "secC": 8.9,
-  "wc": 17,
-  "secD": 10.2,
-  "wd": 22,
-  "points": [
-   {
-    "zh": "TFDA 許可證文件",
-    "kw": "the TFDA license",
-    "en": "This is the TFDA license document.",
-    "groups": [
-     [
-      "license",
-      "licence",
-      "document",
-      "certificate",
-      "tfda",
-      "fda",
-      "approval"
-     ]
-    ],
-    "need": 1,
-    "must": true
-   },
-   {
-    "zh": "報告內容：睡眠時間、睡眠分期、bRDI、心跳呼吸",
-    "kw": "report: sleep time, stages, bRDI, HR, RR",
-    "en": "The report covers sleep time, sleep stages, bRDI, heart rate and respiration rate.",
-    "groups": [
-     [
-      "sleep time",
-      "time in bed",
-      "sleep efficiency",
-      "efficiency",
-      "sleep stages",
-      "stages",
-      "staging"
-     ],
-     [
-      "brdi",
-      "heart rate",
-      "respiratory rate",
-      "breathing rate",
-      "index"
-     ]
-    ],
-    "need": 1,
-    "must": false
-   },
-   {
-    "zh": "bRDI 30：90.5%；心率 40–120；一致性 69%",
-    "kw": "labeled: 90.5%, HR 40–120, staging 69%",
-    "en": "bRDI 30: 90.5%; Heart rate 40–120 Bpm; overall agreement 69%.",
-    "groups": [
-     [
-      "90.5",
-      "90"
-     ],
-     [
-      "40",
-      "120",
-      "heart rate"
-     ],
-     [
-      "69",
-      "staging",
-      "stages",
-      "agreement"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   }
-  ],
-  "slideKw": {
-   "detailed": [
-    "30",
-    "90.5%",
-    "TFDA",
-    "bRDI",
-    "document"
-   ],
-   "concise": [
-    "30",
-    "90.5%",
-    "TFDA",
-    "bRDI",
-    "document"
-   ],
-   "kp": [
-    "30",
-    "90.5%",
-    "TFDA",
-    "bRDI",
-    "document"
-   ]
-  },
-  "onD": 6,
-  "onC": 6
- },
- "24": {
   "title": "So what does TFDA clearance mean in practice?",
   "detailed": [
-   "So what does TFDA clearance mean in practice?",
+   "So what does TFDA clearance mean in practice? Here is what the license covers.",
    "The main cut-off is bRDI ≥ 30. This flags suspected severe OSA.",
    "Sensitivity and specificity are both 90.5%.",
    "It tracks heart rate from 40–120 bpm.",
@@ -3551,7 +3434,7 @@
    "The main cut-off is bRDI ≥ 30. It's a screen, not a full diagnosis."
   ],
   "dMark": [
-   "So what does TFDA clearance mean in practice?",
+   "So what does TFDA clearance mean in practice? [Here is] what [the license covers.]",
    "[The] main cut-off [is] bRDI ≥ 30. This flags suspected severe OSA.",
    "Sensitivity [and] specificity [are both] 90.5%.",
    "It tracks heart rate from 40–120 bpm.",
@@ -3564,8 +3447,8 @@
   ],
   "secC": 11.5,
   "wc": 22,
-  "secD": 29.1,
-  "wd": 63,
+  "secD": 31.8,
+  "wd": 69,
   "points": [
    {
     "zh": "主要門檻 bRDI ≥ 30 → 疑似重度",
@@ -3670,10 +3553,10 @@
     "diagnosis"
    ]
   },
-  "onD": 53,
+  "onD": 54,
   "onC": 18
  },
- "25": {
+ "24": {
   "title": "How do we install it?",
   "detailed": [
    "Next, a practical question: how do we install it?",
@@ -3774,7 +3657,7 @@
   "onD": 31,
   "onC": 15
  },
- "26": {
+ "25": {
   "title": "How it all works, around the clock",
   "detailed": [
    "Once it's installed, how does it all work, around the clock?",
@@ -3916,7 +3799,7 @@
   "onD": 40,
   "onC": 17
  },
- "27": {
+ "26": {
   "title": "Study 3: Can breathing tell us about the heart?",
   "detailed": [
    "Now let's turn to the heart. Study 3 asks: can breathing tell us about the heart?",
@@ -4105,7 +3988,7 @@
   "onD": 62,
   "onC": 35
  },
- "28": {
+ "27": {
   "title": "Why does a weaker heart change breathing during sleep?",
   "detailed": [
    "But why would a weaker heart change breathing during sleep?",
@@ -4240,7 +4123,7 @@
   "onD": 28,
   "onC": 22
  },
- "29": {
+ "28": {
   "title": "Periodic-breathing features & cycle length",
   "detailed": [
    "And how do we measure periodic breathing? We use features like the cycle length and the hyperpnea length.",
@@ -4389,7 +4272,7 @@
   "onD": 30,
   "onC": 21
  },
- "30": {
+ "29": {
   "title": "IEEE JTEHM 2025 paper",
   "detailed": [
    "These ideas come together in our paper on evaluating cardiac impairment from abnormal respiratory patterns, using wireless radar and deep learning.",
@@ -4534,7 +4417,7 @@
   "onD": 25,
   "onC": 14
  },
- "31": {
+ "30": {
   "title": "Putting numbers on the heart–breathing links",
   "detailed": [
    "From that paper, let's put numbers on the heart–breathing links.",
@@ -4672,7 +4555,7 @@
   "onD": 54,
   "onC": 32
  },
- "32": {
+ "31": {
   "title": "What does daily screening data look like?",
   "detailed": [
    "Now, back to daily practice. What does our daily screening data look like?",
@@ -4800,7 +4683,7 @@
   "onD": 19,
   "onC": 15
  },
- "33": {
+ "32": {
   "title": "Our ward work has won national awards",
   "detailed": [
    "This daily ward work has also won national awards for our zero-contact care platform.",
@@ -4932,7 +4815,7 @@
   "onD": 34,
   "onC": 12
  },
- "34": {
+ "33": {
   "title": "What to take home",
   "detailed": [
    "To wrap up, what should you take home?",
