@@ -190,8 +190,8 @@
    "Let me start with a simple question: why is sleep testing so hard?",
    "Look at the waiting room. If we suspect sleep-disordered breathing, we need objective data.",
    "But getting that data is a real hassle.",
-   "Putting on the sensors often takes more than 60 minutes, and it makes patients anxious.",
-   "And then patients have to sleep in a very unnatural setting."
+   "Besides, putting on the sensors for the patient often takes more than 40 minutes, which makes patients anxious.",
+   "And patients have to sleep in a very unnatural setting."
   ],
   "concise": [
    "Let me start with this: why is sleep testing so hard?",
@@ -202,8 +202,8 @@
    "[Let me start with a simple question:] why is sleep testing so hard?",
    "[Look at] the waiting room. If we suspect sleep-disordered breathing, we need objective data.",
    "But getting that data is a real hassle.",
-   "[Putting on the sensors] often [takes more than] 60 minutes, [and it makes] patients [anxious.]",
-   "[And then] patients have to sleep in a very unnatural setting."
+   "[Besides, putting on the sensors for the patient] often [takes more than 40] minutes, [which makes] patients [anxious.]",
+   "[And] patients have to sleep in a very unnatural setting."
   ],
   "cMark": [
    "[Let me start with this:] why is sleep testing so hard?",
@@ -212,8 +212,8 @@
   ],
   "secC": 17.2,
   "wc": 33,
-  "secD": 28.2,
-  "wd": 61,
+  "secD": 29.1,
+  "wd": 63,
   "points": [
    {
     "zh": "需要客觀資料，但取得很麻煩",
@@ -249,16 +249,14 @@
     "must": true
    },
    {
-    "zh": "貼線超過 60 分鐘、會焦慮",
-    "kw": "over 60 minutes of wiring, anxiety",
-    "en": "Sensor application time often exceeds 60 minutes, causing anxiety.",
+    "zh": "貼線超過 40 分鐘、會焦慮",
+    "kw": "over 40 minutes of wiring, anxiety",
+    "en": "Sensor application time often exceeds 40 minutes, causing anxiety.",
     "groups": [
      [
-      "60 minutes",
-      "sixty minutes",
-      "one hour",
-      "an hour",
-      "hour",
+      "40 minutes",
+      "forty minutes",
+      "40 min",
       "long time",
       "takes time"
      ],
@@ -317,7 +315,7 @@
   ],
   "slideKw": {
    "detailed": [
-    "60",
+    "40",
     "disordered",
     "breathing",
     "objective",
@@ -335,7 +333,7 @@
     "unnatural"
    ]
   },
-  "onD": 39,
+  "onD": 38,
   "onC": 28
  },
  "3": {
