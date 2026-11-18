@@ -4548,8 +4548,7 @@
    "First, it's contactless. A 24-GHz radar can monitor breathing night after night, with nothing to wear.",
    "Second, it's consistent with standard tests: r = 0.91 in the hospital, and ρ = 0.87 at home.",
    "Third, it's a TFDA-cleared screen for suspected severe OSA, with 90.5% sensitivity.",
-   "Fourth, we found associations between periodic breathing and cardiac impairment. So it may help us watch the heart, too.",
-   "And finally, our work received national quality awards: SNQ and NHQA.",
+   "And finally, we found associations between periodic breathing and cardiac impairment. So it may help us watch the heart, too.",
    "Thank you very much. I'm happy to take your questions."
   ],
   "concise": [
@@ -4557,7 +4556,7 @@
    "It's contactless, with nothing to wear.",
    "It agrees with standard tests, in the hospital and at home.",
    "It's TFDA-cleared to screen for suspected severe OSA.",
-   "And it may help us watch the heart, too.",
+   "And finally, it may help us watch the heart, too.",
    "Thank you very much. I'm happy to take your questions."
   ],
   "dMark": [
@@ -4565,8 +4564,7 @@
    "[First, it's] contactless. A 24-GHz radar can monitor breathing night after night, with nothing to wear.",
    "[Second, it's] consistent with standard tests: r = 0.91 in the hospital, and ρ = 0.87 at home.",
    "[Third, it's a] TFDA-cleared screen for suspected severe OSA, with 90.5% sensitivity.",
-   "[Fourth,] we found associations between periodic breathing and cardiac impairment. So it may help us watch the heart, too.",
-   "[And finally, our work] received national quality awards: SNQ and NHQA.",
+   "[And finally,] we found associations between periodic breathing and cardiac impairment. So it may help us watch the heart, too.",
    "[Thank you very much. I'm happy] to take [your questions.]"
   ],
   "cMark": [
@@ -4574,13 +4572,13 @@
    "[It's] contactless, with nothing to wear.",
    "It agrees with standard tests, in the hospital and at home.",
    "It's TFDA-cleared to screen for suspected severe OSA.",
-   "[And] it may help us watch the heart, too.",
+   "[And finally,] it may help us watch the heart, too.",
    "[Thank you very much. I'm happy] to take [your questions.]"
   ],
-  "secC": 27.1,
-  "wc": 52,
-  "secD": 43.4,
-  "wd": 94,
+  "secC": 27.7,
+  "wc": 53,
+  "secD": 38.8,
+  "wd": 84,
   "points": [
    {
     "zh": "24 GHz 雷達：夜夜監測、身上不用戴東西",
@@ -4747,8 +4745,6 @@
     "GHz",
     "TFDA",
     "OSA",
-    "SNQ",
-    "NHQA",
     "contactless",
     "breathing",
     "consistent"
@@ -4767,7 +4763,7 @@
     "Contactless"
    ]
   },
-  "onD": 69,
+  "onD": 62,
   "onC": 37
  }
 }
