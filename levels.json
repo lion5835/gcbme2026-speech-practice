@@ -2096,10 +2096,10 @@
   "detailed": [
    "Beyond the correlation, Study 1 also asked: how accurate is it in the hospital?",
    "Here, bRDI is the BestShape Respiratory Disturbance Index, from the radar.",
-   "The radar's bRDI and the AHI from PSG line up well, with r = 0.91, and p < 0.01.",
-   "For moderate-to-severe OSA, the accuracy was 90.3%, with a cut-off of 19.2 events/h.",
-   "For severe OSA, the accuracy was 92.4%, with a cut-off of 28.86 events/h.",
-   "And for multi-class prediction, the average accuracy was 83.7%."
+   "The radar's bRDI and the AHI from PSG line up well, with a strong correlation.",
+   "For moderate-to-severe OSA, the accuracy was 90.3%.",
+   "And for severe OSA, the accuracy was 92.4%.",
+   "If we look at multi-class prediction, the average accuracy was 83.7%."
   ],
   "concise": [
    "And how accurate is it in the hospital?",
@@ -2109,10 +2109,10 @@
   "dMark": [
    "[Beyond the correlation,] Study 1 [also asked:] how accurate is it in the hospital?",
    "[Here,] bRDI [is the] BestShape Respiratory Disturbance Index, [from the radar.]",
-   "[The radar's] bRDI [and the] AHI [from PSG line up well, with] r = 0.91, [and] p < 0.01.",
-   "[For] moderate-to-severe OSA, [the] accuracy [was] 90.3%, [with a] cut-off [of] 19.2 events/h.",
-   "[For] severe OSA, [the] accuracy [was] 92.4%, [with a] cut-off [of] 28.86 events/h.",
-   "[And for] multi-class prediction, [the] average accuracy [was] 83.7%."
+   "[The radar's] bRDI [and the] AHI [from PSG line up well, with a strong] correlation.",
+   "[For] moderate-to-severe OSA, [the] accuracy [was] 90.3%.",
+   "[And for] severe OSA, [the] accuracy [was] 92.4%.",
+   "[If we look at] multi-class prediction, [the] average accuracy [was] 83.7%."
   ],
   "cMark": [
    "[And] how accurate is it in the hospital?",
@@ -2121,13 +2121,13 @@
   ],
   "secC": 14.6,
   "wc": 28,
-  "secD": 36.5,
-  "wd": 79,
+  "secD": 30.5,
+  "wd": 66,
   "points": [
    {
-    "zh": "雷達 bRDI 與 PSG AHI 高度相關（r = 0.91）",
+    "zh": "雷達 bRDI 與 PSG AHI 高度相關",
     "kw": "bRDI vs AHI, r = 0.91",
-    "en": "bRDI versus AHI: r = 0.91 (p < 0.01).",
+    "en": "The radar's bRDI and the AHI from PSG line up well, with a strong correlation.",
     "groups": [
      [
       "0.91",
@@ -2147,6 +2147,13 @@
       "index",
       "psg",
       "radar"
+     ],
+     [
+      "strong correlation",
+      "correlation",
+      "line up",
+      "agree",
+      "agreement"
      ]
     ],
     "need": 2,
@@ -2210,12 +2217,8 @@
   ],
   "slideKw": {
    "detailed": [
-    "0.91",
-    "0.01",
     "90.3%",
-    "19.2",
     "92.4%",
-    "28.86",
     "83.7%",
     "bRDI",
     "AHI",
@@ -2241,37 +2244,47 @@
     "Moderate-to"
    ]
   },
-  "onD": 41,
+  "onD": 30,
   "onC": 19
  },
  "14": {
   "title": "From research to the ward: a zero-contact care platform",
   "detailed": [
-   "Next, from research to the ward: our zero-contact care platform. We now use the radar every day for our inpatients.",
-   "It monitors breathing nonstop, with no contact, and it reads heart rate and bed status from the same radar signal.",
+   "Next, from research to the ward.",
+   "Early in this research, the COVID-19 pandemic hit. So we put the radar in the isolation wards of our pulmonary department.",
+   "Because it's contactless, staff didn't have to go in and out of the rooms so often. That lowered their risk, and saved a lot of trouble.",
+   "And we could still watch our patients closely.",
+   "That became our zero-contact care platform. Today, we use the radar every day for our inpatients.",
+   "It monitors breathing nonstop, and it reads heart rate and bed status from the same radar signal.",
    "If a patient is out of bed too long, or vital signs are abnormal, staff get alerts on the dashboard and LINE.",
    "It received the 2021 SNQ, and the 2022 NHQA, Distinctive Center for our Sleep Center."
   ],
   "concise": [
-   "Next, from research to the ward: we now use the radar every day for our inpatients.",
-   "It tracks breathing, heart rate, and bed status.",
+   "Next, from research to the ward.",
+   "During COVID-19, we put the radar in our isolation wards. Staff went in less often, but we could still watch the patients.",
+   "Today, we use the radar every day for our inpatients. It tracks breathing, heart rate, and bed status.",
    "It received the 2021 SNQ and the 2022 NHQA awards."
   ],
   "dMark": [
-   "[Next,] from research to the ward: [our] zero-contact care platform. We now use the radar every day for our inpatients.",
-   "[It monitors] breathing nonstop, with no contact, [and it reads] heart rate [and] bed status from the same radar signal.",
+   "[Next,] from research to the ward.",
+   "[Early in this research, the COVID-19 pandemic hit. So we put the radar in the isolation wards of our pulmonary department.]",
+   "[Because it's contactless, staff didn't have to go in and out of the rooms so often. That lowered their risk, and saved a lot of trouble.]",
+   "[And we could still watch our patients closely.]",
+   "[That became our] zero-contact care platform. [Today,] we use the radar every day for our inpatients.",
+   "[It monitors] breathing nonstop, [and it reads] heart rate [and] bed status from the same radar signal.",
    "[If] a patient is out of bed too long, [or] vital signs [are] abnormal, staff get alerts on the dashboard and LINE.",
    "[It received the] 2021 SNQ, [and the] 2022 NHQA, Distinctive Center for our Sleep Center."
   ],
   "cMark": [
-   "[Next,] from research to the ward: we now use the radar every day for our inpatients.",
-   "[It tracks] breathing, heart rate, [and] bed status.",
+   "[Next,] from research to the ward.",
+   "[During COVID-19, we put the radar in our isolation wards. Staff went in less often, but we could still watch the patients.]",
+   "[Today,] we use the radar every day for our inpatients. [It tracks] breathing, heart rate, [and] bed status.",
    "[It received the] 2021 SNQ [and the] 2022 NHQA [awards.]"
   ],
-  "secC": 17.7,
-  "wc": 34,
-  "secD": 35.5,
-  "wd": 77,
+  "secC": 29.2,
+  "wc": 56,
+  "secD": 60.5,
+  "wd": 131,
   "points": [
    {
     "zh": "從研究到病房：每天用在住院病人",
@@ -2332,6 +2345,35 @@
     ],
     "need": 2,
     "must": true
+   },
+   {
+    "zh": "研究初期遇上 COVID-19：雷達放在胸腔科隔離病房，醫護少進出、降低風險，仍能觀察病人",
+    "kw": "COVID isolation wards: contactless, less staff entry",
+    "en": "Early in this research, during COVID-19, we put the radar in our isolation wards. Staff went in less often, but we could still watch the patients.",
+    "groups": [
+     [
+      "covid",
+      "covid-19",
+      "pandemic",
+      "isolation",
+      "isolation ward",
+      "isolation wards"
+     ],
+     [
+      "contactless",
+      "no contact",
+      "less often",
+      "fewer visits",
+      "risk",
+      "go in and out",
+      "in and out",
+      "watch",
+      "monitor",
+      "patients"
+     ]
+    ],
+    "need": 2,
+    "must": false
    },
    {
     "zh": "呼吸、心率、床位狀態；儀表板與 LINE 通知",
@@ -2431,8 +2473,8 @@
     "Breathing"
    ]
   },
-  "onD": 61,
-  "onC": 24
+  "onD": 57,
+  "onC": 23
  },
  "15": {
   "title": "Does it work in real homes?",
