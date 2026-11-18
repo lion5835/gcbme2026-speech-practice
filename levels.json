@@ -2435,303 +2435,6 @@
   "onC": 24
  },
  "15": {
-  "title": "Obstructive Sleep Apnea after COVID-19",
-  "detailed": [
-   "During the pandemic, we also looked at obstructive sleep apnea after COVID-19. This is an observational study.",
-   "The table shows sleep test results in post-COVID-19 patients.",
-   "Out of 257 patients, only 2 were normal, with an AHI below 5.",
-   "Mild OSA was 11.28%, moderate was 29.18%, and severe was 58.75%."
-  ],
-  "concise": [
-   "During the pandemic, this observational study looked at sleep apnea after COVID-19.",
-   "Out of 257 patients, only 2 were normal, and 58.75% were severe."
-  ],
-  "dMark": [
-   "[During the pandemic, we also looked at] obstructive sleep apnea after COVID-19. [This is] an observational study.",
-   "[The table shows] sleep [test results] in post-COVID-19 patients.",
-   "[Out of] 257 patients, only 2 were normal, [with an AHI below 5.]",
-   "Mild [OSA was] 11.28%, moderate [was] 29.18%, [and] severe [was] 58.75%."
-  ],
-  "cMark": [
-   "[During the pandemic, this] observational study [looked at] sleep apnea after COVID-19.",
-   "[Out of] 257 patients, only 2 were normal, [and] 58.75% [were] severe."
-  ],
-  "secC": 12.5,
-  "wc": 24,
-  "secD": 23.1,
-  "wd": 50,
-  "points": [
-   {
-    "zh": "COVID-19 後的阻塞性睡眠呼吸中止（Life 2024）",
-    "kw": "OSA after COVID-19",
-    "en": "Obstructive Sleep Apnea after COVID-19: An Observational Study.",
-    "groups": [
-     [
-      "covid",
-      "covid 19",
-      "coronavirus",
-      "pandemic",
-      "after covid",
-      "long covid"
-     ],
-     [
-      "apnea",
-      "apnoea",
-      "stop breathing",
-      "stops breathing",
-      "stopped breathing",
-      "breathing stops",
-      "pause in breathing",
-      "breathing pause",
-      "pauses",
-      "not breathing",
-      "no breathing",
-      "osa",
-      "sleep apnea",
-      "hypopnea",
-      "shallow breathing",
-      "breathing event",
-      "respiratory event",
-      "events"
-     ]
-    ],
-    "need": 2,
-    "must": true
-   },
-   {
-    "zh": "257 人中只有 2 人正常（AHI<5）；重度 58.75%",
-    "kw": "257 patients, only 2 normal, 58.75% severe",
-    "en": "N = 257, only 2 were normal (AHI<5); Severe: 58.75%.",
-    "groups": [
-     [
-      "257",
-      "only two",
-      "only 2",
-      "two were normal",
-      "2 were normal",
-      "most",
-      "almost all",
-      "majority"
-     ],
-     [
-      "58.75",
-      "59",
-      "58",
-      "severe",
-      "29.18",
-      "moderate",
-      "high"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   }
-  ],
-  "slideKw": {
-   "detailed": [
-    "257",
-    "11.28%",
-    "29.18%",
-    "58.75%",
-    "COVID",
-    "obstructive",
-    "observational",
-    "patients",
-    "moderate"
-   ],
-   "concise": [
-    "257",
-    "58.75%",
-    "COVID",
-    "observational",
-    "patients"
-   ],
-   "kp": [
-    "257",
-    "58.75%",
-    "COVID",
-    "Sleep",
-    "Apnea"
-   ]
-  },
-  "onD": 24,
-  "onC": 14
- },
- "16": {
-  "title": "Radar picks up OSA in COVID-19 patients",
-  "detailed": [
-   "On our own wards, the radar also flags possible OSA in COVID-19 patients.",
-   "From 2021/7 to 2022/7, our platform recorded 5,376 monitoring sessions.",
-   "The lines show the percentage with RDI ≥15, ≥30, and ≥40.",
-   "It runs from Delta in the summer of 2021, to Omicron in the summer of 2022.",
-   "These are observational data. They show trends, not a diagnosis for each patient."
-  ],
-  "concise": [
-   "On our wards, radar flags possible OSA in COVID-19 patients.",
-   "From 2021/7 to 2022/7, we recorded 5,376 monitoring sessions.",
-   "We tracked RDI ≥15, ≥30, and ≥40, from Delta to Omicron.",
-   "These are observational trends, not a diagnosis for each patient."
-  ],
-  "dMark": [
-   "[On our own wards, the] radar [also] flags possible OSA in COVID-19 patients.",
-   "[From] 2021/7 to 2022/7, [our] platform [recorded] 5,376 monitoring sessions.",
-   "[The lines show the percentage with] RDI ≥15, ≥30, [and] ≥40.",
-   "[It runs from] Delta [in the] summer [of] 2021, [to] Omicron [in the] summer [of] 2022.",
-   "[These are observational data. They show trends, not a diagnosis for each patient.]"
-  ],
-  "cMark": [
-   "[On our wards,] radar flags possible OSA in COVID-19 patients.",
-   "[From] 2021/7 to 2022/7, [we recorded] 5,376 monitoring sessions.",
-   "[We tracked] RDI ≥15, ≥30, [and] ≥40, [from] Delta [to] Omicron.",
-   "[These are observational trends, not a diagnosis for each patient.]"
-  ],
-  "secC": 20.9,
-  "wc": 40,
-  "secD": 29.1,
-  "wd": 63,
-  "points": [
-   {
-    "zh": "2021/7–2022/7：5,376 次監測（monitoring sessions）",
-    "kw": "5,376 monitoring sessions",
-    "en": "2021/7 to 2022/7: 5,376 monitoring sessions.",
-    "groups": [
-     [
-      "5376",
-      "5,376",
-      "5000",
-      "thousands",
-      "large",
-      "big data",
-      "at scale",
-      "many sessions"
-     ],
-     [
-      "session",
-      "sessions",
-      "monitoring",
-      "recording",
-      "recordings",
-      "records",
-      "data",
-      "ward",
-      "radar"
-     ]
-    ],
-    "need": 2,
-    "must": true
-   },
-   {
-    "zh": "追蹤 RDI ≥15/30/40 比例，跨 Delta 到 Omicron",
-    "kw": "RDI shares, Delta → Omicron",
-    "en": "RDI >=15, >=30, >=40 (%), from Covid-19 (Delta) to Covid-19 (Omicron).",
-    "groups": [
-     [
-      "rdi",
-      "15",
-      "30",
-      "40",
-      "proportion",
-      "percentage",
-      "share",
-      "index"
-     ],
-     [
-      "delta",
-      "omicron",
-      "wave",
-      "waves",
-      "season",
-      "seasons",
-      "covid"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "Omicron 期間很多人有上呼吸道症狀",
-    "kw": "Omicron: upper-airway symptoms",
-    "en": "Pharyngitis: runny nose, headache, fatigue, sneezing, sore throat.",
-    "groups": [
-     [
-      "omicron"
-     ],
-     [
-      "upper airway",
-      "runny nose",
-      "sore throat",
-      "symptoms",
-      "nose",
-      "throat",
-      "sneezing",
-      "headache",
-      "fatigue"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "這些是觀察性資料：看趨勢，不是個別診斷",
-    "kw": "observational: trends, not diagnosis",
-    "en": "Observational data: trends, not a diagnosis for each patient.",
-    "groups": [
-     [
-      "observational",
-      "observation",
-      "trend",
-      "trends",
-      "observational trends"
-     ],
-     [
-      "not a diagnosis",
-      "not diagnosis",
-      "not diagnose",
-      "each patient",
-      "individual"
-     ]
-    ],
-    "need": 1,
-    "must": false
-   }
-  ],
-  "slideKw": {
-   "detailed": [
-    "2021",
-    "2022",
-    "5,376",
-    "15",
-    "30",
-    "40",
-    "OSA",
-    "COVID",
-    "RDI",
-    "Delta",
-    "Omicron",
-    "possible"
-   ],
-   "concise": [
-    "2021",
-    "2022",
-    "5,376",
-    "15",
-    "30",
-    "40",
-    "OSA",
-    "COVID"
-   ],
-   "kp": [
-    "2021",
-    "2022",
-    "5,376",
-    "15",
-    "30"
-   ]
-  },
-  "onD": 24,
-  "onC": 19
- },
- "17": {
   "title": "Does it work in real homes?",
   "detailed": [
    "Now, let's leave the hospital. Does it work in real homes?",
@@ -2872,7 +2575,7 @@
   "onD": 36,
   "onC": 19
  },
- "18": {
+ "16": {
   "title": "Study 2: Taking it home",
   "detailed": [
    "This brings us to Study 2: taking it home.",
@@ -3019,7 +2722,7 @@
   "onD": 46,
   "onC": 21
  },
- "19": {
+ "17": {
   "title": "Study 2: How well does it work at home?",
   "detailed": [
    "So how well does it work at home?",
@@ -3163,7 +2866,7 @@
   "onD": 46,
   "onC": 18
  },
- "20": {
+ "18": {
   "title": "Study 2: Grading severity at home",
   "detailed": [
    "Study 2 also looked at grading severity at home.",
@@ -3296,7 +2999,7 @@
   "onD": 32,
   "onC": 11
  },
- "21": {
+ "19": {
   "title": "Hospital vs. home: how do they compare?",
   "detailed": [
    "Let's put the two studies side by side. Hospital vs. home: how do they compare?",
@@ -3434,7 +3137,7 @@
   "onD": 51,
   "onC": 17
  },
- "22": {
+ "20": {
   "title": "TFDA clearance: where we stand",
   "detailed": [
    "Next, TFDA clearance: where we stand. The device is TFDA cleared.",
@@ -3574,7 +3277,7 @@
   "onD": 49,
   "onC": 26
  },
- "23": {
+ "21": {
   "title": "So what does TFDA clearance mean in practice?",
   "detailed": [
    "So what does TFDA clearance mean in practice? Here is what the license covers.",
@@ -3711,7 +3414,7 @@
   "onD": 54,
   "onC": 18
  },
- "24": {
+ "22": {
   "title": "How do we install it?",
   "detailed": [
    "Next, a practical question: how do we install it?",
@@ -3812,7 +3515,7 @@
   "onD": 31,
   "onC": 15
  },
- "25": {
+ "23": {
   "title": "How it all works, around the clock",
   "detailed": [
    "Once it's installed, how does it all work, around the clock?",
@@ -3954,7 +3657,7 @@
   "onD": 40,
   "onC": 17
  },
- "26": {
+ "24": {
   "title": "Study 3: Can breathing tell us about the heart?",
   "detailed": [
    "Now let's turn to the heart. Study 3 asks: can breathing tell us about the heart?",
@@ -4143,7 +3846,7 @@
   "onD": 62,
   "onC": 35
  },
- "27": {
+ "25": {
   "title": "Why does a weaker heart change breathing during sleep?",
   "detailed": [
    "But why would a weaker heart change breathing during sleep?",
@@ -4278,7 +3981,7 @@
   "onD": 28,
   "onC": 22
  },
- "28": {
+ "26": {
   "title": "Periodic-breathing features & cycle length",
   "detailed": [
    "And how do we measure periodic breathing? We use features like the cycle length and the hyperpnea length.",
@@ -4427,7 +4130,7 @@
   "onD": 30,
   "onC": 21
  },
- "29": {
+ "27": {
   "title": "IEEE JTEHM 2025 paper",
   "detailed": [
    "These ideas come together in our paper on evaluating cardiac impairment from abnormal respiratory patterns, using wireless radar and deep learning.",
@@ -4572,7 +4275,7 @@
   "onD": 25,
   "onC": 14
  },
- "30": {
+ "28": {
   "title": "Putting numbers on the heart–breathing links",
   "detailed": [
    "From that paper, let's put numbers on the heart–breathing links.",
@@ -4710,7 +4413,7 @@
   "onD": 54,
   "onC": 32
  },
- "31": {
+ "29": {
   "title": "What does daily screening data look like?",
   "detailed": [
    "Now, back to daily practice. What does our daily screening data look like?",
@@ -4838,139 +4541,7 @@
   "onD": 19,
   "onC": 15
  },
- "32": {
-  "title": "Our ward work has won national awards",
-  "detailed": [
-   "This daily ward work has also won national awards for our zero-contact care platform.",
-   "In 2025, we received the NHQA, the National Healthcare Quality Award, for our zero-contact monitoring platform for inpatients.",
-   "We also received the SNQ, the Symbol of National Quality, for our Wholehearted integrated care model."
-  ],
-  "concise": [
-   "This daily ward work has also won national awards.",
-   "We received the 2025 NHQA and the SNQ national quality awards."
-  ],
-  "dMark": [
-   "[This daily] ward work has [also] won national awards for our zero-contact care platform.",
-   "[In] 2025, [we received the] NHQA, [the] National Healthcare Quality Award, for our zero-contact monitoring platform for [inpatients.]",
-   "[We also received the] SNQ, [the] Symbol of National Quality, for our Wholehearted integrated care model."
-  ],
-  "cMark": [
-   "[This daily] ward work has [also] won national awards.",
-   "[We received the] 2025 NHQA [and the] SNQ national quality awards."
-  ],
-  "secC": 10.4,
-  "wc": 20,
-  "secD": 22.2,
-  "wd": 48,
-  "points": [
-   {
-    "zh": "標題：我們的病房工作獲得國家獎項",
-    "kw": "cardiac work shaped our quality program",
-    "en": "Our ward work has won national awards.",
-    "groups": [
-     [
-      "heart",
-      "cardiac",
-      "cardio",
-      "heart failure",
-      "lvef",
-      "ejection fraction",
-      "heart function",
-      "cardiology",
-      "quality recognition",
-      "ward outcomes",
-      "national awards",
-      "ward work"
-     ],
-     [
-      "quality",
-      "program",
-      "care",
-      "award"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "2025 NHQA 智慧醫療（住院）標章",
-    "kw": "NHQA 2025 Quality Mark, inpatient",
-    "en": "2025 NHQA: National Healthcare Quality Award, Quality Mark, Inpatient Services.",
-    "groups": [
-     [
-      "nhqa",
-      "quality mark",
-      "mark",
-      "award"
-     ],
-     [
-      "2025",
-      "inpatient",
-      "smart healthcare",
-      "smart",
-      "zero contact",
-      "platform"
-     ]
-    ],
-    "need": 2,
-    "must": true
-   },
-   {
-    "zh": "SNQ 國家品質標章：全心全力整合照護模式",
-    "kw": "SNQ 'Wholehearted' cardiac care model",
-    "en": "SNQ: Symbol of National Quality, Wholehearted Integrated Care Model.",
-    "groups": [
-     [
-      "snq",
-      "symbol of national quality",
-      "national quality"
-     ],
-     [
-      "wholehearted",
-      "whole hearted",
-      "cardiac",
-      "heart",
-      "care model",
-      "team"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   }
-  ],
-  "slideKw": {
-   "detailed": [
-    "2025",
-    "NHQA",
-    "SNQ",
-    "National",
-    "Healthcare",
-    "Quality",
-    "Award",
-    "Symbol",
-    "Wholehearted",
-    "platform",
-    "monitoring",
-    "integrated"
-   ],
-   "concise": [
-    "2025",
-    "NHQA",
-    "SNQ",
-    "national"
-   ],
-   "kp": [
-    "2025",
-    "NHQA",
-    "SNQ",
-    "National",
-    "Quality"
-   ]
-  },
-  "onD": 34,
-  "onC": 12
- },
- "33": {
+ "30": {
   "title": "What to take home",
   "detailed": [
    "To wrap up, what should you take home?",
