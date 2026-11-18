@@ -2179,7 +2179,7 @@
     "must": true
    },
    {
-    "zh": "呼吸、心率、床位狀態；儀表板與 LINE Notify 通知",
+    "zh": "呼吸、心率、床位狀態；儀表板與 LINE 通知",
     "kw": "breathing, heart rate, bed status, alerts",
     "en": "Breathing, Heart rate, Bed status; staff get alerts on the dashboard and LINE.",
     "groups": [
@@ -2894,7 +2894,7 @@
   "wd": 57,
   "points": [
    {
-    "zh": "居家相關係數 0.87",
+    "zh": "居家相關係數 ρ = 0.87（Spearman）",
     "kw": "home correlation 0.87",
     "en": "Correlation: ρ = 0.87 (p < 0.01); bRDI_TIB tracks HSAT AHI closely.",
     "groups": [
@@ -3202,7 +3202,7 @@
     "must": false
    },
    {
-    "zh": "相關性 0.91 vs 0.87",
+    "zh": "相關性 r = 0.91 vs ρ = 0.87",
     "kw": "correlation 0.91 vs 0.87",
     "en": "Correlation: r = 0.91 and ρ = 0.87.",
     "groups": [
@@ -5030,7 +5030,7 @@
     "must": true
    },
    {
-    "zh": "院內 r=0.91、居家 r=0.87：與標準檢查一致",
+    "zh": "院內 r=0.91、居家 ρ=0.87（Spearman）：與標準檢查一致",
     "kw": "accurate: 0.91 hospital, 0.87 home",
     "en": "Consistent: It agrees with standard tests in the hospital (r=0.91) and at home (ρ = 0.87).",
     "groups": [
