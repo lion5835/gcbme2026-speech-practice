@@ -2248,235 +2248,6 @@
   "onC": 19
  },
  "14": {
-  "title": "From research to the ward: a zero-contact care platform",
-  "detailed": [
-   "Next, from research to the ward.",
-   "Early in this research, the COVID-19 pandemic hit. So we put the radar in the isolation wards of our pulmonary department.",
-   "Because it's contactless, staff didn't have to go in and out of the rooms so often. That lowered their risk, and saved a lot of trouble.",
-   "And we could still watch our patients closely.",
-   "That became our zero-contact care platform. Today, we use the radar every day for our inpatients.",
-   "It monitors breathing nonstop, and it reads heart rate and bed status from the same radar signal.",
-   "If a patient is out of bed too long, or vital signs are abnormal, staff get alerts on the dashboard and LINE.",
-   "It received the 2021 SNQ, and the 2022 NHQA, Distinctive Center for our Sleep Center."
-  ],
-  "concise": [
-   "Next, from research to the ward.",
-   "During COVID-19, we put the radar in our isolation wards. Staff went in less often, but we could still watch the patients.",
-   "Today, we use the radar every day for our inpatients. It tracks breathing, heart rate, and bed status.",
-   "It received the 2021 SNQ and the 2022 NHQA awards."
-  ],
-  "dMark": [
-   "[Next,] from research to the ward.",
-   "[Early in this research, the COVID-19 pandemic hit. So we put the radar in the isolation wards of our pulmonary department.]",
-   "[Because it's contactless, staff didn't have to go in and out of the rooms so often. That lowered their risk, and saved a lot of trouble.]",
-   "[And we could still watch our patients closely.]",
-   "[That became our] zero-contact care platform. [Today,] we use the radar every day for our inpatients.",
-   "[It monitors] breathing nonstop, [and it reads] heart rate [and] bed status from the same radar signal.",
-   "[If] a patient is out of bed too long, [or] vital signs [are] abnormal, staff get alerts on the dashboard and LINE.",
-   "[It received the] 2021 SNQ, [and the] 2022 NHQA, Distinctive Center for our Sleep Center."
-  ],
-  "cMark": [
-   "[Next,] from research to the ward.",
-   "[During COVID-19, we put the radar in our isolation wards. Staff went in less often, but we could still watch the patients.]",
-   "[Today,] we use the radar every day for our inpatients. [It tracks] breathing, heart rate, [and] bed status.",
-   "[It received the] 2021 SNQ [and the] 2022 NHQA [awards.]"
-  ],
-  "secC": 29.2,
-  "wc": 56,
-  "secD": 60.5,
-  "wd": 131,
-  "points": [
-   {
-    "zh": "從研究到病房：每天用在住院病人",
-    "kw": "into routine ward care",
-    "en": "From research to the ward: a zero-contact care platform we now use every day for our inpatients.",
-    "groups": [
-     [
-      "ward",
-      "wards",
-      "inpatient",
-      "routine",
-      "daily",
-      "care",
-      "platform",
-      "hospital",
-      "from research to the ward",
-      "every day",
-      "inpatients",
-      "zero-contact"
-     ],
-     [
-      "radar",
-      "radio wave",
-      "radio waves",
-      "sensor",
-      "device",
-      "24 gigahertz",
-      "24 ghz",
-      "microwave",
-      "contactless",
-      "no contact",
-      "non contact",
-      "without contact",
-      "contact free",
-      "doesn't touch",
-      "does not touch",
-      "don't touch",
-      "not touching",
-      "no wire",
-      "no wires",
-      "without wires",
-      "without any wire",
-      "wireless",
-      "nothing on the patient",
-      "nothing on the body",
-      "nothing attached",
-      "non wearable",
-      "not wearable",
-      "nothing to wear",
-      "don't need to wear",
-      "do not need to wear",
-      "no need to wear",
-      "without wearing",
-      "not attached",
-      "no sensors on",
-      "zero contact"
-     ]
-    ],
-    "need": 2,
-    "must": true
-   },
-   {
-    "zh": "研究初期遇上 COVID-19：雷達放在胸腔科隔離病房，醫護少進出、降低風險，仍能觀察病人",
-    "kw": "COVID isolation wards: contactless, less staff entry",
-    "en": "Early in this research, during COVID-19, we put the radar in our isolation wards. Staff went in less often, but we could still watch the patients.",
-    "groups": [
-     [
-      "covid",
-      "covid-19",
-      "pandemic",
-      "isolation",
-      "isolation ward",
-      "isolation wards"
-     ],
-     [
-      "contactless",
-      "no contact",
-      "less often",
-      "fewer visits",
-      "risk",
-      "go in and out",
-      "in and out",
-      "watch",
-      "monitor",
-      "patients"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "呼吸、心率、床位狀態；儀表板與 LINE 通知",
-    "kw": "breathing, heart rate, bed status, alerts",
-    "en": "Breathing, Heart rate, Bed status; staff get alerts on the dashboard and LINE.",
-    "groups": [
-     [
-      "breathing",
-      "heart rate",
-      "heart",
-      "respiration",
-      "vital",
-      "vitals",
-      "monitor",
-      "monitors"
-     ],
-     [
-      "bed",
-      "out of bed",
-      "bed exit",
-      "leave the bed",
-      "leaves the bed",
-      "left the bed",
-      "in bed",
-      "getting up",
-      "alert",
-      "alerts",
-      "alarm",
-      "notify",
-      "notification",
-      "notifications",
-      "line",
-      "message",
-      "push",
-      "warn",
-      "warning"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "2021 SNQ、2022 NHQA 特色中心",
-    "kw": "SNQ 2021, NHQA 2022",
-    "en": "2021 SNQ, Symbol of National Quality; 2022 NHQA, Distinctive Center – Sleep Center.",
-    "groups": [
-     [
-      "snq",
-      "nhqa",
-      "award",
-      "awards",
-      "recognized",
-      "recognition",
-      "prize",
-      "quality"
-     ],
-     [
-      "2021",
-      "2022",
-      "national",
-      "symbol"
-     ]
-    ],
-    "need": 1,
-    "must": false
-   }
-  ],
-  "slideKw": {
-   "detailed": [
-    "2021",
-    "2022",
-    "LINE",
-    "SNQ",
-    "NHQA",
-    "Distinctive",
-    "Center",
-    "Sleep",
-    "research",
-    "platform",
-    "inpatients",
-    "breathing"
-   ],
-   "concise": [
-    "2021",
-    "2022",
-    "SNQ",
-    "NHQA",
-    "research",
-    "inpatients",
-    "breathing"
-   ],
-   "kp": [
-    "2021",
-    "2022",
-    "SNQ",
-    "NHQA",
-    "Breathing"
-   ]
-  },
-  "onD": 57,
-  "onC": 23
- },
- "15": {
   "title": "Does it work in real homes?",
   "detailed": [
    "Now, let's leave the hospital. Does it work in real homes?",
@@ -2617,7 +2388,7 @@
   "onD": 36,
   "onC": 19
  },
- "16": {
+ "15": {
   "title": "Study 2: Taking it home",
   "detailed": [
    "This brings us to Study 2: taking it home.",
@@ -2764,7 +2535,7 @@
   "onD": 46,
   "onC": 21
  },
- "17": {
+ "16": {
   "title": "Study 2: How well does it work at home?",
   "detailed": [
    "So how well does it work at home?",
@@ -2908,7 +2679,7 @@
   "onD": 46,
   "onC": 18
  },
- "18": {
+ "17": {
   "title": "Study 2: Grading severity at home",
   "detailed": [
    "Study 2 also looked at grading severity at home.",
@@ -3041,7 +2812,7 @@
   "onD": 32,
   "onC": 11
  },
- "19": {
+ "18": {
   "title": "Hospital vs. home: how do they compare?",
   "detailed": [
    "Let's put the two studies side by side. Hospital vs. home: how do they compare?",
@@ -3179,7 +2950,7 @@
   "onD": 51,
   "onC": 17
  },
- "20": {
+ "19": {
   "title": "TFDA clearance: where we stand",
   "detailed": [
    "Next, TFDA clearance: where we stand. The device is TFDA cleared.",
@@ -3319,144 +3090,7 @@
   "onD": 49,
   "onC": 26
  },
- "21": {
-  "title": "So what does TFDA clearance mean in practice?",
-  "detailed": [
-   "So what does TFDA clearance mean in practice? Here is what the license covers.",
-   "The main cut-off is bRDI ≥ 30. This flags suspected severe OSA.",
-   "Sensitivity and specificity are both 90.5%.",
-   "It tracks heart rate from 40–120 bpm.",
-   "And for sleep stages, the consistency is 69%.",
-   "But keep in mind: bRDI ≥ 30 is validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis."
-  ],
-  "concise": [
-   "So what does TFDA clearance mean in practice?",
-   "The main cut-off is bRDI ≥ 30. It's a screen, not a full diagnosis."
-  ],
-  "dMark": [
-   "So what does TFDA clearance mean in practice? [Here is] what [the license covers.]",
-   "[The] main cut-off [is] bRDI ≥ 30. This flags suspected severe OSA.",
-   "Sensitivity [and] specificity [are both] 90.5%.",
-   "It tracks heart rate from 40–120 bpm.",
-   "[And for] sleep stages, [the] consistency [is] 69%.",
-   "[But] keep in mind: bRDI ≥ 30 is validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis."
-  ],
-  "cMark": [
-   "So what does TFDA clearance mean in practice?",
-   "[The] main cut-off [is] bRDI ≥ 30. [It's] a screen, [not] a full diagnosis."
-  ],
-  "secC": 11.5,
-  "wc": 22,
-  "secD": 31.8,
-  "wd": 69,
-  "points": [
-   {
-    "zh": "主要門檻 bRDI ≥ 30 → 疑似重度",
-    "kw": "main threshold bRDI ≥30",
-    "en": "Main cut-off: bRDI ≥ 30. This flags suspected severe OSA.",
-    "groups": [
-     [
-      "30",
-      "thirty",
-      "threshold",
-      "cut off",
-      "cutoff",
-      "main cut-off",
-      "flags"
-     ],
-     [
-      "severe",
-      "serious",
-      "high risk",
-      "worst",
-      "brdi"
-     ]
-    ],
-    "need": 2,
-    "must": true
-   },
-   {
-    "zh": "敏感度/特異度 90.5%；分期 69%",
-    "kw": "90.5%; staging 69%",
-    "en": "Sensitivity: 90.5%, Specificity: 90.5%; Sleep stages: 69% consistency.",
-    "groups": [
-     [
-      "90.5",
-      "90",
-      "sensitivity",
-      "specificity"
-     ],
-     [
-      "69",
-      "staging"
-     ]
-    ],
-    "need": 1,
-    "must": false
-   },
-   {
-    "zh": "已驗證可篩檢疑似重度 OSA，不能取代完整診斷",
-    "kw": "screen, not definitive diagnosis",
-    "en": "It's validated as a screen for suspected severe OSA. It doesn't replace a full diagnosis.",
-    "groups": [
-     [
-      "screen",
-      "screening",
-      "not diagnosis",
-      "not a diagnosis",
-      "not diagnostic",
-      "not replace",
-      "doesn't replace",
-      "does not replace",
-      "not a replacement",
-      "not standalone",
-      "not a diagnostic",
-      "not yet",
-      "not validated",
-      "only screening",
-      "definitive",
-      "replacement",
-      "full diagnosis",
-      "keep in mind"
-     ]
-    ],
-    "need": 1,
-    "must": false
-   }
-  ],
-  "slideKw": {
-   "detailed": [
-    "30",
-    "90.5%",
-    "40",
-    "120",
-    "69%",
-    "TFDA",
-    "bRDI",
-    "OSA",
-    "Sensitivity",
-    "clearance",
-    "practice",
-    "suspected"
-   ],
-   "concise": [
-    "30",
-    "TFDA",
-    "bRDI",
-    "clearance",
-    "practice",
-    "diagnosis"
-   ],
-   "kp": [
-    "30",
-    "bRDI",
-    "diagnosis"
-   ]
-  },
-  "onD": 54,
-  "onC": 18
- },
- "22": {
+ "20": {
   "title": "How do we install it?",
   "detailed": [
    "Next, a practical question: how do we install it?",
@@ -3557,7 +3191,7 @@
   "onD": 31,
   "onC": 15
  },
- "23": {
+ "21": {
   "title": "How it all works, around the clock",
   "detailed": [
    "Once it's installed, how does it all work, around the clock?",
@@ -3699,7 +3333,7 @@
   "onD": 40,
   "onC": 17
  },
- "24": {
+ "22": {
   "title": "Study 3: Can breathing tell us about the heart?",
   "detailed": [
    "Now let's turn to the heart. Study 3 asks: can breathing tell us about the heart?",
@@ -3888,13 +3522,341 @@
   "onD": 62,
   "onC": 35
  },
+ "23": {
+  "title": "Decoding periodic breathing (PB)",
+  "detailed": [
+   "So what exactly is periodic breathing?",
+   "Look at the top. Normal breathing is steady, with even waves.",
+   "Now look below. In periodic breathing, the breathing grows and fades: a phase of heavy breathing, then an apnea, again and again.",
+   "One heavy-breathing phase plus one apnea makes one cycle. The time it takes is the PB cycle length.",
+   "Periodic breathing is often seen in heart failure.",
+   "From the continuous radar signal, we can measure this cycle length, night after night.",
+   "And this number may give us a window into how well the heart pumps."
+  ],
+  "concise": [
+   "So what is periodic breathing? It grows and fades: heavy breathing, then apnea, again and again.",
+   "One full round is the PB cycle length. It's often seen in heart failure.",
+   "The radar can measure it, and it may give us a window into how well the heart pumps."
+  ],
+  "dMark": [
+   "[So what exactly is] periodic breathing?",
+   "[Look at the top.] Normal breathing [is] steady, [with] even waves.",
+   "[Now look below. In] periodic breathing, [the] breathing grows and fades: [a phase of] heavy breathing, [then an] apnea, [again and again.]",
+   "[One heavy-breathing] phase [plus one] apnea [makes one] cycle. [The time it takes is the] PB cycle length.",
+   "Periodic breathing is often seen in heart failure.",
+   "[From the continuous] radar [signal, we can] measure [this] cycle length, [night after night.]",
+   "[And this number] may give us a window into how well the heart pumps."
+  ],
+  "cMark": [
+   "[So what is] periodic breathing? [It] grows and fades: heavy breathing, [then] apnea, [again and again.]",
+   "[One full round is the] PB cycle length. [It's] often seen in heart failure.",
+   "[The] radar [can] measure [it, and it] may give us a window into how well the heart pumps."
+  ],
+  "secC": 25.0,
+  "wc": 48,
+  "secD": 42.9,
+  "wd": 93,
+  "points": [
+   {
+    "zh": "週期性呼吸：換氣過度與呼吸中止交替、漸強漸弱",
+    "kw": "PB grows and fades",
+    "en": "Periodic breathing grows and fades: heavy breathing and apnea take turns.",
+    "groups": [
+     [
+      "periodic breathing",
+      "grows and fades",
+      "waxing",
+      "waning",
+      "heavy breathing",
+      "pb"
+     ],
+     [
+      "apnea",
+      "take turns",
+      "again and again",
+      "cycle",
+      "alternate",
+      "alternating"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "一段換氣過度＋一段呼吸中止＝一個週期（PB cycle length）",
+    "kw": "one round = PB cycle length",
+    "en": "One heavy-breathing phase plus one apnea is one cycle: the PB cycle length.",
+    "groups": [
+     [
+      "cycle length",
+      "one cycle",
+      "pb cycle",
+      "cycle"
+     ],
+     [
+      "phase",
+      "apnea",
+      "heavy breathing",
+      "plus",
+      "time",
+      "round"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "常見於心衰竭；雷達量週期長度，可能反映心臟泵血功能",
+    "kw": "often seen in heart failure; may show pumping",
+    "en": "It's often seen in heart failure. The radar measures the cycle length, which may show how well the heart pumps.",
+    "groups": [
+     [
+      "heart failure",
+      "heart",
+      "pumps",
+      "pump",
+      "cardiac"
+     ],
+     [
+      "radar",
+      "measure",
+      "cycle length",
+      "window"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "slideKw": {
+   "detailed": [
+    "PB",
+    "Normal",
+    "Periodic",
+    "breathing"
+   ],
+   "concise": [
+    "PB",
+    "periodic",
+    "breathing"
+   ],
+   "kp": [
+    "PB",
+    "Periodic",
+    "breathing"
+   ]
+  },
+  "onD": 45,
+  "onC": 29
+ },
+ "24": {
+  "title": "High loop gain: PB / CSB in a radar recording",
+  "detailed": [
+   "Here's what it looks like in a real radar recording.",
+   "This is high loop gain: periodic breathing, also called Cheyne-Stokes breathing.",
+   "On top is the raw radar signal. You can see the breathing grow and fade, over and over.",
+   "Then our algorithm finds each PB cycle. Each red line marks one cycle it detected.",
+   "So the cycle length can be measured automatically."
+  ],
+  "concise": [
+   "This is a real recording: high loop gain, periodic breathing, or Cheyne-Stokes breathing.",
+   "Our algorithm marks each PB cycle with a red line, so the cycle length is measured automatically."
+  ],
+  "dMark": [
+   "[Here's what it looks like in a real] radar [recording.]",
+   "[This is] high loop gain: periodic breathing, [also called] Cheyne-Stokes breathing.",
+   "[On top is the raw] radar signal. [You can see the breathing grow and fade, over and over.]",
+   "[Then our] algorithm [finds each] PB [cycle. Each red line marks one cycle it detected.]",
+   "[So the cycle length can be measured automatically.]"
+  ],
+  "cMark": [
+   "[This is a real recording:] high loop gain, periodic breathing, [or] Cheyne-Stokes breathing.",
+   "[Our] algorithm [marks each] PB [cycle with a red line, so the cycle length is measured automatically.]"
+  ],
+  "secC": 15.7,
+  "wc": 30,
+  "secD": 28.6,
+  "wd": 62,
+  "points": [
+   {
+    "zh": "真實雷達紀錄：High loop gain＝週期性呼吸／陳施氏呼吸",
+    "kw": "high loop gain = PB / CSB",
+    "en": "High loop gain: periodic breathing, or Cheyne-Stokes breathing, in a real radar signal.",
+    "groups": [
+     [
+      "high loop gain",
+      "loop gain"
+     ],
+     [
+      "periodic breathing",
+      "cheyne-stokes",
+      "cheyne stokes",
+      "csb",
+      "radar signal",
+      "real recording"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "演算法找出每個 PB 週期（紅線），自動量週期長度",
+    "kw": "red lines = each PB cycle",
+    "en": "The algorithm finds each PB cycle. Each red line is one cycle, so the cycle length is measured automatically.",
+    "groups": [
+     [
+      "algorithm",
+      "red line",
+      "red lines",
+      "each cycle",
+      "detected",
+      "finds",
+      "marks"
+     ],
+     [
+      "cycle length",
+      "automatically",
+      "automatic",
+      "measure",
+      "measured"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "slideKw": {
+   "detailed": [
+    "PB",
+    "Cheyne",
+    "Stokes",
+    "periodic",
+    "breathing",
+    "algorithm"
+   ],
+   "concise": [
+    "PB",
+    "Cheyne",
+    "Stokes",
+    "periodic",
+    "breathing",
+    "algorithm"
+   ],
+   "kp": [
+    "PB",
+    "Cheyne",
+    "Stokes",
+    "periodic",
+    "breathing"
+   ]
+  },
+  "onD": 12,
+  "onC": 9
+ },
  "25": {
+  "title": "Two reasons breathing swings: OSA and heart failure",
+  "detailed": [
+   "But why does breathing swing like this? There are two main reasons.",
+   "First, airway resistance, like in OSA. The body overreacts, then underreacts. Too much, then too little. So breathing becomes unstable.",
+   "Second, heart failure. The CO2 and oxygen signals are delayed, so breathing control is always one step behind.",
+   "That second reason is the one we care about today."
+  ],
+  "concise": [
+   "Why does breathing swing? Two reasons. Airway resistance, like in OSA, makes breathing unstable.",
+   "And in heart failure, the CO2 and oxygen signals are delayed. That's the one we care about today."
+  ],
+  "dMark": [
+   "[But why does breathing swing like this? There are two main reasons.]",
+   "[First,] airway resistance, [like in] OSA. [The body overreacts, then underreacts. Too much, then too little. So breathing becomes unstable.]",
+   "[Second,] heart failure. [The] CO2 [and oxygen] signals [are] delayed, [so breathing control is always one step behind.]",
+   "[That second reason is the one we care about today.]"
+  ],
+  "cMark": [
+   "[Why does breathing swing? Two reasons.] Airway resistance, [like in] OSA, [makes breathing unstable.]",
+   "[And in] heart failure, [the] CO2 [and oxygen] signals [are] delayed. [That's the one we care about today.]"
+  ],
+  "secC": 16.7,
+  "wc": 32,
+  "secD": 27.7,
+  "wd": 60,
+  "points": [
+   {
+    "zh": "原因一：呼吸道阻力（OSA）→ 過猶不及、呼吸不穩",
+    "kw": "airway resistance (OSA) → instability",
+    "en": "Airway resistance (OSA): respiratory instability. Too much, then too little.",
+    "groups": [
+     [
+      "airway resistance",
+      "resistance",
+      "airway",
+      "osa"
+     ],
+     [
+      "unstable",
+      "instability",
+      "overreacts",
+      "underreacts",
+      "too much",
+      "too little"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "原因二：心衰竭 → CO₂/O₂ 訊號慢半拍",
+    "kw": "heart failure → CO2/O2 signals delayed",
+    "en": "Heart failure: the CO2 and oxygen signals are delayed.",
+    "groups": [
+     [
+      "heart failure",
+      "heart"
+     ],
+     [
+      "delayed",
+      "delay",
+      "late",
+      "one step behind",
+      "co2",
+      "oxygen",
+      "signals"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   }
+  ],
+  "slideKw": {
+   "detailed": [
+    "OSA",
+    "CO2",
+    "resistance"
+   ],
+   "concise": [
+    "OSA",
+    "CO2",
+    "Airway",
+    "resistance"
+   ],
+   "kp": [
+    "OSA",
+    "CO2",
+    "Airway",
+    "Heart",
+    "resistance"
+   ]
+  },
+  "onD": 8,
+  "onC": 8
+ },
+ "26": {
   "title": "Why does a weaker heart change breathing during sleep?",
   "detailed": [
-   "But why would a weaker heart change breathing during sleep?",
-   "It comes from a feedback loop: the neural outflow, the plant gain, the circulation time, and the chemoreflex gain to CO2.",
-   "Periodic breathing is associated with impaired cardiac function.",
-   "Our radar does not measure CO2. It only sees the breathing pattern."
+   "Let's look closer at this loop. Why would a weaker heart change breathing during sleep?",
+   "Breathing is controlled by a feedback loop: the neural outflow, the plant gain, the circulation time, and the chemoreflex gain to CO2.",
+   "When the heart is weak, blood moves more slowly, so the circulation time gets longer. The loop reacts late, and breathing starts to swing.",
+   "So periodic breathing is associated with impaired cardiac function.",
+   "Just to be clear, our radar does not measure CO2. It only sees the breathing pattern."
   ],
   "concise": [
    "But why does a weaker heart change breathing during sleep?",
@@ -3902,10 +3864,11 @@
    "The radar does not measure CO2. It only sees the breathing pattern."
   ],
   "dMark": [
-   "[But why would] a weaker heart change breathing during sleep?",
-   "[It comes from a feedback loop: the] neural outflow, [the] plant gain, [the] circulation time, [and the] chemoreflex gain to CO2.",
-   "Periodic breathing is associated with impaired cardiac function.",
-   "[Our radar] does [not measure] CO2. [It only sees the] breathing [pattern.]"
+   "[Let's look closer at this loop.] Why [would] a weaker heart change breathing during sleep?",
+   "[Breathing is controlled by a feedback loop: the] neural outflow, [the] plant gain, [the] circulation time, [and the] chemoreflex gain to CO2.",
+   "[When the heart is weak, blood moves more slowly, so the] circulation time [gets longer. The loop reacts late, and breathing starts to swing.]",
+   "[So] periodic breathing is associated with impaired cardiac function.",
+   "[Just to be clear, our radar] does [not measure] CO2. [It only sees the] breathing [pattern.]"
   ],
   "cMark": [
    "[But] why does a weaker heart change breathing during sleep?",
@@ -3914,8 +3877,8 @@
   ],
   "secC": 17.2,
   "wc": 33,
-  "secD": 23.5,
-  "wd": 51,
+  "secD": 39.7,
+  "wd": 86,
   "points": [
    {
     "zh": "呼吸控制迴路：神經輸出、plant gain、循環時間、化學反射",
@@ -3995,10 +3958,10 @@
   "slideKw": {
    "detailed": [
     "CO2",
-    "Periodic",
     "breathing",
     "circulation",
     "chemoreflex",
+    "periodic",
     "associated",
     "impaired",
     "function"
@@ -4020,35 +3983,41 @@
     "associated"
    ]
   },
-  "onD": 28,
+  "onD": 31,
   "onC": 22
  },
- "26": {
+ "27": {
   "title": "Periodic-breathing features & cycle length",
   "detailed": [
-   "And how do we measure periodic breathing? We use features like the cycle length and the hyperpnea length.",
-   "When cycle length was measured by CPAP, it was 11x in acute heart failure, 8x in chronic heart failure, and 1x in a normal heart.",
-   "And by LVEF, the cycle length goes from 49.1 seconds when LVEF is above 50, up to 85.7 seconds when LVEF is below 20."
+   "So how do we measure periodic breathing? We use features like the cycle length and the hyperpnea length.",
+   "Other teams have looked at this, too. The worse the heart, the longer the cycle.",
+   "One team looked back at CPAP data from the month before patients came to the emergency room with heart failure.",
+   "Measured by CPAP, the cycle length increased 11 times in acute heart failure, and 8 times in chronic heart failure, compared with 1 time in a normal heart.",
+   "And by LVEF, the cycle length goes from 49.1 seconds when LVEF is above 50, up to 85.7 seconds when LVEF is below 20.",
+   "Again, these are associations."
   ],
   "concise": [
-   "And periodic breathing has features we can measure, like the cycle length.",
-   "Cycle length measured by CPAP is 11x in acute heart failure, and 8x in chronic heart failure.",
-   "As LVEF falls, the cycle length goes from 49.1 up to 85.7 seconds."
+   "Periodic breathing has features we can measure, like the cycle length. The worse the heart, the longer the cycle.",
+   "Measured by CPAP, the cycle length increased 11 times in acute heart failure, and 8 times in chronic heart failure.",
+   "As LVEF falls, the cycle length goes from 49.1 up to 85.7 seconds. These are associations."
   ],
   "dMark": [
-   "[And how do we measure periodic breathing? We use] features [like the] cycle length [and the] hyperpnea length.",
-   "[When] cycle length [was] measured by CPAP, [it was] 11x [in] acute heart failure, 8x [in] chronic heart failure, [and] 1x [in a] normal heart.",
-   "[And by] LVEF, [the] cycle length [goes from] 49.1 [seconds when] LVEF [is above] 50, [up to] 85.7 [seconds when] LVEF [is below] 20."
+   "[So how do we measure periodic breathing? We use] features [like the] cycle length [and the] hyperpnea length.",
+   "[Other teams have looked at this, too. The worse the heart, the longer the cycle.]",
+   "[One team looked back at] CPAP [data from the month before patients came to the emergency room with] heart failure.",
+   "Measured by CPAP, [the] cycle length [increased 11 times in] acute heart failure, [and 8 times in] chronic heart failure, [compared with 1 time in a] normal heart.",
+   "[And by] LVEF, [the] cycle length [goes from] 49.1 [seconds when] LVEF [is above] 50, [up to] 85.7 [seconds when] LVEF [is below] 20.",
+   "[Again, these are associations.]"
   ],
   "cMark": [
-   "[And periodic breathing has] features [we can measure, like the] cycle length.",
-   "Cycle length measured by CPAP [is] 11x [in] acute heart failure, [and] 8x [in] chronic heart failure.",
-   "[As] LVEF [falls, the] cycle length [goes from] 49.1 [up to] 85.7 [seconds.]"
+   "[Periodic breathing has] features [we can measure, like the] cycle length. [The worse the heart, the longer the cycle.]",
+   "Measured by CPAP, [the] cycle length [increased 11 times in] acute heart failure, [and 8 times in] chronic heart failure.",
+   "[As] LVEF [falls, the] cycle length [goes from] 49.1 [up to] 85.7 [seconds. These are associations.]"
   ],
-  "secC": 21.9,
-  "wc": 42,
-  "secD": 30.9,
-  "wd": 67,
+  "secC": 28.7,
+  "wc": 55,
+  "secD": 50.3,
+  "wd": 109,
   "points": [
    {
     "zh": "週期性呼吸可量化：週期長度等特徵",
@@ -4075,7 +4044,9 @@
       "cycle",
       "length",
       "measure",
-      "measurable"
+      "measurable",
+      "worse heart",
+      "longer cycle"
      ]
     ],
     "need": 2,
@@ -4116,7 +4087,7 @@
    {
     "zh": "急性心衰 11 倍、慢性 8 倍",
     "kw": "acute HF 11×, chronic 8×",
-    "en": "Cycle length measured by CPAP: Acute Heart Failure 11x, Chronic Heart Failure 8x.",
+    "en": "Cycle length measured by CPAP increased 11 times in acute heart failure and 8 times in chronic heart failure.",
     "groups": [
      [
       "11",
@@ -4140,63 +4111,86 @@
   ],
   "slideKw": {
    "detailed": [
-    "11",
     "49.1",
     "50",
     "85.7",
     "20",
     "CPAP",
     "LVEF",
+    "Measured",
     "features",
-    "hyperpnea",
-    "measured"
+    "hyperpnea"
    ],
    "concise": [
-    "11",
     "49.1",
     "85.7",
     "CPAP",
     "LVEF",
-    "Cycle",
-    "features",
-    "measured"
+    "Measured",
+    "features"
    ],
    "kp": [
     "49.1",
     "85.7",
-    "11",
     "LVEF",
-    "CPAP"
+    "CPAP",
+    "Cycle"
    ]
   },
   "onD": 30,
-  "onC": 21
+  "onC": 19
  },
- "27": {
+ "28": {
   "title": "IEEE JTEHM 2025 paper",
   "detailed": [
-   "These ideas come together in our paper on evaluating cardiac impairment from abnormal respiratory patterns, using wireless radar and deep learning.",
+   "So we tested this ourselves. We put the radar in the cardiology ward, and we really saw a lot of Cheyne-Stokes breathing.",
+   "That's our paper on evaluating cardiac impairment from abnormal respiratory patterns, using wireless radar and deep learning.",
    "In Table 1, we split patients by LVEF: above 50%, 47 patients, and 50% or below, 25 patients.",
    "The table also compares LVEF, LVEDD, and LVESD between the two groups."
   ],
   "concise": [
+   "We put the radar in the cardiology ward, and saw a lot of Cheyne-Stokes breathing.",
    "This is our paper on evaluating cardiac impairment from abnormal respiratory patterns.",
    "We compared 47 patients with LVEF above 50%, and 25 patients with LVEF of 50% or below."
   ],
   "dMark": [
-   "[These ideas come together in our] paper [on] evaluating cardiac impairment from abnormal respiratory patterns, [using] wireless radar and deep learning.",
+   "[So we tested this ourselves. We put the radar in the cardiology ward, and we really saw a lot of Cheyne-Stokes breathing.]",
+   "[That's our] paper [on] evaluating cardiac impairment from abnormal respiratory patterns, [using] wireless radar and deep learning.",
    "[In] Table 1, [we split patients by] LVEF: [above] 50%, 47 [patients, and] 50% [or below,] 25 [patients.]",
    "[The] table [also compares] LVEF, LVEDD, [and] LVESD between [the two groups.]"
   ],
   "cMark": [
+   "[We put the radar in the cardiology ward, and saw a lot of Cheyne-Stokes breathing.]",
    "[This is our] paper [on] evaluating cardiac impairment from abnormal respiratory patterns.",
    "[We compared] 47 [patients with] LVEF [above] 50%, [and] 25 [patients with] LVEF [of] 50% [or below.]"
   ],
-  "secC": 15.1,
-  "wc": 29,
-  "secD": 23.5,
-  "wd": 51,
+  "secC": 23.0,
+  "wc": 44,
+  "secD": 31.8,
+  "wd": 69,
   "points": [
+   {
+    "zh": "雷達放到心臟科病房，看到很多陳施氏呼吸",
+    "kw": "radar in the cardiology ward",
+    "en": "We put the radar in the cardiology ward and saw a lot of Cheyne-Stokes breathing.",
+    "groups": [
+     [
+      "cardiology",
+      "cardiology ward",
+      "heart ward",
+      "ward"
+     ],
+     [
+      "cheyne-stokes",
+      "cheyne stokes",
+      "periodic breathing",
+      "a lot",
+      "many"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
    {
     "zh": "我們 2025 IEEE JTEHM 論文：雷達+深度學習評估心功能",
     "kw": "IEEE JTEHM 2025: radar + deep learning for cardiac",
@@ -4317,13 +4311,14 @@
   "onD": 25,
   "onC": 14
  },
- "28": {
+ "29": {
   "title": "Putting numbers on the heart–breathing links",
   "detailed": [
    "From that paper, let's put numbers on the heart–breathing links.",
    "Keep in mind: these are clinical associations only.",
    "If RDI goes up by 1/h, LVEF goes down 0.22%, and LVESD goes up 0.14 mm.",
-   "If the PB cycle is 1 s longer, NT-proBNP goes up 158.49 pg/mL, LVEF goes down 0.21%, LVEDD goes up 0.11 mm, and LVESD goes up 0.16 mm."
+   "If the PB cycle is 1 s longer, NT-proBNP goes up 158.49 pg/mL. That's a big change, for just one second.",
+   "LVEF goes down 0.21%, LVEDD goes up 0.11 mm, and LVESD goes up 0.16 mm."
   ],
   "concise": [
    "From that paper, let's put numbers on the heart–breathing links. These are clinical associations only.",
@@ -4334,7 +4329,8 @@
    "[From that paper, let's put] numbers on the heart–breathing links.",
    "Keep in mind: these are clinical associations only.",
    "If RDI goes up [by] 1/h, LVEF goes down 0.22%, [and] LVESD goes up 0.14 mm.",
-   "If the PB cycle is 1 s longer, NT-proBNP goes up 158.49 pg/mL, LVEF goes down 0.21%, LVEDD goes up 0.11 mm, [and] LVESD goes up 0.16 mm."
+   "If the PB cycle is 1 s longer, NT-proBNP goes up 158.49 pg/mL. [That's a big change, for just one second.]",
+   "LVEF goes down 0.21%, LVEDD goes up 0.11 mm, [and] LVESD goes up 0.16 mm."
   ],
   "cMark": [
    "[From that paper, let's put] numbers on the heart–breathing links. These are clinical associations only.",
@@ -4343,8 +4339,8 @@
   ],
   "secC": 19.8,
   "wc": 38,
-  "secD": 28.6,
-  "wd": 62,
+  "secD": 32.3,
+  "wd": 70,
   "points": [
    {
     "zh": "提醒：只是臨床相關性",
@@ -4455,32 +4451,32 @@
   "onD": 54,
   "onC": 32
  },
- "29": {
+ "30": {
   "title": "What does daily screening data look like?",
   "detailed": [
    "Now, back to daily practice. What does our daily screening data look like?",
-   "The team gets a LINE message from the test site.",
+   "Every morning, the radar makes a report from the night before, and the team gets a LINE message from the test site.",
    "For each bed, it lists the bRDI, sleep time, PB%, PB events, and the average PB cycle length that we just discussed.",
-   "On the right is the full sleep report, in Chinese."
+   "On the right is the full sleep report for each patient."
   ],
   "concise": [
    "Now, back to daily practice: what does our daily screening data look like?",
-   "A LINE message lists the bRDI, sleep time, PB%, PB events, and the average cycle length for each bed."
+   "Every morning, a LINE message lists the bRDI, sleep time, PB%, PB events, and the average cycle length for each bed."
   ],
   "dMark": [
    "[Now, back to] daily [practice.] What does [our] daily screening data look like?",
-   "[The team gets a] LINE [message from the] test site.",
+   "[Every morning, the radar makes a report from the night before, and the team gets a] LINE [message from the] test site.",
    "[For each bed, it lists the] bRDI, sleep time, PB%, PB events, [and the average] PB [cycle length that we just discussed.]",
-   "[On the right is the full] sleep [report, in Chinese.]"
+   "[On the right is the full] sleep [report for each patient.]"
   ],
   "cMark": [
    "[Now, back to] daily [practice:] what does [our] daily screening data look like?",
-   "[A] LINE [message lists the] bRDI, sleep time, PB%, PB events, [and the average cycle length for each bed.]"
+   "[Every morning, a] LINE [message lists the] bRDI, sleep time, PB%, PB events, [and the average cycle length for each bed.]"
   ],
-  "secC": 16.7,
-  "wc": 32,
-  "secD": 25.4,
-  "wd": 55,
+  "secC": 17.7,
+  "wc": 34,
+  "secD": 31.4,
+  "wd": 68,
   "points": [
    {
     "zh": "每床 LINE 摘要：bRDI、睡眠時間、週期性呼吸",
@@ -4532,7 +4528,7 @@
     "must": false
    },
    {
-    "zh": "標題：每日篩檢資料長什麼樣子",
+    "zh": "每天早上自動產生前一晚的報告",
     "kw": "care team sees it every morning",
     "en": "What does daily screening data look like?",
     "groups": [
@@ -4583,7 +4579,7 @@
   "onD": 19,
   "onC": 15
  },
- "30": {
+ "31": {
   "title": "What to take home",
   "detailed": [
    "To wrap up, what should you take home?",
