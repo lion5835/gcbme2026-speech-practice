@@ -2071,176 +2071,35 @@
   "onC": 19
  },
  "14": {
-  "title": "Does it work in real homes?",
-  "detailed": [
-   "Now, let's leave the hospital. Does it work in real homes?",
-   "We studied 80 patients over 147 nights.",
-   "We checked it against PSG in the hospital, and against HSAT at home. No technician was there at home.",
-   "So we see it as a promising complement to HSAT."
-  ],
-  "concise": [
-   "Now, does it work in real homes?",
-   "We studied 80 patients over 147 nights, with no technician at home.",
-   "It's a promising complement to HSAT."
-  ],
-  "dMark": [
-   "[Now, let's leave] the hospital. Does it work in real homes?",
-   "[We studied] 80 patients [over] 147 nights.",
-   "We checked it against PSG in the hospital, and against HSAT at home. No technician was there at home.",
-   "[So we see it as] a promising complement to HSAT."
-  ],
-  "cMark": [
-   "[Now,] does it work in real homes?",
-   "[We studied] 80 patients [over] 147 nights, [with] no technician at home.",
-   "[It's] a promising complement to HSAT."
-  ],
-  "secC": 13.0,
-  "wc": 25,
-  "secD": 21.7,
-  "wd": 47,
-  "points": [
-   {
-    "zh": "在真實家中也行得通嗎？",
-    "kw": "does it work at home?",
-    "en": "Does it work in real homes?",
-    "groups": [
-     [
-      "home",
-      "house",
-      "real world",
-      "real life",
-      "daily life",
-      "at home",
-      "real homes"
-     ],
-     [
-      "reliable",
-      "reliably",
-      "work",
-      "works",
-      "accurate",
-      "question",
-      "can it",
-      "trust",
-      "trusted",
-      "good enough",
-      "useful"
-     ]
-    ],
-    "need": 2,
-    "must": true
-   },
-   {
-    "zh": "80 人、147 晚",
-    "kw": "80 patients, 147 nights",
-    "en": "80 Patients, 147 Nights.",
-    "groups": [
-     [
-      "80",
-      "147"
-     ],
-     [
-      "patients",
-      "nights",
-      "subjects",
-      "people"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "可補充 HSAT；居家沒有技術員在場",
-    "kw": "promising complement to HSAT",
-    "en": "A Promising Complement to HSAT; no technician was there at home.",
-    "groups": [
-     [
-      "complement",
-      "promising",
-      "add on",
-      "support",
-      "alongside",
-      "in addition",
-      "together with",
-      "not a replacement"
-     ],
-     [
-      "no technician",
-      "without a technician",
-      "without technician",
-      "no professional",
-      "no staff",
-      "unattended",
-      "no one on site",
-      "by themselves"
-     ]
-    ],
-    "need": 1,
-    "must": false
-   }
-  ],
-  "slideKw": {
-   "detailed": [
-    "80",
-    "147",
-    "PSG",
-    "HSAT",
-    "hospital",
-    "patients",
-    "technician",
-    "promising",
-    "complement"
-   ],
-   "concise": [
-    "80",
-    "147",
-    "HSAT",
-    "patients",
-    "technician",
-    "promising",
-    "complement"
-   ],
-   "kp": [
-    "80",
-    "147",
-    "HSAT",
-    "Patients",
-    "Nights"
-   ]
-  },
-  "onD": 36,
-  "onC": 19
- },
- "15": {
   "title": "Study 2: Taking it home",
   "detailed": [
-   "This brings us to Study 2: taking it home.",
+   "Now, let's leave the hospital. This brings us to Study 2: taking it home.",
    "At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician.",
    "Again, 80 patients and 147 nights, with no staff on site.",
    "We compared the radar with home sleep apnea testing, or HSAT.",
    "Real homes are messy, so we need robust signal processing."
   ],
   "concise": [
-   "That's Study 2: taking it home.",
+   "Now, let's leave the hospital. Study 2: taking it home.",
    "At home, nothing is controlled, and there's no technician.",
    "We had 80 patients and 147 nights, and we compared it with HSAT."
   ],
   "dMark": [
-   "[This brings us to] Study 2: taking it home.",
+   "[Now, let's leave the hospital. This brings us to] Study 2: taking it home.",
    "At home, nothing is controlled: different sleep positions, thick blankets, noise, and no technician.",
    "[Again,] 80 patients [and] 147 nights, with no staff on site.",
    "We compared [the radar] with home sleep apnea testing, [or] HSAT.",
    "Real homes are messy, so we need robust signal processing."
   ],
   "cMark": [
-   "[That's] Study 2: taking it home.",
+   "[Now, let's leave the hospital.] Study 2: taking it home.",
    "At home, nothing is controlled, [and there's] no technician.",
    "[We had] 80 patients [and] 147 nights, [and] we compared it with HSAT."
   ],
-  "secC": 14.6,
-  "wc": 28,
-  "secD": 25.4,
-  "wd": 55,
+  "secC": 16.7,
+  "wc": 32,
+  "secD": 27.7,
+  "wd": 60,
   "points": [
    {
     "zh": "居家什麼都無法控制：睡姿、厚被子、噪音、沒有技術員",
@@ -2358,7 +2217,7 @@
   "onD": 46,
   "onC": 21
  },
- "16": {
+ "15": {
   "title": "Study 2: How well does it work at home?",
   "detailed": [
    "So how well does it work at home?",
@@ -2502,7 +2361,7 @@
   "onD": 46,
   "onC": 18
  },
- "17": {
+ "16": {
   "title": "Study 2: Grading severity at home",
   "detailed": [
    "Study 2 also looked at grading severity at home.",
@@ -2635,7 +2494,7 @@
   "onD": 32,
   "onC": 11
  },
- "18": {
+ "17": {
   "title": "Hospital vs. home: how do they compare?",
   "detailed": [
    "Let's put the two studies side by side. Hospital vs. home: how do they compare?",
@@ -2773,7 +2632,7 @@
   "onD": 51,
   "onC": 17
  },
- "19": {
+ "18": {
   "title": "TFDA clearance: where we stand",
   "detailed": [
    "Next, TFDA clearance: where we stand. The device is TFDA cleared.",
@@ -2913,7 +2772,7 @@
   "onD": 49,
   "onC": 26
  },
- "20": {
+ "19": {
   "title": "How do we install it?",
   "detailed": [
    "Next, a practical question: how do we install it?",
@@ -3014,7 +2873,7 @@
   "onD": 31,
   "onC": 15
  },
- "21": {
+ "20": {
   "title": "How it all works, around the clock",
   "detailed": [
    "Once it's installed, how does it all work, around the clock?",
@@ -3156,7 +3015,7 @@
   "onD": 40,
   "onC": 17
  },
- "22": {
+ "21": {
   "title": "Study 3: Can breathing tell us about the heart?",
   "detailed": [
    "Now let's turn to the heart. Study 3 asks: can breathing tell us about the heart?",
@@ -3345,7 +3204,7 @@
   "onD": 62,
   "onC": 35
  },
- "23": {
+ "22": {
   "title": "Decoding periodic breathing (PB)",
   "detailed": [
    "So what exactly is periodic breathing?",
@@ -3472,7 +3331,7 @@
   "onD": 45,
   "onC": 29
  },
- "24": {
+ "23": {
   "title": "High loop gain: PB / CSB in a radar recording",
   "detailed": [
    "Here's what it looks like in a real radar recording.",
@@ -3576,7 +3435,7 @@
   "onD": 12,
   "onC": 9
  },
- "25": {
+ "24": {
   "title": "Two reasons breathing swings: OSA and heart failure",
   "detailed": [
    "But why does breathing swing like this? There are two main reasons.",
@@ -3672,7 +3531,7 @@
   "onD": 8,
   "onC": 8
  },
- "26": {
+ "25": {
   "title": "Why does a weaker heart change breathing during sleep?",
   "detailed": [
    "Let's look closer at this loop. Why would a weaker heart change breathing during sleep?",
@@ -3809,7 +3668,7 @@
   "onD": 31,
   "onC": 22
  },
- "27": {
+ "26": {
   "title": "Periodic-breathing features & cycle length",
   "detailed": [
    "So how do we measure periodic breathing? We use features like the cycle length and the hyperpnea length.",
@@ -3963,7 +3822,7 @@
   "onD": 30,
   "onC": 19
  },
- "28": {
+ "27": {
   "title": "IEEE JTEHM 2025 paper",
   "detailed": [
    "So we tested this ourselves. We put the radar in the cardiology ward, and we really saw a lot of Cheyne-Stokes breathing.",
@@ -4134,7 +3993,7 @@
   "onD": 25,
   "onC": 14
  },
- "29": {
+ "28": {
   "title": "Putting numbers on the heart–breathing links",
   "detailed": [
    "From that paper, let's put numbers on the heart–breathing links.",
@@ -4274,7 +4133,7 @@
   "onD": 54,
   "onC": 32
  },
- "30": {
+ "29": {
   "title": "What does daily screening data look like?",
   "detailed": [
    "Now, back to daily practice. What does our daily screening data look like?",
@@ -4402,7 +4261,7 @@
   "onD": 19,
   "onC": 15
  },
- "31": {
+ "30": {
   "title": "What to take home",
   "detailed": [
    "To wrap up, what should you take home?",
