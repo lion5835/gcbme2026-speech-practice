@@ -1464,13 +1464,17 @@
    "A standard sleep test sees no airflow. But the radar sees the chest moving again.",
    "So judging apnea by the size of chest motion has a big error. This is the biggest blind spot.",
    "In our first year with the engineering team, we tried many methods. Nothing worked, and we almost gave up.",
-   "The way out was this: the radar has to spot a typical pattern of chest-motion changes."
+   "The way out was this: the radar has to spot a typical pattern of chest-motion changes.",
+   "That pattern ends with the recovery surge: when an event ends, the airway opens, and the person takes one big breath.",
+   "Let me show you a short video of what this looks like on the radar."
   ],
   "concise": [
    "Why? Because sleep tests watch airflow, while radar watches the chest.",
    "And every patient is different in body size and sleep position, so the usual rules on chest motion can be far off.",
    "In an obstructive event, the patient keeps trying to breathe, and the chest moves again, but no air flows. That's the biggest blind spot.",
-   "We almost gave up. The way out: the radar has to spot a typical pattern of chest-motion changes."
+   "We almost gave up. The way out: the radar has to spot a typical pattern of chest-motion changes.",
+   "That pattern ends with the recovery surge: when an event ends, the airway opens, and the person takes one big breath.",
+   "Let me show you a short video of what this looks like on the radar."
   ],
   "dMark": [
    "[Why? Because] sleep tests watch airflow, [while] radar watches the chest. [They are] two different signals.",
@@ -1483,18 +1487,22 @@
    "[A standard sleep test sees no] airflow. [But the] radar [sees the] chest [moving again.]",
    "[So judging] apnea [by the size of] chest motion [has a big error. This is the biggest] blind spot.",
    "[In our first year with the engineering team, we tried many methods. Nothing worked, and we almost gave up.]",
-   "[The way out was this: the] radar has to spot a typical pattern of chest-motion changes."
+   "[The way out was this: the] radar has to spot a typical pattern of chest-motion changes.",
+   "[That pattern ends with the recovery surge: when an event ends, the airway opens, and the person takes one big breath.]",
+   "[Let me show you a short video of what this looks like on the radar.]"
   ],
   "cMark": [
    "[Why? Because] sleep tests watch airflow, [while] radar watches the chest.",
    "[And every patient is different in body size and sleep position, so the usual rules on chest motion can be far off.]",
    "In an obstructive event, the patient keeps trying to breathe, [and the chest moves again,] but no air flows. [That's the biggest] blind spot.",
-   "[We almost gave up. The way out: the] radar has to spot a typical pattern of chest-motion changes."
+   "[We almost gave up. The way out: the] radar has to spot a typical pattern of chest-motion changes.",
+   "[That pattern ends with the recovery surge: when an event ends, the airway opens, and the person takes one big breath.]",
+   "[Let me show you a short video of what this looks like on the radar.]"
   ],
-  "secC": 39.1,
-  "wc": 75,
-  "secD": 87.7,
-  "wd": 190,
+  "secC": 57.9,
+  "wc": 111,
+  "secD": 104.3,
+  "wd": 226,
   "points": [
    {
     "zh": "睡眠檢查看氣流：停止（apnea）或變淺（hypopnea）",
@@ -1657,91 +1665,11 @@
     ],
     "need": 2,
     "must": false
-   }
-  ],
-  "slideKw": {
-   "detailed": [
-    "Radar",
-    "different",
-    "standard",
-    "hypopnea",
-    "obstructive"
-   ],
-   "concise": [
-    "obstructive"
-   ],
-   "kp": [
-    "Sleep",
-    "Radar",
-    "obstructive"
-   ]
-  },
-  "onD": 66,
-  "onC": 34
- },
- "11": {
-  "title": "How radar sees a sleep-breathing event",
-  "detailed": [
-   "Then I thought of a basic fact of breathing physiology: the recovery surge.",
-   "After an apnea or a hypopnea, however long it lasts, breathing always comes back.",
-   "At that moment, after a period of too little air, the airway muscles get their tone back, and the airway opens.",
-   "So the person takes one big, deep breath. That's the loud snort that often wakes up a bed partner.",
-   "This recovery surge is a clear marker. Whatever the body size or sleep position, a big breath always comes when the event ends.",
-   "Let me show you the five steps of chest-wall motion.",
-   "First, normal breathing: the chest moves regularly.",
-   "Then apnea onset: the movement drops sharply, or stops.",
-   "Then struggling effort: the airway is still closed, so the chest makes small moves, trying to breathe.",
-   "Then the recovery surge: the airway opens, with one big breath.",
-   "And then it goes back to normal.",
-   "This whole sequence is the event that radar can detect.",
-   "We suggested this feature to our engineering team. And luckily, the radar then reached high accuracy for these breathing events.",
-   "Interestingly, Apple's public documents on the Apple Watch sleep apnea feature use the same idea.",
-   "And this year, our own study used breathing sounds to assess OSA. It also relies on the sound of the recovery surge.",
-   "Let me show you a short video of what this looks like on the radar."
-  ],
-  "concise": [
-   "Then I thought of the recovery surge. When an event ends, the airway opens, and the person takes one big breath.",
-   "It always comes, whatever the body size or sleep position.",
-   "So here is how radar sees a sleep-breathing event, in five steps.",
-   "Normal breathing, apnea onset, struggling effort, recovery surge, and back to normal.",
-   "With this feature, the radar reached high accuracy. Apple's public documents on the Apple Watch use the same idea, and so does our own breathing-sound study this year.",
-   "Let me show you a short video of what this looks like on the radar."
-  ],
-  "dMark": [
-   "[Then I thought of a basic fact of breathing physiology: the] recovery surge.",
-   "[After an] apnea [or a hypopnea, however long it lasts,] breathing [always] comes back.",
-   "[At that moment, after a period of too little air, the] airway [muscles get their tone back, and the] airway opens.",
-   "[So the person takes] one big[, deep] breath. [That's the loud snort that often wakes up a bed partner.]",
-   "[This] recovery surge [is a clear marker. Whatever the body size or sleep position, a] big breath [always comes when the event ends.]",
-   "[Let me show you the] five steps [of] chest-wall motion.",
-   "[First,] normal breathing: the chest moves regularly.",
-   "[Then] apnea onset: [the] movement drops sharply, or stops.",
-   "[Then] struggling effort: the airway is still closed, [so] the chest makes small moves, trying to breathe.",
-   "[Then the] recovery surge: the airway opens, [with] one big breath.",
-   "[And then it] goes back to normal.",
-   "This whole sequence is the event that radar can detect.",
-   "[We suggested this feature to our engineering team. And luckily, the] radar [then reached high accuracy for these breathing events.]",
-   "[Interestingly, Apple's public documents on the Apple Watch sleep apnea feature use the same idea.]",
-   "[And this year, our own study used] breathing [sounds to assess OSA. It also relies on the sound of the] recovery surge.",
-   "[Let me show you a short video of what this looks like on the radar.]"
-  ],
-  "cMark": [
-   "[Then I thought of the] recovery surge. [When an event ends, the] airway opens, [and the person takes] one big breath.",
-   "[It always comes, whatever the body size or sleep position.]",
-   "[So here is] how radar sees a sleep-breathing event, [in] five steps.",
-   "Normal breathing, apnea onset, struggling effort, recovery surge, [and] back to normal.",
-   "[With this feature, the radar reached high accuracy. Apple's public documents on the Apple Watch use the same idea, and so does our own breathing-sound study this year.]",
-   "[Let me show you a short video of what this looks like on the radar.]"
-  ],
-  "secC": 51.1,
-  "wc": 98,
-  "secD": 107.5,
-  "wd": 233,
-  "points": [
+   },
    {
-    "zh": "靈感：recovery surge——事件結束時氣道打開，一定有一次大呼吸，不受體型或睡姿影響",
+    "zh": "Recovery surge：事件結束時氣道打開，一定有一次大呼吸；接著播影片",
     "kw": "recovery surge = clear marker",
-    "en": "The recovery surge: when an apnea or hypopnea ends, the airway opens and the person takes one big breath, whatever the body size or sleep position.",
+    "en": "That pattern ends with the recovery surge: when an event ends, the airway opens, and the person takes one big breath.",
     "groups": [
      [
       "recovery surge",
@@ -1767,187 +1695,29 @@
     ],
     "need": 2,
     "must": true
-   },
-   {
-    "zh": "一開始正常，事件開始時振幅明顯下降甚至停止",
-    "kw": "normal → amplitude drops or stops",
-    "en": "Normal breathing, then Apnea onset: movement drops sharply, or stops.",
-    "groups": [
-     [
-      "normal",
-      "regular"
-     ],
-     [
-      "drop",
-      "drops",
-      "decrease",
-      "decreases",
-      "smaller",
-      "reduce",
-      "reduced",
-      "stop",
-      "stops",
-      "flat",
-      "goes down",
-      "go down",
-      "falls",
-      "weaker",
-      "less",
-      "drops sharply",
-      "movement drops"
-     ]
-    ],
-    "need": 1,
-    "must": true
-   },
-   {
-    "zh": "氣道還關著時，胸部掙扎出現小幅上下",
-    "kw": "struggle: small movements while airway closed",
-    "en": "Struggling effort: the airway is still closed; the chest makes small moves, trying to breathe.",
-    "groups": [
-     [
-      "struggle",
-      "struggling",
-      "effort",
-      "trying to breathe",
-      "try to breathe",
-      "fight"
-     ],
-     [
-      "small",
-      "tiny",
-      "little",
-      "slight",
-      "micro",
-      "weak",
-      "small moves"
-     ],
-     [
-      "airway",
-      "closed",
-      "blocked",
-      "up and down",
-      "movement",
-      "movements"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "氣道打開時一次大起伏（恢復呼吸），再回到正常",
-    "kw": "big recovery breath, then back to normal",
-    "en": "Recovery surge: one big breath as breathing comes back, then Back to normal.",
-    "groups": [
-     [
-      "big",
-      "large",
-      "deep",
-      "huge",
-      "strong",
-      "surge",
-      "sharp"
-     ],
-     [
-      "recovery",
-      "recover",
-      "opens",
-      "open",
-      "airway opens",
-      "gasp"
-     ],
-     [
-      "return",
-      "returns",
-      "back to normal",
-      "normal again",
-      "normal"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "整段序列就是雷達能偵測的事件",
-    "kw": "whole pattern defines the event; schematic",
-    "en": "This whole sequence is the event that radar can detect.",
-    "groups": [
-     [
-      "whole",
-      "entire",
-      "full",
-      "all",
-      "sequence",
-      "pattern",
-      "five",
-      "5"
-     ],
-     [
-      "event",
-      "detect",
-      "detects",
-      "detection",
-      "radar"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "加入此特徵後準確度提升；Apple Watch 公開文件與我們今年的呼吸聲音研究都用同樣概念",
-    "kw": "high accuracy; same idea as Apple Watch & our sound study",
-    "en": "With this feature, the radar reached high accuracy. Apple's public documents on the Apple Watch use the same idea, and so does our own breathing-sound study this year.",
-    "groups": [
-     [
-      "accuracy",
-      "accurate",
-      "high accuracy",
-      "worked",
-      "improved"
-     ],
-     [
-      "apple",
-      "apple watch",
-      "watch",
-      "breathing sounds",
-      "breathing sound",
-      "sound",
-      "our study",
-      "our own study",
-      "same idea"
-     ]
-    ],
-    "need": 1,
-    "must": false
    }
   ],
   "slideKw": {
    "detailed": [
-    "recovery",
-    "breathing",
-    "regularly",
-    "movement",
-    "struggling",
-    "sequence"
+    "Radar",
+    "different",
+    "standard",
+    "hypopnea",
+    "obstructive"
    ],
    "concise": [
-    "Normal",
-    "recovery",
-    "breathing",
-    "struggling"
+    "obstructive"
    ],
    "kp": [
-    "Normal",
-    "Apnea",
-    "Struggling",
-    "Recovery",
-    "breathing"
+    "Sleep",
+    "Radar",
+    "obstructive"
    ]
   },
-  "onD": 74,
-  "onC": 26
+  "onD": 66,
+  "onC": 34
  },
- "12": {
+ "11": {
   "title": "Video: the radar during an obstructive apnea (1:54)",
   "detailed": [
    "So that's the recovery surge the radar picks up."
@@ -1996,7 +1766,7 @@
   "onD": 2,
   "onC": 2
  },
- "13": {
+ "12": {
   "title": "Does the radar agree with the clinical gold standard?",
   "detailed": [
    "Now, the key question for Study 1: does the radar agree with the clinical gold standard?",
@@ -2144,7 +1914,7 @@
   "onD": 28,
   "onC": 16
  },
- "14": {
+ "13": {
   "title": "Study 1: How accurate is it in the hospital?",
   "detailed": [
    "Beyond the correlation, Study 1 also asked: how accurate is it in the hospital?",
@@ -2300,7 +2070,7 @@
   "onD": 30,
   "onC": 19
  },
- "15": {
+ "14": {
   "title": "Does it work in real homes?",
   "detailed": [
    "Now, let's leave the hospital. Does it work in real homes?",
@@ -2441,7 +2211,7 @@
   "onD": 36,
   "onC": 19
  },
- "16": {
+ "15": {
   "title": "Study 2: Taking it home",
   "detailed": [
    "This brings us to Study 2: taking it home.",
@@ -2588,7 +2358,7 @@
   "onD": 46,
   "onC": 21
  },
- "17": {
+ "16": {
   "title": "Study 2: How well does it work at home?",
   "detailed": [
    "So how well does it work at home?",
@@ -2732,7 +2502,7 @@
   "onD": 46,
   "onC": 18
  },
- "18": {
+ "17": {
   "title": "Study 2: Grading severity at home",
   "detailed": [
    "Study 2 also looked at grading severity at home.",
@@ -2865,7 +2635,7 @@
   "onD": 32,
   "onC": 11
  },
- "19": {
+ "18": {
   "title": "Hospital vs. home: how do they compare?",
   "detailed": [
    "Let's put the two studies side by side. Hospital vs. home: how do they compare?",
@@ -3003,7 +2773,7 @@
   "onD": 51,
   "onC": 17
  },
- "20": {
+ "19": {
   "title": "TFDA clearance: where we stand",
   "detailed": [
    "Next, TFDA clearance: where we stand. The device is TFDA cleared.",
@@ -3143,7 +2913,7 @@
   "onD": 49,
   "onC": 26
  },
- "21": {
+ "20": {
   "title": "How do we install it?",
   "detailed": [
    "Next, a practical question: how do we install it?",
@@ -3244,7 +3014,7 @@
   "onD": 31,
   "onC": 15
  },
- "22": {
+ "21": {
   "title": "How it all works, around the clock",
   "detailed": [
    "Once it's installed, how does it all work, around the clock?",
@@ -3386,7 +3156,7 @@
   "onD": 40,
   "onC": 17
  },
- "23": {
+ "22": {
   "title": "Study 3: Can breathing tell us about the heart?",
   "detailed": [
    "Now let's turn to the heart. Study 3 asks: can breathing tell us about the heart?",
@@ -3575,7 +3345,7 @@
   "onD": 62,
   "onC": 35
  },
- "24": {
+ "23": {
   "title": "Decoding periodic breathing (PB)",
   "detailed": [
    "So what exactly is periodic breathing?",
@@ -3702,7 +3472,7 @@
   "onD": 45,
   "onC": 29
  },
- "25": {
+ "24": {
   "title": "High loop gain: PB / CSB in a radar recording",
   "detailed": [
    "Here's what it looks like in a real radar recording.",
@@ -3806,7 +3576,7 @@
   "onD": 12,
   "onC": 9
  },
- "26": {
+ "25": {
   "title": "Two reasons breathing swings: OSA and heart failure",
   "detailed": [
    "But why does breathing swing like this? There are two main reasons.",
@@ -3902,7 +3672,7 @@
   "onD": 8,
   "onC": 8
  },
- "27": {
+ "26": {
   "title": "Why does a weaker heart change breathing during sleep?",
   "detailed": [
    "Let's look closer at this loop. Why would a weaker heart change breathing during sleep?",
@@ -4039,7 +3809,7 @@
   "onD": 31,
   "onC": 22
  },
- "28": {
+ "27": {
   "title": "Periodic-breathing features & cycle length",
   "detailed": [
    "So how do we measure periodic breathing? We use features like the cycle length and the hyperpnea length.",
@@ -4193,7 +3963,7 @@
   "onD": 30,
   "onC": 19
  },
- "29": {
+ "28": {
   "title": "IEEE JTEHM 2025 paper",
   "detailed": [
    "So we tested this ourselves. We put the radar in the cardiology ward, and we really saw a lot of Cheyne-Stokes breathing.",
@@ -4364,7 +4134,7 @@
   "onD": 25,
   "onC": 14
  },
- "30": {
+ "29": {
   "title": "Putting numbers on the heart–breathing links",
   "detailed": [
    "From that paper, let's put numbers on the heart–breathing links.",
@@ -4504,7 +4274,7 @@
   "onD": 54,
   "onC": 32
  },
- "31": {
+ "30": {
   "title": "What does daily screening data look like?",
   "detailed": [
    "Now, back to daily practice. What does our daily screening data look like?",
@@ -4632,7 +4402,7 @@
   "onD": 19,
   "onC": 15
  },
- "32": {
+ "31": {
   "title": "What to take home",
   "detailed": [
    "To wrap up, what should you take home?",
