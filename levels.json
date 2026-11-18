@@ -3917,134 +3917,6 @@
   "onC": 17
  },
  "27": {
-  "title": "What does daily screening data look like?",
-  "detailed": [
-   "And what does daily screening data look like?",
-   "The team gets a LINE message from the test site.",
-   "For each bed, it lists the bRDI, sleep time, PB%, PB events, and the average cycle length.",
-   "On the right is the full sleep report, in Chinese."
-  ],
-  "concise": [
-   "And what does daily screening data look like?",
-   "A LINE message lists the bRDI, sleep time, PB%, and PB events for each bed."
-  ],
-  "dMark": [
-   "[And] what does daily screening data look like?",
-   "[The team gets a] LINE [message from the] test site.",
-   "[For each bed, it lists the] bRDI, sleep time, PB%, PB events, [and the average cycle length.]",
-   "[On the right is the full] sleep [report, in Chinese.]"
-  ],
-  "cMark": [
-   "[And] what does daily screening data look like?",
-   "[A] LINE [message lists the] bRDI, sleep time, PB%, [and] PB events [for each bed.]"
-  ],
-  "secC": 12.0,
-  "wc": 23,
-  "secD": 20.8,
-  "wd": 45,
-  "points": [
-   {
-    "zh": "每床 LINE 摘要：bRDI、睡眠時間、週期性呼吸",
-    "kw": "LINE summary per bed",
-    "en": "LINE: bRDI / Sleep time / PB% / PB events / Cycle-length avg.",
-    "groups": [
-     [
-      "line",
-      "summary",
-      "message",
-      "notify",
-      "report",
-      "line notify"
-     ],
-     [
-      "brdi",
-      "sleep time",
-      "periodic breathing",
-      "cycle length",
-      "each bed",
-      "every bed",
-      "per bed"
-     ]
-    ],
-    "need": 2,
-    "must": true
-   },
-   {
-    "zh": "完整睡眠報告：分期、事件、趨勢、心跳呼吸",
-    "kw": "full sleep report",
-    "en": "The full BestShape sleep report with sleep stages, breathing rate and heart rate.",
-    "groups": [
-     [
-      "full report",
-      "sleep report",
-      "report",
-      "full"
-     ],
-     [
-      "stages",
-      "events",
-      "trend",
-      "heart rate",
-      "breathing rate",
-      "night"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   },
-   {
-    "zh": "標題：每日篩檢資料長什麼樣子",
-    "kw": "care team sees it every morning",
-    "en": "What does daily screening data look like?",
-    "groups": [
-     [
-      "care team",
-      "team",
-      "nurses",
-      "doctors",
-      "staff",
-      "we see",
-      "daily screening data",
-      "screening data",
-      "in practice"
-     ],
-     [
-      "every morning",
-      "each morning",
-      "morning",
-      "daily",
-      "every day"
-     ]
-    ],
-    "need": 2,
-    "must": false
-   }
-  ],
-  "slideKw": {
-   "detailed": [
-    "LINE",
-    "bRDI",
-    "PB",
-    "screening"
-   ],
-   "concise": [
-    "LINE",
-    "bRDI",
-    "PB",
-    "screening"
-   ],
-   "kp": [
-    "LINE",
-    "bRDI",
-    "PB",
-    "Sleep",
-    "screening"
-   ]
-  },
-  "onD": 17,
-  "onC": 14
- },
- "28": {
   "title": "Study 3: Can breathing tell us about the heart?",
   "detailed": [
    "Now let's turn to the heart. Study 3 asks: can breathing tell us about the heart?",
@@ -4233,7 +4105,7 @@
   "onD": 62,
   "onC": 35
  },
- "29": {
+ "28": {
   "title": "Why does a weaker heart change breathing during sleep?",
   "detailed": [
    "But why would a weaker heart change breathing during sleep?",
@@ -4368,7 +4240,7 @@
   "onD": 28,
   "onC": 22
  },
- "30": {
+ "29": {
   "title": "Periodic-breathing features & cycle length",
   "detailed": [
    "And how do we measure periodic breathing? We use features like the cycle length and the hyperpnea length.",
@@ -4517,7 +4389,7 @@
   "onD": 30,
   "onC": 21
  },
- "31": {
+ "30": {
   "title": "IEEE JTEHM 2025 paper",
   "detailed": [
    "These ideas come together in our paper on evaluating cardiac impairment from abnormal respiratory patterns, using wireless radar and deep learning.",
@@ -4662,7 +4534,7 @@
   "onD": 25,
   "onC": 14
  },
- "32": {
+ "31": {
   "title": "Putting numbers on the heart–breathing links",
   "detailed": [
    "From that paper, let's put numbers on the heart–breathing links.",
@@ -4800,30 +4672,158 @@
   "onD": 54,
   "onC": 32
  },
+ "32": {
+  "title": "What does daily screening data look like?",
+  "detailed": [
+   "Now, back to daily practice. What does our daily screening data look like?",
+   "The team gets a LINE message from the test site.",
+   "For each bed, it lists the bRDI, sleep time, PB%, PB events, and the average PB cycle length that we just discussed.",
+   "On the right is the full sleep report, in Chinese."
+  ],
+  "concise": [
+   "Now, back to daily practice: what does our daily screening data look like?",
+   "A LINE message lists the bRDI, sleep time, PB%, PB events, and the average cycle length for each bed."
+  ],
+  "dMark": [
+   "[Now, back to] daily [practice.] What does [our] daily screening data look like?",
+   "[The team gets a] LINE [message from the] test site.",
+   "[For each bed, it lists the] bRDI, sleep time, PB%, PB events, [and the average] PB [cycle length that we just discussed.]",
+   "[On the right is the full] sleep [report, in Chinese.]"
+  ],
+  "cMark": [
+   "[Now, back to] daily [practice:] what does [our] daily screening data look like?",
+   "[A] LINE [message lists the] bRDI, sleep time, PB%, PB events, [and the average cycle length for each bed.]"
+  ],
+  "secC": 16.7,
+  "wc": 32,
+  "secD": 25.4,
+  "wd": 55,
+  "points": [
+   {
+    "zh": "每床 LINE 摘要：bRDI、睡眠時間、週期性呼吸",
+    "kw": "LINE summary per bed",
+    "en": "LINE: bRDI / Sleep time / PB% / PB events / Cycle-length avg.",
+    "groups": [
+     [
+      "line",
+      "summary",
+      "message",
+      "notify",
+      "report",
+      "line notify"
+     ],
+     [
+      "brdi",
+      "sleep time",
+      "periodic breathing",
+      "cycle length",
+      "each bed",
+      "every bed",
+      "per bed"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
+   {
+    "zh": "完整睡眠報告：分期、事件、趨勢、心跳呼吸",
+    "kw": "full sleep report",
+    "en": "The full BestShape sleep report with sleep stages, breathing rate and heart rate.",
+    "groups": [
+     [
+      "full report",
+      "sleep report",
+      "report",
+      "full"
+     ],
+     [
+      "stages",
+      "events",
+      "trend",
+      "heart rate",
+      "breathing rate",
+      "night"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "標題：每日篩檢資料長什麼樣子",
+    "kw": "care team sees it every morning",
+    "en": "What does daily screening data look like?",
+    "groups": [
+     [
+      "care team",
+      "team",
+      "nurses",
+      "doctors",
+      "staff",
+      "we see",
+      "daily screening data",
+      "screening data",
+      "in practice"
+     ],
+     [
+      "every morning",
+      "each morning",
+      "morning",
+      "daily",
+      "every day"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   }
+  ],
+  "slideKw": {
+   "detailed": [
+    "LINE",
+    "bRDI",
+    "PB",
+    "screening"
+   ],
+   "concise": [
+    "LINE",
+    "bRDI",
+    "PB",
+    "screening"
+   ],
+   "kp": [
+    "LINE",
+    "bRDI",
+    "PB",
+    "Sleep",
+    "screening"
+   ]
+  },
+  "onD": 19,
+  "onC": 15
+ },
  "33": {
   "title": "Our ward work has won national awards",
   "detailed": [
-   "Beyond research, our ward work has also won national awards for our zero-contact care platform.",
+   "This daily ward work has also won national awards for our zero-contact care platform.",
    "In 2025, we received the NHQA, the National Healthcare Quality Award, for our zero-contact monitoring platform for inpatients.",
    "We also received the SNQ, the Symbol of National Quality, for our Wholehearted integrated care model."
   ],
   "concise": [
-   "Beyond research, our ward work has won national awards.",
+   "This daily ward work has also won national awards.",
    "We received the 2025 NHQA and the SNQ national quality awards."
   ],
   "dMark": [
-   "[Beyond research,] our ward work has [also] won national awards for our zero-contact care platform.",
+   "[This daily] ward work has [also] won national awards for our zero-contact care platform.",
    "[In] 2025, [we received the] NHQA, [the] National Healthcare Quality Award, for our zero-contact monitoring platform for [inpatients.]",
    "[We also received the] SNQ, [the] Symbol of National Quality, for our Wholehearted integrated care model."
   ],
   "cMark": [
-   "[Beyond research,] our ward work has won national awards.",
+   "[This daily] ward work has [also] won national awards.",
    "[We received the] 2025 NHQA [and the] SNQ national quality awards."
   ],
   "secC": 10.4,
   "wc": 20,
-  "secD": 22.6,
-  "wd": 49,
+  "secD": 22.2,
+  "wd": 48,
   "points": [
    {
     "zh": "標題：我們的病房工作獲得國家獎項",
@@ -4929,8 +4929,8 @@
     "Quality"
    ]
   },
-  "onD": 35,
-  "onC": 13
+  "onD": 34,
+  "onC": 12
  },
  "34": {
   "title": "What to take home",

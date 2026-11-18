@@ -3,7 +3,7 @@
 'use strict';
 const APP = window.__app; if (!APP) return;
 const { SL, settings, saveSettings, esc, fmt } = APP;
-const VER = '13';
+const VER = '14';
 const $ = id => document.getElementById(id);
 const GAP_SENT = 0.3, GAP_SLIDE = 0.8;
 const VOICES = { heart: '自然女聲', michael: '自然男聲' };
@@ -135,7 +135,7 @@ if ('mediaSession' in navigator) try {
 /* offline: put every detailed clip of the chosen voice in the audio cache (sw.js serves it, with Range support) */
 $('tkCache').onclick = async () => {
   if (!('caches' in window)) { $('tkCacheState').textContent = '這個瀏覽器不支援離線快取'; return; }
-  await load(); const v = voice(); const c = await caches.open('gcbme-audio-v' + VER); let n = 0, bad = 0;
+  await load(); const v = voice(); try { for (const k of await caches.keys()) if (k.startsWith('gcbme-audio') && k !== 'gcbme-audio-v' + VER) await caches.delete(k); } catch (e) { } const c = await caches.open('gcbme-audio-v' + VER); let n = 0, bad = 0;
   const urls = list.map(it => urlFor(it, v)).concat([`audio/${v}/durations.json?v=${VER}`]);
   for (const u of urls) { try { if (!(await c.match(u))) { const r = await fetch(u); if (r.ok) await c.put(u, r); else bad++; } } catch (e) { bad++; } n++; if (n % 10 === 0) $('tkCacheState').textContent = `${n}/${urls.length}`; }
   $('tkCacheState').textContent = bad ? `完成，但有 ${bad} 個沒存到，請在網路好時再按一次` : `✓ 已存 ${VOICES[v]} 整場（${urls.length} 段），離線也能播`;
