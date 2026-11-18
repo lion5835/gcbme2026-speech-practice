@@ -2,32 +2,34 @@
  "1": {
   "title": "Non-wearable Devices in Sleep Medicine",
   "detailed": [
-   "Good morning, everyone. Thank you for inviting me to the GCBME 2026 International Forum on Smart Healthcare.",
+   "Good morning, everyone. Thank you for inviting me to this Forum on Smart Healthcare.",
    "I'm Wen-Te Liu, from Pulmonary Medicine at Shuang Ho Hospital.",
    "Today I'll talk about non-wearable devices in sleep medicine: how we use contactless radar to check breathing during sleep."
   ],
   "concise": [
-   "Good morning, everyone. I'm Wen-Te Liu, from Pulmonary Medicine at Shuang Ho Hospital.",
+   "Good morning, everyone. Thank you for inviting me to this Forum on Smart Healthcare.",
+   "I'm Wen-Te Liu, from Pulmonary Medicine at Shuang Ho Hospital.",
    "Today's topic is using contactless radar to check breathing during sleep."
   ],
   "dMark": [
-   "[Good morning, everyone. Thank you for inviting me to the] GCBME 2026 International Forum on Smart Healthcare.",
+   "[Good morning, everyone. Thank you for inviting me to this] Forum on Smart Healthcare.",
    "[I'm] Wen-Te Liu, [from] Pulmonary Medicine [at] Shuang Ho Hospital.",
    "[Today I'll talk about] non-wearable devices in sleep medicine: [how we use] contactless radar to check breathing during sleep."
   ],
   "cMark": [
-   "[Good morning, everyone. I'm] Wen-Te Liu, [from] Pulmonary Medicine [at] Shuang Ho Hospital.",
+   "[Good morning, everyone. Thank you for inviting me to this] Forum on Smart Healthcare.",
+   "[I'm] Wen-Te Liu, [from] Pulmonary Medicine [at] Shuang Ho Hospital.",
    "[Today's topic is] using contactless radar to check breathing during sleep."
   ],
-  "secC": 12.5,
-  "wc": 24,
-  "secD": 21.2,
-  "wd": 46,
+  "secC": 18.3,
+  "wc": 35,
+  "secD": 19.8,
+  "wd": 43,
   "points": [
    {
     "zh": "自我介紹：雙和醫院胸腔科醫師",
     "kw": "who I am",
-    "en": "Wen-Te Liu, M.D., Pulmonary Medicine, Shuang Ho Hospital.",
+    "en": "Wen-Te Liu, M.D., Ph.D., Pulmonary Medicine, Shuang Ho Hospital.",
     "groups": [
      [
       "wen te liu",
@@ -110,51 +112,34 @@
     "must": true
    },
    {
-    "zh": "演講路線：問題→技術→院內/居家驗證→心臟",
-    "kw": "roadmap",
-    "en": "GCBME 2026 International Forum on Smart Healthcare.",
+    "zh": "感謝邀請參加這個智慧醫療論壇",
+    "kw": "thank the forum",
+    "en": "Thank you for inviting me to this Forum on Smart Healthcare.",
     "groups": [
      [
-      "problem",
-      "challenge",
-      "bottleneck"
+      "forum",
+      "smart healthcare",
+      "gcbme",
+      "conference",
+      "meeting"
      ],
      [
-      "technology",
-      "technique",
-      "method",
-      "how it works"
-     ],
-     [
-      "hospital",
-      "home",
-      "validation",
-      "results",
-      "study",
-      "studies"
-     ],
-     [
-      "heart",
-      "cardiac",
-      "cardio",
-      "heart failure",
-      "lvef",
-      "ejection fraction",
-      "heart function",
-      "cardiology",
-      "new direction",
-      "future"
+      "thank",
+      "thanks",
+      "thank you",
+      "inviting",
+      "invitation",
+      "invite",
+      "welcome",
+      "honor"
      ]
     ],
-    "need": 2,
+    "need": 1,
     "must": false
    }
   ],
   "slideKw": {
    "detailed": [
-    "2026",
-    "GCBME",
-    "International",
     "Forum",
     "Smart",
     "Healthcare",
@@ -163,15 +148,18 @@
     "Shuang",
     "Hospital",
     "wearable",
-    "contactless"
+    "contactless",
+    "breathing"
    ],
    "concise": [
+    "Forum",
+    "Smart",
+    "Healthcare",
     "Pulmonary",
     "Medicine",
     "Shuang",
     "Hospital",
-    "contactless",
-    "breathing"
+    "contactless"
    ],
    "kp": [
     "Pulmonary",
@@ -181,8 +169,8 @@
     "Sleep"
    ]
   },
-  "onD": 26,
-  "onC": 15
+  "onD": 23,
+  "onC": 19
  },
  "2": {
   "title": "Why is sleep testing so hard?",
@@ -196,6 +184,7 @@
   "concise": [
    "Let me start with this: why is sleep testing so hard?",
    "We need objective data, but getting that data is a real hassle.",
+   "Putting on the sensors often takes more than 40 minutes, which makes patients anxious.",
    "And patients have to sleep in a very unnatural setting."
   ],
   "dMark": [
@@ -208,10 +197,11 @@
   "cMark": [
    "[Let me start with this:] why is sleep testing so hard?",
    "We need objective data, but getting that data is a real hassle.",
+   "[Putting on the sensors] often [takes more than] 40 minutes, [which makes patients anxious.]",
    "And patients have to sleep in a very unnatural setting."
   ],
-  "secC": 17.2,
-  "wc": 33,
+  "secC": 24.5,
+  "wc": 47,
   "secD": 29.1,
   "wd": 63,
   "points": [
@@ -251,7 +241,7 @@
    {
     "zh": "貼線超過 40 分鐘、會焦慮",
     "kw": "over 40 minutes of wiring, anxiety",
-    "en": "Sensor application time often exceeds 40 minutes, causing anxiety.",
+    "en": "Putting on the sensors often takes more than 40 minutes, which makes patients anxious.",
     "groups": [
      [
       "40 minutes",
@@ -323,6 +313,7 @@
     "unnatural"
    ],
    "concise": [
+    "40",
     "objective",
     "patients",
     "unnatural"
@@ -334,32 +325,32 @@
    ]
   },
   "onD": 38,
-  "onC": 28
+  "onC": 31
  },
  "3": {
   "title": "How do today's tests compare?",
   "detailed": [
    "Let's look at the options we have now. How do today's tests compare?",
-   "PSG covers all sleep diseases, but it needs 20 or more wires, and patients wait 1 to 2 months.",
+   "PSG covers all sleep diseases, but it needs 20 or more wires, and patients wait 1 or 2 months.",
    "Home sleep testing uses 3 wires. An oximeter or an ECG patch can record for 7 to 14 days.",
    "But they are all uncomfortable, and the patch can cause allergy.",
    "So we need to move past wearable sensors, from Type I to Type IV, to monitoring with nothing to wear, night after night."
   ],
   "concise": [
    "So how do today's tests compare?",
-   "PSG needs 20 or more wires and a 1 to 2 month wait, and the other tests are uncomfortable.",
+   "PSG needs 20 or more wires and a 1 or 2 month wait, and the other tests are uncomfortable.",
    "So we need monitoring with nothing to wear, night after night."
   ],
   "dMark": [
    "[Let's look at the options we have now.] How do today's tests compare?",
-   "PSG [covers] all sleep diseases, [but it needs] 20 [or more] wires, [and patients] wait 1 [to 2] months.",
+   "PSG [covers] all sleep diseases, [but it needs] 20 [or more] wires, [and patients] wait 1 [or 2] months.",
    "Home sleep testing [uses] 3 wires. [An] oximeter [or an] ECG patch [can record for 7 to 14] days.",
    "[But they are all] uncomfortable, [and the] patch [can cause] allergy.",
    "So we need to move past wearable sensors, [from Type I to Type IV,] to monitoring with nothing to wear, night after night."
   ],
   "cMark": [
    "[So] how do today's tests compare?",
-   "PSG [needs] 20 [or more] wires [and a] 1 [to 2 month] wait, [and the other] tests [are] uncomfortable.",
+   "PSG [needs] 20 [or more] wires [and a] 1 [or 2 month] wait, [and the other] tests [are] uncomfortable.",
    "So we need monitoring with nothing to wear, night after night."
   ],
   "secC": 18.8,
@@ -370,7 +361,7 @@
    {
     "zh": "PSG 最完整但線多、要等 1–2 個月",
     "kw": "PSG: complete but many wires, long wait",
-    "en": "Polysomnography: All Sleep Diseases, ≥20 wires, 1-2 Months wait.",
+    "en": "Polysomnography: All Sleep Diseases, ≥20 wires, 1 or 2 months wait.",
     "groups": [
      [
       "polysomnography",
@@ -397,7 +388,9 @@
       "month",
       "months",
       "long time",
-      "queue"
+      "queue",
+      "1 or 2 months",
+      "one or two months"
      ]
     ],
     "need": 2,
@@ -1282,27 +1275,33 @@
  "9": {
   "title": "Radar turns tiny chest movements into breathing signals",
   "detailed": [
-   "Before the results, how does the radar see the breathing? It turns tiny chest movements into breathing signals.",
+   "Before the results, let's look at the most important question: how does the radar see the breathing?",
+   "It turns tiny chest movements into breathing signals.",
    "In panel A, normal breathing gives a steady, regular wave.",
-   "Panel B shows a respiratory event. During the apnea episode, the wave gets very small, and then breathing comes back."
+   "Panel B shows a respiratory event. During the apnea episode, the wave gets very small, and then breathing comes back.",
+   "This looks simple. But in real life, it's not simple at all."
   ],
   "concise": [
-   "First, how does the radar see the breathing? It turns tiny chest movements into breathing signals.",
-   "You can see normal breathing, and a respiratory event with an apnea episode."
+   "Before the results, the key question: how does the radar see the breathing? It turns tiny chest movements into breathing signals.",
+   "You can see normal breathing, and a respiratory event with an apnea episode.",
+   "It looks simple. But in real life, it's not simple at all."
   ],
   "dMark": [
-   "[Before the results,] how does the radar see the breathing? [It] turns tiny chest movements into breathing signals.",
+   "[Before the results, let's look at the most important question:] how does the radar see the breathing?",
+   "[It] turns tiny chest movements into breathing signals.",
    "[In panel] A, normal breathing [gives a steady, regular wave.]",
-   "[Panel B shows a] respiratory event. [During the] apnea episode, [the wave gets very small, and then] breathing [comes back.]"
+   "[Panel B shows a] respiratory event. [During the] apnea episode, [the wave gets very small, and then] breathing [comes back.]",
+   "[This looks simple. But in real life, it's not simple at all.]"
   ],
   "cMark": [
-   "[First,] how does the radar see the breathing? [It] turns tiny chest movements into breathing signals.",
-   "[You can see] normal breathing, [and a] respiratory event [with an] apnea episode."
+   "[Before the results, the key question:] how does the radar see the breathing? [It] turns tiny chest movements into breathing signals.",
+   "[You can see] normal breathing, [and a] respiratory event [with an] apnea episode.",
+   "[It looks simple. But in real life, it's not simple at all.]"
   ],
-  "secC": 15.1,
-  "wc": 29,
-  "secD": 22.2,
-  "wd": 48,
+  "secC": 24.0,
+  "wc": 46,
+  "secD": 30.9,
+  "wd": 67,
   "points": [
    {
     "zh": "雷達把胸壁微動轉成呼吸訊號",
@@ -1401,6 +1400,33 @@
     ],
     "need": 1,
     "must": false
+   },
+   {
+    "zh": "看起來簡單，實際上完全不是這麼回事",
+    "kw": "looks simple, but it is not",
+    "en": "This looks simple. But in real life, it's not simple at all.",
+    "groups": [
+     [
+      "simple",
+      "easy",
+      "looks simple",
+      "seems simple",
+      "straightforward"
+     ],
+     [
+      "not simple",
+      "not easy",
+      "real life",
+      "reality",
+      "difficult",
+      "hard",
+      "not at all",
+      "complicated",
+      "not so simple"
+     ]
+    ],
+    "need": 2,
+    "must": false
    }
   ],
   "slideKw": {
@@ -1428,33 +1454,47 @@
  "10": {
   "title": "Sleep tests watch airflow. Radar watches the chest.",
   "detailed": [
-   "But there's a catch. Sleep tests watch airflow, while radar watches the chest.",
-   "In standard scoring, airflow stops, or gets shallow. We only see these events when we measure airflow.",
-   "Radar senses the chest rising and falling, not airflow. So if we read chest motion as airflow, we get blind spots.",
-   "In an obstructive event, the patient keeps trying to breathe, but no air flows.",
-   "That's why the radar has to spot a typical pattern of chest-motion changes."
+   "Why? Because sleep tests watch airflow, while radar watches the chest. They are two different signals.",
+   "In standard scoring, airflow stops, that's apnea, or gets shallow, that's hypopnea. We only see these events when we measure airflow.",
+   "Radar senses the chest rising and falling, not airflow.",
+   "And every patient is different: tall or short, thin or heavy, lying on the back or on the side.",
+   "So if we use a \"normal\" breathing size, and the usual apnea and hypopnea rules, on chest motion, the results can be far off.",
+   "There's one more problem. In an obstructive event, the upper airway is blocked. At first, chest motion drops a lot.",
+   "But as time goes on, the body starts to struggle to breathe.",
+   "A standard sleep test sees no airflow. But the radar sees the chest moving again.",
+   "So judging apnea by the size of chest motion has a big error. This is the biggest blind spot.",
+   "In our first year with the engineering team, we tried many methods. Nothing worked, and we almost gave up.",
+   "The way out was this: the radar has to spot a typical pattern of chest-motion changes."
   ],
   "concise": [
-   "But sleep tests watch airflow: it stops, or gets shallow. Radar watches the chest.",
-   "Radar senses the chest rising and falling, not airflow.",
-   "In an obstructive event the chest still moves, so the radar has to spot a typical pattern of chest-motion changes."
+   "Why? Because sleep tests watch airflow, while radar watches the chest.",
+   "And every patient is different in body size and sleep position, so the usual rules on chest motion can be far off.",
+   "In an obstructive event, the patient keeps trying to breathe, and the chest moves again, but no air flows. That's the biggest blind spot.",
+   "We almost gave up. The way out: the radar has to spot a typical pattern of chest-motion changes."
   ],
   "dMark": [
-   "[But there's a catch.] Sleep tests watch airflow, [while] radar watches the chest.",
-   "[In] standard scoring, airflow stops, or gets shallow. We only see these events when we measure airflow.",
-   "Radar senses the chest rising and falling, not airflow. [So] if we read chest motion as airflow, we get blind spots.",
-   "In an obstructive event, the patient keeps trying to breathe, but no air flows.",
-   "[That's why the] radar has to spot a typical pattern of chest-motion changes."
+   "[Why? Because] sleep tests watch airflow, [while] radar watches the chest. [They are] two different signals.",
+   "[In] standard scoring, airflow stops, [that's] apnea, [or] gets shallow, [that's] hypopnea. We only see these events when we measure airflow.",
+   "Radar senses the chest rising and falling, not airflow.",
+   "[And every patient is different: tall or short, thin or heavy, lying on the back or on the side.]",
+   "[So if we use a \"normal\" breathing size, and the usual] apnea [and] hypopnea [rules, on] chest motion, [the results can be far off.]",
+   "[There's one more problem.] In an obstructive event, [the upper airway is blocked. At first,] chest motion [drops a lot.]",
+   "[But as time goes on, the body starts to struggle to] breathe.",
+   "[A standard sleep test sees no] airflow. [But the] radar [sees the] chest [moving again.]",
+   "[So judging] apnea [by the size of] chest motion [has a big error. This is the biggest] blind spot.",
+   "[In our first year with the engineering team, we tried many methods. Nothing worked, and we almost gave up.]",
+   "[The way out was this: the] radar has to spot a typical pattern of chest-motion changes."
   ],
   "cMark": [
-   "[But] sleep tests watch airflow: [it] stops, or gets shallow. Radar watches the chest.",
-   "Radar senses the chest rising and falling, not airflow.",
-   "In an obstructive event the chest still [moves, so the] radar has to spot a typical pattern of chest-motion changes."
+   "[Why? Because] sleep tests watch airflow, [while] radar watches the chest.",
+   "[And every patient is different in body size and sleep position, so the usual rules on chest motion can be far off.]",
+   "In an obstructive event, the patient keeps trying to breathe, [and the chest moves again,] but no air flows. [That's the biggest] blind spot.",
+   "[We almost gave up. The way out: the] radar has to spot a typical pattern of chest-motion changes."
   ],
-  "secC": 22.4,
-  "wc": 43,
-  "secD": 36.0,
-  "wd": 78,
+  "secC": 39.1,
+  "wc": 75,
+  "secD": 87.7,
+  "wd": 190,
   "points": [
    {
     "zh": "睡眠檢查看氣流：停止（apnea）或變淺（hypopnea）",
@@ -1545,9 +1585,43 @@
     "must": true
    },
    {
-    "zh": "雷達要認出胸部動作的典型變化模式",
+    "zh": "每個人體型、睡姿差異大，用一般的振幅標準在胸部動作上誤差很大",
+    "kw": "body size & position vary → usual rules fail",
+    "en": "Every patient is different in body size and sleep position, so the usual apnea and hypopnea rules on chest motion can be far off.",
+    "groups": [
+     [
+      "body size",
+      "tall",
+      "short",
+      "thin",
+      "heavy",
+      "position",
+      "sleep position",
+      "posture",
+      "different",
+      "every patient",
+      "lying on the back",
+      "on the side"
+     ],
+     [
+      "far off",
+      "error",
+      "wrong",
+      "not accurate",
+      "inaccurate",
+      "rules",
+      "standard",
+      "normal size",
+      "big error"
+     ]
+    ],
+    "need": 2,
+    "must": false
+   },
+   {
+    "zh": "阻塞時病人掙扎呼吸、胸部又動起來：最大的盲點；差點放棄，最後要認出胸部動作的典型變化模式",
     "kw": "obstruction: chest still moves → need a pattern",
-    "en": "Radar has to spot a typical pattern of chest-motion changes.",
+    "en": "In an obstructive event, the patient struggles to breathe and the chest moves again. This is the biggest blind spot, so radar has to spot a typical pattern of chest-motion changes.",
     "groups": [
      [
       "obstructive",
@@ -1575,7 +1649,10 @@
       "not a flat line",
       "recognize",
       "typical pattern",
-      "spot"
+      "spot",
+      "biggest blind spot",
+      "almost gave up",
+      "gave up"
      ]
     ],
     "need": 2,
@@ -1584,56 +1661,109 @@
   ],
   "slideKw": {
    "detailed": [
-    "Sleep",
     "Radar",
+    "different",
     "standard",
+    "hypopnea",
     "obstructive"
    ],
    "concise": [
-    "Radar",
     "obstructive"
    ],
    "kp": [
     "Sleep",
-    "Radar"
+    "Radar",
+    "obstructive"
    ]
   },
-  "onD": 68,
-  "onC": 38
+  "onD": 66,
+  "onC": 34
  },
  "11": {
   "title": "How radar sees a sleep-breathing event",
   "detailed": [
-   "Here's how radar sees a sleep-breathing event: in five steps of chest-wall motion.",
+   "Then I thought of a basic fact of breathing physiology: the recovery surge.",
+   "After an apnea or a hypopnea, however long it lasts, breathing always comes back.",
+   "At that moment, after a period of too little air, the airway muscles get their tone back, and the airway opens.",
+   "So the person takes one big, deep breath. That's the loud snort that often wakes up a bed partner.",
+   "This recovery surge is a clear marker. Whatever the body size or sleep position, a big breath always comes when the event ends.",
+   "Let me show you the five steps of chest-wall motion.",
    "First, normal breathing: the chest moves regularly.",
    "Then apnea onset: the movement drops sharply, or stops.",
-   "Then struggling effort: the airway is still closed, so the chest makes small moves.",
-   "Then a recovery surge: the airway opens, with one big breath.",
+   "Then struggling effort: the airway is still closed, so the chest makes small moves, trying to breathe.",
+   "Then the recovery surge: the airway opens, with one big breath.",
    "And then it goes back to normal.",
-   "This whole sequence is the event that radar can detect."
+   "This whole sequence is the event that radar can detect.",
+   "We suggested this feature to our engineering team. And luckily, the radar then reached high accuracy for these breathing events.",
+   "Interestingly, Apple's public documents on the Apple Watch sleep apnea feature use the same idea.",
+   "And this year, our own study used breathing sounds to assess OSA. It also relies on the sound of the recovery surge."
   ],
   "concise": [
+   "Then I thought of the recovery surge. When an event ends, the airway opens, and the person takes one big breath.",
+   "It always comes, whatever the body size or sleep position.",
    "So here is how radar sees a sleep-breathing event, in five steps.",
-   "Normal breathing, apnea onset, struggling effort, recovery surge, and back to normal."
+   "Normal breathing, apnea onset, struggling effort, recovery surge, and back to normal.",
+   "With this feature, the radar reached high accuracy. Apple's public documents on the Apple Watch use the same idea, and so does our own breathing-sound study this year."
   ],
   "dMark": [
-   "[Here's] how radar sees a sleep-breathing event: [in] five steps [of] chest-wall motion.",
+   "[Then I thought of a basic fact of breathing physiology: the] recovery surge.",
+   "[After an] apnea [or a hypopnea, however long it lasts,] breathing [always] comes back.",
+   "[At that moment, after a period of too little air, the] airway [muscles get their tone back, and the] airway opens.",
+   "[So the person takes] one big[, deep] breath. [That's the loud snort that often wakes up a bed partner.]",
+   "[This] recovery surge [is a clear marker. Whatever the body size or sleep position, a] big breath [always comes when the event ends.]",
+   "[Let me show you the] five steps [of] chest-wall motion.",
    "[First,] normal breathing: the chest moves regularly.",
    "[Then] apnea onset: [the] movement drops sharply, or stops.",
-   "[Then] struggling effort: the airway is still closed, [so] the chest makes small moves.",
-   "[Then a] recovery surge: the airway opens, [with] one big breath.",
+   "[Then] struggling effort: the airway is still closed, [so] the chest makes small moves, trying to breathe.",
+   "[Then the] recovery surge: the airway opens, [with] one big breath.",
    "[And then it] goes back to normal.",
-   "This whole sequence is the event that radar can detect."
+   "This whole sequence is the event that radar can detect.",
+   "[We suggested this feature to our engineering team. And luckily, the] radar [then reached high accuracy for these breathing events.]",
+   "[Interestingly, Apple's public documents on the Apple Watch sleep apnea feature use the same idea.]",
+   "[And this year, our own study used] breathing [sounds to assess OSA. It also relies on the sound of the] recovery surge."
   ],
   "cMark": [
+   "[Then I thought of the] recovery surge. [When an event ends, the] airway opens, [and the person takes] one big breath.",
+   "[It always comes, whatever the body size or sleep position.]",
    "[So here is] how radar sees a sleep-breathing event, [in] five steps.",
-   "Normal breathing, apnea onset, struggling effort, recovery surge, [and] back to normal."
+   "Normal breathing, apnea onset, struggling effort, recovery surge, [and] back to normal.",
+   "[With this feature, the radar reached high accuracy. Apple's public documents on the Apple Watch use the same idea, and so does our own breathing-sound study this year.]"
   ],
-  "secC": 12.5,
-  "wc": 24,
-  "secD": 32.8,
-  "wd": 71,
+  "secC": 43.3,
+  "wc": 83,
+  "secD": 100.6,
+  "wd": 218,
   "points": [
+   {
+    "zh": "靈感：recovery surge——事件結束時氣道打開，一定有一次大呼吸，不受體型或睡姿影響",
+    "kw": "recovery surge = clear marker",
+    "en": "The recovery surge: when an apnea or hypopnea ends, the airway opens and the person takes one big breath, whatever the body size or sleep position.",
+    "groups": [
+     [
+      "recovery surge",
+      "recovery",
+      "surge",
+      "big breath",
+      "deep breath",
+      "snort",
+      "one big breath",
+      "airway opens"
+     ],
+     [
+      "always",
+      "every",
+      "marker",
+      "clear marker",
+      "body size",
+      "sleep position",
+      "whatever",
+      "event ends",
+      "comes back"
+     ]
+    ],
+    "need": 2,
+    "must": true
+   },
    {
     "zh": "一開始正常，事件開始時振幅明顯下降甚至停止",
     "kw": "normal → amplitude drops or stops",
@@ -1758,22 +1888,49 @@
     ],
     "need": 2,
     "must": false
+   },
+   {
+    "zh": "加入此特徵後準確度提升；Apple Watch 公開文件與我們今年的呼吸聲音研究都用同樣概念",
+    "kw": "high accuracy; same idea as Apple Watch & our sound study",
+    "en": "With this feature, the radar reached high accuracy. Apple's public documents on the Apple Watch use the same idea, and so does our own breathing-sound study this year.",
+    "groups": [
+     [
+      "accuracy",
+      "accurate",
+      "high accuracy",
+      "worked",
+      "improved"
+     ],
+     [
+      "apple",
+      "apple watch",
+      "watch",
+      "breathing sounds",
+      "breathing sound",
+      "sound",
+      "our study",
+      "our own study",
+      "same idea"
+     ]
+    ],
+    "need": 1,
+    "must": false
    }
   ],
   "slideKw": {
    "detailed": [
+    "recovery",
     "breathing",
     "regularly",
     "movement",
     "struggling",
-    "recovery",
     "sequence"
    ],
    "concise": [
     "Normal",
+    "recovery",
     "breathing",
-    "struggling",
-    "recovery"
+    "struggling"
    ],
    "kp": [
     "Normal",
@@ -1783,8 +1940,8 @@
     "breathing"
    ]
   },
-  "onD": 57,
-  "onC": 19
+  "onD": 74,
+  "onC": 26
  },
  "12": {
   "title": "Does the radar agree with the clinical gold standard?",
