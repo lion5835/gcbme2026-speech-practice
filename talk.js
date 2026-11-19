@@ -3,7 +3,7 @@
 'use strict';
 const APP = window.__app; if (!APP) return;
 const { SL, settings, saveSettings, esc, fmt } = APP;
-const VER = '25';
+const VER = '26';
 const $ = id => document.getElementById(id);
 const GAP_SENT = 0.3, GAP_SLIDE = 0.8;
 const VOICES = { heart: '自然女聲', michael: '自然男聲' };
