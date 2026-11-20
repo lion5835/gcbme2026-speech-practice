@@ -2221,30 +2221,30 @@
   "title": "Study 2: How well does it work at home?",
   "detailed": [
    "So how well does it work at home?",
-   "We got a strong Spearman correlation, ρ = 0.87, with p < 0.01. So bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
-   "For consistency, on average, the difference is −5.30 events/h.",
-   "And 93.88% of nights, that's 138 of 147, fall within the ±1.96 SD limits of agreement."
+   "We got a strong Spearman correlation, ρ = 0.87, with p < 0.01.",
+   "So bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
+   "For consistency, on average, the difference is 5.30 events/h."
   ],
   "concise": [
    "So how well does it work at home?",
    "The Spearman correlation was strong, ρ = 0.87.",
-   "On average, the difference is −5.30 events/h."
+   "On average, the difference is 5.30 events/h."
   ],
   "dMark": [
    "[So] how well does it work at home?",
-   "[We got a strong Spearman] correlation, ρ = 0.87, [with] p < 0.01. [So] bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
-   "[For] consistency, on average, the difference is −5.30 events/h.",
-   "[And] 93.88% of nights, [that's] 138 of 147, fall within the ±1.96 SD limits of agreement."
+   "[We got a strong Spearman] correlation, ρ = 0.87, [with] p < 0.01.",
+   "[So] bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
+   "[For] consistency, on average, the difference is [5.30] events/h."
   ],
   "cMark": [
    "[So] how well does it work at home?",
    "[The Spearman] correlation [was strong,] ρ = 0.87.",
-   "On average, the difference is −5.30 events/h."
+   "On average, the difference is [5.30] events/h."
   ],
   "secC": 12.0,
   "wc": 23,
-  "secD": 26.3,
-  "wd": 57,
+  "secD": 18.9,
+  "wd": 41,
   "points": [
    {
     "zh": "居家相關係數 ρ = 0.87（Spearman）",
@@ -2286,47 +2286,21 @@
     "must": true
    },
    {
-    "zh": "Bland–Altman：平均差 −5.30，93.88% 夜晚在一致界限內",
-    "kw": "Bland–Altman: mean −5.30, 93.88% within",
-    "en": "On average, the difference is −5.30 events/h; 93.88% of nights fall within the ±1.96 SD limits of agreement.",
+    "zh": "平均差 5.30 events/h",
+    "kw": "mean difference 5.30 events/h",
+    "en": "On average, the difference is 5.30 events/h.",
     "groups": [
      [
       "5.30",
       "5.3",
-      "minus 5",
+      "five",
       "mean difference",
-      "bland altman",
-      "bias"
-     ],
-     [
-      "93.88",
-      "94",
-      "138",
-      "limits of agreement",
-      "limits",
-      "within"
+      "difference",
+      "bias",
+      "on average"
      ]
     ],
     "need": 1,
-    "must": false
-   },
-   {
-    "zh": "這是一致界限，不是信賴區間",
-    "kw": "limits of agreement, not a CI",
-    "en": "These are limits of agreement, not a confidence interval.",
-    "groups": [
-     [
-      "limits of agreement",
-      "agreement"
-     ],
-     [
-      "not a confidence interval",
-      "not confidence interval",
-      "not a ci",
-      "not the confidence"
-     ]
-    ],
-    "need": 2,
     "must": false
    }
   ],
@@ -2358,40 +2332,40 @@
     "difference"
    ]
   },
-  "onD": 46,
-  "onC": 18
+  "onD": 31,
+  "onC": 17
  },
  "16": {
   "title": "Study 2: Grading severity at home",
   "detailed": [
    "Study 2 also looked at grading severity at home.",
-   "For moderate-to-severe OSA, the accuracy was 83.67%, with a bRDI_TIB cut-off of 21.19 events/h.",
-   "For severe OSA, it was 93.21%, with a cut-off of 28.14 events/h.",
-   "For multi-class prediction, the average accuracy was 78.23%. That's better than HSAT rules alone, at 72.11%."
+   "For moderate-to-severe OSA, the accuracy was near 84%.",
+   "For severe OSA, it was about 93%.",
+   "For multi-class prediction, the average accuracy was around 78%."
   ],
   "concise": [
    "Next, grading severity at home.",
-   "For moderate-to-severe OSA, accuracy was 83.67%. For severe OSA, it was 93.21%."
+   "For moderate-to-severe OSA, accuracy was near 84%. For severe OSA, it was about 93%."
   ],
   "dMark": [
    "Study 2 [also looked at] grading severity at home.",
-   "[For] moderate-to-severe OSA, [the] accuracy [was] 83.67%, [with a] bRDI_TIB cut-off [of] 21.19 events/h.",
-   "[For] severe OSA, [it was] 93.21%, [with a] cut-off [of] 28.14 events/h.",
-   "[For] multi-class prediction, [the] average accuracy [was] 78.23%. [That's] better than HSAT rules alone, at 72.11%."
+   "[For] moderate-to-severe OSA, [the] accuracy [was near 84%.]",
+   "[For] severe OSA, [it was about 93%.]",
+   "[For] multi-class prediction, [the] average accuracy [was around 78%.]"
   ],
   "cMark": [
    "[Next,] grading severity at home.",
-   "[For] moderate-to-severe OSA, accuracy [was] 83.67%. [For] severe OSA, [it was] 93.21%."
+   "[For] moderate-to-severe OSA, accuracy [was near 84%. For] severe OSA, [it was about 93%.]"
   ],
-  "secC": 8.9,
-  "wc": 17,
-  "secD": 23.5,
-  "wd": 51,
+  "secC": 9.9,
+  "wc": 19,
+  "secD": 15.2,
+  "wd": 33,
   "points": [
    {
-    "zh": "居家中重度準確度 83.67%",
-    "kw": "home moderate-to-severe 83.67%",
-    "en": "Moderate-to-Severe OSA: 83.67% Accuracy.",
+    "zh": "居家中重度準確度約 84%",
+    "kw": "home moderate-to-severe ~84%",
+    "en": "Moderate-to-severe OSA: accuracy near 84%.",
     "groups": [
      [
       "83.67",
@@ -2409,9 +2383,9 @@
     "must": false
    },
    {
-    "zh": "居家重度準確度 93.21%",
-    "kw": "home severe 93.21%",
-    "en": "Severe OSA: 93.21% Accuracy.",
+    "zh": "居家重度準確度約 93%",
+    "kw": "home severe ~93%",
+    "en": "Severe OSA: accuracy about 93%.",
     "groups": [
      [
       "93.21",
@@ -2436,24 +2410,22 @@
     "must": true
    },
    {
-    "zh": "多分類 78.23%，比純 HSAT 規則 72.11% 好",
-    "kw": "multi-class 78.23% vs 72.11%",
-    "en": "Multi-class Prediction: 78.23% average accuracy, better than HSAT rules alone, at 72.11%.",
+    "zh": "多分類平均準確度約 78%",
+    "kw": "multi-class ~78%",
+    "en": "Multi-class prediction: average accuracy around 78%.",
     "groups": [
      [
       "78.23",
       "78",
-      "72.11",
-      "72"
+      "seventy-eight"
      ],
      [
       "multi class",
       "multiclass",
+      "multi-class",
       "class",
       "levels",
-      "better",
-      "higher",
-      "compared"
+      "average"
      ]
     ],
     "need": 2,
@@ -2491,8 +2463,8 @@
     "Severe"
    ]
   },
-  "onD": 32,
-  "onC": 11
+  "onD": 15,
+  "onC": 9
  },
  "17": {
   "title": "Hospital vs. home: how do they compare?",
@@ -2500,7 +2472,7 @@
    "Let's put the two studies side by side. Hospital vs. home: how do they compare?",
    "In Study 1, in the hospital, the correlation with PSG was r = 0.91, and severe OSA accuracy was 92.4%.",
    "In Study 2, in real homes with nothing controlled, the Spearman correlation with HSAT was ρ = 0.87, and severe OSA accuracy was 93.21%.",
-   "So the key insight is: for severe OSA, accuracy stays above 92%, in the hospital and at home."
+   "So the key insight is: for severe OSA, accuracy stays above 92%, both in the hospital and at home."
   ],
   "concise": [
    "Let's compare hospital vs. home.",
@@ -2510,7 +2482,7 @@
    "[Let's put the two studies side by side.] Hospital vs. home: how do they compare?",
    "[In] Study 1, in the hospital, [the] correlation [with] PSG [was] r = 0.91, [and] severe OSA accuracy [was] 92.4%.",
    "[In] Study 2, [in] real homes [with] nothing controlled, [the Spearman] correlation [with] HSAT [was] ρ = 0.87, [and] severe OSA accuracy [was] 93.21%.",
-   "[So the] key insight [is:] for severe OSA, accuracy stays above 92%, in the hospital and at home."
+   "[So the] key insight [is:] for severe OSA, accuracy stays above 92%, [both] in the hospital and at home."
   ],
   "cMark": [
    "[Let's] compare hospital vs. home.",
@@ -2518,8 +2490,8 @@
   ],
   "secC": 9.4,
   "wc": 18,
-  "secD": 35.5,
-  "wd": 77,
+  "secD": 36.0,
+  "wd": 78,
   "points": [
    {
     "zh": "院內 vs 居家：比較",
