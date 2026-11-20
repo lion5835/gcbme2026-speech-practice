@@ -2223,28 +2223,28 @@
    "So how well does it work at home?",
    "We got a strong Spearman correlation, ρ = 0.87, with p < 0.01.",
    "So bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
-   "For consistency, on average, the difference is 5.30 events/h."
+   "For consistency, on average, the difference is about 5 events per hour lower."
   ],
   "concise": [
    "So how well does it work at home?",
    "The Spearman correlation was strong, ρ = 0.87.",
-   "On average, the difference is 5.30 events/h."
+   "On average, the difference is about 5 events per hour lower."
   ],
   "dMark": [
    "[So] how well does it work at home?",
    "[We got a strong Spearman] correlation, ρ = 0.87, [with] p < 0.01.",
    "[So] bRDI_TIB tracks HSAT AHI closely, even with no one supervising.",
-   "[For] consistency, on average, the difference is [5.30] events/h."
+   "[For] consistency, on average, the difference is about 5 events per hour lower."
   ],
   "cMark": [
    "[So] how well does it work at home?",
    "[The Spearman] correlation [was strong,] ρ = 0.87.",
-   "On average, the difference is [5.30] events/h."
+   "On average, the difference is about 5 events per hour lower."
   ],
-  "secC": 12.0,
-  "wc": 23,
-  "secD": 18.9,
-  "wd": 41,
+  "secC": 14.1,
+  "wc": 27,
+  "secD": 20.8,
+  "wd": 45,
   "points": [
    {
     "zh": "居家相關係數 ρ = 0.87（Spearman）",
@@ -2286,18 +2286,18 @@
     "must": true
    },
    {
-    "zh": "平均差 5.30 events/h",
-    "kw": "mean difference 5.30 events/h",
-    "en": "On average, the difference is 5.30 events/h.",
+    "zh": "平均差約每小時少 5 次",
+    "kw": "mean difference ~5 events/h lower",
+    "en": "On average, the difference is about 5 events per hour lower.",
     "groups": [
      [
-      "5.30",
-      "5.3",
+      "5",
       "five",
       "mean difference",
       "difference",
       "bias",
-      "on average"
+      "on average",
+      "lower"
      ]
     ],
     "need": 1,
@@ -2321,19 +2321,19 @@
    ],
    "concise": [
     "0.87",
-    "5.30",
+    "5",
     "correlation",
     "difference"
    ],
    "kp": [
     "0.87",
-    "5.30",
+    "5",
     "Correlation",
     "difference"
    ]
   },
-  "onD": 31,
-  "onC": 17
+  "onD": 36,
+  "onC": 22
  },
  "16": {
   "title": "Study 2: Grading severity at home",
